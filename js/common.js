@@ -14,8 +14,8 @@ $(document).ready(function() {
 	$(".animation_2").animated("fadeInLeft", "fadeInLeft");
 	$(".animation_3").animated("fadeInRight", "fadeInRight");
 
-	$(".left .resume_item").animated("fadeInLeft", "fadeInLeft");
-	$(".right .resume_item").animated("fadeInRight", "fadeInRight");
+	$(".left .uslygi_item").animated("fadeInLeft", "fadeInLeft");
+	$(".right .uslygi_item").animated("fadeInRight", "fadeInRight");
 
 
 
@@ -62,10 +62,10 @@ $(document).ready(function() {
 
 	$("input,select,textarea").jqBootstrapValidation();
 
-	$("top_mnu ul a").mPageScroll2id(); //выбрав пункт меню, сколит до секции
+	$("top_mnu ul a").mPageScroll2id(); //выбрав пункт меню, скролит до секции
 
 });
 $(window).load(function() { 
 	$(".loader_inner").fadeOut(); 
 	$(".loader").delay(400).fadeOut("slow"); 
-});
+}); //прелоадер

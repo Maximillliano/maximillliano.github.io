@@ -80,24 +80,13 @@ section {
     background-repeat: no-repeat;
     background-position: center center;
     background-color: #fff;
-    height: 60px;
-    width: 60px;
+    height: 40px;
+    width: 40px;
     margin-top: -30px;
     margin-left: -30px;
     left: 50%;
     top: 50%;
     position: absolute; }
-
-.logo_container {
-  float: left; }
-
-svg {
-  height: 60px;
-  width: 60px;
-  z-index: 100;
-  position: fixed;
-  left: 20px;
-  top: 20px; }
 
 .toggle_mnu {
   width: 50px;
@@ -248,6 +237,7 @@ svg {
       padding: 10px 35px;
       color: #fff;
       border: 6px solid #fff;
+      background-color: rgba(0, 0, 0, 0.2);
       text-transform: uppercase;
       font-weight: bold;
       font-size: 3.5em;
@@ -301,37 +291,40 @@ svg {
   font-size: 20px;
   padding: 0 3px; }
 
-.resume_container .left {
+.uslygi_container .left {
   text-align: right;
   border-right: #d2d2d2 1px solid; }
-  .resume_container .left h3 {
+  .uslygi_container .left h3 {
     text-align: right; }
-.resume_container .right {
+.uslygi_container .right {
   text-align: left; }
-  .resume_container .right h3 {
-    text-align: left; }
-.resume_container h3 {
+  .uslygi_container .right h3 {
+    text-align: left;
+    padding-left: 8px; }
+.uslygi_container h3 {
   margin-top: 30px; }
-.resume_container .year {
+.uslygi_container .cost a {
   color: #fff;
   font-weight: 600;
   font-style: italic;
   display: inline-block;
-  padding: 0 15px;
-  margin-bottom: 15px; }
-.resume_container strong {
+  padding: 0 5px; }
+.uslygi_container strong {
   font-weight: 600;
   font-style: normal;
   text-transform: uppercase; }
-.resume_container .resume_description {
-  font-style: italic; }
-.resume_container .resume_item {
+.uslygi_container .uslygi_icon {
+  font-size: 40px;
+  margin-bottom: 35px;
+  margin-right: 35px;
+  margin-left: 35px; }
+.uslygi_container .uslygi_item {
   margin-bottom: 35px; }
-  .resume_container .resume_item p {
+  .uslygi_container .uslygi_item p {
     margin-top: 10px; }
-  .resume_container .resume_item:last-child {
+  .uslygi_container .uslygi_item:last-child {
     margin-bottom: 0; }
-    .resume_container .resume_item:last-child p {
+    .uslygi_container .uslygi_item:last-child p {
       margin-bottom: 0; }
 
 .s_portfolio ul,

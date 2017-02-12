@@ -29,11 +29,14 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-	.resume_container .left,
-	.section_content .resume_container h3,
-	.resume_container .resume_icon {
+	.uslygi_container .left
+	{
 		text-align: left;
 		margin-bottom: 10px;
+	}
+	.uslygi_icon,
+	.row .uslygi_container h3{
+		text-align: center;
 	}
 }
 
@@ -43,6 +46,9 @@
 		font-size: 2em;
 		padding-left: 10px;
 		padding-right: 10px;
+	}
+	.top_wrapper .top_text p{
+		font-size: 0.8em;
 	}
 	.main_footer{
 		text-align: left;
