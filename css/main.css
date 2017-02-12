@@ -130,8 +130,7 @@ svg {
   background: black;
   border: none;
   border-radius: 4px 4px 4px 4px;
-  -webkit-transition: -webkit-transform 0.5s, top 0.2s;
-          transition: transform 0.5s, top 0.2s;
+  transition: transform 0.5s, top 0.2s;
   display: block; }
 
 .sw-bottom {
@@ -142,10 +141,8 @@ svg {
   background: black;
   border: none;
   border-radius: 4px 4px 4px 4px;
-  -webkit-transition: -webkit-transform 0.5s, top 0.2s;
-          transition: transform 0.5s, top 0.2s;
-  -webkit-transition-delay: 0.2s, 0s;
-          transition-delay: 0.2s, 0s; }
+  transition: transform 0.5s, top 0.2s;
+  transition-delay: 0.2s, 0s; }
 
 .sw-footer {
   position: relative;
@@ -155,27 +152,19 @@ svg {
   background: black;
   border: none;
   border-radius: 4px 4px 4px 4px;
-  -webkit-transition: all 0.5s;
-          transition: all 0.5s;
-  -webkit-transition-delay: 0.1s;
-          transition-delay: 0.1s; }
+  transition: all 0.5s;
+  transition-delay: 0.1s; }
 
 .sandwich.active .sw-topper {
   top: 9px;
-  -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg); }
+  transform: rotate(-45deg); }
 .sandwich.active .sw-bottom {
   top: 6px;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg); }
+  transform: rotate(45deg); }
 .sandwich.active .sw-footer {
   opacity: 0;
   top: 0;
-  -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-          transform: rotate(180deg); }
+  transform: rotate(180deg); }
 
 .top_mnu {
   position: fixed;
@@ -196,15 +185,19 @@ svg {
     text-align: center; }
     .top_mnu ul li:nth-child(1) a {
       -webkit-animation-duration: 0.5s;
+      -moz-animation-duration: 0.5s;
       animation-duration: 0.5s; }
     .top_mnu ul li:nth-child(2) a {
       -webkit-animation-duration: 1s;
+      -moz-animation-duration: 1s;
       animation-duration: 1s; }
     .top_mnu ul li:nth-child(3) a {
       -webkit-animation-duration: 1.2s;
+      -moz-animation-duration: 1.2s;
       animation-duration: 1.2s; }
     .top_mnu ul li:nth-child(4) a {
       -webkit-animation-duration: 1.3s;
+      -moz-animation-duration: 1.3s;
       animation-duration: 1.3s; }
     .top_mnu ul a {
       color: #fff;
@@ -222,6 +215,7 @@ svg {
         left: 0;
         height: 100%;
         -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
         transition: all 0.5s ease; }
         .top_mnu ul a span:hover {
           background-color: rgba(255, 255, 255, 0.09); }
@@ -247,6 +241,7 @@ svg {
       text-transform: uppercase;
       font-size: 1em;
       -webkit-animation-delay: 1.2s;
+      -moz-animation-delay: 1.2s;
       animation-delay: 1.2s; }
     .top_wrapper .top_text h1 {
       display: inline-block;
@@ -259,6 +254,7 @@ svg {
       margin-left: 25px;
       margin-right: 25px;
       -webkit-animation-delay: 0.8s;
+      -moz-animation-delay: 0.8s;
       animation-delay: 0.8s; }
 
 .toggle_mnu {
@@ -267,6 +263,7 @@ svg {
 .h_opacify {
   opacity: 0.2;
   -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
   transition: all 0.2s ease; }
 
 .main_footer {
@@ -368,8 +365,7 @@ svg {
     text-align: center;
     padding-top: 15%;
     opacity: 0;
-    -webkit-transition: all 0.5s;
-            transition: all 0.5s; }
+    transition: all 0.5s; }
   .portfolio_item:hover .port_item_cont {
     opacity: 1;
     padding-top: 20%; }
@@ -440,3 +436,5 @@ svg {
     text-indent: 15px;
     font-size: 12px;
     background-color: transparent; }
+
+/*# sourceMappingURL=main.css.map */
