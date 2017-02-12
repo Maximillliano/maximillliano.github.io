@@ -19,9 +19,9 @@ $(document).ready(function() {
 
 
 
-	$(".top_text h1").animated("fadeInDown", "fadeOutUp");
-	$(".top_text p").animated("fadeInUp", "fadeOutDown");
-	$(".section_header").animated("fadeInUp", "fadeOutDown");
+	$(".top_text h1").animated("fadeInDown", "fadeInDown");
+	$(".top_text p").animated("fadeInUp", "fadeInUp");
+	$(".section_header").animated("fadeInUp", "fadeInUp");
 	
 
 	function heightDetect(){

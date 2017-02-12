@@ -24,6 +24,9 @@
 		padding-left: 10px;
 		padding-right: 10px;
 	}
+	.container .row h3{
+		margin-top: 80px;
+	}
 }
 
 
@@ -61,11 +64,14 @@
 	.main_footer .social_wrap ul {
 		padding-left: 0;
 	}
+	
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
-
+	.s_portfolio li{
+		font-size: 0.6em ;
+	}
 }
 
 
