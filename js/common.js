@@ -11,8 +11,6 @@ $(document).ready(function() {
 	$(".popup_content").magnificPopup({tyle:"inline", midClick: true});
 
 	$(".animation_1").animated("flipInY", "flipInY");
-	$(".animation_2").animated("fadeInLeft", "fadeInLeft");
-	$(".animation_3").animated("fadeInRight", "fadeInRight");
 
 	$(".left .uslygi_item").animated("fadeInLeft", "fadeInLeft");
 	$(".right .uslygi_item").animated("fadeInRight", "fadeInRight");
