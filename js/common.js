@@ -8,7 +8,7 @@ $(document).ready(function() {
 	});
 
 	$(".popup").magnificPopup({type:'image'});
-	$(".popup_content").magnificPopup({tyle:"inline", midClick: true});
+	$(".popup_content").magnificPopup({type:"inline", midClick: true});
 
 	$(".animation_1").animated("flipInY", "flipInY");
 
