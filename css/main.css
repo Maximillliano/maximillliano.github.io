@@ -309,7 +309,7 @@ section {
   font-style: italic;
   display: inline-block;
   padding: 0 5px; }
-.uslygi_container strong {
+.uslygi_container .uslygi_description {
   font-weight: 600;
   font-style: normal;
   text-transform: uppercase; }

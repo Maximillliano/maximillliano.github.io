@@ -1,7 +1,7 @@
 @import "../bourbon/bourbon"
 
 $color: #FF6347 //Theme skin
-$text_color: #888
+$text_color: #6e6e6e
 $main_color: #222
 $bg_light: #FAFAFA
 
@@ -78,8 +78,6 @@ section
 		font-weight: 600
 		margin-right: 8px
 		margin-left: 8px
-	.left .uslygi_description strong
-		margin-left: 10px
 
 .cost
 	display: inline-block
@@ -89,8 +87,11 @@ section
 .uslygi_item
 	.cost
 		background-color: $color
+		a:hover
+			color: $main_color
 	.uslygi_description
 		+kerning(1)
+	
 
 .s_portfolio
 	li

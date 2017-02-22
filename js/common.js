@@ -19,7 +19,7 @@ $(document).ready(function() {
 
 	$(".top_text h1").animated("fadeInDown", "fadeInDown");
 	$(".top_text p").animated("fadeInUp", "fadeInUp");
-	$(".section_header").animated("fadeInUp", "fadeInUp");
+	$(".section_header").animated("fadeInUp", "fadeOutUp");
 	
 
 	function heightDetect(){

@@ -8,7 +8,7 @@ a {
 p,
 body .main_footer,
 .s_about li {
-  color: #888; }
+  color: #6e6e6e; }
 
 .color_element {
   color: #FF6347; }
@@ -30,7 +30,7 @@ body .main_footer,
     background-color: #fff; }
 
 svg path {
-  fill: #888; }
+  fill: #6e6e6e; }
 
 .top_mnu a:hover {
   color: #FF6347; }
@@ -51,7 +51,7 @@ svg path {
 
 section h3 {
   letter-spacing: 3px;
-  color: #888; }
+  color: #6e6e6e; }
 
 .s_about p:nth-child(even) {
   color: #FF6347; }
@@ -63,8 +63,6 @@ section h3 {
   font-weight: 600;
   margin-right: 8px;
   margin-left: 8px; }
-.uslygi_container .left .uslygi_description strong {
-  margin-left: 10px; }
 
 .cost {
   display: inline-block;
@@ -73,11 +71,13 @@ section h3 {
 
 .uslygi_item .cost {
   background-color: #FF6347; }
+  .uslygi_item .cost a:hover {
+    color: #222; }
 .uslygi_item .uslygi_description {
   letter-spacing: 1px; }
 
 .s_portfolio li {
-  color: #888;
+  color: #6e6e6e;
   letter-spacing: 2px; }
   .s_portfolio li.active {
     color: #fff;
@@ -107,6 +107,6 @@ form button {
   letter-spacing: 2px; }
 form .form-group {
   letter-spacing: 2px;
-  color: #888; }
+  color: #6e6e6e; }
 
 /*# sourceMappingURL=tomato.css.map */
