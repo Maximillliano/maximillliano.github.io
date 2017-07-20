@@ -1,0 +1,168 @@
+@import "bourbon/bourbon"
+
+$text-color: #333
+$dark-color: #000
+$blue-color: #003469
+$green-color: #67bc5c
+
+body
+	font-family: "OpenSansBold", sans-serif
+	color: $text-color
+	font-weight: normal
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	-webkit-font-smoothing: antialised
+
+h1
+	color: #fff
+	font-size: 70px
+	line-height: 56px
+	font-weight: bold
+	font-family: "OpenSansExtraBold", sans-serif
+	text-transform: uppercase
+	margin: 0
+
+section
+	padding: 58px 0 68px
+	&.s_dark
+		h2, h3, p
+			color: #fff
+	h2
+		color: $blue-color
+		font-size: 50px
+		line-height: 56px
+		margin-bottom: 50px
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: green
+
+.hidden
+	display: none
+
+body
+	min-height: 640px
+	background: url(../img/top_bg.jpg) no-repeat
+	background-position: top center
+	background-size: cover
+
+header
+	color: #fff
+	padding-top: 32px
+
+.logo
+	font-size: 45px
+	font-family: "OpenSansBold", sans-serif
+	font-weight: bold
+	cursor: pointer
+
+.top_phone
+	text-align: right
+
+.tab_item 
+	display: none
+.tab_item:first-child
+	display: block
+
+.top_phone .wrapper .tab
+	text-transform: uppercase
+	cursor: pointer
+.top_phone .wrapper .active 
+	text-decoration: underline
+.top_phone .tab_item
+	font-size: 40px
+	font-family: "OpenSansBold", sans-serif
+
+.top_header
+	margin-top: 70px
+	h2
+		margin: 10px 0 0
+		font-family: "OpenSansExtraBold", sans-serif
+		font-size: 45px	
+
+.tabs_header
+	margin-top: 50px
+	ul, li
+		list-style-type: none
+		margin: 0
+		padding: 0
+	li
+		padding-left: 40px
+		position: relative
+		margin-bottom: 12px
+	i
+		position: absolute
+		left: -2px
+		top: 5px
+		line-height: 26px
+		color: #fff
+	.tabs
+		.tab
+			display: inline-block
+			background-color: rgba(255,255,255,.20)
+			border-radius: 10px
+			padding: 12px 14px
+			font-size: 17px
+			text-transform: uppercase
+			cursor: pointer
+			float: left
+			font-family: "OpenSansBold", sans-serif
+			+transition(all .25s ease)
+			&.active
+				background-color: rgba(255,255,255,.5)
+				color: #fff
+
+	.tab_content
+		width: 530px
+		font-size: 16px
+		text-transform: uppercase
+		background-color: rgba(255,255,255,.5)
+		border-radius: 10px
+		padding: 12px 18px 16px
+		color: #fff
+		font-family: "OpenSansRegular", sans-serif
+
+.button
+	border-radius: 20px
+	box-shadow: 0px 5px 0px 0px #fff
+	cursor: pointer
+	display: inline-block
+	height: 46px
+	line-height: 46px
+	padding: 0 32px
+	background-color: #000
+	text-transform: uppercase
+	text-align: center
+	color: #fff
+	font-size: 16px
+	font-family: "OpenSansBold", sans-serif
+	&.btn_red
+		background-image: linear-gradient(to right, #ff5ba2 0%, #f538af 51%, #eb2eb0 100%)
+	&.btn_green
+		background-color: $green-color
+	&.btn_white
+		background-color: #fff
+		color: #000
+
+.button_wrap
+	text-align: right
+	padding-top: 5px
+
+a.button
+	color: #fff
+	text-decoration: none
+a.button:hover
+	background: #ff5ba2
+
+.button:active
+		transform: translate(0px, 5px)
+		-webkit-transform: translate(0px, 5px)
+		box-shadow: 0px 1px 0px 0px
+
+.tab:hover
+	color: #ff5ba2
