@@ -1,0 +1,360 @@
+body {
+	padding: 0;
+	margin: 0;
+	color: #646464;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+
+a {
+	color: #000;
+}
+
+.bodybg {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: center;
+	width: 93%;
+	margin: 2% 3%;
+	background: linear-gradient(to bottom left, #e8e8eb, #f5f6f6);
+	border-radius: 2em;
+	border: 1px solid #e0e0e0;
+	-webkit-box-shadow: -7px 7px 25px 0px rgba(0,0,0,0.37);
+	-moz-box-shadow: -7px 7px 25px 0px rgba(0,0,0,0.37);
+	box-shadow: -7px 7px 25px 0px rgba(0,0,0,0.37);
+}
+
+
+/* Левая сторона */
+.left {
+	margin: 1.8em 0 1.8em 2em;
+}
+
+.element_left {
+	background: url(../img/BG_elem_left.png) no-repeat;
+	width: 255px;
+	height: 250px;
+	margin-bottom: 2em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.element_left i {
+	margin-left: -.3em;
+	font-size: 2em;
+}
+
+.element_left h3 {
+	margin: .8em 0 .8em -.8em;
+	font-weight: 400;
+	font-size: 1.25em;
+	color: #383838;
+}
+
+.element_left p {
+	margin: 0;
+	margin-left: -1.5em;
+	width: 13.3em;
+	font-size: .9em;
+	text-align: center;
+}
+
+div.element_left:last-child {
+	margin-bottom: 0;
+}
+
+.element_left:hover i {
+	font-size: 2.7em;
+	color: #646464;
+	transition-duration: 1s;
+}
+
+
+/* Середина */
+.middle {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: #000;
+	padding: 0 2em;
+}
+
+.middle img {
+	width: 21.5em;
+	margin-top: 3em;
+}
+
+.middle div {
+	font-size: 5.3em;
+	font-family: 'BankGothicBold';
+	text-transform: uppercase;
+	letter-spacing: -3.5px;
+}
+
+.middle span {
+	font-size: 3em;
+	font-family: 'BankGothicBold';
+	text-transform: uppercase;
+	letter-spacing: 1.42em;
+	width: 7.3em;
+}
+
+.middle p {
+	font-size: 1em;
+	margin: 0;
+	margin-top: 2em;
+	width: 22em;
+}
+
+button {
+	margin-top: 2em;
+	width: 14em;
+	height: 48px;
+	background: #000;
+	border-radius: .3em;
+	border: 0;
+	color: #eff0f1;
+	font-size: 1.5em;
+	letter-spacing: 2px;
+	cursor: pointer;
+	outline:none;
+}
+
+button:hover {
+	background: #646464;
+	transition-duration: 1s;
+}
+
+
+/* Popup */
+.hidden {
+	display: none;
+}
+
+form {
+	padding: 42px 30px;
+	background-color: #fff;
+	max-width: 280px;
+	margin: auto;
+	margin-left: 40%;
+	position: relative;
+}
+
+form input {
+	width: 100%;
+	height: 35px;
+	margin-bottom: 20px;
+}
+
+form button {
+	margin: 0 20%;
+	margin-top: 1em;
+	width: 60%;
+}
+
+button.mfp-close {
+	margin: 0;
+}
+
+
+.socials a {
+	margin-top: 2.2em;
+	font-size: .6em;
+	padding-right: .5em;
+	text-decoration: none;
+}
+
+.socials a.fa:hover {
+	margin-top: 1em;
+	font-size: .8em;
+	color: #646464;
+	transition-duration: 1s;
+}
+
+a.fa.fa-twitter {
+	padding-right: 0;
+}
+
+.socials a:visited {
+	color: #000;
+}
+
+
+/* Правая сторона */
+.right {
+	margin: 1.8em 2em 1.8em 0;
+}
+
+.element_right {
+	background: url(../img/BG_elem_right.png) no-repeat;
+	width: 284px;
+	height: 250px;
+	margin-bottom: 2em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.element_right i {
+	margin-right: -1em;
+	font-size: 2em;
+}
+
+.element_right h3 {
+	margin: .8em -1.5em .8em 0;
+	font-weight: 400;
+	font-size: 1.25em;
+	color: #383838;
+}
+
+.element_right p {
+	margin: 0;
+	margin-right: -2em;
+	width: 17em;
+	font-size: .9em;
+	text-align: center;
+}
+
+div.element_right:last-child {
+	margin-bottom: 0;
+}
+
+.element_right:hover i {
+	font-size: 2.7em;
+	color: #646464;
+	transition-duration: 1s;
+}
+
+
+/* Mobile */
+.mobile {
+	display: none;
+	margin-top: 2.8em;
+}
+.poloska {
+	display: flex;
+	margin-bottom: 2em;
+}
+
+.box_left {
+	width: 38%;
+	height: 15.35em;
+	background: #e9eae9;
+}
+
+.box_right {
+	width: 50%;
+	height: 15.35em;
+	background: #e9eae9;
+	z-index: 1;
+}
+
+.element_hidden_left {
+	background: url(../img/BG_elem_left.png) no-repeat;
+	margin: -1px;
+	width: 255px;
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.element_hidden_left i {
+	margin-left: -.3em;
+	font-size: 2em;
+}
+
+.element_hidden_left h3 {
+	margin: .8em 0 .8em -.8em;
+	font-weight: 400;
+	font-size: 1.25em;
+	color: #383838;
+}
+
+.element_hidden_left p {
+	margin: 0;
+	margin-left: -1.5em;
+	width: 13.3em;
+	font-size: .9em;
+	text-align: center;
+}
+
+div.element_hidden_left:last-child {
+	margin-bottom: 0;
+}
+
+.element_hidden_right {
+	background: url(../img/BG_elem_mob_right.png) no-repeat;
+	width: 284px;
+	height: 250px;
+	margin-left: 34%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 2;
+}
+
+.element_hidden_right i {
+	margin-right: -2em;
+	font-size: 2em;
+}
+
+.element_hidden_right h3 {
+	margin: .8em -3em .8em 0;
+	font-weight: 400;
+	font-size: 1.25em;
+	color: #383838;
+}
+
+.element_hidden_right p {
+	margin: 0;
+	margin-right: -4em;
+	width: 17em;
+	font-size: .9em;
+	text-align: center;
+}
+
+div.element_hidden_right:last-child {
+	margin-bottom: 0;
+}
+
+.popup_mob button {
+	margin: 1.5em 31% 0 31%;
+	width: 16em;
+	height: 80px;
+	background: #000;
+	border-radius: .3em;
+	border: 0;
+	color: #eff0f1;
+	font-size: 1.5em;
+	letter-spacing: 2px;
+	cursor: pointer;
+	outline:none;
+}
+
+.socials_mob {
+	margin: .7em 24% 1em 26%;
+}
+
+.socials_mob a {
+	margin-top: .8em;
+	font-size: 4em;
+	padding-right: .7em;
+	text-decoration: none;
+}
+
+a.fa.fa-twitter {
+	padding-right: 0;
+}
+
+.socials_mob a:visited {
+	color: #000;
+}
