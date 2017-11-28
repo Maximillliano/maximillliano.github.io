@@ -1,0 +1,559 @@
+/* Смартфоны (портретный и альбомный режимы) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+/* Сюда добавляем стили*/
+}
+ 
+/* iPad (портретный и альбомный режимы) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+/* Сюда добавляем стили*/
+}
+
+/* iPad (портретный и альбомный режимы) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1590px) {
+	.top_text div{
+		font-size: 8em;
+	}
+	
+	.top_text h1 {
+		font-size: 1.4em;
+	}
+	
+	.button_main {
+		height: 1.8em;
+		font-size: 1.6em;
+		width: 25%;
+	}
+	
+	.about_us .blog_1 p,
+	.about_us .blog_2 p,
+	.about_us .blog_3 p{
+		font-size: 1em;
+	}
+	
+	.about_us .zaslygi {
+		font-size: 1.8em;
+	}
+	
+	.button_blog {
+		height: 2.2em;
+		margin-top: 1em; 
+		width: 120px;
+	}
+	
+	.portfolio div {
+		font-size: 1.4em;
+	}
+	
+	.portfolio .item_portf:hover div {
+		font-size: 1.8em;
+	}
+}
+
+
+@media only screen
+and (max-device-width : 1590px) {
+	.top_text div{
+		font-size: 8em;
+	}
+	
+	.top_text h1 {
+		font-size: 1.4em;
+	}
+	
+	.about_us .blog_1 p,
+	.about_us .blog_2 p,
+	.about_us .blog_3 p{
+		font-size: 1em;
+	}
+	
+	.about_us .zaslygi {
+		font-size: 1.8em;
+	}
+	
+	.button_blog {
+		height: 2.2em;
+		margin-top: 1em; 
+	}
+	
+	.portfolio div {
+		font-size: 1.4em;
+	}
+	
+	.portfolio .item_portf:hover div {
+		font-size: 1.8em;
+	}
+	
+	.boxs h2 {
+		font-size: 1.5em;
+	}
+
+	.boxs ul {
+		font-size: .8em;
+	}
+	
+}
+
+@media only screen
+and (max-device-width : 1350px) {
+	menu ul {
+		padding: 2.5% 2%;
+	}
+	
+	menu a:hover {
+		font-size: 1.1em;
+	}
+	
+	.top_text {
+		padding: 14em 0 6em 3.5%;
+		}	
+	
+	.top_text div{
+		font-size: 7em;
+	}
+	
+	.top_text h1 {
+		font-size: 1.2em;
+	}
+	
+	.button_main {
+		height: 1.7em;
+		font-size: 1.4em;
+		width: 23%;
+	}
+	
+	.about_us .blog_1 span,
+	.about_us .blog_2 span,
+	.about_us .blog_3 span{
+		font-size: 1.5em;
+	}
+	
+	.about_us .blog_1 p,
+	.about_us .blog_2 p,
+	.about_us .blog_3 p{
+		font-size: 1em;
+	}
+	
+	.about_us .zaslygi {
+		font-size: 1.5em;
+	}
+	
+	.button_blog {
+		height: 2.2em;
+		margin-top: 1em; 
+		width: 120px;
+	}
+	
+	.portfolio div {
+		font-size: 1.4em;
+	}
+	
+	.portfolio .item_portf:hover div {
+		font-size: 1.8em;
+	}
+	
+	.callus h2 {
+		font-size: 1.2em;
+	}
+	
+	.callus h1 a {
+		font-size: 3rem;
+	}
+	
+	.callus h1 span{
+		font-size: 4rem;
+	}
+	
+	.callus a {
+		font-size: 1rem;
+	}
+	
+	.callus a span {
+		font-size: 1rem;
+	}
+	
+			.form_s3 {
+			width: 30em;
+		}
+		.form_s4 {
+			width: 30em;
+		}
+	
+	.button_form {
+		margin: 1.2em 30% 0 30%;
+		width: 40%;
+		font-size: 1.4em;
+		height: 50px;
+	}
+	
+	.tel_footer li {
+		margin-top: 2%; 
+		font-size: 1.1rem;
+	}
+	
+	.footer_content ul.socials {
+		margin-top: 2%; 
+		font-size: 1rem;
+	}
+}
+
+@media only screen
+	and (max-device-width : 1190px) {
+	
+		menu ul {
+		padding: 2.5% 2%;
+	}
+	
+	menu a:hover {
+		font-size: 1.1em;
+	}
+		
+	.top_text div{
+		font-size: 7em;
+	}
+	
+	.top_text h1 {
+		font-size: 1.2em;
+	}
+	
+	.button_main {
+		height: 1.8em;
+		font-size: 1.2em;
+		width: 24%;
+	}
+	
+	.about_us .blog_1 p,
+	.about_us .blog_2 p,
+	.about_us .blog_3 p{
+		font-size: 1em;
+	}
+	
+	.about_us .zaslygi {
+		font-size: 1.4em;
+		padding-top: 2%;
+		padding-bottom: 2%;
+	}
+	
+	.button_blog {
+		height: 2.2em;
+		margin-top: 1em; 
+		width: 120px;
+	}
+	
+	.portfolio div {
+		font-size: 1.2em;
+	}
+	
+	.portfolio .item_portf:hover div {
+		font-size: 1.4em;
+	}
+		
+	.boxs h2 {
+		font-size: 1.2em;
+	}
+
+	.boxs ul {
+		font-size: .8em;
+	}
+	
+	.tel_footer li {
+		margin-top: 2%; 
+		font-size: 1.1rem;
+	}
+	
+	.footer_content ul.socials {
+		margin-top: 2%; 
+		font-size: .8rem;
+	}
+}
+
+@media only screen
+	and (max-device-width : 1090px) {
+	
+		menu ul {
+		padding: 2.5% 2%;
+	}
+	
+	menu a:hover {
+		font-size: 1.1em;
+	}
+	
+	.top_text div{
+		font-size: 7em;
+	}
+	
+	.top_text h1 {
+		font-size: 1.2em;
+	}
+	
+	
+	
+  .about_us .blog_1 span,
+	.about_us .blog_2 span,
+	.about_us .blog_3 span{
+		font-size: 1.2em;
+	}
+    
+	.about_us .blog_1 p,
+	.about_us .blog_2 p,
+	.about_us .blog_3 p{
+		font-size: .8em;
+	}
+	
+	.about_us .zaslygi {
+		font-size: 1.2em;
+		padding-right: 4%;
+	}
+}
+
+@media only screen
+  and (max-device-width : 1000px) {
+    
+	.uslygi {
+		display: none;	
+		}	
+  .footer_content ul.socials {
+		display: none;
+	}
+}
+
+
+@media only screen
+	and (max-device-width : 640px) {
+		
+		header a img {
+			width: 18em;
+		}
+		.menu2 {
+			display: flex;
+		}
+		menu {
+			display: none;
+		}
+		
+		.burger {
+			display: none;
+		}
+		
+		.top_head {
+			background-size: 300%;
+
+
+		}
+		
+		.top_text {
+			padding: 28em 5% 18em 5%;
+			text-align: center;
+			width: 90%;
+			
+		}
+		
+		.top_text div {
+			font-size: 10em;
+			
+		}
+		
+		.top_text h1 {
+			font-size: 2em;
+		}
+		
+		.button_main {
+			margin: 0 30%;
+			margin-top: 10%;
+			width: 40%;
+			height: 2.5em;
+			font-size: 2.5em;
+		}
+		
+		.about_us .blog_1,
+		.about_us .blog_2,
+		.about_us .blog_3 {
+			display: none;
+		} 
+
+		.about_us .zaslygi {
+			justify-content: center;
+			width: 100%;
+			font-size: 3em;
+		}
+		
+		.about_us .zaslygi .zaslygi_icons {
+			padding-left: 0; 
+		}
+
+		#block-for-slider {
+			display: none;
+		}
+		
+		.portfolio .item_portf {
+			display: none;
+		}
+		
+		.portfolio .item_portf:last-child {
+			display: flex;
+			width: 100%;
+		}
+		
+		.portfolio img {
+			width: 100%;
+		}
+		
+		.portfolio .item_portf div {
+		font-size: 5em;
+		background-color: rgba(255,255,255,.8);
+		}
+		
+		.portfolio .item_portf:hover div {
+		font-size: 5em;
+		background-color: rgba(255,255,255,.8);
+		color: #717171;
+		}
+		
+		.uslygi{
+			display: flex;
+			padding-top: 5%;
+		}
+		
+		.boxs:nth-child(2){
+			display: none;
+		}
+		
+		.boxs:last-child {
+			display: none;
+		}
+		
+		.uslygi .boxs{
+			width: 80%;
+		}
+		
+		.boxs span {
+			font-size: 8rem;
+		}
+		
+		.boxs h2 {
+			font-size: 5em; 
+		}
+		
+		.boxs ul {
+			font-size: 2em;
+		}
+		
+		.brands {
+			display: none;
+		}
+		
+		.callus span {
+			display: inline;	
+			font-size: 15rem;
+			padding-right: 0;	
+		}
+
+		.callus h2 {
+			font-size: 2.5em;
+		}
+		
+		.callus h1 a {
+			font-size: 5rem;
+			padding-top: 6%;
+		}
+		
+		.callus h1 span {
+		display: none;
+		}
+		
+		.callus a {
+			margin-top: 1.5%;
+			font-size: 2rem;
+		}
+		
+		.callus a span {
+			font-size: 2rem;
+		}
+		
+		.callus form {
+			padding-top: 5em;
+		}
+		
+		.callus form div {
+			display: flex;
+			flex-direction: column;
+		}
+		
+		form input, textarea {
+			height: 100%;
+		}
+		
+		form input::placeholder {
+			font-size: 1.8em;
+		}
+		
+		form textarea::placeholder {
+			font-size: 1.8em;
+		}
+		
+		.form_s1 {
+			height: 4.5em;
+		}
+		
+		.form_s2 {
+			margin-top: 6.5%;
+			margin-left: 0;
+			height: 4.5em;
+		}
+		
+		.form_s3 {
+			width: 45em;
+			height: 4.5em;
+		}
+		
+		.form_s4 {
+			width: 45em;
+			height: 15em;
+		}
+		
+		.button_form {
+			width: 100%;
+			margin: 1em 0 0 0;
+			height: 100%;
+			border-bottom: 10px solid #b02e28;
+			font-size: 4em;
+			margin-bottom: 1em;
+		}
+		
+		footer .footer_content {
+			width: 90%;
+		}
+		
+		.tel_footer li {
+			display: flex;
+			font-size: 2.5em;
+		}
+		
+		.footer_content ul.socials {
+			display: flex;
+			flex-direction: column;
+			text-align: right;
+			padding: 0;
+			margin: 0;
+			font-size: 1.4em;
+			
+		}
+		
+		.footer_content ul.socials span {
+			font-size: 1.5em;
+			padding-right: .4em;
+		}
+		
+		
+		footer a img {
+			display: none;
+		}
+		
+
+		
+}
