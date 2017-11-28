@@ -166,15 +166,6 @@ a.fa.fa-twitter {
 	margin: 1.8em 2em 1.8em 0;
 }
 
-.right a {
-	text-decoration: none;
-	color: #646464;
-}
-
-.right a p:hover {
-	text-decoration: underline;
-}
-
 .element_right {
 	background: url(../img/BG_elem_right.png) no-repeat;
 	width: 284px;
