@@ -40,10 +40,13 @@ a {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	position: relative;
 }
 
 .element_left i {
-	margin-left: -.3em;
+	position: absolute;
+	top: 1.2em;
+	left: 3.42em;
 	font-size: 2em;
 }
 
@@ -67,9 +70,11 @@ div.element_left:last-child {
 }
 
 .element_left:hover i {
+	top: .7em;
+	left: 2.4em;
 	font-size: 2.7em;
 	color: #646464;
-	transition-duration: 1s;
+	transition-duration: .5s;
 }
 
 
@@ -119,21 +124,24 @@ div.element_left:last-child {
 	width: 22em;
 }
 
-button {
+.but {
 	margin-top: 2em;
+	padding-top: 5px;
 	width: 14em;
-	height: 48px;
+	height: 42px;
 	background: #000;
 	border-radius: .3em;
 	border: 0;
 	color: #eff0f1;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
 	font-size: 1.5em;
-	letter-spacing: 2px;
+	text-decoration: none;
 	cursor: pointer;
 	outline:none;
 }
 
-button:hover {
+.but:hover {
 	background: #646464;
 	transition-duration: 1s;
 }
@@ -175,10 +183,13 @@ a.fa.fa-twitter {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	position: relative;
 }
 
 .element_right i {
-	margin-right: -1em;
+	position: absolute;
+	top: 1.2em;
+	right: 3.42em;
 	font-size: 2em;
 }
 
@@ -202,9 +213,11 @@ div.element_right:last-child {
 }
 
 .element_right:hover i {
+	top: .7em;
+	right: 2.4em;
 	font-size: 2.7em;
 	color: #646464;
-	transition-duration: 1s;
+	transition-duration: .5s;
 }
 
 
@@ -225,7 +238,7 @@ div.element_right:last-child {
 }
 
 .box_right {
-	width: 50%;
+	width: 35%;
 	height: 15.35em;
 	background: #e9eae9;
 	z-index: 1;
@@ -268,7 +281,7 @@ div.element_hidden_left:last-child {
 
 .element_hidden_right {
 	background: url(../img/BG_elem_mob_right.png) no-repeat;
-	width: 284px;
+	width: 258px;
 	height: 250px;
 	margin-left: 34%;
 	display: flex;
@@ -302,18 +315,23 @@ div.element_hidden_right:last-child {
 	margin-bottom: 0;
 }
 
-.popup_mob button {
-	margin: 1.5em 31% 0 31%;
-	width: 16em;
-	height: 80px;
+.button {
+	display: block;
+	text-align: center;
+	margin: 2em 35% 0 35%;
+	padding-top: 1.2em;
+	width: 13em;
+	height: 60px;
 	background: #000;
 	border-radius: .3em;
 	border: 0;
 	color: #eff0f1;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
 	font-size: 1.5em;
-	letter-spacing: 2px;
+	text-decoration: none;
 	cursor: pointer;
-	outline: none;
+	outline:none;
 }
 
 .socials_mob {
