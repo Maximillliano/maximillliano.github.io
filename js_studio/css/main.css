@@ -1,5 +1,6 @@
 body {
-  font-family: "OpenSansExtraBold", sans-serif;
+  font-family: "Akrobat", sans-serif;
+	font-weight: normal;
   color: #fff;
   letter-spacing: 1px;
   margin: 0;
@@ -41,7 +42,8 @@ menu ul li {
 }
 
 menu a {
-  font-family: "OpenSansBold", sans-serif;
+	font-weight: bold;
+	font-size: 1.3em;
   text-transform: uppercase;
   text-decoration: none;
 	line-height: 0;
@@ -51,7 +53,7 @@ menu a {
 }
 
 menu a:hover {
-  font-family: "OpenSansExtrabold", sans-serif;
+	font-weight: bold;
   font-size: 1.3em;
   padding: 0 5%;
 	line-height: 0;
@@ -79,23 +81,23 @@ menu a:hover {
 .top_text {
   display: flex;
   flex-direction: column;
-	padding: 16em 0 10em 3.5%;
+	padding: 12em 0 10em 4%;
   width: 60%;
 }
 
 .top_text div {
-  font-family: 'Ubuntu', sans-serif;
+	font-weight: bold;
   text-transform: uppercase;
-  font-size: 10em;
-  line-height: 0.9em;
-  letter-spacing: 0;
+  font-size: 11.2em;
+  line-height: .97em;
+  letter-spacing: .02em;
   text-shadow: 0 0 15px rgba(0,0,0,.4);
 	animation-duration: 7s;
 }
 
 .top_text h1 {
   text-transform: uppercase;
-  font-size: 1.6em;
+  font-size: 2em;
   margin-top: 1em;
 	animation-duration: 7s;
 }
@@ -112,7 +114,9 @@ menu a:hover {
   border-bottom: 5px solid #b02e28;
   text-decoration: none;
   text-transform: uppercase;
+	font-weight: bold;
   font-size: 1.8em;
+	letter-spacing: .07em;
   color: #fff;
 	animation-duration: 2s;
 }
@@ -135,7 +139,6 @@ menu a:hover {
   margin: .4em 0;
   background-color: #fff;
   color: #3e3e3e;
-  font-family: "OpenSansRegular", sans-serif;
   font-size: 0.8em;
 	animation-duration: 2s;
 }
@@ -151,7 +154,7 @@ menu a:hover {
   border-bottom: 4px solid #b02e28;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: "OpenSansExtrabold", sans-serif;
+  font-weight: bold;
   font-size: 1.3em;
   color: #fff;
 	z-index: 3;
@@ -180,7 +183,7 @@ menu a:hover {
 }
 
 .about_us .blog_1 span  {
-  font-family: "OpenSansExtrabold", sans-serif;
+  font-weight: bold;
   text-transform: uppercase;
   font-size: 1.8em;
 	z-index: 3;
@@ -188,10 +191,9 @@ menu a:hover {
 
 .about_us .blog_1 p {
 	margin: 0;
-	font-family: "OpenSansRegular", sans-serif;
-  font-size: 1.2em;
-  line-height: 1.4em;
-	letter-spacing: 0;
+	padding: 1em 0;
+  font-size: 1.3em;
+  line-height: 1.2em;
 	width: 55%;
 	z-index: 3;
 }
@@ -218,17 +220,16 @@ menu a:hover {
 }
 
 .about_us .blog_2 span  {
-  font-family: "OpenSansExtrabold", sans-serif;
+	font-weight: bold;
   text-transform: uppercase;
   font-size: 1.8em;
 }
 
 .about_us .blog_2 p {
 	margin: 0;
-	font-family: "OpenSansRegular", sans-serif;
-  font-size: 1.2em;
-	letter-spacing: 0;
-  line-height: 1.4em;
+	padding: 1em 0;
+  font-size: 1.3em;
+  line-height: 1.2em;
 }
 
 
@@ -245,17 +246,16 @@ menu a:hover {
 }
 
 .about_us .blog_3 span  {
-  font-family: "OpenSansExtrabold", sans-serif;
+	font-weight: bold;
   text-transform: uppercase;
   font-size: 1.8em;
 }
 
 .about_us .blog_3 p {
 	margin: 0;
-	font-family: "OpenSansRegular", sans-serif;
-  font-size: 1.2em;
-	letter-spacing: 0;
-  line-height: 1.4em;
+	padding: 1em 0;
+  font-size: 1.3em;
+	line-height: 1.2em;
 }
 
 
@@ -268,7 +268,6 @@ menu a:hover {
 	padding: .3% 0;
 	background-color: #fbfbfd;
   border: 1px solid #e1e1e1;
-  font-family: "OpenSansExtrabold", sans-serif;
   text-transform: uppercase;
   font-size: 2.2em;
   color: #3e3e3e;

@@ -352,3 +352,44 @@ a.fa.fa-twitter {
 .socials_mob a:visited {
 	color: #000;
 }
+
+.hidden {
+	display: none;
+}
+
+form {
+	padding: 50px 20px;
+	margin: auto;
+	border-radius: 15px;
+	max-width: 320px;
+	background-color: #fff;
+	position: relative;
+}
+
+form input {
+	margin: 0 10%;
+	width: 80%;
+	margin-bottom: 15px;
+	line-height: 2.5em;
+}
+
+button {
+	text-align: center;
+	margin: 1em 13% 0 13%;
+	width: 10em;
+	height: 60px;
+	background: #000;
+	border-radius: .3em;
+	border: 0;
+	color: #eff0f1;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 1.5em;
+	text-decoration: none;
+	cursor: pointer;
+	outline:none;
+}
+
+button.mfp-close {
+	margin: 0;
+}

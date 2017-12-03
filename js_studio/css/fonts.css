@@ -1,3 +1,13 @@
-@font-face{font-family:"OpenSansBold";font-style:normal;font-weight:normal;src:url("../fonts/OpenSansBold/OpenSansBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansBold/OpenSansBold.woff") format("woff"), url("../fonts/OpenSansBold/OpenSansBold.ttf") format("truetype")}
-@font-face{font-family:"OpenSansExtraBold";font-style:normal;font-weight:normal;src:url("../fonts/OpenSansExtraBold/OpenSansExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansExtraBold/OpenSansExtraBold.woff") format("woff"), url("../fonts/OpenSansExtraBold/OpenSansExtraBold.ttf") format("truetype")}
-@font-face{font-family:"OpenSansRegular";font-style:normal;font-weight:normal;src:url("../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"), url("../fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype")}
+@font-face {
+    font-family: Akrobat;
+    src: url(../fonts/Akrobat-ExtraBold.ttf);
+		font-weight: bold;
+}
+
+@font-face {
+    font-family: Akrobat;
+    src: url(../fonts/Akrobat-Regular.ttf);
+		font-weight: normal;
+}
+
+		
