@@ -23,7 +23,7 @@
 	}
 
 	.but:hover {
-		display: none;
+	background: #000;
 	}
 	
 	.socials a {
