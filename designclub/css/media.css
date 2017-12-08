@@ -49,14 +49,6 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
-
-}
-
-
-/*==========  Mobile First Method  ==========*/
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px) {
 	
 	.element_hidden_left i {
 		font-size: 3em;
@@ -98,6 +90,15 @@
 	.box_right {
 		width: 52%;
 	}
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+	
+}	
 
 
 /* Extra Small Devices, Phones */
