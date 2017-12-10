@@ -373,6 +373,10 @@ form input {
 	line-height: 2.5em;
 }
 
+textarea {
+	margin: 0 10%;
+}
+
 button {
 	text-align: center;
 	margin: 1em 13% 0 13%;
