@@ -1,30 +1,21 @@
-$(function() {
+$(document).ready(function() {
 
 	$(".popup").magnificPopup();
+});
 	
 	//E-mail Ajax Send
 	//Documentation & Example: https://github.com/agragregra/uniMail
-	$("form").submit(function() { //Change
-		var th = $(this);
+	$("#form").submit(function() { //Change
 		$.ajax({
 			type: "POST",
 			url: "mail.php", //Change
-			data: th.serialize()
+			data: $(this).serialize()
 		}).done(function() {
-			alert("Thank you!");
+			alert("lol!");
 			setTimeout(function() {
 				// Done Functions
 				$.magnificPopup.close();
-				th.trigger("reset");
 			}, 1000);
 		});
 		return false;
 	});	
-});
-
-$(window).load(function() {
-
-	$(".loader_inner").fadeOut();
-	$(".loader").delay(400).fadeOut("slow");
-
-});

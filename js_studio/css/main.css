@@ -278,8 +278,8 @@ menu a:hover {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  font-size: 2.4em;
-	padding: 1.9% 0;
+  font-size: 2em;
+	padding: 1.5% 0;
 	padding-left: 13%;
 }
 
@@ -412,7 +412,7 @@ menu a:hover {
 .portfolio {
   display: flex; 
   border: 1px solid #e1e1e1;
-	font-family: "OpenSansExtraBold", sans-serif;
+	font-family: "Akrobat", sans-serif;
 }
 
 .portfolio .item_portf {
@@ -436,7 +436,7 @@ menu a:hover {
   color: rgba(0, 0, 0, 0.3);
 	background-color: rgba(255,255,255,.3);
 	border-radius: 5px;
-	font-size: 2em;
+	font-size: 2.5em;
 	color: rgba(16, 16, 16, .3);
 	
 	transition: all 1s;
@@ -445,7 +445,7 @@ menu a:hover {
 .portfolio .item_portf:hover div {
 	background-color: rgba(255,255,255,.8);
 	color: #3e3e3e;
-	font-size: 2.2em;
+	font-size: 2.8em;
 }
 
 
@@ -454,7 +454,7 @@ menu a:hover {
 	display: flex;
 	justify-content: center;
   background-color: #f6f6f6;
-	font-family: "OpenSansExtraBold", sans-serif;
+	font-family: "Akrobat", sans-serif;
   color: #646464;
 }
 
@@ -487,8 +487,8 @@ menu a:hover {
 	width: 80%;
 	margin-top: 18%;
 	margin-left: 5%;
-	font-size: 1em;
-	font-family: "OpenSansBold", sans-serif;
+	font-size: 1.2em;
+	font-family: "Akrobat", sans-serif;
 	color: #d84747;
 }
 
@@ -545,7 +545,7 @@ menu a:hover {
 	padding: 3em 0;
   background-color: #f6f6f6;
 	color: #717171;
-	font-family: "OpenSansBold", sans-serif;
+	font-family: "Akrobat", sans-serif;
 }
 
 .callus span {
@@ -556,7 +556,7 @@ menu a:hover {
 
 .callus h2 {
 		margin: 0;
-		font-size: 1.5em;
+		font-size: 2em;
 		letter-spacing: 3px;
 }
 
@@ -578,27 +578,28 @@ menu a:hover {
 .callus h1 a{
 		text-decoration: none;
 		color: #717171;
-		font-size: 4rem;
+		font-size: 3.5rem;
 		letter-spacing: 4px;
 }
 
 .callus h1 span {
 		display: inline;
-		font-size: 6.8rem;
+		font-size: 5rem;
 		padding-right: .3em;
 }
 
 .callus a {
 		text-decoration: none;
 		color: #717171;
-		font-size: 1.4rem;
+		font-size: 1.2rem;
 		letter-spacing: 2px;
 		text-transform: uppercase;
+	font-weight: bold;
 }
 
 .callus a span {
 		display: inline;
-		font-size: 1.6rem;
+		font-size: 1.3rem;
 		padding-right: .5em;
 }
 
@@ -613,8 +614,8 @@ form input, textarea {
 	border: transparent;
 	width: 95%;
 	margin: 0 1em;
-	font-family: "OpenSansBold", sans-serif;
-	font-size: 1em;
+	font-family: "Akrobat", sans-serif;
+	font-size: 1.2em;
 	color: #8c8c8c;
 }
 
@@ -623,12 +624,12 @@ textarea {
 }
 
 form input::placeholder {
-	color: #c1c1c1;
+	color: #818181;
 	font-size: .9em;
 }
 
 form textarea::placeholder {
-	color: #c1c1c1;
+	color: #818181;
 	font-size: .9em;
 }
 
@@ -681,7 +682,9 @@ form div {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1.8em;
+	font-weight: bold;
   color: #fff;
+	letter-spacing: .07em;
 }
 
 .button_form:hover {
@@ -718,7 +721,7 @@ footer .footer_content ul {
 		display: flex;
 		flex-direction: column;
 		padding: 0;
-		padding-top: .5%;
+		padding-top: .8%;
 }
 
 .tel_footer li {
@@ -732,20 +735,23 @@ footer .footer_content ul {
 		width: 50%;
 		margin: 0;
 		padding: 0;
-		padding-top: 2.6%;
+		padding-top: 3.2%;
 		text-transform: uppercase;
 		font-size: 1.2rem;
-		letter-spacing: 2px;	
 }
 
 .footer_content ul.socials a {
-	font-family: "OpenSansRegular", sans-serif;
+	font-family: "Akrobat", sans-serif;
 	color: #f6f6f6;
 	text-decoration: none;
 }
 
 .footer_content ul.socials a:hover {
 	color: #d85050;
+}
+
+.footer_content ul.socials a span {
+	padding-right: 8px;
 }
 
 footer a img {

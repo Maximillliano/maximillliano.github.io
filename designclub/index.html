@@ -6,6 +6,10 @@
   <meta charset="UTF-8">
   <title>Design Club</title>
   
+  <meta name="yandex-verification" content="1fa6b134e0e208d5" />
+  <meta name="keywords" content="дизайн, дизайн интерьеров, дизайнеры, сообщество дизайнеров, беларусь, дизайнеры беларуси, архитекторы, архитекторы и дизайнеры">
+  <meta name="description" content="Cообщество Design Club создано для практикующих дизайнеров и архитекторов Беларуси">
+  
   <meta property="og:type" content="article" />
 	<meta property="og:title" content="Design club" />
 	<meta property="og:description" content="Наше сообщество Design Club создано для практикующих дизайнеров и архитекторов, а так же руководителей бюро и студий, профессионально занимающихся дизайном интерьеров и архитектурой." />
@@ -131,7 +135,7 @@
 		<div class="element_hidden_right">
 			<i class="fa  fa-question-circle" aria-hidden="true"></i>
 			<h3>Контакты</h3>
-			<p>Если у Вас есть какие-либо  предложения или вопросы пишите Dclub.by@gmail.com</p>
+			<p>Если у Вас есть какие-либо  предложения или вопросы пишите <a href="mailto:Dclub.by@gmail.com?subject=Вопрос по Designclub">Dclub.by@gmail.com</a></p>
 		</div>
 	<div class="box_right"></div>
 	</div>
@@ -142,10 +146,17 @@
 	
 	<!-- Popup -->
 	<div class="hidden">
-		<form id="form">
-			<input type="text" name="name" placeholder="Имя"><br>
-			<input type="text" name="email" placeholder="Почта"><br>
-			<textarea type="text" cols="34" rows="7"></textarea>
+		<form id="form" action="mail.php" method="POST">
+		
+		<!-- Невидимая часть -->
+		<input type="hidden" name="project_name" value="Design Club">
+		<input type="hidden" name="admin_email" value="dclub.by@gmail.com">
+		<input type="hidden" name="form_subject" value="Заявка Design Club">
+		
+		<!-- Видимая часть -->
+			<input type="text" name="Имя" placeholder="Ваше имя" required><br>
+			<input type="text" name="Почта" placeholder="Ваша почта" required><br>
+			<textarea type="text" name="Сообщение" cols="34" rows="7"></textarea>
 			<button>Отправить</button>
 		</form>
 	</div>

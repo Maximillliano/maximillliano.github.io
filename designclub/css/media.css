@@ -1,7 +1,7 @@
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
+@media screen and (max-width : 1200px) {
 	.bodybg {
 		width: 100%;
 		margin: 0;
@@ -39,13 +39,16 @@
 	.mobile {
 		display: block;
 	}
+	
+	.element_hidden_right {
+		margin-left: 35%;
+	}
 }
-
 
 /*==========  Mobile First Method  ==========*/
 
 /* Custom, iPhone Retina */
-/* @media only screen and (min-width : 320px) {
+ @media screen and (max-width : 1000px) {
 	
 	.middle img {
 		width: 45em;
@@ -147,23 +150,4 @@
 	
 }
 
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px) {
-
-}
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
-	
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-
-}
-
- /* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-
-}
 

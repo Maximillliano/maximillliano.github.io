@@ -360,7 +360,7 @@ a.fa.fa-twitter {
 form {
 	padding: 50px 20px;
 	margin: auto;
-	border-radius: 15px;
+	border-radius: 5px;
 	max-width: 320px;
 	background-color: #fff;
 	position: relative;
@@ -379,9 +379,9 @@ textarea {
 
 button {
 	text-align: center;
-	margin: 1em 13% 0 13%;
-	width: 10em;
-	height: 60px;
+	margin: 1em 10% 0 10%;
+	width: 10.9em;
+	height: 50px;
 	background: #000;
 	border-radius: .3em;
 	border: 0;
