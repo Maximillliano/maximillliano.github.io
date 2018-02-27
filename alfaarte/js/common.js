@@ -4,6 +4,7 @@ var slideInterval = 5000;
 var navBtnId = 0;
 var translateWidth = 0;
 
+
 $(document).ready(function() {
     var switchInterval = setInterval(nextSlide, slideInterval);
 

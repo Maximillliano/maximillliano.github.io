@@ -222,8 +222,7 @@ a {
 
 .gallery {
   width: 100%;
-  overflow: auto;
-  background: black; }
+  overflow: auto; }
 
 .text_gal {
   margin: 10% auto;
@@ -242,11 +241,10 @@ a {
     position: relative;
     width: 32.9%;
     height: 19.8em;
-    border-right: 0.2em solid black;
-    border-left: 0.2em solid black;
-    border-bottom: 0.3em solid black;
-    overflow: hidden;
-    outline: none; }
+    border-right: 0.2em solid white;
+    border-left: 0.2em solid white;
+    border-bottom: 0.3em solid white;
+    overflow: hidden; }
     .photo_gal a div {
       display: none; }
     .photo_gal a span {
