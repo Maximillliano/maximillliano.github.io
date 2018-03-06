@@ -256,6 +256,8 @@ a {
       height: 100%; }
     .photo_gal a bold {
       font-weight: 600; }
+    .photo_gal a small {
+      font-size: 14px; }
     .photo_gal a img {
       height: 100%;
       -moz-transition: all 1s ease-out;
@@ -277,7 +279,7 @@ a {
     display: block;
     position: absolute;
     padding: 8% 8.4% 6%;
-    margin: 15% 23%;
+    margin: 17% 23%;
     z-index: 2;
     background-color: rgba(255, 255, 255, 0.7);
     color: black;
@@ -296,8 +298,8 @@ a {
   .photo_gal .big:hover .gal_big {
     display: block;
     position: absolute;
-    padding: 5.1% 8.4%;
-    margin: 8% 31%;
+    padding: 3.4% 5%;
+    margin: 8.5% 35.5%;
     z-index: 2;
     background-color: rgba(255, 255, 255, 0.7);
     color: black;
