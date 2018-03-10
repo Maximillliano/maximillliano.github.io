@@ -183,11 +183,13 @@ a {
 
 /*Секция Слайдер */
 #block-for-slider {
-  width: 100%;
+  position: absolute;
+  height: 100%;
   margin: 0 auto; }
 
 #viewport {
   width: 100%;
+  height: 100%;
   position: relative;
   overflow: hidden;
   -webkit-user-select: none;
@@ -224,8 +226,10 @@ a {
   width: 100%;
   overflow: auto;
   background: black; }
+  .gallery .close {
+    display: none; }
 
-.text_gal {
+#text_gal {
   margin: 10% auto;
   width: 267px;
   font-size: 0.9em;
@@ -241,10 +245,10 @@ a {
   .photo_gal a {
     position: relative;
     width: 32.9%;
-    height: 19.8em;
+    height: 19.55em;
     border-right: 0.2em solid black;
     border-left: 0.2em solid black;
-    border-bottom: 0.3em solid black;
+    border-bottom: 0.4em solid black;
     overflow: hidden;
     outline: none; }
     .photo_gal a div {
@@ -260,16 +264,13 @@ a {
       font-size: 14px; }
     .photo_gal a img {
       height: 100%;
+      width: 120%;
       -moz-transition: all 1s ease-out;
       -o-transition: all 1s ease-out;
       -webkit-transition: all 1s ease-out; }
-  .photo_gal a:nth-child(2), .photo_gal a:nth-child(6), .photo_gal a:nth-child(12), .photo_gal a:nth-child(16), .photo_gal a:nth-child(22), .photo_gal a:nth-child(26) {
-    width: 66.2%; }
-    .photo_gal a:nth-child(2) img, .photo_gal a:nth-child(6) img, .photo_gal a:nth-child(12) img, .photo_gal a:nth-child(16) img, .photo_gal a:nth-child(22) img, .photo_gal a:nth-child(26) img {
-      height: 150%;
-      width: 100%; }
   .photo_gal .small:hover img {
     height: 110%;
+    width: 130%;
     transform-origin: center center;
     -webkit-transform: scale(1.05);
     -moz-transform: scale(1.05);
@@ -278,28 +279,10 @@ a {
   .photo_gal .small:hover .gal_mal {
     display: block;
     position: absolute;
-    padding: 8% 8.4% 6%;
-    margin: 17% 23%;
-    z-index: 2;
-    background-color: rgba(255, 255, 255, 0.7);
-    color: black;
-    font-weight: 300;
-    font-size: 20px;
-    text-transform: uppercase;
-    text-align: center; }
-  .photo_gal .big:hover img {
-    width: 110%;
-    height: 160%;
-    transform-origin: center center;
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -o-transform: scale(1.05);
-    -webkit-filter: blur(3px); }
-  .photo_gal .big:hover .gal_big {
-    display: block;
-    position: absolute;
-    padding: 3.4% 5%;
-    margin: 8.5% 35.5%;
+    padding: 6% 0 6%;
+    margin: 18% 0;
+    margin-left: 26%;
+    width: 50%;
     z-index: 2;
     background-color: rgba(255, 255, 255, 0.7);
     color: black;

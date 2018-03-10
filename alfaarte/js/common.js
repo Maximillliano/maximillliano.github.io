@@ -90,14 +90,12 @@ $('#close_tab').click(function() {
 
 // Кнопки меню
 
-var flag_uslygi = true;
 $('#uslygi').click(function() {
         $('.mobile').css('display', 'none');
 				$('.stydii').css('display', 'none');
 				$('.uslygi').css('display', 'block');
 })
 
-var flag_stydii = true;
 $('#stydii').click(function() {
         $('.mobile').css('display', 'none');
 				$('.uslygi').css('display', 'none');
