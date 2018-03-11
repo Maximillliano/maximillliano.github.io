@@ -81,7 +81,7 @@ a {
     right: 0;
     margin: 35% auto 5%; }
   .menu img {
-    width: 270px;
+    width: 9em;
     align-content: center; }
   .menu .info {
     margin: 22px auto 0;
@@ -138,7 +138,7 @@ a {
       top: 0;
       right: 0; }
     .menu .menu_bottom .but_menu li {
-      width: 267px;
+      width: 100%;
       padding: 10px 0;
       border: 2px solid rgba(255, 255, 255, 0.3);
       margin-bottom: 22px;
@@ -185,7 +185,8 @@ a {
 #block-for-slider {
   position: absolute;
   height: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  overflow: hidden; }
 
 #viewport {
   width: 100%;
@@ -220,7 +221,9 @@ a {
   float: left; }
 
 .slide-img {
-  width: 100%; }
+  width: 100%;
+  height: 100vh;
+  object-fit: cover; }
 
 .gallery {
   width: 100%;
