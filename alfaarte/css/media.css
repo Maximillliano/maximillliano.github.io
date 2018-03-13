@@ -77,7 +77,7 @@
 
 /* Мобльная версия*/
 
-@media screen and (max-width:900px) {
+@media screen and (max-width: 900px) {
   #block-for-slider {
 		display: none;}
 
