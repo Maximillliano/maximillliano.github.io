@@ -1,16 +1,88 @@
-@media screen and (max-width: 1200px){
-	.menu .menu_bottom .but_menu li {
-		width: 85%}
-	
-
-
-
+@media screen and (max-width: 2500px){
+	.menu .menu_bottom {
+		margin-left: 60px;}
 }
 
-@media screen and (max-width: 900px){
-	#block-for-slider {
+@media screen and (max-width: 1920px){
+	.menu .menu_bottom {
+		margin-left: 55px;}
+}
+
+@media screen and (max-width: 1840px){
+	.photo_gal a {
+		width: 32.7%}
+	
+	.photo_gal a:nth-child(2),.photo_gal a:nth-child(6),.photo_gal a:nth-child(12),.photo_gal a:nth-child(16) {
+		width: 66%
+	}
+}
+	
+@media screen and (max-width: 1600px){
+	.menu .menu_bottom {
+		margin-left: 40px;}
+}
+
+@media screen and (max-width: 1350px){
+	.photo_gal a {
+		width: 32.4%;}
+	
+	.photo_gal a:nth-child(2),.photo_gal a:nth-child(6),.photo_gal a:nth-child(12),.photo_gal a:nth-child(16) {
+		width: 65.6%
+	}
+	
+		#text_gal {
+		margin: 10% 0 10% 14%;}
+}
+
+@media screen and (max-width: 1300px){
+	.menu .menu_bottom {
+		margin-left: 35px;}
+	
+	.menu img {
+		width: 8em;
+	}
+	
+	.menu .info a {
+		font-size: .8em;
+	}
+	
+	.menu .menu_bottom .but_menu li {
+		font-size: .6em;
+	}
+	
+	.photo_gal .small:hover .gal_mal {
+		font-size: 14px;
+		margin-top: 27%;
+		margin-left: 18%;
+		padding-left: 6%;
+		padding-right: 6%;
+	}
+	.photo_gal .small:hover .gal_big {
+		font-size: 14px;
+		margin-top: 14%;
+		margin-left: 35%;
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+}
+
+@media screen and (max-width: 1100px){
+	.menu .menu_bottom {
+		margin-left: 28px;}
+	
+	.menu .menu_bottom .socials {
+		margin-top: 10px;
+	}
+}
+
+/* Мобльная версия*/
+
+@media screen and (max-width:900px) {
+  #block-for-slider {
 		display: none;}
 
 	mobile {
 		display: block;}
 }
+
+
