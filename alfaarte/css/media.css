@@ -86,22 +86,22 @@
 	
 	mobile .main img {
 		width: 70%;
-		margin-top: 20%;
+		margin-top: 20vh;
 	}
 	mobile .main .overlay-for-slider-black {
-		height: 80%;
+		height: 80vh;
 	}
 	
 	mobile .main .socials {
-		margin-top: 30%;
+		margin-top: 30vh;
 	}
 	
 	mobile .swiper-container .gal_mal {
-		margin-top: 17%;
+		margin-top: 17vh;
 	}
 	
 	mobile .last img {
-		margin-top: 30%;
+		margin-top: 30vh;
 	}
 }
 
@@ -109,18 +109,18 @@
 	
 	mobile .main img {
 		width: 88%;
-		margin-top: 62%;
+		margin-top: 22vh;
 	}
 	mobile .main .overlay-for-slider-black {
 		height: 100%;
 	}
 	
 	mobile .main .socials {
-		margin-top: 47%;
+		margin-top: 27vh;
 	}
 	
 	mobile .swiper-container .gal_mal {
-		margin-top: 28%;
+		margin-top: 28vh;
 	}
 	
 	mobile .o_stydii_naz .uslygi {
@@ -129,7 +129,7 @@
 	}
 	
 	mobile .last img {
-		margin-top: 45%;
+		margin-top: 25vh;
 	}
 	
 	mobile .swiper-container .gal_mal i {
@@ -139,7 +139,7 @@
 
 @media screen and (max-width: 450px) {
 		mobile .swiper-container .gal_mal {
-		margin-top: 38%;
+		margin-top: 38vh;
 	}
 }
 

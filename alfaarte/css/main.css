@@ -328,7 +328,7 @@ mobile {
     flex-direction: column; }
     mobile .main img {
       width: 88%;
-      margin: 62% auto 0 auto;
+      margin: 62vh auto 0 auto;
       align-content: center;
       z-index: 3; }
     mobile .main .socials {
@@ -462,5 +462,9 @@ mobile {
         font-size: 1em;
         padding-right: 0.6em;
         padding-left: 0.6em; }
+
+@-moz-document url-prefix() {
+  .menu .logo {
+    margin-top: 10%; } }
 
 /*# sourceMappingURL=main.css.map */
