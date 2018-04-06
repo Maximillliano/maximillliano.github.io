@@ -6,64 +6,122 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="referrer" content="origin">
+    <link rel="icon" href="images/favicon.ico" />
     <meta name="description" content="Официальный дилер Goppion Caffe в Беларуси">
     <meta name="keywords" content="кофе, Goppion Caffe, кофемашины">
 
-    <!-- Font -->
-    <link rel="dns-prefetch" href="//fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
-    <link href="css/fonts.css" rel="stylesheet">
+  <!--  <meta name="yandex-verification" content="52f8fe700e19267c" />-->
+  <!-- Yandex.Metrika counter -->
+<!--
+    <script type="text/javascript" >
+            (function (d, w, c) {
+                    (w[c] = w[c] || []).push(function() {
+                            try {
+                                    w.yaCounter47492530 = new Ya.Metrika2({
+                                            id:47492530,
+                                            clickmap:true,
+                                            trackLinks:true,
+                                            accurateTrackBounce:true,
+                                            webvisor:true
+                                    });
+                            } catch(e) { }
+                    });
 
+                    var n = d.getElementsByTagName("script")[0],
+                            s = d.createElement("script"),
+                            f = function () { n.parentNode.insertBefore(s, n); };
+                    s.type = "text/javascript";
+                    s.async = true;
+                    s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+                    if (w.opera == "[object Opera]") {
+                            d.addEventListener("DOMContentLoaded", f, false);
+                    } else { f(); }
+            })(document, window, "yandex_metrika_callbacks2");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/47492530" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+-->
+    <!-- /Yandex.Metrika counter -->
+ 
+<!--
+  <meta property="og:type" content="article" />
+    <meta property="og:title" content="Максимилиан Антипенко" />
+    <meta property="og:description" content="Web-Дизайнер / Графический дизайнер" />
+    <meta property="og:url" content="https://maximillliano.github.io" />
+    <meta property="og:image" content="img/Social-vk.jpg" />
+-->
+  
+    <!-- Font -->
+    <link href="css/fonts.css" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- Themify Icons -->
+    <!-- Fontawesome Icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/themify-icons.css">
     <!-- Owl carousel -->
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <!-- Main css -->
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body data-spy="scroll" data-target="#navbar">
+<body>
     <div class="loaderArea">
         <div class="loader"></div>
     </div>
 
-    <!-- Nav Menu -->
-
+    <!-- Menu -->
     <div class="nav-menu fixed-top">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <nav class="navbar navbar-expand-lg justify-content-between">
-                        <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="logo" alt=""></a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-                        <div><span class="fas fa-phone"></span><a href="#" class="phone my-3 my-sm-0 ml-lg-3">+375 (17) 268-55-79</a></div>
+                        <a class="navbar-brand" href="index.html"><img class="logo" src="images/logo.png" alt=""></a> 
+                        <div><span class="fas fa-phone"></span><a class="phone my-3 my-sm-0 ml-lg-3" href="tel:+375172685579">+375 (17) 268-55-79</a></div>
                     </nav>
                 </div>
             </div>
         </div>
     </div>
-
-
-    <header class="bg-gradient" id="home">
+    
+    <header class="bg-gradient">
         <div class="container">
             <p class="title_h2">Официальный диллер</p>
             <h1>кофе «Goppion caffe`»</h1>
             <p class="title_h2">На территории Беларуси </p>
         </div>
         <div class="img-holder"><img src="images/coffe_main.png" alt="phone" class="img-fluid"></div>
-        <a href="#" class="btn btn-primary">Заказать оптом</a>
+        <a href="#modal0" class="btn btn-primary open_modal">Заказать оптом</a>
     </header>
 
-    <div class="section" id="features">
+        <div id="modal0" class="modal_div">
+            <span class="modal_close"><i class="fas fa-times"></i></span>
+                <div class="title_form">Отправить заявку</div>
+                <div class="subtitle_form">мы обязательно с вами свяжемся</div>
+                <form id="form" action="mail.php" method="POST">
+                    <!-- Невидимая часть -->
+                    <input type="hidden" name="project_name" value="Goppion Caffe">
+                    <input type="hidden" name="admin_email" value="rusika8@tut.by">
+                    <input type="hidden" name="form_subject" value="Заказ с сайте Goppion Caffe">       
+                     <!-- Видимая часть -->
+                    <div class="pole_form">Ваше имя</div>
+                    <input type="text" name="Имя" required><br>
+                    <div class="pole_form">Ваша почта</div>
+                    <input type="text" name="Почта" required><br>
+                    <div class="pole_form">Ваша сообщение</div>
+                    <textarea type="text" name="Сообщение" cols="45" rows="5"></textarea>
+                    <button class="btn btn-light but">Отправить</a>
+                </form>
+            </div>
+    <!-- // end .section -->
+    
+    <div class="section">
         <div class="container">
 
             <div class="section-title">
                 <h3>Мы знаем толк в хорошем кофе</h3>
                 <small>Качество и цена - это о нас!</small>
             </div>
-
 
             <div class="row">
                 <div class="col-12 col-lg-4">
@@ -109,10 +167,9 @@
 
         </div>
 
-
-
     </div>
     <!-- // end .section -->
+
     <img class="overf_bg" src="images/round_top.png" alt="">
     <div class="section light-bg pos_rel">
         <div class="container">
@@ -140,7 +197,9 @@
             <div class="tab-content">
                 <div class="tab-pane fade show active" id="communication">
                     <div class="d-flex flex-raw flex-wrap">
+                        <div id="overlay"></div>
 
+                        <!--01-->
                         <div class="div col-3 justify-content-center align-items-center card">
                             <div class="card-size">  
                                 <div class="gramm">1000 г</div>
@@ -149,9 +208,33 @@
     "Нативо Биологико Органик"</h4>
                                 <div class="text_s">Кофе «GOPPION CAFFE`»  
     натуральный жареный в зернах</div>
-                                <a href="#" class="btn btn-light">Подробнее</a>
+                                <a href="#modal1" class="btn btn-light open_modal">Подробнее</a>
                             </div>
                         </div>
+
+                        <div id="modal1" class="modal_div card_div">
+                            <span class="modal_close"><i class="fas fa-times"></i></span>
+                            <div class="title_text">Nativo Biologico Organic  "Нативо Биологико Органик"</div>
+                            <div class="gramm gramright">Упаковка: 1000 г</div>
+                            <div class="element_inner">
+                                <img src="images/cof_mash_card.png" alt="">
+                                <div class="element_right">
+                                    <h4>Описание</h4>
+                                    <div class="text_s">Кофе класса премиум (30% арабики и 70% робусты) – крепкий и пряный, так любимый жителями юга Италии. Специальная темная обжарка придает эспрессо густой шоколадно-сливочный вкус и полный, многогранный аромат. 
+            Crema е Gusto называют «эспрессо с сильным характером». Он имеет высокое содержание кофеина.</div>
+                                    <h4>Характеристики</h4>
+                                    <div class="text_s">Кофе молотый
+                                        </br>Вес нетто: 250 г
+                                        </br>Степень обжарки: темная
+                                        </br>Упаковка ед. товара: вакуумный пакет
+                                        </br>Сорт зерна: смесь арабики и робусты
+                                        </br>Степень помола: средний
+                                    </div>
+                                    <a href="#modal0" onclick="document.getElementById('modal1').style.display='none'" class="btn btn-light but open_modal">Заказать оптом</a>
+                                </div>
+                            </div>
+                        </div>
+                    
 
                         <div class="div col-3 justify-content-center align-items-center card">
                             <div class="card-size">  
@@ -477,7 +560,7 @@
     </div>
 
 <!-- // end .section -->
-        <div class="map_s">
+        <div id="contacts" class="map_s">
         <div class="container">
             <div class="section-title">
                 <h3>Контакты</h3>

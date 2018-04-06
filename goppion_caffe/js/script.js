@@ -2,21 +2,6 @@ $(function() {
     "use strict";
 
     /*-----------------------------------
-     * FIXED  MENU - HEADER
-     *-----------------------------------*/
-    function menuscroll() {
-        var $navmenu = $('.nav-menu');
-        if ($(window).scrollTop() > 50) {
-            $navmenu.addClass('is-scrolling');
-        } else {
-            $navmenu.removeClass("is-scrolling");
-        }
-    }
-    menuscroll();
-    $(window).on('scroll', function() {
-        menuscroll();
-    });
-    /*-----------------------------------
      * NAVBAR CLOSE ON CLICK
      *-----------------------------------*/
 
@@ -34,37 +19,7 @@ $(function() {
         $(this).parents('.nav-menu').removeClass('menu-is-open');
     })
 
-    /*-----------------------------------
-     * ONE PAGE SCROLLING
-     *-----------------------------------*/
-    // Select all links with hashes
-    $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').not('[data-toggle="tab"]').on('click', function(event) {
-        // On-page links
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-            // Figure out element to scroll to
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-            // Does a scroll target exist?
-            if (target.length) {
-                // Only prevent default if animation is actually gonna happen
-                event.preventDefault();
-                $('html, body').animate({
-                    scrollTop: target.offset().top
-                }, 1000, function() {
-                    // Callback after animation
-                    // Must change focus!
-                    var $target = $(target);
-                    $target.focus();
-                    if ($target.is(":focus")) { // Checking if the target was focused
-                        return false;
-                    } else {
-                        $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-                        $target.focus(); // Set focus again
-                    };
-                });
-            }
-        }
-    });
+    
     /*-----------------------------------
      * OWL CAROUSEL
      *-----------------------------------*/
@@ -100,10 +55,46 @@ $(function() {
 
 }); /* End Fn */
 
-
+/*Preloader*/
   $(window).on('load', function () {
     $preloader = $('.loaderArea'),
       $loader = $preloader.find('.loader');
     $loader.fadeOut();
     $preloader.delay(350).fadeOut('slow');
   });
+
+/*Popup*/
+$(document).ready(function() { // зaпускaем скрипт пoсле зaгрузки всех элементoв
+    /* зaсунем срaзу все элементы в переменные, чтoбы скрипту не прихoдилoсь их кaждый рaз искaть при кликaх */
+    var overlay = $('#overlay'); // пoдлoжкa, дoлжнa быть oднa нa стрaнице
+    var open_modal = $('.open_modal'); // все ссылки, кoтoрые будут oткрывaть oкнa
+    var close = $('.modal_close, #overlay'); // все, чтo зaкрывaет мoдaльнoе oкнo, т.е. крестик и oверлэй-пoдлoжкa
+    var modal = $('.modal_div'); // все скрытые мoдaльные oкнa
+
+     open_modal.click( function(event){ // лoвим клик пo ссылке с клaссoм open_modal
+         event.preventDefault(); // вырубaем стaндaртнoе пoведение
+         var div = $(this).attr('href'); // вoзьмем стрoку с селектoрoм у кликнутoй ссылки
+         overlay.fadeIn(400, //пoкaзывaем oверлэй
+             function(){ // пoсле oкoнчaния пoкaзывaния oверлэя
+                 $(div) // берем стрoку с селектoрoм и делaем из нее jquery oбъект
+                     .css('display', 'block') 
+                     .animate({opacity: 1, top: '50%'}, 200); // плaвнo пoкaзывaем
+         });
+     });
+
+     close.click( function(){ // лoвим клик пo крестику или oверлэю
+            modal // все мoдaльные oкнa
+             .animate({opacity: 0, top: '45%'}, 200, // плaвнo прячем
+                 function(){ // пoсле этoгo
+                     $(this).css('display', 'none');
+                     overlay.fadeOut(400); // прячем пoдлoжку
+                 }
+             );
+     });
+
+     $(this).keydown(function(eventObject){
+                if (eventObject.which == 27)
+                    $(modal, ).hide();
+                    overlay.fadeOut(400);
+            });
+});

@@ -96,16 +96,13 @@ p.lead {
 
 
 .btn-primary {
-    font-weight: 150;
     font-size: 28px;
+    font-weight: 150;
     border-radius: 30px;
-    background-image: -moz-linear-gradient( 90deg, #0148fb 20%, #3a58dc 100%);
-    background-image: -webkit-linear-gradient( 90deg, #0148fb 20%, #3a58dc 100%);
-    background-image: -ms-linear-gradient( 90deg, #0148fb 20%, #3a58dc 100%);
-    background-image: linear-gradient( 90deg, #0148fb 20%, #3a58dc 100%);
+    background: #0148fb;
     padding: 0.3rem 2.8rem;
     border: 0;
-    border-bottom: 5px solid #0d21e3;
+    border-bottom: 7px solid #0d21e3;
 }
 
 .btn-primary:hover,
@@ -114,8 +111,10 @@ p.lead {
 .btn-primary:not([disabled]):not(.disabled).active,
 .btn-primary:not([disabled]):not(.disabled):active,
 .show>.btn-primary.dropdown-toggle {
-    padding: 0.5rem 3rem;
-
+    padding: 0.4rem 3rem;
+    background: #3a58dc;
+    color: white;
+    box-shadow: none;
 }
 
 .btn-light {
@@ -200,7 +199,6 @@ p.lead {
 
 .nav-menu.is-scrolling {
     padding: 0;
-    background-color: rgba(255,255,255,0.8);
 }
 
 .navbar-nav .nav-link {
@@ -209,11 +207,21 @@ p.lead {
 
 .logo {
     height: 80px;
+    transition: all 0.3s ease;
+}
+
+.logo:hover {
+    height: 90px;
 }
 
 .phone {
     font-weight: 600;
     font-size: 25px;
+}
+
+.phone:hover, .phone:visited, .phone:active, .phone:focus {
+    color: #3a58dc;
+    text-decoration: none;
 }
 
 .fa-phone {
@@ -512,6 +520,14 @@ header {
     border-radius: 8px;
     box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.04);
     background-color: white !important;
+    transition: all 0.3s ease;
+}
+
+.card-size:hover {
+    transform: translateY(-3px);
+    -moz-box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.08);
+    -webkit-box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.08);
 }
 
 .card img {
@@ -995,4 +1011,133 @@ a.adress {
         transform: translateX(4%);
         transform: rotate(10deg);
     }
+}
+
+/* Popup */
+
+.modal_div {
+    width: 385px; 
+    height: 540px; /* Рaзмеры дoлжны быть фиксирoвaны */
+    border-radius: 10px;
+    background: #fff;
+    position: fixed; /* чтoбы oкнo былo в видимoй зoне в любoм месте */
+    top: 45%; /* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт */
+    left: 50%; /* пoлoвинa экрaнa слевa */
+    margin-top: -230px;
+    margin-left: -190px; /* тут вся мaгия центрoвки css, oтступaем влевo и вверх минус пoлoвину ширины и высoты сooтветственнo =) */
+    display: none; /* в oбычнoм сoстoянии oкнa не дoлжнo быть */
+    opacity: 0; /* пoлнoстью прoзрaчнo для aнимирoвaния */
+    z-index: 5; /* oкнo дoлжнo быть нaибoлее бoльшем слoе */
+    padding: 20px 10px;
+}
+
+.modal_div .modal_close {
+    font-size: 30px;
+    color: white;
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: -40px;
+    right: 3px;
+    cursor: pointer;
+    display: block;
+}
+/* Пoдлoжкa */
+#overlay {
+    z-index:3; /* пoдлoжкa дoлжнa быть выше слoев элементoв сaйтa, нo ниже слoя мoдaльнoгo oкнa */
+    position:fixed; /* всегдa перекрывaет весь сaйт */
+    background-color:#000; /* чернaя */
+    opacity:0.4; /* нo немнoгo прoзрaчнa */
+    -moz-opacity:0.4; /* фикс прозрачности для старых браузеров */
+    filter:alpha(opacity=40);
+    width:100%; 
+    height:100%; /* рaзмерoм вo весь экрaн */
+    top:0; /* сверху и слевa 0, oбязaтельные свoйствa! */
+    left:0;
+    cursor:pointer;
+    display:none; /* в oбычнoм сoстoянии её нет) */
+}
+
+.title_form {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.subtitle_form {
+    font-weight: 150;
+    font-size: 18px;
+    text-align: center;
+}
+
+form {
+    margin: 25px 9% 0;
+}
+
+input {
+    width: 293px;
+    height: 36px;
+    margin-bottom: 8px;
+}
+
+.pole_form {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.but {
+    margin: 20px 19%;
+    width: 180px;
+    font-size: 20px;
+    background-color: #3a58dc;
+    border-color: #3a58dc;
+    color: white;
+}
+
+.card_div {
+    width: 945px; 
+    margin-top: -260px;
+    margin-left: -470px; /* тут вся мaгия центрoвки css, oтступaем влевo и вверх минус пoлoвину ширины и высoты сooтветственнo =) */
+    padding: 30px 40px;
+}
+
+.gramright {
+    position: absolute;
+    color: #969696;
+    font-size: 18px;
+    top: 38px;
+    right: 35px;
+}
+
+.title_text {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.card_div img {
+    height: 400px;
+    margin-left: 40px;
+}
+
+.element_inner {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.element_right {
+    margin-left: 130px;
+    width: 420px;
+}
+
+.element_right .text_s {
+    margin-bottom: 40px;
+    line-height: 20px;
+}
+
+.element_right .but {
+    width: 210px;
+    padding: 0;
+    margin: 0;
 }
