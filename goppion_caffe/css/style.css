@@ -186,15 +186,6 @@ p.lead {
     font-size: 26px;
 }
 
-@media (max-width:767px) {
-    h1 {
-        font-size: 40px;
-    }
-    h2 {
-        font-size: 30px;
-    }
-}
-
 
 /* Меню */
 
@@ -236,32 +227,6 @@ p.lead {
     color: #3a58dc;
 }
 
-@media (min-width: 992px) {
-    .navbar-expand-lg .navbar-nav .nav-link {
-        padding-right: 1rem;
-        padding-left: 1rem;
-        font-size: 14px;
-    }
-    .navbar-nav>.nav-item>.nav-link.active:after {
-        content: "";
-        border-bottom: 2px solid #cd99d4;
-        left: 1rem;
-        right: 1rem;
-        bottom: 5px;
-        height: 1px;
-        position: absolute;
-    }
-}
-
-@media (max-width:991px) {
-    .navbar-nav.is-scrolling {
-        padding-bottom: 1rem;
-    }
-    .navbar-nav .nav-item {
-        text-align: center;
-    }
-}
-
 
 /* Шапка */
 
@@ -300,21 +265,6 @@ header {
   to { top: 15px; }
 }
 
-@media (max-width:1200px) {
-    .img-holder {
-        padding-bottom: 50%;
-    }
-}
-
-@media (max-width:767px) {
-    .tagline {
-        font-size: 17px;
-    }
-    .img-holder {
-        padding-bottom: 100%;
-    }
-}
-
 
 /* Услуги */
 
@@ -332,15 +282,6 @@ header {
     border: 0;
     border-radius: 3px;
     transition: all 0.3s ease;
-}
-
-@media (max-width:991px) {
-    .card.features {
-        margin-bottom: 2rem;
-    }
-    [class^="col-"]:last-child .card.features {
-        margin-bottom: 0;
-    }
 }
 
 .card-title {
@@ -374,7 +315,7 @@ header {
     padding: 36px 0;
 }
 
-/*  Товары */
+/* Товары */
 .overf_bg {
     width: 100%
 }
@@ -401,12 +342,6 @@ header {
 .bubble_s3 {
     bottom:-1.5%;
     right: 0;
-}
-
-@media (max-width:992px) {
-    .tab-content {
-        padding: 1.5rem;
-    }
 }
 
 .tab-content p {
@@ -518,8 +453,7 @@ header {
     padding-bottom: 0;
 }
 
-/*  Приемущества
-----------------------*/
+/*  Приемущества */
 
 .alignr {
     text-align: right;
@@ -736,6 +670,7 @@ a.adress {
   bottom: 0;
   right: 0;
 }
+
 @-webkit-keyframes load3 {
   0% {
     -webkit-transform: rotate(0deg);
@@ -746,6 +681,7 @@ a.adress {
     transform: rotate(360deg);
   }
 }
+
 @keyframes load3 {
   0% {
     -webkit-transform: rotate(0deg);
@@ -976,4 +912,103 @@ input {
     width: 210px;
     padding: 0;
     margin: 0;
+}
+
+@media (max-width:767px) {
+    header {
+        padding-bottom: 100px;
+    }
+    .bg-gradient .container {
+        margin-top: 30px;
+    }
+    h1 {
+        font-size: 39px;
+        line-height: 50px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 29px;
+    }
+    .title_h2 {
+        font-size: 25px;
+    }
+    .section-title small {
+        font-size: 17px;
+    }
+    .img-holder {
+        height: 430px;
+    }
+    .img-holder img {
+        height: 420px;
+    }
+    
+    .fa-phone {
+        padding-right: 20px;
+    }
+    .mob_tel {
+        display: block;
+        position: absolute;
+    }
+    .btn-primary {
+        padding: 0.4rem 2.5rem;
+        font-size: 20px;
+    }
+    .media-body {
+        width: 60%;
+    }
+    .media span {
+        font-size: 55px;
+    }
+    .card-title {
+        font-size: 18px;
+    }
+    .card-text {
+        font-size: 14px;
+    }
+    .section {
+        padding-top: 10px;
+    }
+    .bubble {
+        display: none;
+    }
+}
+
+@media (max-width:991px) {
+    .navbar-nav .nav-item {
+        text-align: center;
+    }
+    .card.features {
+        margin-bottom: 2rem;
+    }
+    [class^="col-"]:last-child .card.features {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1rem;
+        padding-left: 1rem;
+        font-size: 14px;
+    }
+    .navbar-nav>.nav-item>.nav-link.active:after {
+        content: "";
+        border-bottom: 2px solid #cd99d4;
+        left: 1rem;
+        right: 1rem;
+        bottom: 5px;
+        height: 1px;
+        position: absolute;
+    }
+    .tab-content {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width:1200px) {
+    .img-holder {
+        padding-bottom: 50%;
+    }
 }
