@@ -156,7 +156,7 @@ p.lead {
 }
 
 .section {
-    padding: 150px 0;
+    padding-top: 150px;
 }
 
 .map {
@@ -172,7 +172,7 @@ p.lead {
 }
 
 .map_s {
-    padding-top: 0;
+    padding-top: 150px;
     overflow: hidden;
 }
 
@@ -355,6 +355,7 @@ header {
 .nav-tabs {
     border-bottom: 0;
     margin-bottom: 20px;
+    margin-left: 30px;
     width: 395px;
     height: 42px;
     border-radius: 30px;
@@ -914,7 +915,11 @@ input {
     margin: 0;
 }
 
+
 @media (max-width:767px) {
+    .nav-menu{
+        background-color: rgba(255,255,255, 0.8);
+    }
     header {
         padding-bottom: 60px;
     }
@@ -929,8 +934,15 @@ input {
         font-size: 28px;
     }
     h3 {
-        font-size: 26px;
+        font-size: 34px;
         margin-top: 60px;
+        margin-bottom: 0;
+    }
+    h3:first-child {
+        font-size: 30px;
+    }
+    h5 {
+        font-size: 18px;
     }
     .title_h2 {
         font-size: 25px;
@@ -964,6 +976,9 @@ input {
     .media span {
         font-size: 55px;
     }
+    .fa-tint:before, .fa-heart:before, .fa-adjust:before {
+        font-size: 20px;
+    }
     .card-title {
         font-size: 18px;
     }
@@ -971,6 +986,7 @@ input {
         font-size: 14px;
     }
     .section {
+        padding: 0;
         padding-top: 10px;
     }
     .bubble {
@@ -985,12 +1001,42 @@ input {
     .overf_bg {
         display: none;
     }
-    .alignr {
-        text-align: center;
+    .owl-dots {
+        margin-top: 20px !important;
     }
+
     .comments {
         display: none;
     }
+    .nav-tabs {
+        margin-left: 15px;
+    }
+    .card-size {
+        padding: 0;
+    }
+    a.mail_pol {
+        font-size: 25px;
+    }
+    .circ_blog {
+        width: 350px;
+        height: 350px;
+        margin-top: 80px;
+    }
+    .mail_pol::after {
+    top: 15px;
+    left: 155px;
+    }
+    iframe {
+        height: 500px
+    }
+    .ui-steps li {
+        padding: 0;
+    }
+    .section-title {
+        margin-bottom: 30px;
+    }
+
+
 }
 
 @media (max-width:991px) {
