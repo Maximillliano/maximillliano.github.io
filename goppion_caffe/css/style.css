@@ -1037,7 +1037,6 @@ input {
         width: 300px;
         height: 300px;
         margin-top: 130px;
-        background: rgba(255,255,255,0.6);
     }
     .mail_pol::after {
     top: 0;
