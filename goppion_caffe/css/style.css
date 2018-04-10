@@ -934,18 +934,22 @@ input {
         font-size: 28px;
     }
     h3 {
-        font-size: 34px;
+        font-size: 32px;
         margin-top: 60px;
         margin-bottom: 0;
     }
     h3:first-child {
-        font-size: 30px;
+        font-size: 26px;
     }
     h5 {
         font-size: 18px;
     }
     .title_h2 {
         font-size: 25px;
+    }
+
+    p {
+        font-size: 14px;
     }
     .section-title small {
         font-size: 17px;
@@ -971,7 +975,7 @@ input {
         font-size: 20px;
     }
     .media-body {
-        width: 60%;
+        width: 90%;
     }
     .media span {
         font-size: 55px;
@@ -1009,22 +1013,35 @@ input {
         display: none;
     }
     .nav-tabs {
-        margin-left: 15px;
+        margin-left: -8px;
+        width: 350px;
+    }
+    .nav-item {
+        padding: 0 .3em; 
+    }
+    .nav-item:first-child {
+        margin-left: 5px;
     }
     .card-size {
         padding: 0;
+        width: 150px;
+    }
+    .btn-light {
+        padding-left: 2rem;
+        padding-right: 2rem; 
     }
     a.mail_pol {
         font-size: 25px;
     }
     .circ_blog {
-        width: 350px;
-        height: 350px;
-        margin-top: 80px;
+        width: 300px;
+        height: 300px;
+        margin-top: 130px;
+        background: rgba(255,255,255,0.6);
     }
     .mail_pol::after {
-    top: 15px;
-    left: 155px;
+    top: 0;
+    left: 128px;
     }
     iframe {
         height: 500px
@@ -1035,8 +1052,12 @@ input {
     .section-title {
         margin-bottom: 30px;
     }
-
-
+    .map_s {
+        padding-top: 0;
+    }
+    a.adress {
+        font-size: 18px;
+    }
 }
 
 @media (max-width:991px) {
