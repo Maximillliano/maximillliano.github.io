@@ -315,6 +315,10 @@ header {
     padding: 36px 0;
 }
 
+.priemy {
+    padding-bottom: 80px;
+}
+
 /* Товары */
 .overf_bg {
     width: 100%
@@ -355,7 +359,7 @@ header {
 .nav-tabs {
     border-bottom: 0;
     margin-bottom: 20px;
-    margin-left: 30px;
+    margin-left: 10px;
     width: 395px;
     height: 42px;
     border-radius: 30px;
@@ -915,8 +919,75 @@ input {
     margin: 0;
 }
 
+@media screen and (max-width: 1800px) {
+    .img-fluid {
+        height: 500px;
+    }
+    .img-holder {
+        height: 100%;
+        padding-bottom: 0;
+    }
+    .btn-primary {
+        margin-top: 10px;
+    }
+}
 
-@media (max-width:767px) {
+@media screen and (max-width: 1650px) {
+    .img-fluid {
+        height: 450px;
+    }
+    .btn-primary {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    h1 {
+        font-size: 55px;
+    }
+    .img-fluid {
+        height: 380px;
+    }
+    .bg-gradient {
+        padding-bottom: 20px;
+    }
+    h3 {
+        font-size: 40px;
+    }
+    .section-title small {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .img-fluid {
+        height: 340px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .card-size {
+        padding: 0;
+    }
+    .img-fluid img {
+        height: 410px;
+    }
+    .btn-primary {
+        margin-top: 20px;
+    }
+    .card-body .media span {
+        font-size: 60px;
+    }
+    .card-text {
+        font-size: 15px;
+    }
+    .size_img {
+        padding-top: 100px;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
     .nav-menu{
         background-color: rgba(255,255,255, 0.8);
     }
@@ -958,7 +1029,6 @@ input {
         height: 100%;
         padding-bottom: 10px;
     }
-    
     .fa-phone {
         padding-right: 20px;
         font-size: 20px;
@@ -999,8 +1069,9 @@ input {
     .card-body {
         transform: translateY(-3px);
         -moz-box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.08);
-        -webkit-box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.08);
-        box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.08);
+        -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.08);
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.08);
+        margin-bottom: 40px;
     }
     .overf_bg {
         display: none;
@@ -1013,7 +1084,7 @@ input {
         display: none;
     }
     .nav-tabs {
-        margin-left: -8px;
+        margin-left: 0;
         width: 350px;
     }
     .nav-item {
@@ -1024,8 +1095,12 @@ input {
     }
     .card-size {
         padding: 0;
-        width: 150px;
+        width: 160px;
     }
+    .card .gramm {
+        display: none;
+    }
+
     .btn-light {
         padding-left: 2rem;
         padding-right: 2rem; 
@@ -1039,8 +1114,8 @@ input {
         margin-top: 130px;
     }
     .mail_pol::after {
-    top: 0;
-    left: 128px;
+        top: 0;
+        left: 128px;
     }
     iframe {
         height: 500px
@@ -1057,40 +1132,18 @@ input {
     a.adress {
         font-size: 18px;
     }
-}
-
-@media (max-width:991px) {
-    .navbar-nav .nav-item {
-        text-align: center;
+    .nav-small {
+        width: 170px;
     }
-    .card.features {
-        margin-bottom: 2rem;
-    }
-    [class^="col-"]:last-child .card.features {
-        margin-bottom: 0;
+    .pos_rel {
+        padding-bottom: 60px;
     }
 }
-
-@media (min-width: 992px) {
-    .navbar-expand-lg .navbar-nav .nav-link {
-        padding-right: 1rem;
-        padding-left: 1rem;
-        font-size: 14px;
+@media screen and (max-width: 764px) {
+    .card-size {
+        width: auto;
     }
-    .navbar-nav>.nav-item>.nav-link.active:after {
-        content: "";
-        border-bottom: 2px solid #cd99d4;
-        left: 1rem;
-        right: 1rem;
-        bottom: 5px;
-        height: 1px;
-        position: absolute;
+    .nav-tabs {
+        margin-left: 10px;
     }
-    .tab-content {
-        padding: 1.5rem;
-    }
-}
-
-@media (max-width:1200px) {
-
 }
