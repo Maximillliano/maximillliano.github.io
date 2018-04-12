@@ -425,7 +425,6 @@ header {
 
 .card img {
     width: 80px;
-    height: 100%;
     transition: all 0.3s ease;
 }
 
@@ -858,6 +857,10 @@ input {
     margin-bottom: 8px;
 }
 
+textarea {
+    width: 293px;
+}
+
 .pole_form {
     font-size: 22px;
     font-weight: 600;
@@ -917,6 +920,10 @@ input {
     width: 210px;
     padding: 0;
     margin: 0;
+}
+
+.mob_but {
+    display: none;
 }
 
 @media screen and (max-width: 1800px) {
@@ -988,6 +995,11 @@ input {
 
 
 @media screen and (max-width: 992px) {
+    .loader {
+        margin-top: 75%;
+        width: 8em;
+        height: 8em;
+    }
     .nav-menu{
         background-color: rgba(255,255,255, 0.8);
     }
@@ -1023,7 +1035,7 @@ input {
         font-size: 14px;
     }
     .section-title small {
-        font-size: 17px;
+        font-size: 16px;
     }
     .img-holder {
         height: 100%;
@@ -1073,19 +1085,21 @@ input {
         box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.08);
         margin-bottom: 40px;
     }
+    .card.features:hover {
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.08);
+    }
     .overf_bg {
         display: none;
     }
     .owl-dots {
         margin-top: 20px !important;
     }
-
     .comments {
         display: none;
     }
     .nav-tabs {
         margin-left: 0;
-        width: 350px;
+        width: 300px;
     }
     .nav-item {
         padding: 0 .3em; 
@@ -1138,12 +1152,59 @@ input {
     .pos_rel {
         padding-bottom: 60px;
     }
+    .nav-tabs .nav-item .nav-link {
+        font-size: 13px;
+    }
+    .modal_div {
+        width: 250px;
+        height: 380px;
+        top: 5%;
+        left: 37%;
+        margin-top: -120px;
+        margin-left: 0;
+    }
+    input, textarea {
+        width: 190px;
+        height: 30px;
+    }
+    .title_form {
+        font-size: 25px;
+    }
+    .subtitle_form {
+        font-size: 16px;
+    }
+    .pole_form {
+        font-size: 16px;
+    }
+    .but {
+        font-size: 18px;
+    }
+    .btn-light {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .open_modal {
+        display: none;
+    }
+    .mob_but {
+        display: inline-block;
+    }
 }
+
 @media screen and (max-width: 764px) {
     .card-size {
         width: auto;
     }
     .nav-tabs {
-        margin-left: 10px;
+        margin-left: 0;
+    }
+    .modal_div {
+        left: 33%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .modal_div {
+        left: 13%;
     }
 }
