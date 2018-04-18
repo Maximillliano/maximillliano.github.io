@@ -138,9 +138,6 @@ p.lead {
     color: white;
 }
 
-.btn-light:visited {
-    color: #323232;
-}
 .btn-group-lg>.btn,
 .btn-lg {
     padding: 0.8rem 1rem;
@@ -358,9 +355,10 @@ header {
 
 .nav-tabs {
     border-bottom: 0;
+    margin-top: 70px;
     margin-bottom: 20px;
     margin-left: 10px;
-    width: 395px;
+    width: 260px;
     height: 42px;
     border-radius: 30px;
     background-color: white;
@@ -396,7 +394,6 @@ header {
 .nav-small {
     position: relative;
     width: 205px;
-    margin-top: 70px;
 }
 
 .card {
@@ -424,7 +421,7 @@ header {
 }
 
 .card img {
-    width: 80px;
+    height: 156px;
     transition: all 0.3s ease;
 }
 
@@ -434,6 +431,7 @@ header {
 
 .card h4 {
     margin-top: 5px;
+    height: 60px;
 }
 
 .card .gramm {
@@ -450,6 +448,7 @@ header {
     font-weight: 300;
     line-height: 16px;
     margin-top: 8px;
+    height: 32px;
 }
 
 .sec_pad {
@@ -912,7 +911,7 @@ textarea {
 }
 
 .element_right .text_s {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     line-height: 20px;
 }
 
@@ -1099,7 +1098,7 @@ textarea {
     }
     .nav-tabs {
         margin-left: 0;
-        width: 300px;
+        width: 205px;
     }
     .nav-item {
         padding: 0 .3em; 
@@ -1147,7 +1146,7 @@ textarea {
         font-size: 18px;
     }
     .nav-small {
-        width: 170px;
+        width: 150px;
     }
     .pos_rel {
         padding-bottom: 60px;
