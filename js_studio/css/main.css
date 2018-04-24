@@ -500,42 +500,6 @@ menu a:hover {
 	color: #717171;
 }
 
-
-/*Секция Брэнды*/
-.brands {
-	display: flex;
-	flex-direction: column;
-  background-color: #a4a4a4;
-	border: 1px solid #ddd;
-	padding: 3% 0;
-}
-
-.brands h2 {
-	margin: 0;
-	padding-bottom: 4%;
-  text-align: center;
-	text-transform: uppercase;
-  font-size: 2em; 
-  color: #fff;
-}
-
-.brands ul {
-	display: flex;
-	justify-content: center;
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-.brands ul li {
-	margin: 0 2%;
-}
-
-.brands ul img:hover {
-	height: 6.5em;
-}
-
-
 /* Секция форма */
 .callus {
 	display: flex;
@@ -755,4 +719,13 @@ footer .footer_content ul {
 
 footer a img {
 		padding: 25px 0;
+}
+
+.maximilian {
+	color: #f6f6f6;
+	padding-top: 3.2%;
+}
+
+.maximilian:hover {
+	color: #d85050;
 }

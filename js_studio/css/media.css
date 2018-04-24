@@ -270,6 +270,10 @@ and (max-device-width : 1350px) {
 		margin-top: 2%; 
 		font-size: .8rem;
 	}
+
+	.maximilian {
+		font-size: .9em;
+	}
 }
 
 @media only screen
@@ -291,8 +295,6 @@ and (max-device-width : 1350px) {
 		font-size: 1.2em;
 	}
 	
-	
-	
   .about_us .blog_1 span,
 	.about_us .blog_2 span,
 	.about_us .blog_3 span{
@@ -309,6 +311,9 @@ and (max-device-width : 1350px) {
 		font-size: 1.2em;
 		padding-right: 4%;
 	}
+	.maximilian {
+		display: none;
+	}
 }
 
 @media only screen
@@ -317,9 +322,7 @@ and (max-device-width : 1350px) {
 	.uslygi {
 		display: none;	
 		}	
-  .footer_content ul.socials {
-		display: none;
-	}
+  
 }
 
 
@@ -443,10 +446,6 @@ and (max-device-width : 1350px) {
 			font-size: 2em;
 		}
 		
-		.brands {
-			display: none;
-		}
-		
 		.callus span {
 			display: inline;	
 			font-size: 15rem;
@@ -548,12 +547,5 @@ and (max-device-width : 1350px) {
 			font-size: 1.5em;
 			padding-right: .4em;
 		}
-		
-		
-		footer a img {
-			display: none;
-		}
-		
-
 		
 }
