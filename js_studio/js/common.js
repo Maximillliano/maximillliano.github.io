@@ -107,6 +107,13 @@ $(function(){
   });
 });
 
+//Страница галлереи
+$(document).ready(function() {
+  $('#lightgallery').lightGallery({
+    pager: true
+  });
+});
+
 
 /*Счетчик
 (function ($) {
