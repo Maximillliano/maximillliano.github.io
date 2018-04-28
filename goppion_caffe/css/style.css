@@ -189,6 +189,7 @@ p.lead {
 .nav-menu {
     padding: 0;
     transition: all 0.3s ease;
+    background-color: rgba(255,255,255, 0.8);
 }
 
 .nav-menu.is-scrolling {
@@ -206,6 +207,26 @@ p.lead {
 
 .logo:hover {
     height: 90px;
+}
+
+ul.menu-top {
+    margin-bottom: 0;
+    margin-left: 80px;
+}
+
+ul.menu-top  li {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+ul.menu-top li a {
+    color: #3a58dc;
+}
+
+ul.menu-top li a:hover {
+    color: #323232;
 }
 
 .phone {
@@ -235,14 +256,6 @@ header {
 
 .bg-gradient {
     background: url(../images/BG_main.png) top center no-repeat;
-}
-
-.tagline {
-    font-size: 23px;
-    font-weight: 300;
-    color: #ffb8f6;
-    max-width: 800px;
-    margin: 0 auto;
 }
 
 .img-holder {
@@ -423,7 +436,21 @@ header {
 
 .card img {
     height: 156px;
-    transition: all 0.3s ease;
+}
+
+div.nalich {
+    position: absolute;
+    top: 70px;
+
+    margin: 0;
+    font-weight: 600;
+    font-size: 20px;
+    color: #3a58dc;
+}
+
+.nalich span {
+    color: #3a58dc;
+    padding-right: 10px;
 }
 
 .card h4 {
@@ -892,8 +919,15 @@ textarea {
 }
 
 .card_div img {
-    height: 400px;
+    height: 350px;
     margin-left: 40px;
+    transition: all 0.3s ease;
+}
+
+.card_div img:hover {
+    transform: scale(1.8);
+    transition: all 0.3s ease;
+    z-index: 200;
 }
 
 .element_inner {
