@@ -222,11 +222,18 @@ ul.menu-top  li {
 }
 
 ul.menu-top li a {
-    color: #3a58dc;
+    color: #323232;
+    transition: all 0.3s ease;
 }
 
 ul.menu-top li a:hover {
-    color: #323232;
+    font-size: 32px;
+    color: #3a58dc;
+}
+
+.active_menu {
+    font-size: 32px;
+    color: #3a58dc !important;
 }
 
 .phone {
@@ -256,6 +263,7 @@ header {
 
 .bg-gradient {
     background: url(../images/BG_main.png) top center no-repeat;
+    padding-top: 140px;
 }
 
 .img-holder {
@@ -441,7 +449,6 @@ header {
 div.nalich {
     position: absolute;
     top: 70px;
-
     margin: 0;
     font-weight: 600;
     font-size: 20px;
@@ -653,6 +660,11 @@ a.adress {
     vertical-align: text-bottom;
 }
 
+.white_fot {
+    background-color: none;
+    margin-top: 80px;
+}
+
 /* Preloader */
 .loader {
   font-size: 10px;
@@ -832,7 +844,7 @@ a.adress {
 
 .modal_div .modal_close {
     font-size: 30px;
-    color: black;
+    color: white;
     width: 21px;
     height: 21px;
     position: absolute;
@@ -1000,6 +1012,10 @@ textarea {
     .img-fluid {
         height: 340px;
     }
+
+    ul.menu-top  li {
+        font-size: 19px;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -1025,6 +1041,10 @@ textarea {
 
 
 @media screen and (max-width: 992px) {
+    ul.menu-top  {
+        display: none;
+    }
+
     .loader {
         margin-top: 75%;
         width: 8em;
@@ -1223,7 +1243,7 @@ textarea {
 
 @media screen and (max-width: 764px) {
     .card-size {
-        width: auto;
+        width: 100%;
     }
     .nav-tabs {
         margin-left: 0;
