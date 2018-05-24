@@ -122,6 +122,7 @@ textarea
 }a,
 a:hover
 {
+    color: #ffe169;
     text-decoration: underline;
 }.dashed-lnk,
 .dashed-lnk:hover
