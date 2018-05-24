@@ -10,48 +10,8 @@
     <meta name="referrer" content="origin">
     <link rel="icon" href="images/favicon.ico" />
     <meta name="description" content="Официальный дилер Goppion Caffe в Беларуси">
-    <meta name="keywords" content="кофе, Goppion Caffe, кофемашины">
+    <meta name="keywords" content="кофе, кофемашины, coffe, coffee, coffeemaschine, Кофе, Кофе машины, Кофемашины, goppion, gopion, гапион, гопион, гоппион, гаппион, русика, rusika, rusiko, Русико, Русика, Goppion Caffe, чай, tea, горячий шоколад, шоколад, hot chocolate, шоко, опт, оптом, оптом кофе, диллер">
 
-  <!--  <meta name="yandex-verification" content="52f8fe700e19267c" />-->
-  <!-- Yandex.Metrika counter -->
-<!--
-    <script type="text/javascript" >
-            (function (d, w, c) {
-                    (w[c] = w[c] || []).push(function() {
-                            try {
-                                    w.yaCounter47492530 = new Ya.Metrika2({
-                                            id:47492530,
-                                            clickmap:true,
-                                            trackLinks:true,
-                                            accurateTrackBounce:true,
-                                            webvisor:true
-                                    });
-                            } catch(e) { }
-                    });
-
-                    var n = d.getElementsByTagName("script")[0],
-                            s = d.createElement("script"),
-                            f = function () { n.parentNode.insertBefore(s, n); };
-                    s.type = "text/javascript";
-                    s.async = true;
-                    s.src = "https://mc.yandex.ru/metrika/tag.js";
-
-                    if (w.opera == "[object Opera]") {
-                            d.addEventListener("DOMContentLoaded", f, false);
-                    } else { f(); }
-            })(document, window, "yandex_metrika_callbacks2");
-    </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/47492530" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
--->
-    <!-- /Yandex.Metrika counter -->
- 
-<!--
-  <meta property="og:type" content="article" />
-    <meta property="og:title" content="Максимилиан Антипенко" />
-    <meta property="og:description" content="Web-Дизайнер / Графический дизайнер" />
-    <meta property="og:url" content="https://maximillliano.github.io" />
-    <meta property="og:image" content="img/Social-vk.jpg" />
--->
   
     <link href="css/fonts.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -82,9 +42,19 @@
                         <a class="navbar-brand" href="index.html"><img class="logo" src="images/logo.png" alt=""></a>
                         <ul class="menu-top">
                             <li><a class="active_menu" href="index.html">Главная</a></li>
-                            <li><a href="coffe_zern.html">Зерновой кофе</a></li>
-                            <li><a href="coffe_mash.html">Кофемашины</a></li>
-                            <li><a href="coffe_razn.html">Разное</a></li>
+                            <li><a href="#">Кофе</a>
+                                <ul class="submenu">
+                                    <li><a href="coffe_molot.html">Молотый кофе</a></li>
+                                    <li><a href="coffe_zern.html">Зерновой кофе</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Чай</a>
+                                <ul class="submenu">
+                                    <li><a href="coffe_zern.html">Джеймс</a></li>
+                                    <li><a href="coffe_molot.html">Бугетти</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="coffe_choco.html">Горячий шоколад</a></li>
                         </ul>
                         <div><span class="fas fa-phone"></span><a class="phone my-3 my-sm-0 ml-lg-3" href="tel:+375172685579">+375 (17) 268-55-79</a></div>
                     </nav>
@@ -105,9 +75,9 @@
                      <!-- Видимая часть -->
                     <div class="pole_form">Ваше имя</div>
                     <input type="text" name="Имя" required><br>
-                    <div class="pole_form">Ваша почта</div>
-                    <input type="text" name="Почта" required><br>
-                    <div class="pole_form">Ваша сообщение</div>
+                    <div class="pole_form">Ваш телефон</div>
+                    <input type="text" name="Телефон" required><br>
+                    <div class="pole_form">Ваше сообщение</div>
                     <textarea type="text" name="Сообщение" rows="5"></textarea>
                     <button class="btn btn-light but">Отправить</button>
                 </form>
@@ -133,7 +103,8 @@
 
                         <!--2 Item menu - 1tab - s6-->
                         <div class="div col-6 col-md-3 justify-content-center align-items-center card">
-                            <div class="card-size">  
+                            <div class="card-size">
+                                <span class="fas fa-check-circle cardcircle"></span> 
                                 <div class="gramm">250 г</div>
                                 <a><img src="images/cof_molot_s6.png" alt=""></a>
                                 <h4>Кофе Goppion Caffe "J.B.M."</h4>
@@ -153,20 +124,550 @@
                                 <img src="images/cof_molot_card_s6.png" alt="">
                                 <div class="element_right">
                                     <h4>Описание</h4>
+                                    <div class="text_s">Кофе Goppion Caffe JBM (Ямайка Блю Маунтин) - напиток, который подобно жарким ямайским танцам закружит Вас в феерии вкуса и разнообразии вкусовых оттенков.</div>
+                                    <h4>Характеристики</h4>
+                                    <div class="text_s"> Состав: кофе 100% Арабика
+                                        <br/>Степень обжарки: средняя
+                                        <br/>Срок годности: 24 месяца
+                                    </div>
+                                    <a href="#modal0" onclick="document.getElementById('modal12').style.display='none'" class="btn btn-light but open_modal">Заказать</a>
+                                </div>
+                            </div>
+                        </div>
+
+                         <!--2 Item menu - 1tab - s14-->
+                        <div class="div col-6 col-md-3 justify-content-center align-items-center card">
+                            <div class="card-size">
+                                <span class="fas fa-check-circle cardcircle"></span> 
+                                <div class="gramm">250 г</div>
+                                <a><img src="images/cof_molot_s14.png" alt=""></a>
+                                <h4>Кофе Goppion Caffe "Espresso Italiano CSC"</h4>
+                                <div class="text_s">Кофе ЭСПРЕССО ИТАЛИАНО</div>
+                                <a href="#modal31" class="btn btn-light open_modal">Подробнее</a>
+                                <a href="tel:+375172685579" class="btn btn-light mob_but">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <!--2 Item menu - 1tab - s14 modal-->
+                        <div id="modal31" class="modal_div card_div">
+                            <span class="modal_close"><i class="fas fa-times"></i></span>
+                            <div class="title_text">Кофе Goppion Caffe "Espresso Italiano CSC"</div>
+                            <div class="nalich"><span class="fas fa-check-circle"></span>В наличии</div>
+                            <div class="gramm gramright">Вес: 250 г (жесть)</div>
+                            <div class="element_inner">
+                                <img src="images/cof_molot_card_s14.png" alt="">
+                                <div class="element_right">
+                                    <h4>Описание</h4>
+                                    <div class="text_s">Кофе Goppion Caffe "Espresso Italiano CSC" сертифицирован CSC® и состоит из арабского кофе собранного в Бразилии и Центральной Америки</div>
+                                    <h4>Характеристики</h4>
+                                    <div class="text_s"> Состав: кофе 100% Арабика
+                                        <br/>Вкус: мягкий, бархатистый аромат с долговечным шоколадным послевкусием
+                                        <br/>Идеально подходит для эспрессо, капучино или специальных напитков
+                                        <br/>Срок годности: 24 месяца
+                                    </div>
+                                    <a href="#modal0" onclick="document.getElementById('modal31').style.display='none'" class="btn btn-light but open_modal">Заказать</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--2 Item menu - 1tab - s15-->
+                        <div class="div col-6 col-md-3 justify-content-center align-items-center card">
+                            <div class="card-size">
+                                <span class="fas fa-check-circle cardcircle"></span> 
+                                <div class="gramm">250 г</div>
+                                <a><img src="images/cof_molot_s15.png" alt=""></a>
+                                <h4>Кофе Goppion Caffe "NATIVO BIO Organic"</h4>
+                                <div class="text_s">Кофе НАТИВО БИО ОРГАНИК</div>
+                                <a href="#modal32" class="btn btn-light open_modal">Подробнее</a>
+                                <a href="tel:+375172685579" class="btn btn-light mob_but">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <!--2 Item menu - 1tab - s15 modal-->
+                        <div id="modal32" class="modal_div card_div">
+                            <span class="modal_close"><i class="fas fa-times"></i></span>
+                            <div class="title_text">Кофе Goppion Caffe "NATIVO BIO Organic"</div>
+                            <div class="nalich"><span class="fas fa-check-circle"></span>В наличии</div>
+                            <div class="gramm gramright">Вес: 250 г</div>
+                            <div class="element_inner">
+                                <img src="images/cof_molot_card_s15.png" alt="">
+                                <div class="element_right">
+                                    <h4>Описание</h4>
+                                    <div class="text_s">Кофе Goppion NATIVO BIO Organic - из Центральной Америки, сертифицированный IMC. Идеально подходит для тех, кто предпочитает органические, вегетарианские продукты.</div>
+                                    <h4>Характеристики</h4>
+                                    <div class="text_s"> Состав: кофе 100% Арабика
+                                        <br/>Степень обжарки: средняя
+                                        <br/>Без кофеина: да
+                                        <br/>Срок годности: 24 месяца
+                                    </div>
+                                    <a href="#modal0" onclick="document.getElementById('modal32').style.display='none'" class="btn btn-light but open_modal">Заказать</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--2 Item menu - 1tab - s9-->
+                        <div class="div col-6 col-md-3 justify-content-center align-items-center card">
+                            <div class="card-size">
+                                <span class="fas fa-check-circle cardcircle"></span> 
+                                <div class="gramm">250 г</div>
+                                <a><img src="images/cof_molot_s9.png" alt=""></a>
+                                <h4>Кофе Goppion Caffe "NATIVO BIO Decaffeinato Organic"</h4>
+                                <div class="text_s">Кофе НАТИВО БИО БЕЗ КОФЕИНА Органик</div>
+                                <a href="#modal15" class="btn btn-light open_modal">Подробнее</a>
+                                <a href="tel:+375172685579" class="btn btn-light mob_but">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <!--2 Item menu - 1tab - s9 modal-->
+                        <div id="modal15" class="modal_div card_div">
+                            <span class="modal_close"><i class="fas fa-times"></i></span>
+                            <div class="title_text">Кофе Goppion Caffe "NATIVO BIO Decaffeinato Organic"</div>
+                            <div class="nalich"><span class="fas fa-check-circle"></span>В наличии</div>
+                            <div class="gramm gramright">Вес: 250 г (жесть)</div>
+                            <div class="element_inner">
+                                <img src="images/cof_molot_card_s9.png" alt="">
+                                <div class="element_right">
+                                    <h4>Описание</h4>
+                                    <div class="text_s">Кофе Goppion NATIVO BIO Decaffeinato Organic - это экологически чистый продукт, выращенный без использования химических удобрений. Этот кофе отличается также низким содержанием кофеина, всего 0,1 %!</div>
+                                    <h4>Характеристики</h4>
+                                    <div class="text_s"> Состав: кофе 100% Арабика
+                                        <br/>Степень обжарки: средняя
+                                        <br/>Без кофеина: да
+                                        <br/>Срок годности: 24 месяца
+                                    </div>
+                                    <a href="#modal0" onclick="document.getElementById('modal15').style.display='none'" class="btn btn-light but open_modal">Заказать</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--2 Item menu - 1tab - s8-->
+                        <div class="div col-6 col-md-3 justify-content-center align-items-center card">
+                            <div class="card-size">
+                                <span class="fas fa-check-circle cardcircle"></span> 
+                                <div class="gramm">250 г</div>
+                                <a><img src="images/cof_molot_s8.png" alt=""></a>
+                                <h4>Кофе Goppion Caffe "Dolce"</h4>
+                                <div class="text_s">Кофе ДОЛЬЧЕ</div>
+                                <a href="#modal14" class="btn btn-light open_modal">Подробнее</a>
+                                <a href="tel:+375172685579" class="btn btn-light mob_but">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <!--2 Item menu - 1tab - s8 modal-->
+                        <div id="modal14" class="modal_div card_div">
+                            <span class="modal_close"><i class="fas fa-times"></i></span>
+                            <div class="title_text">Кофе Goppion Caffe "Dolce"</div>
+                            <div class="nalich"><span class="fas fa-check-circle"></span>В наличии</div>
+                            <div class="gramm gramright">Вес: 250 г (жесть)</div>
+                            <div class="element_inner">
+                                <img src="images/cof_molot_card_s8.png" alt="">
+                                <div class="element_right">
+                                    <h4>Описание</h4>
+                                    <div class="text_s">Венеция - город, который внес огромный вклад в развитие кофейной индустрии. На сегодняшний день компания Goppion в знак благодарности разработала особенную линейку кофе, которая неразрывной нитью связывает историю Венеции с молотым кофе. На эксклюзивных баночках кофе Goppion Dolce изображены картины знаменитых художников этого замечательного города.</div>
+                                    <h4>Характеристики</h4>
+                                    <div class="text_s"> Состав: кофе 90% Арабика
+                                        <br/>Степень обжарки: темная
+                                        <br/>Срок годности: 24 месяца
+                                    </div>
+                                    <a href="#modal0" onclick="document.getElementById('modal14').style.display='none'" class="btn btn-light but open_modal">Заказать</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--2 Item menu - 1tab - s13-->
+                        <div class="div col-6 col-md-3 justify-content-center align-items-center card">
+                            <div class="card-size">
+                                <span class="fas fa-check-circle cardcircle"></span> 
+                                <div class="gramm">250 г</div>
+                                <a><img src="images/cof_molot_s13.png" alt=""></a>
+                                <h4>Кофе Goppion Caffe "Edizione Limitata"</h4>
+                                <div class="text_s">Кофе ЭДИЗИОН ЛИМИТАТА</div>
+                                <a href="#modal30" class="btn btn-light open_modal">Подробнее</a>
+                                <a href="tel:+375172685579" class="btn btn-light mob_but">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <!--2 Item menu - 1tab - s13 modal-->
+                        <div id="modal30" class="modal_div card_div">
+                            <span class="modal_close"><i class="fas fa-times"></i></span>
+                            <div class="title_text">Кофе Goppion Caffe "Edizione Limitata"</div>
+                            <div class="nalich"><span class="fas fa-check-circle"></span>В наличии</div>
+                            <div class="gramm gramright">Вес: 250 г (жесть)</div>
+                            <div class="element_inner">
+                                <img src="images/cof_molot_card_s13.png" alt="">
+                                <div class="element_right">
+                                    <h4>Описание</h4>
+                                    <div class="text_s">Кофе Goppion "Edizione Limitata" - это лимитированное издание в честь 70 летия!</div>
+                                    <h4>Характеристики</h4>
+                                    <div class="text_s"> Состав: кофе 100% Арабика
+                                        <br/>Степень обжарки: средняя
+                                        <br/>Срок годности: 24 месяца
+                                    </div>
+                                    <a href="#modal0" onclick="document.getElementById('modal30').style.display='none'" class="btn btn-light but open_modal">Заказать</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--2 Item menu - 1tab - s7-->
+                        <div class="div col-6 col-md-3 justify-content-center align-items-center card">
+                            <div class="card-size">
+                                <span class="fas fa-check-circle cardcircle"></span> 
+                                <div class="gramm">250 г</div>
+                                <a><img src="images/cof_molot_s7.png" alt=""></a>
+                                <h4>Кофе Goppion Caffe "L'Eroica"</h4>
+                                <div class="text_s">Молотый кофе</div>
+                                <a href="#modal13" class="btn btn-light open_modal">Подробнее</a>
+                                <a href="tel:+375172685579" class="btn btn-light mob_but">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <!--2 Item menu - 1tab - s7 modal-->
+                        <div id="modal13" class="modal_div card_div">
+                            <span class="modal_close"><i class="fas fa-times"></i></span>
+                            <div class="title_text">Кофе Goppion Caffe "L'Eroica"</div>
+                            <div class="nalich"><span class="fas fa-check-circle"></span>В наличии</div>
+                            <div class="gramm gramright">Вес: 250 г (жесть)</div>
+                            <div class="element_inner">
+                                <img src="images/cof_molot_card_s7.png" alt="">
+                                <div class="element_right">
+                                    <h4>Описание</h4>
+                                    <div class="text_s">Прочувствуйте атмосферу праздника и хорошего кофе вместе с ограниченной серией Goppion Caffe L Eroica!</div>
+                                    <h4>Характеристики</h4>
+                                    <div class="text_s"> Состав: кофе 100% Арабика
+                                        <br/>Степень обжарки: средняя
+                                        <br/>Количество робусты: 0%
+                                        <br/>Срок годности: 24 месяца
+                                    </div>
+                                    <a href="#modal0" onclick="document.getElementById('modal13').style.display='none'" class="btn btn-light but open_modal">Заказать</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--2 Item menu - 1tab - s4-->
+                        <div class="div col-6 col-md-3 justify-content-center align-items-center card">
+                            <div class="card-size">
+                                <span class="fas fa-check-circle cardcircle"></span> 
+                                <div class="gramm">250 г</div>
+                                <a><img src="images/cof_molot_s4.png" alt=""></a>
+                                <h4>Кофе Goppion Caffe "Latta Caffettiera"</h4>
+                                <div class="text_s">Молотый кофе</div>
+                                <a href="#modal10" class="btn btn-light open_modal">Подробнее</a>
+                                <a href="tel:+375172685579" class="btn btn-light mob_but">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <!--2 Item menu - 1tab - s4 modal-->
+                        <div id="modal10" class="modal_div card_div">
+                            <span class="modal_close"><i class="fas fa-times"></i></span>
+                            <div class="title_text">Кофе Goppion Caffe "Latta Caffettiera"</div>
+                            <div class="nalich"><span class="fas fa-check-circle"></span>В наличии</div>
+                            <div class="gramm gramright">Вес: 250 г (жесть)</div>
+                            <div class="element_inner">
+                                <img src="images/cof_molot_card_s4.png" alt="">
+                                <div class="element_right">
+                                    <h4>Описание</h4>
+                                    <div class="text_s">Кофе "Latta Caffettiera" -  вкус кофе бархатистый и интенсивный. Этот напиток отличается низким содержанием кофеина.</div>
+                                    <h4>Характеристики</h4>
+                                    <div class="text_s"> Состав: кофе 100% Арабика
+                                        <br/> Степень обжарки: средняя
+                                        <br/> Срое годности: 24 месяца
+                                        <br/> Степень обжарки: средняя
+                                    </div>
+                                    <a href="#modal0" onclick="document.getElementById('modal10').style.display='none'" class="btn btn-light but open_modal">Заказать</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--2 Item menu - 1tab - s5-->
+                        <div class="div col-6 col-md-3 justify-content-center align-items-center card">
+                            <div class="card-size">
+                                <span class="fas fa-check-circle cardcircle"></span> 
+                                <div class="gramm">250 г</div>
+                                <a><img src="images/cof_molot_s5.png" alt=""></a>
+                                <h4>Кофе Goppion Caffe "Latta Tucano"</h4>
+                                <div class="text_s">Молотый кофе</div>
+                                <a href="#modal11" class="btn btn-light open_modal">Подробнее</a>
+                                <a href="tel:+375172685579" class="btn btn-light mob_but">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <!--2 Item menu - 1tab - s5 modal-->
+                        <div id="modal11" class="modal_div card_div">
+                            <span class="modal_close"><i class="fas fa-times"></i></span>
+                            <div class="title_text">Кофе Goppion Caffe "Latta Tucano"</div>
+                            <div class="nalich"><span class="fas fa-check-circle"></span>В наличии</div>
+                            <div class="gramm gramright">Вес: 250 г</div>
+                            <div class="element_inner">
+                                <img src="images/cof_molot_card_s5.png" alt="">
+                                <div class="element_right">
+                                    <h4>Описание</h4>
                                     <div class="text_s">Кофе "Latta Tucano" - это именно тот кофе, после которого эмоции зашкаливают и сердце начинает биться чаще. Он волнует воображение своим необычайно насыщенным и бархатистым вкусом и радует глаз стильной жестяной баночкой, оформленной в ретро стиле.</div>
                                     <h4>Характеристики</h4>
                                     <div class="text_s"> Состав: кофе 100% Арабика
                                         <br/>Степень обжарки: средняя
                                         <br/>Срок годности: 24 месяца
                                     </div>
-                                    <a href="#modal0" onclick="document.getElementById('modal12').style.display='none'" class="btn btn-light but open_modal">Заказать оптом</a>
+                                    <a href="#modal0" onclick="document.getElementById('modal11').style.display='none'" class="btn btn-light but open_modal">Заказать</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--2 Item menu - 1tab - s11-->
+                        <div class="div col-6 col-md-3 justify-content-center align-items-center card">
+                            <div class="card-size">
+                                <span class="fas fa-check-circle cardcircle"></span> 
+                                <div class="gramm">250 г</div>
+                                <a><img src="images/cof_molot_s11.png" alt=""></a>
+                                <h4>Кофе Goppion Caffe "Latta-Coffetherapy"</h4>
+                                <div class="text_s">Кофе ЛАТТА КОФЕТЕРАПИЯ</div>
+                                <a href="#modal28" class="btn btn-light open_modal">Подробнее</a>
+                                <a href="tel:+375172685579" class="btn btn-light mob_but">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <!--2 Item menu - 1tab - s11 modal-->
+                        <div id="modal28" class="modal_div card_div">
+                            <span class="modal_close"><i class="fas fa-times"></i></span>
+                            <div class="title_text">Кофе Goppion Caffe "Latta-Coffetherapy"</div>
+                            <div class="nalich"><span class="fas fa-check-circle"></span>В наличии</div>
+                            <div class="gramm gramright">Вес: 250 г (жесть)</div>
+                            <div class="element_inner">
+                                <img src="images/cof_molot_card_s11.png" alt="">
+                                <div class="element_right">
+                                    <h4>Описание</h4>
+                                    <div class="text_s"></div>
+                                    <h4>Характеристики</h4>
+                                    <div class="text_s"> Состав: кофе 100% Арабика
+                                        <br/>Вкус: сладкий
+                                        <br/>Без кофеина: да
+                                        <br/>Срок годности: 24 месяца
+                                    </div>
+                                    <a href="#modal0" onclick="document.getElementById('modal28').style.display='none'" class="btn btn-light but open_modal">Заказать</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--2 Item menu - 1tab - s12-->
+                        <div class="div col-6 col-md-3 justify-content-center align-items-center card">
+                            <div class="card-size">
+                                <span class="fas fa-check-circle cardcircle"></span> 
+                                <div class="gramm">250 г</div>
+                                <a><img src="images/cof_molot_s12.png" alt=""></a>
+                                <h4>Кофе Goppion Caffe "Latta-Storica"</h4>
+                                <div class="text_s">Кофе ЛАТТА СТОРИКА</div>
+                                <a href="#modal29" class="btn btn-light open_modal">Подробнее</a>
+                                <a href="tel:+375172685579" class="btn btn-light mob_but">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <!--2 Item menu - 1tab - s12 modal-->
+                        <div id="modal29" class="modal_div card_div">
+                            <span class="modal_close"><i class="fas fa-times"></i></span>
+                            <div class="title_text">Кофе Goppion Caffe "Latta-Storica"</div>
+                            <div class="nalich"><span class="fas fa-check-circle"></span>В наличии</div>
+                            <div class="gramm gramright">Вес: 250 г (жесть)</div>
+                            <div class="element_inner">
+                                <img src="images/cof_molot_card_s12.png" alt="">
+                                <div class="element_right">
+                                    <h4>Описание</h4>
+                                    <div class="text_s">Кофе Goppion Caffe "Latta Storica" (Гоппион Кафе "Лата Сторика") – натуральный молотый кофе в оригинальной, эксклюзивной подарочной баночке с защелкой.</div>
+                                    <h4>Характеристики</h4>
+                                    <div class="text_s"> Состав: кофе 100% Арабика
+                                        <br/>Вкус: сладкий
+                                        <br/>Степень обжарк: средняя
+                                        <br/>Без кофеина: да
+                                        <br/>Срок годности: 24 месяца
+                                    </div>
+                                    <a href="#modal0" onclick="document.getElementById('modal29').style.display='none'" class="btn btn-light but open_modal">Заказать</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--2 Item menu - 1tab - s13-->
+                        <div class="div col-6 col-md-3 justify-content-center align-items-center card">
+                            <div class="card-size">
+                                <span class="fas fa-check-circle cardcircle"></span> 
+                                <div class="gramm">250 г</div>
+                                <a><img src="images/cof_molot_s18.png" alt=""></a>
+                                <h4>Кофе Goppion Caffe "Latta Foglie"</h4>
+                                <div class="text_s">Кофе ЛАТТА ФОГЛИ</div>
+                                <a href="#modal40" class="btn btn-light open_modal">Подробнее</a>
+                                <a href="tel:+375172685579" class="btn btn-light mob_but">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <!--2 Item menu - 1tab - s13 modal-->
+                        <div id="modal40" class="modal_div card_div">
+                            <span class="modal_close"><i class="fas fa-times"></i></span>
+                            <div class="title_text">Кофе Goppion Caffe "Latta Foglie"</div>
+                            <div class="nalich"><span class="fas fa-check-circle"></span>В наличии</div>
+                            <div class="gramm gramright">Вес: 250 г (жесть)</div>
+                            <div class="element_inner">
+                                <img src="images/cof_molot_card_s18.png" alt="">
+                                <div class="element_right">
+                                    <h4>Описание</h4>
+                                    <div class="text_s">Кофе Goppion Caffe "Latta Foglie" (Гоппион Кафе "Лата Фогли") – кофе высокого качества упакованное в эксклюзивную оригинальную баночку с защелкой.</div>
+                                    <h4>Характеристики</h4>
+                                    <div class="text_s"> Состав: кофе 100% Арабика
+                                        <br/>Вкус: сладкий
+                                        <br/>Степень обжарк: средняя
+                                        <br/>Без кофеина: да
+                                        <br/>Срок годности: 24 месяца
+                                    </div>
+                                    <a href="#modal0" onclick="document.getElementById('modal40').style.display='none'" class="btn btn-light but open_modal">Заказать</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--2 Item menu - 1tab - s14-->
+                        <div class="div col-6 col-md-3 justify-content-center align-items-center card">
+                            <div class="card-size">
+                                <span class="fas fa-check-circle cardcircle"></span> 
+                                <div class="gramm">250 г</div>
+                                <a><img src="images/cof_molot_s19.png" alt=""></a>
+                                <h4>Кофе Goppion Caffe "Latta Bacche"</h4>
+                                <div class="text_s">Кофе ЛАТТА БАЧЧЕ</div>
+                                <a href="#modal41" class="btn btn-light open_modal">Подробнее</a>
+                                <a href="tel:+375172685579" class="btn btn-light mob_but">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <!--2 Item menu - 1tab - s14 modal-->
+                        <div id="modal41" class="modal_div card_div">
+                            <span class="modal_close"><i class="fas fa-times"></i></span>
+                            <div class="title_text">Кофе Goppion Caffe "Latta Bacche"</div>
+                            <div class="nalich"><span class="fas fa-check-circle"></span>В наличии</div>
+                            <div class="gramm gramright">Вес: 250 г (жесть)</div>
+                            <div class="element_inner">
+                                <img src="images/cof_molot_card_s19.png" alt="">
+                                <div class="element_right">
+                                    <h4>Описание</h4>
+                                    <div class="text_s">Кофе Goppion Caffe "Latta Bacche" (Гоппион Кафе "Лата Баче") – натуральный молотый кофе с низким содержанием кофеина в оригинальной, эксклюзивной подарочной баночке с защелкой.</div>
+                                    <h4>Характеристики</h4>
+                                    <div class="text_s"> Состав: кофе 100% Арабика
+                                        <br/>Вкус: сладкий
+                                        <br/>Степень обжарк: средняя
+                                        <br/>Без кофеина: да
+                                        <br/>Срок годности: 24 месяца
+                                    </div>
+                                    <a href="#modal0" onclick="document.getElementById('modal41').style.display='none'" class="btn btn-light but open_modal">Заказать</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--2 Item menu - 1tab - s15-->
+                        <div class="div col-6 col-md-3 justify-content-center align-items-center card">
+                            <div class="card-size">
+                                <span class="fas fa-check-circle cardcircle"></span> 
+                                <div class="gramm">250 г</div>
+                                <a><img src="images/cof_molot_s20.png" alt=""></a>
+                                <h4>Кофе Goppion Caffe "LATTA ROSSA"</h4>
+                                <div class="text_s">Кофе ЛАТТА РОССА</div>
+                                <a href="#modal42" class="btn btn-light open_modal">Подробнее</a>
+                                <a href="tel:+375172685579" class="btn btn-light mob_but">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <!--2 Item menu - 1tab - s15 modal-->
+                        <div id="modal42" class="modal_div card_div">
+                            <span class="modal_close"><i class="fas fa-times"></i></span>
+                            <div class="title_text">Кофе Goppion Caffe "LATTA ROSSA"</div>
+                            <div class="nalich"><span class="fas fa-check-circle"></span>В наличии</div>
+                            <div class="gramm gramright">Вес: 250 г (жесть)</div>
+                            <div class="element_inner">
+                                <img src="images/cof_molot_card_s20.png" alt="">
+                                <div class="element_right">
+                                    <h4>Описание</h4>
+                                    <div class="text_s"></div>
+                                    <h4>Характеристики</h4>
+                                    <div class="text_s"> Состав: кофе 100% Арабика
+                                        <br/>Вкус: сладкий
+                                        <br/>Без кофеина: да
+                                        <br/>Срок годности: 24 месяца
+                                    </div>
+                                    <a href="#modal0" onclick="document.getElementById('modal42').style.display='none'" class="btn btn-light but open_modal">Заказать</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!--2 Item menu - 1tab - s16-->
+                        <div class="div col-6 col-md-3 justify-content-center align-items-center card">
+                            <div class="card-size">
+                                <span class="fas fa-check-circle cardcircle"></span> 
+                                <div class="gramm">250 г</div>
+                                <a><img src="images/cof_molot_s16.png" alt=""></a>
+                                <h4>Кофе Goppion Caffe "NATIVO BIO Organic"</h4>
+                                <div class="text_s">Кофе НАТИВО БИО ОРГАНИК</div>
+                                <a href="#modal33" class="btn btn-light open_modal">Подробнее</a>
+                                <a href="tel:+375172685579" class="btn btn-light mob_but">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <!--2 Item menu - 1tab - s16 modal-->
+                        <div id="modal33" class="modal_div card_div">
+                            <span class="modal_close"><i class="fas fa-times"></i></span>
+                            <div class="title_text">Кофе Goppion Caffe "NATIVO BIO Organic"</div>
+                            <div class="nalich"><span class="fas fa-check-circle"></span>В наличии</div>
+                            <div class="gramm gramright">Вес: 250 г</div>
+                            <div class="element_inner">
+                                <img src="images/cof_molot_card_s16.png" alt="">
+                                <div class="element_right">
+                                    <h4>Описание</h4>
+                                    <div class="text_s">Кофе Goppion NATIVO BIO Organic - из Центральной Америки, сертифицированный IMC. Идеально подходит для тех, кто предпочитает органические, вегетарианские продукты.</div>
+                                    <h4>Характеристики</h4>
+                                    <div class="text_s"> Состав: кофе 100% Арабика
+                                        <br/>Степень обжарки: средняя
+                                        <br/>Без кофеина: да
+                                        <br/>Срок годности: 24 месяца
+                                    </div>
+                                    <a href="#modal0" onclick="document.getElementById('modal33').style.display='none'" class="btn btn-light but open_modal">Заказать</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--2 Item menu - 1tab - s3-->
+                        <div class="div col-6 col-md-3 justify-content-center align-items-center card">
+                            <div class="card-size">
+                                <span class="fas fa-check-circle cardcircle"></span> 
+                                <div class="gramm">250 г</div>
+                                <a><img src="images/cof_molot_s3.png" alt=""></a>
+                                <h4>Кофе Goppion Caffe "Arabica Blend"</h4>
+                                <div class="text_s">Кофе АРАБИКА БЛЕНД</div>
+                                <a href="#modal9" class="btn btn-light open_modal">Подробнее</a>
+                                <a href="tel:+375172685579" class="btn btn-light mob_but">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <!--2 Item menu - 1tab - s3 modal-->
+                        <div id="modal9" class="modal_div card_div">
+                            <span class="modal_close"><i class="fas fa-times"></i></span>
+                            <div class="title_text">Кофе Goppion Caffe "Arabica Blend"</div>
+                            <div class="nalich"><span class="fas fa-check-circle"></span>В наличии</div>
+                            <div class="gramm gramright">Вес: 250 г</div>
+                            <div class="element_inner">
+                                <img src="images/cof_molot_card_s3.png" alt="">
+                                <div class="element_right">
+                                    <h4>Описание</h4>
+                                    <div class="text_s">Кофе "Arabica Blend" - смесь превосходной Арабики. Сладкий ровный вкус с шоколадными нотками в послевкусии. Хорошо сбалансированный аромат. Низкое содержание кофеина.</div>
+                                    <h4>Характеристики</h4>
+                                    <div class="text_s"> Состав: кофе 100% Арабика
+                                        <br/>Профессиональные характеристики по 10 бальной шкале:
+                                        <br/>пенка - 7
+                                        <br/>аромат - 7
+                                        <br/>мягкость - 9
+                                        <br/>послевкусие - 8
+                                        <br/>кофеин - 2
+                                    </div>
+                                    <a href="#modal0" onclick="document.getElementById('modal9').style.display='none'" class="btn btn-light but open_modal">Заказать</a>
                                 </div>
                             </div>
                         </div>
 
                         <!--2 Item menu - 1tab - s2-->
                         <div class="div col-6 col-md-3 justify-content-center align-items-center card">
-                            <div class="card-size">  
+                            <div class="card-size">
+                                <span class="fas fa-check-circle cardcircle"></span> 
                                 <div class="gramm">250 г</div>
                                 <a><img src="images/cof_molot_s2.png" alt=""></a>
                                 <h4>Кофе Goppion Caffe "Qualita Rossa"</h4>
@@ -197,14 +698,15 @@
                                         <br/>послевкусие - 7
                                         <br/>кофеин - 2
                                     </div>
-                                    <a href="#modal0" onclick="document.getElementById('modal8').style.display='none'" class="btn btn-light but open_modal">Заказать оптом</a>
+                                    <a href="#modal0" onclick="document.getElementById('modal8').style.display='none'" class="btn btn-light but open_modal">Заказать</a>
                                 </div>
                             </div>
                         </div>
         
                         <!--2 Item menu - 1tab - s1-->
                         <div class="div col-6 col-md-3 justify-content-center align-items-center card">
-                            <div class="card-size">  
+                            <div class="card-size">
+                                <span class="fas fa-check-circle cardcircle"></span> 
                                 <div class="gramm">250 г</div>
                                 <a><img src="images/cof_molot_s1.png" alt=""></a>
                                 <h4>Кофе GOPPION CAFFE "Qualita Oro"</h4>
@@ -235,219 +737,54 @@
                                         <br/>послевкусие - 7
                                         <br/>кофеин - 2
                                     </div>
-                                    <a href="#modal0" onclick="document.getElementById('modal7').style.display='none'" class="btn btn-light but open_modal">Заказать оптом</a>
+                                    <a href="#modal0" onclick="document.getElementById('modal7').style.display='none'" class="btn btn-light but open_modal">Заказать</a>
                                 </div>
                             </div>
                         </div>
 
-                        <!--2 Item menu - 1tab - s3-->
+                        <!--2 Item menu - 1tab - s17-->
                         <div class="div col-6 col-md-3 justify-content-center align-items-center card">
-                            <div class="card-size">  
+                            <div class="card-size">
+                                <span class="fas fa-check-circle cardcircle"></span> 
                                 <div class="gramm">250 г</div>
-                                <a><img src="images/cof_molot_s3.png" alt=""></a>
-                                <h4>Кофе Goppion Caffe "Arabica Blend"</h4>
-                                <div class="text_s">Кофе АРАБИКА БЛЕНД</div>
-                                <a href="#modal9" class="btn btn-light open_modal">Подробнее</a>
+                                <a><img src="images/cof_molot_s17.png" alt=""></a>
+                                <h4>Кофе GOPPION CAFFE "Oro Espresso"</h4>
+                                <div class="text_s">Кофе ОРО ЭСПРЕССО</div>
+                                <a href="#modal39" class="btn btn-light open_modal">Подробнее</a>
                                 <a href="tel:+375172685579" class="btn btn-light mob_but">Подробнее</a>
                             </div>
                         </div>
 
-                        <!--2 Item menu - 1tab - s3 modal-->
-                        <div id="modal9" class="modal_div card_div">
+                        <!--2 Item menu - 1tab - s17 modal-->
+                        <div id="modal39" class="modal_div card_div">
                             <span class="modal_close"><i class="fas fa-times"></i></span>
-                            <div class="title_text">Кофе Goppion Caffe "Arabica Blend"</div>
+                            <div class="title_text">Кофе GOPPION CAFFE "Oro Espresso"</div>
                             <div class="nalich"><span class="fas fa-check-circle"></span>В наличии</div>
                             <div class="gramm gramright">Вес: 250 г</div>
                             <div class="element_inner">
-                                <img src="images/cof_molot_card_s3.png" alt="">
+                                <img src="images/cof_molot_card_s17.png" alt="">
                                 <div class="element_right">
                                     <h4>Описание</h4>
-                                    <div class="text_s">Кофе "Arabica Blend" - смесь превосходной Арабики. Сладкий ровный вкус с шоколадными нотками в послевкусии. Хорошо сбалансированный аромат. Низкое содержание кофеина.</div>
+                                    <div class="text_s">Кофе "Oro Espresso" - не слишком мягкий и не слишком крепкий, не слишком кислый и не слишком горький. Его вкус утонченно сбалансирован и подчеркнут фруктовой нотой.</div>
                                     <h4>Характеристики</h4>
                                     <div class="text_s"> Состав: кофе 100% Арабика
                                         <br/>Профессиональные характеристики по 10 бальной шкале:
                                         <br/>пенка - 7
+                                        <br/>тепло - 6
                                         <br/>аромат - 7
-                                        <br/>мягкость - 9
-                                        <br/>послевкусие - 8
+                                        <br/>мягкость - 7
+                                        <br/>послевкусие - 7
                                         <br/>кофеин - 2
                                     </div>
-                                    <a href="#modal0" onclick="document.getElementById('modal9').style.display='none'" class="btn btn-light but open_modal">Заказать оптом</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--2 Item menu - 1tab - s4-->
-                        <div class="div col-6 col-md-3 justify-content-center align-items-center card">
-                            <div class="card-size">  
-                                <div class="gramm">250 г</div>
-                                <a><img src="images/cof_molot_s4.png" alt=""></a>
-                                <h4>Кофе Goppion Caffe "Latta Caffettiera"</h4>
-                                <div class="text_s">Молотый кофе</div>
-                                <a href="#modal10" class="btn btn-light open_modal">Подробнее</a>
-                                <a href="tel:+375172685579" class="btn btn-light mob_but">Подробнее</a>
-                            </div>
-                        </div>
-
-                        <!--2 Item menu - 1tab - s4 modal-->
-                        <div id="modal10" class="modal_div card_div">
-                            <span class="modal_close"><i class="fas fa-times"></i></span>
-                            <div class="title_text">Кофе Goppion Caffe "Latta Caffettiera"</div>
-                            <div class="nalich"><span class="fas fa-check-circle"></span>В наличии</div>
-                            <div class="gramm gramright">Вес: 250 г (жесть)</div>
-                            <div class="element_inner">
-                                <img src="images/cof_molot_card_s4.png" alt="">
-                                <div class="element_right">
-                                    <h4>Описание</h4>
-                                    <div class="text_s">Кофе "Latta Caffettiera" -  вкус кофе бархатистый и интенсивный. Этот напиток отличается низким содержанием кофеина.</div>
-                                    <h4>Характеристики</h4>
-                                    <div class="text_s"> Состав: кофе 100% Арабика
-                                        <br/> Степень обжарки: средняя
-                                        <br/> Срое годности: 24 месяца
-                                        <br/> Степень обжарки: средняя
-                                    </div>
-                                    <a href="#modal0" onclick="document.getElementById('modal10').style.display='none'" class="btn btn-light but open_modal">Заказать оптом</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--2 Item menu - 1tab - s5-->
-                        <div class="div col-6 col-md-3 justify-content-center align-items-center card">
-                            <div class="card-size">  
-                                <div class="gramm">250 г</div>
-                                <a><img src="images/cof_molot_s5.png" alt=""></a>
-                                <h4>Кофе Goppion Caffe "Latta Tucano"</h4>
-                                <div class="text_s">Молотый кофе</div>
-                                <a href="#modal11" class="btn btn-light open_modal">Подробнее</a>
-                                <a href="tel:+375172685579" class="btn btn-light mob_but">Подробнее</a>
-                            </div>
-                        </div>
-
-                        <!--2 Item menu - 1tab - s5 modal-->
-                        <div id="modal11" class="modal_div card_div">
-                            <span class="modal_close"><i class="fas fa-times"></i></span>
-                            <div class="title_text">Кофе Goppion Caffe "Latta Tucano"</div>
-                            <div class="nalich"><span class="fas fa-check-circle"></span>В наличии</div>
-                            <div class="gramm gramright">Вес: 250 г</div>
-                            <div class="element_inner">
-                                <img src="images/cof_molot_card_s5.png" alt="">
-                                <div class="element_right">
-                                    <h4>Описание</h4>
-                                    <div class="text_s">Кофе "Latta Tucano" - это именно тот кофе, после которого эмоции зашкаливают и сердце начинает биться чаще. Он волнует воображение своим необычайно насыщенным и бархатистым вкусом и радует глаз стильной жестяной баночкой, оформленной в ретро стиле.</div>
-                                    <h4>Характеристики</h4>
-                                    <div class="text_s"> Состав: кофе 100% Арабика
-                                        <br/>Степень обжарки: средняя
-                                        <br/>Срок годности: 24 месяца
-                                    </div>
-                                    <a href="#modal0" onclick="document.getElementById('modal11').style.display='none'" class="btn btn-light but open_modal">Заказать оптом</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--2 Item menu - 1tab - s7-->
-                        <div class="div col-6 col-md-3 justify-content-center align-items-center card">
-                            <div class="card-size">  
-                                <div class="gramm">250 г</div>
-                                <a><img src="images/cof_molot_s7.png" alt=""></a>
-                                <h4>Кофе Goppion Caffe "L'Eroica"</h4>
-                                <div class="text_s">Молотый кофе</div>
-                                <a href="#modal13" class="btn btn-light open_modal">Подробнее</a>
-                                <a href="tel:+375172685579" class="btn btn-light mob_but">Подробнее</a>
-                            </div>
-                        </div>
-
-                        <!--2 Item menu - 1tab - s7 modal-->
-                        <div id="modal13" class="modal_div card_div">
-                            <span class="modal_close"><i class="fas fa-times"></i></span>
-                            <div class="title_text">Кофе Goppion Caffe "L'Eroica"</div>
-                            <div class="nalich"><span class="fas fa-check-circle"></span>В наличии</div>
-                            <div class="gramm gramright">Вес: 250 г (жесть)</div>
-                            <div class="element_inner">
-                                <img src="images/cof_molot_card_s7.png" alt="">
-                                <div class="element_right">
-                                    <h4>Описание</h4>
-                                    <div class="text_s">Прочувствуйте атмосферу праздника и хорошего кофе вместе с ограниченной серией Goppion Caffe L Eroica!</div>
-                                    <h4>Характеристики</h4>
-                                    <div class="text_s"> Состав: кофе 100% Арабика
-                                        <br/>Степень обжарки: средняя
-                                        <br/>Количество робусты: 0%
-                                        <br/>Срок годности: 24 месяца
-                                    </div>
-                                    <a href="#modal0" onclick="document.getElementById('modal13').style.display='none'" class="btn btn-light but open_modal">Заказать оптом</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--2 Item menu - 1tab - s8-->
-                        <div class="div col-6 col-md-3 justify-content-center align-items-center card">
-                            <div class="card-size">  
-                                <div class="gramm">250 г</div>
-                                <a><img src="images/cof_molot_s8.png" alt=""></a>
-                                <h4>Кофе Goppion Caffe "Dolce"</h4>
-                                <div class="text_s">Кофе ДОЛЬЧЕ</div>
-                                <a href="#modal14" class="btn btn-light open_modal">Подробнее</a>
-                                <a href="tel:+375172685579" class="btn btn-light mob_but">Подробнее</a>
-                            </div>
-                        </div>
-
-                        <!--2 Item menu - 1tab - s8 modal-->
-                        <div id="modal14" class="modal_div card_div">
-                            <span class="modal_close"><i class="fas fa-times"></i></span>
-                            <div class="title_text">Кофе Goppion Caffe "Dolce"</div>
-                            <div class="nalich"><span class="fas fa-check-circle"></span>В наличии</div>
-                            <div class="gramm gramright">Вес: 250 г (жесть)</div>
-                            <div class="element_inner">
-                                <img src="images/cof_molot_card_s8.png" alt="">
-                                <div class="element_right">
-                                    <h4>Описание</h4>
-                                    <div class="text_s">Венеция - город, который внес огромный вклад в развитие кофейной индустрии. На сегодняшний день компания Goppion в знак благодарности разработала особенную линейку кофе, которая неразрывной нитью связывает историю Венеции с молотым кофе. На эксклюзивных баночках кофе Goppion Dolce изображены картины знаменитых художников этого замечательного города.</div>
-                                    <h4>Характеристики</h4>
-                                    <div class="text_s"> Состав: кофе 90% Арабика
-                                        <br/>Степень обжарки: темная
-                                        <br/>Срок годности: 24 месяца
-                                    </div>
-                                    <a href="#modal0" onclick="document.getElementById('modal14').style.display='none'" class="btn btn-light but open_modal">Заказать оптом</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--2 Item menu - 1tab - s9-->
-                        <div class="div col-6 col-md-3 justify-content-center align-items-center card">
-                            <div class="card-size">  
-                                <div class="gramm">250 г</div>
-                                <a><img src="images/cof_molot_s9.png" alt=""></a>
-                                <h4>Кофе Goppion Caffe "NATIVO BIO Decaffeinato Organic"</h4>
-                                <div class="text_s">Кофе НАТИВО БИО БЕЗ КОФЕИНА Органик</div>
-                                <a href="#modal15" class="btn btn-light open_modal">Подробнее</a>
-                                <a href="tel:+375172685579" class="btn btn-light mob_but">Подробнее</a>
-                            </div>
-                        </div>
-
-                        <!--2 Item menu - 1tab - s9 modal-->
-                        <div id="modal15" class="modal_div card_div">
-                            <span class="modal_close"><i class="fas fa-times"></i></span>
-                            <div class="title_text">Кофе Goppion Caffe "NATIVO BIO Decaffeinato Organic"</div>
-                            <div class="nalich"><span class="fas fa-check-circle"></span>В наличии</div>
-                            <div class="gramm gramright">Вес: 250 г (жесть)</div>
-                            <div class="element_inner">
-                                <img src="images/cof_molot_card_s9.png" alt="">
-                                <div class="element_right">
-                                    <h4>Описание</h4>
-                                    <div class="text_s">Кофе Goppion NATIVO BIO Decaffeinato Organic - это экологически чистый продукт, выращенный без использования химических удобрений. Этот кофе отличается также низким содержанием кофеина, всего 0,1 %!</div>
-                                    <h4>Характеристики</h4>
-                                    <div class="text_s"> Состав: кофе 100% Арабика
-                                        <br/>Степень обжарки: средняя
-                                        <br/>Без кофеина: да
-                                        <br/>Срок годности: 24 месяца
-                                    </div>
-                                    <a href="#modal0" onclick="document.getElementById('modal15').style.display='none'" class="btn btn-light but open_modal">Заказать оптом</a>
+                                    <a href="#modal0" onclick="document.getElementById('modal39').style.display='none'" class="btn btn-light but open_modal">Заказать</a>
                                 </div>
                             </div>
                         </div>
 
                         <!--2 Item menu - 1tab - s10-->
                         <div class="div col-6 col-md-3 justify-content-center align-items-center card">
-                            <div class="card-size">  
+                            <div class="card-size">
+                                <span class="fas fa-check-circle cardcircle"></span> 
                                 <div class="gramm">250 г</div>
                                 <a><img src="images/cof_molot_s10.png" alt=""></a>
                                 <h4>Кофе Goppion Caffe "QUALITA ORO ESPRESSO CASA"</h4>
@@ -475,176 +812,7 @@
                                         <br/>Срок годности: 24 месяца
                                         <br/>Подходит для всех эспрессо-машин
                                     </div>
-                                    <a href="#modal0" onclick="document.getElementById('modal27').style.display='none'" class="btn btn-light but open_modal">Заказать оптом</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--2 Item menu - 1tab - s11-->
-                        <div class="div col-6 col-md-3 justify-content-center align-items-center card">
-                            <div class="card-size">  
-                                <div class="gramm">250 г</div>
-                                <a><img src="images/cof_molot_s11.png" alt=""></a>
-                                <h4>Кофе Goppion Caffe "Latta-Coffetherapy"</h4>
-                                <div class="text_s">Кофе ЛАТТА КОФЕТЕРАПИЯ</div>
-                                <a href="#modal28" class="btn btn-light open_modal">Подробнее</a>
-                                <a href="tel:+375172685579" class="btn btn-light mob_but">Подробнее</a>
-                            </div>
-                        </div>
-
-                        <!--2 Item menu - 1tab - s11 modal-->
-                        <div id="modal28" class="modal_div card_div">
-                            <span class="modal_close"><i class="fas fa-times"></i></span>
-                            <div class="title_text">Кофе Goppion Caffe "Latta-Coffetherapy"</div>
-                            <div class="nalich"><span class="fas fa-check-circle"></span>В наличии</div>
-                            <div class="gramm gramright">Вес: 250 г (жесть)</div>
-                            <div class="element_inner">
-                                <img src="images/cof_molot_card_s11.png" alt="">
-                                <div class="element_right">
-                                    <h4>Описание</h4>
-                                    <div class="text_s"></div>
-                                    <h4>Характеристики</h4>
-                                    <div class="text_s"> Состав: кофе 100% Арабика
-                                        <br/>Вкус: сладкий
-                                        <br/>Без кофеина: да
-                                        <br/>Срок годности: 24 месяца
-                                    </div>
-                                    <a href="#modal0" onclick="document.getElementById('modal28').style.display='none'" class="btn btn-light but open_modal">Заказать оптом</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--2 Item menu - 1tab - s12-->
-                        <div class="div col-6 col-md-3 justify-content-center align-items-center card">
-                            <div class="card-size">  
-                                <div class="gramm">250 г</div>
-                                <a><img src="images/cof_molot_s12.png" alt=""></a>
-                                <h4>Кофе Goppion Caffe "Latta-Storica"</h4>
-                                <div class="text_s">Кофе ЛАТТА СТОРИКА</div>
-                                <a href="#modal29" class="btn btn-light open_modal">Подробнее</a>
-                                <a href="tel:+375172685579" class="btn btn-light mob_but">Подробнее</a>
-                            </div>
-                        </div>
-
-                        <!--2 Item menu - 1tab - s12 modal-->
-                        <div id="modal29" class="modal_div card_div">
-                            <span class="modal_close"><i class="fas fa-times"></i></span>
-                            <div class="title_text">Кофе Goppion Caffe "Latta-Storica"</div>
-                            <div class="nalich"><span class="fas fa-check-circle"></span>В наличии</div>
-                            <div class="gramm gramright">Вес: 250 г (жесть)</div>
-                            <div class="element_inner">
-                                <img src="images/cof_molot_card_s12.png" alt="">
-                                <div class="element_right">
-                                    <h4>Описание</h4>
-                                    <div class="text_s"></div>
-                                    <h4>Характеристики</h4>
-                                    <div class="text_s"> Состав: кофе 100% Арабика
-                                        <br/>Вкус: сладкий
-                                        <br/>Без кофеина: да
-                                        <br/>Срок годности: 24 месяца
-                                    </div>
-                                    <a href="#modal0" onclick="document.getElementById('modal29').style.display='none'" class="btn btn-light but open_modal">Заказать оптом</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--2 Item menu - 1tab - s13-->
-                        <div class="div col-6 col-md-3 justify-content-center align-items-center card">
-                            <div class="card-size">  
-                                <div class="gramm">250 г</div>
-                                <a><img src="images/cof_molot_s13.png" alt=""></a>
-                                <h4>Кофе Goppion Caffe "Edizione Limitata"</h4>
-                                <div class="text_s">Кофе ЭДИЗИОН ЛИМИТАТА</div>
-                                <a href="#modal30" class="btn btn-light open_modal">Подробнее</a>
-                                <a href="tel:+375172685579" class="btn btn-light mob_but">Подробнее</a>
-                            </div>
-                        </div>
-
-                        <!--2 Item menu - 1tab - s13 modal-->
-                        <div id="modal30" class="modal_div card_div">
-                            <span class="modal_close"><i class="fas fa-times"></i></span>
-                            <div class="title_text">Кофе Goppion Caffe "Edizione Limitata"</div>
-                            <div class="nalich"><span class="fas fa-check-circle"></span>В наличии</div>
-                            <div class="gramm gramright">Вес: 250 г (жесть)</div>
-                            <div class="element_inner">
-                                <img src="images/cof_molot_card_s13.png" alt="">
-                                <div class="element_right">
-                                    <h4>Описание</h4>
-                                    <div class="text_s">Кофе Goppion "Edizione Limitata" - это лимитированное издание в честь 70 летия!</div>
-                                    <h4>Характеристики</h4>
-                                    <div class="text_s"> Состав: кофе 100% Арабика
-                                        <br/>Степень обжарки: средняя
-                                        <br/>Срок годности: 24 месяца
-                                    </div>
-                                    <a href="#modal0" onclick="document.getElementById('modal30').style.display='none'" class="btn btn-light but open_modal">Заказать оптом</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--2 Item menu - 1tab - s14-->
-                        <div class="div col-6 col-md-3 justify-content-center align-items-center card">
-                            <div class="card-size">  
-                                <div class="gramm">250 г</div>
-                                <a><img src="images/cof_molot_s14.png" alt=""></a>
-                                <h4>Кофе Goppion Caffe "Espresso Italiano CSC"</h4>
-                                <div class="text_s">Кофе ЭСПРЕССО ИТАЛИАНО</div>
-                                <a href="#modal31" class="btn btn-light open_modal">Подробнее</a>
-                                <a href="tel:+375172685579" class="btn btn-light mob_but">Подробнее</a>
-                            </div>
-                        </div>
-
-                        <!--2 Item menu - 1tab - s14 modal-->
-                        <div id="modal31" class="modal_div card_div">
-                            <span class="modal_close"><i class="fas fa-times"></i></span>
-                            <div class="title_text">Кофе Goppion Caffe "Espresso Italiano CSC"</div>
-                            <div class="nalich"><span class="fas fa-check-circle"></span>В наличии</div>
-                            <div class="gramm gramright">Вес: 250 г (жесть)</div>
-                            <div class="element_inner">
-                                <img src="images/cof_molot_card_s14.png" alt="">
-                                <div class="element_right">
-                                    <h4>Описание</h4>
-                                    <div class="text_s">Кофе Goppion Caffe "Espresso Italiano CSC" сертифицирован CSC® и состоит из арабского кофе собранного в Бразилии и Центральной Америки</div>
-                                    <h4>Характеристики</h4>
-                                    <div class="text_s"> Состав: кофе 100% Арабика
-                                        <br/>Вкус: мягкий, бархатистый аромат с долговечным шоколадным послевкусием
-                                        <br/>Идеально подходит для эспрессо, капучино или специальных напитков
-                                        <br/>Срок годности: 24 месяца
-                                    </div>
-                                    <a href="#modal0" onclick="document.getElementById('modal31').style.display='none'" class="btn btn-light but open_modal">Заказать оптом</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--2 Item menu - 1tab - s15-->
-                        <div class="div col-6 col-md-3 justify-content-center align-items-center card">
-                            <div class="card-size">  
-                                <div class="gramm">250 г</div>
-                                <a><img src="images/cof_molot_s15.png" alt=""></a>
-                                <h4>Кофе Goppion Caffe "NATIVO BIO Organic"</h4>
-                                <div class="text_s">Кофе НАТИВО БИО ОРГАНИК</div>
-                                <a href="#modal32" class="btn btn-light open_modal">Подробнее</a>
-                                <a href="tel:+375172685579" class="btn btn-light mob_but">Подробнее</a>
-                            </div>
-                        </div>
-
-                        <!--2 Item menu - 1tab - s15 modal-->
-                        <div id="modal32" class="modal_div card_div">
-                            <span class="modal_close"><i class="fas fa-times"></i></span>
-                            <div class="title_text">Кофе Goppion Caffe "NATIVO BIO Organic"</div>
-                            <div class="nalich"><span class="fas fa-check-circle"></span>В наличии</div>
-                            <div class="gramm gramright">Вес: 250 г</div>
-                            <div class="element_inner">
-                                <img src="images/cof_molot_card_s15.png" alt="">
-                                <div class="element_right">
-                                    <h4>Описание</h4>
-                                    <div class="text_s">Кофе Goppion NATIVO BIO Organic - из Центральной Америки, сертифицированный IMC. Идеально подходит для тех, кто предпочитает органические, вегетарианские продукты.</div>
-                                    <h4>Характеристики</h4>
-                                    <div class="text_s"> Состав: кофе 100% Арабика
-                                        <br/>Степень обжарки: средняя
-                                        <br/>Без кофеина: да
-                                        <br/>Срок годности: 24 месяца
-                                    </div>
-                                    <a href="#modal0" onclick="document.getElementById('modal32').style.display='none'" class="btn btn-light but open_modal">Заказать оптом</a>
+                                    <a href="#modal0" onclick="document.getElementById('modal27').style.display='none'" class="btn btn-light but open_modal">Заказать</a>
                                 </div>
                             </div>
                         </div>

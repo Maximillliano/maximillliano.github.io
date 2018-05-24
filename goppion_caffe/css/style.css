@@ -101,7 +101,7 @@ p.lead {
     font-weight: 150;
     border-radius: 30px;
     background: #0148fb;
-    padding: 0.3rem 2.8rem;
+    padding: 0.3rem 5rem;
     border: 0;
     border-bottom: 7px solid #0d21e3;
 }
@@ -112,7 +112,7 @@ p.lead {
 .btn-primary:not([disabled]):not(.disabled).active,
 .btn-primary:not([disabled]):not(.disabled):active,
 .show>.btn-primary.dropdown-toggle {
-    padding: 0.4rem 3rem;
+    padding: 0.4rem 5.3rem;
     background: #3a58dc;
     color: white;
     box-shadow: none;
@@ -222,6 +222,7 @@ ul.menu-top  li {
 }
 
 ul.menu-top li a {
+    position: relative;
     color: #323232;
     transition: all 0.3s ease;
 }
@@ -229,6 +230,30 @@ ul.menu-top li a {
 ul.menu-top li a:hover {
     font-size: 32px;
     color: #3a58dc;
+}
+
+ul.submenu {
+    display: none;
+    position: absolute;
+    padding: 5px;
+    margin-left: -15px;
+    background: white;
+    border: 1px solid rgba(192,192,192,0.5);
+    border-radius: 10px;
+}
+
+ul.submenu li{
+    display: block;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+ul.submenu li a:hover {
+    font-size: 24px;
+}
+
+ul.menu-top li:hover .submenu {
+    display: block;
 }
 
 .active_menu {
@@ -415,7 +440,7 @@ header {
 
 .nav-small {
     position: relative;
-    width: 205px;
+    width: 216px;
 }
 
 .card {
@@ -446,7 +471,7 @@ header {
     height: 156px;
 }
 
-div.nalich {
+.nalich {
     position: absolute;
     top: 70px;
     margin: 0;
@@ -460,9 +485,31 @@ div.nalich {
     padding-right: 10px;
 }
 
+.netnalich {
+    position: absolute;
+    top: 70px;
+    margin: 0;
+    font-weight: 600;
+    font-size: 20px;
+    color: red;
+}
+
+.netnalich span {
+    color: red;
+    padding-right: 10px;
+}
+
 .card h4 {
     margin-top: 5px;
     height: 60px;
+}
+
+.cardcircle {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    font-size: 18px;
+    color: #3a58dc;
 }
 
 .card .gramm {
@@ -480,6 +527,37 @@ div.nalich {
     line-height: 16px;
     margin-top: 8px;
     height: 32px;
+}
+
+.prise {
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 16px;
+    margin-top: 8px;
+    height: 32px;
+    padding-left: 20px;
+    color: #3a58dc;
+}
+
+.prise span {
+    font-size: 22px;
+}
+
+.prisecard {
+    position: absolute;
+    top: 22px;
+    right: 180px;
+    font-size: 34px;
+    font-weight: 600;
+    color: #3a58dc;
+}
+
+.prisecard span {
+    font-size: 22px;
+}
+
+.netvnal {
+    color: red;
 }
 
 .sec_pad {
@@ -1197,7 +1275,7 @@ textarea {
         font-size: 18px;
     }
     .nav-small {
-        width: 150px;
+        width: 160px;
     }
     .pos_rel {
         padding-bottom: 60px;

@@ -269,7 +269,6 @@ a {
     .photo_gal a img {
       margin: 0 auto;
       height: 100%;
-      width: 120%;
       -moz-transition: all 1s ease-out;
       -o-transition: all 1s ease-out;
       -webkit-transition: all 1s ease-out; }
@@ -278,13 +277,11 @@ a {
     .photo_gal a:nth-child(2) img, .photo_gal a:nth-child(6) img, .photo_gal a:nth-child(12) img, .photo_gal a:nth-child(16) img {
       height: 100%; }
   .photo_gal .small:hover img {
-    height: 110%;
-    width: 130%;
+    transform: scale(1.1);
     transform-origin: center center;
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -o-transform: scale(1.05);
-    -webkit-filter: blur(3px); }
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);}
   .photo_gal .small:hover .gal_mal {
     display: block;
     position: absolute;

@@ -92,9 +92,5 @@ $(document).ready(function() { // зaпускaем скрипт пoсле зaг�
              );
      });
 
-     $(this).keydown(function(eventObject){
-                if (eventObject.which == 27)
-                    $(modal).hide();
-                    overlay.fadeOut(400);
-            });
+
 });

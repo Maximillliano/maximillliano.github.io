@@ -40,3 +40,5 @@ $headers = "MIME-Version: 1.0" . PHP_EOL .
 'From: '.adopt($project_name).' <'.$admin_email.'>' . PHP_EOL .
 'Reply-To: '.$admin_email.'' . PHP_EOL;
 mail($admin_email, adopt($form_subject), $message, $headers );
+echo "Письмо отправлено успешно! Ожидайте ответа от сотрудников или наберите нас по номеру: +375 (17) 268-55-79";
+?>
