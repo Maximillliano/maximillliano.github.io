@@ -78,7 +78,7 @@ function prevSlide() {
 var flag_menu = true;
 $('#close_tab').click(function() {
     if (flag_menu == true) {
-        $('.menu').css('margin-right', '-340px');
+        $('.menu').css('margin-right', '-355px');
 				$('.menu').css('overflow', 'hidden');
         flag_menu = false;
     }

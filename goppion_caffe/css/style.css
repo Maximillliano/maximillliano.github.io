@@ -382,7 +382,7 @@ header {
 }
 
 .bubble_s2 {
-    top: 36.2%;
+    bottom: -10%;
     left: 0;
 }
 
@@ -441,6 +441,11 @@ header {
 .nav-small {
     position: relative;
     width: 216px;
+}
+
+.nav-med {
+    position: relative;
+    width: 240px;
 }
 
 .card {
@@ -556,8 +561,23 @@ header {
     font-size: 22px;
 }
 
+.prisecardlong {
+    position: absolute;
+    top: 22px;
+    right: 260px;
+    font-size: 34px;
+    font-weight: 600;
+    color: #3a58dc;
+}
+
+.prisecardlong span {
+    font-size: 22px;
+}
+
 .netvnal {
     color: red;
+    font-size: 20px;
+    padding: 0;
 }
 
 .sec_pad {

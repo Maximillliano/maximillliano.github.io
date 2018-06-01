@@ -78,6 +78,10 @@
 /* Мобльная версия*/
 
 @media screen and (max-width: 900px) {
+	.photo_gal a, .photo_gal a:nth-child(2), .photo_gal a:nth-child(6), .photo_gal a:nth-child(12), .photo_gal a:nth-child(16) {
+		width: 100%;
+	}
+	
   #block-for-slider {
 		display: none;}
 
