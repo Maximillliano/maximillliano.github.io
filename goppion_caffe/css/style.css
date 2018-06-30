@@ -76,6 +76,10 @@ p.lead {
     margin-bottom: 2rem;
 }
 
+ul li {
+    list-style: none;
+}
+
 .text-primary {
     padding-top: 12px;
     color: #dbdbdb !important;
@@ -261,6 +265,10 @@ ul.menu-top li:hover .submenu {
     color: #3a58dc !important;
 }
 
+.headphone {
+    padding-top: 15px;
+}
+
 .phone {
     font-weight: 600;
     font-size: 25px;
@@ -272,7 +280,7 @@ ul.menu-top li:hover .submenu {
 }
 
 .fa-phone {
-    font-size: 25px;
+    font-size: 20px;
     margin-right: -10px;
     color: #3a58dc;
 }
@@ -736,12 +744,20 @@ filter: grayscale(100%);
     color: #3a58dc;
 }
 
+.circ_blog a:nth-child(2), .circ_blog a:nth-child(3) {
+    font-size: 25px;
+}
+
+.mail_pol {
+    margin-top: 40px; 
+}
+
 .mail_pol::after {
     content: '';
     position: absolute;
   border-bottom: 3px solid #d5d5d5;
   height: 1em;
-  top: 40px;
+  top: 90px;
   left: 180px;
   margin-top: 160px;
   width: 50px;
@@ -1040,6 +1056,17 @@ textarea {
     z-index: 200;
 }
 
+.card_div .table_img {
+    position: absolute;
+    height: 85px;
+    left: 50px;
+    bottom: 15px;
+}
+
+.card_div .table_img:hover {
+    transform: none;
+}
+
 .element_inner {
     margin-top: 40px;
     display: flex;
@@ -1047,13 +1074,20 @@ textarea {
 }
 
 .element_right {
-    margin-left: 130px;
-    width: 420px;
+    margin-left: 100px;
+    width: 520px;
+    font-size: 0.9rem;
 }
 
 .element_right .text_s {
     margin-bottom: 30px;
     line-height: 20px;
+}
+
+.text_s strong {
+    font-size: 15px;
+    font-weight: 600;
+    color: #323232;
 }
 
 .element_right .but {
@@ -1185,6 +1219,14 @@ textarea {
     .section-title small {
         font-size: 16px;
     }
+    .headphone {
+        padding-left: 0;
+    }
+
+    .logo {
+        height: 60px;
+    }
+
     .img-holder {
         height: 100%;
         padding-bottom: 10px;
@@ -1331,11 +1373,29 @@ textarea {
         margin-left: 2%;
         margin-right: 2%;
     }
-    .open_modal {
+    .mob_none{
         display: none;
     }
     .mob_but {
         display: inline-block;
+    }
+    .circ_blog a {
+        font-size: 22px;
+    }
+    .circ_blog a:nth-child(2), .circ_blog a:nth-child(3) {
+    font-size: 20px;
+    }
+    a.mail_pol {
+        margin-top: 5px;
+    }
+    
+    .mail_pol::after {
+    display: none;
+    }
+
+    a.adress {
+        padding-top: 10px;
+        font-size: 18px;
     }
 }
 
@@ -1354,5 +1414,17 @@ textarea {
 @media screen and (max-width: 600px) {
     .modal_div {
         left: 13%;
+    }
+    .card img {
+        height: 120px;
+    }
+    .card h4 {
+        font-size: 15px;
+    }
+    .prise {
+        font-size: 28px;
+    }
+    .btn-light {
+        padding: 0.3rem 1.8rem;
     }
 }
