@@ -323,7 +323,9 @@ mobile {
   background: black; }
   mobile .main {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    background: url(../img/bg_mob.jpg) center center no-repeat;
+    background-size: cover; }
     mobile .main img {
       width: 88%;
       margin: 62vh auto 0 auto;
@@ -345,7 +347,7 @@ mobile {
     mobile .main .maximilian {
       position: relative;
       z-index: 3;
-      margin: 6% auto 0 auto;
+      margin: 6% auto 5% auto;
       color: #b1b1b1;
       font-size: 0.9em; }
     mobile .main .overlay-for-slider-black {
@@ -355,15 +357,8 @@ mobile {
       width: 100%;
       min-height: 900px;
       height: 100%; }
-    mobile .main .bg_mobile {
-      position: absolute;
-      z-index: 1;
-      margin: 0 auto;
-      width: 100%;
-      min-height: 900px;
-      height: 100%; }
   mobile .sliders {
-    margin-top: 4%; }
+    margin-top: 10px; }
   mobile .swiper-container {
     width: 100%;
     height: 30em;
