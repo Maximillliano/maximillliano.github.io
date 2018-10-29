@@ -19,14 +19,14 @@ header a img {
 	z-index: 100;
 }
 
-menu {
+.menu {
 	position: fixed;
 	top: 1.3%;
 	right: 0;
 	z-index: 100;
 }
 
-menu ul {
+.menu ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -37,11 +37,11 @@ menu ul {
   background-color: rgba(216,71,71,.4);
 }
 
-menu ul li {
+.menu ul li {
 	padding: 0 2%;
 }
 
-menu a {
+.menu a {
 	font-weight: bold;
 	font-size: 1.3em;
   text-transform: uppercase;
@@ -52,7 +52,7 @@ menu a {
   transition: all 1s;
 }
 
-menu a:hover {
+.menu a:hover {
 	font-weight: bold;
   font-size: 1.3em;
   padding: 0 5%;

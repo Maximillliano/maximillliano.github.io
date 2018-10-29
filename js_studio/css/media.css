@@ -101,11 +101,11 @@ and (max-device-width : 1590px) {
 
 @media only screen
 and (max-device-width : 1350px) {
-	menu ul {
+	.menu ul {
 		padding: 2.5% 2%;
 	}
 	
-	menu a:hover {
+	.menu a:hover {
 		font-size: 1.1em;
 	}
 	
@@ -205,11 +205,11 @@ and (max-device-width : 1350px) {
 @media only screen
 	and (max-device-width : 1190px) {
 	
-		menu ul {
+		.menu ul {
 		padding: 2.5% 2%;
 	}
 	
-	menu a:hover {
+	.menu a:hover {
 		font-size: 1.1em;
 	}
 		
@@ -279,11 +279,11 @@ and (max-device-width : 1350px) {
 @media only screen
 	and (max-device-width : 1090px) {
 	
-		menu ul {
+		.menu ul {
 		padding: 2.5% 2%;
 	}
 	
-	menu a:hover {
+	.menu a:hover {
 		font-size: 1.1em;
 	}
 	
