@@ -5,7 +5,7 @@ $grid-gutter-width: 40px !default;
 $border-radius-base:  4px !default;
 $padding-base-vertical: 14px !default;
 
-$brand-primary: #539DDB !default;
+$brand-primary: #282b2d !default;
 $brand-secondary: #1fb5f6 !default; 
 
 $brand-white: #fff;
@@ -240,7 +240,7 @@ h1, h2, h3, h4, h5, h6 {
 			background: rgba(0,0,0,.7);
 		}
 		i {
-			top: 19px!important;
+			top: 21px !important;
 			left: 0!important;
 			margin: 0!important;
 			padding: 0!important;
@@ -588,12 +588,12 @@ header{
   	  position: relative;
 	  @include inline-block;
 	  width: 30px;
-	  height: 2px;
+	  height: 4px;
 	  color: $brand-black;
 	  font:bold 14px/.4 Helvetica;
 	  text-transform: uppercase;
 	  text-indent:-55px;
-	  background: $brand-black;
+	  background: $brand-white;
 	  transition: all .2s ease-out;
 	  .menu-show & {
 			background: $brand-white;
@@ -602,8 +602,8 @@ header{
 		&::before, &::after {
 	  	   content:'';
 		   width: 30px;
-		   height: 2px;
-		   background: $brand-black;
+		   height: 4px;
+		   background: $brand-white;
 		   position: absolute;
 		   left:0;
 	  		.menu-show & {
@@ -683,8 +683,6 @@ header{
 
 //fh5co-hero
 #fh5co-hero {
-	width: 65%;
-	margin-bottom: 5em;
 	min-height: 700px;
 	background: $brand-white url(../images/loader.gif) no-repeat center center;
 	z-index: 1;
@@ -975,6 +973,7 @@ header{
 }
 
 .fh5co-counters {
+	margin-bottom: 5em;
 	padding: 3em 0;
 	background: lighten($brand-black, 90%);
 	background-size: cover;
