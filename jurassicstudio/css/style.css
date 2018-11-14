@@ -80,11 +80,6 @@ h1, h2, h3, h4, h5, h6 {
   -ms-transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   -o-transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
-  transform: scale(1);
   background: #fff; }
   .menu-show #fh5co-page {
     -webkit-transform: scale(0.9);
@@ -355,7 +350,7 @@ h1, h2, h3, h4, h5, h6 {
 
 header {
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   padding: 1em 0;
   z-index: 2; }
@@ -541,7 +536,7 @@ header {
           left: 0;
           right: 0;
           content: '';
-          background: rgba(0, 0, 0, 0.4);
+          background: rgba(0, 0, 0, 0.1);
           z-index: 1; }
     #fh5co-hero .flexslider .flex-control-nav {
       position: absolute;
@@ -647,6 +642,45 @@ header {
     .intro-heading {
       font-size: 30px; } }
 
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12rem 2rem;
+  color: white;
+  background-image: linear-gradient(to bottom, #45484d 0%, black 100%), url("https://source.unsplash.com/random/1920x1080/?sky");
+  background-blend-mode: multiply;
+  background-size: cover; }
+
+.mouse {
+  max-width: 2.5rem;
+  width: 100%;
+  height: auto; }
+
+.scroll {
+  animation-name: scroll;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(0.65, -0.55, 0.25, 1.5);
+  animation-iteration-count: infinite;
+  transform-origin: 50% 20.5px;
+  will-change: transform, opacity;
+  opacity: 1; }
+
+.scroll-link {
+  position: relative;
+  bottom: 50%;
+  left: 49.4%;
+  transform: translateX(10%);
+  z-index: 1000; }
+
+@keyframes scroll {
+  0%, 20% {
+    transform: translateY(0) scaleY(1); }
+  100% {
+    transform: translateY(36px) scaleY(2);
+    opacity: 0; } }
 .post-entry {
   width: 100%;
   min-height: 700px;
