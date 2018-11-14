@@ -1,5 +1,5 @@
-$font-primary: 'Karla', Arial, sans-serif;
-$font-secondary: 'Playfair Display', Arial, serif;
+$font-primary: 'Open Sans', Arial, sans-serif;
+$font-secondary: 'Open Sans', Arial, serif;
 // Overrides
 $grid-gutter-width: 40px !default; 
 $border-radius-base:  4px !default;
@@ -155,7 +155,7 @@ span{
 h1, h2, h3, h4, h5, h6 {
 	color: rgba($brand-black,.8);
 	font-family: $font-secondary;
-	font-weight: 300;
+	font-weight: 700;
 	margin: 0 0 30px 0;
 }
 ::-webkit-selection {
@@ -764,7 +764,7 @@ header{
 				height: 700px;
 				h2 {
 					font-size: 60px;
-					font-weight: 400;
+					font-weight: 700;
 					color: $brand-white;
 					@media screen and (max-width: $screen-sm) {
 						font-size: 40px;
