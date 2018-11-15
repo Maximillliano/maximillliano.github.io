@@ -720,7 +720,7 @@ header{
 		}
 		.flex-control-nav {
 			position: absolute;
-			bottom: 1em;
+			bottom: 5em;
 			z-index: 1000;
 			@media screen and (max-width: $screen-sm) {
 				bottom: 1em;
@@ -887,9 +887,8 @@ header{
 
 .scroll-link {
 	position: relative;
-  bottom: 50%;
+  bottom: 3em;
   left: 49.4%;
-  transform: translateX(10%);
   z-index: 1000;
 }
 

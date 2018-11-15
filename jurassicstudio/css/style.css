@@ -540,7 +540,7 @@ header {
           z-index: 1; }
     #fh5co-hero .flexslider .flex-control-nav {
       position: absolute;
-      bottom: 1em;
+      bottom: 5em;
       z-index: 1000; }
       @media screen and (max-width: 768px) {
         #fh5co-hero .flexslider .flex-control-nav {
@@ -670,9 +670,8 @@ header {
 
 .scroll-link {
   position: relative;
-  bottom: 50%;
+  bottom: 3em;
   left: 49.4%;
-  transform: translateX(10%);
   z-index: 1000; }
 
 @keyframes scroll {
