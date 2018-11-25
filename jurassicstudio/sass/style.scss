@@ -513,6 +513,7 @@ header{
 		}
 		.fh5co-logo{
 			display: block;
+			margin-top: 8px;
 			font-size: 24px;
 			text-transform: uppercase;
 			color: $brand-white;
@@ -902,6 +903,15 @@ header{
 	}
 }
 
+.phone {
+	position: absolute;
+	right: 70px;
+	top: 5px;
+	color: white;
+	&:hover {
+		text-decoration: none;
+	}
+}
 
 #fh5co-featured{
 
