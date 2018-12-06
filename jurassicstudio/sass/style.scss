@@ -495,8 +495,8 @@ header{
 	width: 100%;
 	position: fixed;
 	top: 0;
-	padding: 1em 0;
 	z-index: 2;
+	background-color: rgba(0,0,0,.3);
 	@media screen and (max-width: $screen-sm) {
 		padding: 2em 0;
 	}
@@ -665,7 +665,7 @@ header{
 	display: block;
 	margin: 0 auto;
 	cursor: pointer;
-	margin-top: 0px;
+	margin-top: 8px;
   	@media screen and (max-width: $screen-sm) {
   		display: block;
   		top: 0px;
@@ -906,13 +906,16 @@ header{
 .phone {
 	position: absolute;
 	right: 70px;
-	top: 5px;
+	top: 13px;
 	color: white;
 	&:hover {
 		text-decoration: none;
 	}
 }
-
+.phone-burger {
+	color: white;
+	font-size: 22px;
+}
 #fh5co-featured{
 
 }
