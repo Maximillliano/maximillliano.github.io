@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Барбершоп Borodinski</title>
+	
+	<link rel="stylesheet" href="css/normalize.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<!-- Main-menu--> 
+	<header class="main-header">
+		<div class="container clearfix">
+			<nav class="menu-main">
+				<ul class="menu-elements">
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Информация</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Прайс-лист</a></li>
+					<li><a href="#">Магазин</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="user-block">
+				<a class="login" href="#">Вход</a>
+			</div>
+			
+		</div>
+	</header>
+
+	<!--Promo-->
+	<main class="container">
+		<div class="logo-main">
+			<img src="img/logo-main.png" width="368" height="204" alt="Барбершоп «Бородинский»">
+		</div>
+		
+		<section class="features clearfix">
+			<div class="features-item">
+				<b class="features-name">Быстро</b>
+				<p>МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ ОБЛАДЕТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!</p>
+			</div>
+			<div class="features-item">
+				<b class="features-name">Круто</b>
+				<p>ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ. МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО! ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.</p>
+			</div>
+			<div class="features-item">
+				<b class="features-name">Дорого</b>
+				<p>НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА НЕ ДАЕТ ОПРЕДЕЛЕНЫЙ СТАТУС?</p>
+			</div>
+		</section>
+		
+		<div class="block-container clearfix">
+			<div class="block-container-left">
+				<h2 class="block-container-title">Новости</h2>
+				<ul class="news-preview">
+					<li>
+						<p>НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ</p>
+						<time datetime="2018-01-11">11 января</time>
+					</li>
+					<li>
+						<p>В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДЕТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ</p>
+						<time datetime="2018-09-19">19 сентября</time>
+					</li>
+				</ul>
+				<a class="btn" href="#">Все новости</a>
+			</div>
+			<div class="block-container-right">
+				<h2 class="block-container-title">Фотогалерея</h2>
+				<div class="gallery">
+					<figure class="gallery-content">
+						<img src="img/photo-1.jpg" width="286" height="164" alt="">
+					</figure>
+					<button class="btn gallery-prev" disabled>Назад</button>
+					<button class="btn gallery-next">Вперед</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="block-container clearfix">
+			<div class="block-container-left">
+				<h2 class="block-container-title">Контактная информация</h2>
+				
+				<p>БАРБЕРШОП «БОРОДИНСКИЙ»<br>
+					АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8<br>
+					ТЕЛЕФОН: +7 (495) 666-02-66
+				</p>
+
+				<p>ВРЕМЯ РАБОТЫ:<br>
+					ПН — ПТ: С 10:00 ДО 22:00<br>
+					СБ — ВС: С 10:00 ДО 19:00
+				</p>
+
+				<a class="btn" href="#">Как проехать</a>
+				<a class="btn" href="#">Обратная связь</a>
+			</div>
+			<div class="block-container-right">
+				<h2 class="block-container-title">Записаться</h2>
+				<p>
+					УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ  ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ
+				</p>
+				<form class="appointment-form" action="" method="post">
+					<input type="text" name="date" value="" placeholder="Дата">
+					<input type="text" name="time" value="" placeholder="Время">
+					<input type="text" name="name" value="" placeholder="Ваше имя">
+					<input type="tel" name="phone" value="" placeholder="Телефон">
+					<a class="btn" href="#">Отправить</a>
+				</form>
+			</div>
+		</div>
+
+	</main>
+
+	<footer class="main-footer">
+		<div class="container clearfix">
+			<section class="footer-contacts">
+				<p>
+					БАРБЕРШОП «БОРОДИНСКИЙ»<br>
+					АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br>
+					<a href="#">КАК НАС НАЙТИ?</a><br>
+					ТЕЛЕФОН: +7 (495) 666-02-66
+				</p>
+			</section>
+
+			<section class="footer-social">
+				<div>Двайте дружить</div>
+				<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+				<a class="social-btn social-btn-fb" href="#">Фэйсбук</a>
+				<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+			</section>
+
+			<section class="footer-copyright">
+				<div>Разработано:</div>
+				<a class="btn" href="#">HTML Academy</a>
+			</section>
+		</div>
+	</footer>
+
+	
+</body>
+</html>
