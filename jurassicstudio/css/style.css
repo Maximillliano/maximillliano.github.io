@@ -4,6 +4,10 @@
   src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'Qg';
+  src: url(../fonts/qg/QG.ttf);
+  font-weight: 300; }
 /* =======================================================
 *
 * 	Template Style 
@@ -57,8 +61,8 @@ span {
 
 h1, h2, h3, h4, h5, h6 {
   color: rgba(0, 0, 0, 0.8);
-  font-family: "Open Sans", Arial, serif;
-  font-weight: 700;
+  font-family: "Qg", Arial, sans-serif;
+  font-weight: 400;
   margin: 0 0 30px 0; }
 
 ::-webkit-selection {
@@ -172,7 +176,7 @@ h1, h2, h3, h4, h5, h6 {
       padding: 0;
       margin: 0;
       display: inline-block;
-      font-family: "Open Sans", Arial, serif; }
+      font-family: "Qg", Arial, sans-serif; }
       #fh5co-main-nav ul li a {
         display: block;
         width: 100%;
@@ -365,7 +369,7 @@ header {
     header .fh5co-navbar-brand h1 {
       width: 20%;
       display: block;
-      font-family: "Open Sans", Arial, serif;
+      font-family: "Qg", Arial, sans-serif;
       margin-bottom: 0; }
     header .fh5co-navbar-brand .fh5co-logo {
       display: block;
@@ -571,7 +575,7 @@ header {
         height: 700px; }
         #fh5co-hero .flexslider .slider-text > .slider-text-inner h2 {
           font-size: 60px;
-          font-weight: 700;
+          font-weight: 400;
           color: #fff; }
           @media screen and (max-width: 768px) {
             #fh5co-hero .flexslider .slider-text > .slider-text-inner h2 {

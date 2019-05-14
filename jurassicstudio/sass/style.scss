@@ -1,5 +1,5 @@
 $font-primary: 'Open Sans', Arial, sans-serif;
-$font-secondary: 'Open Sans', Arial, serif;
+$font-secondary: 'Qg', Arial, sans-serif;
 // Overrides
 $grid-gutter-width: 40px !default; 
 $border-radius-base:  4px !default;
@@ -72,8 +72,13 @@ $form-group-margin-bottom: 30px !default;
 	font-style: normal;
 }
 
+@font-face {
+    font-family: 'Qg';
+    src: url(../fonts/qg/QG.ttf);
+		font-weight: 300;
+}
+
 @mixin icomoon() {
-	
 	font-family: 'icomoon';
 	speak: none;
 	font-style: normal;
@@ -155,7 +160,7 @@ span{
 h1, h2, h3, h4, h5, h6 {
 	color: rgba($brand-black,.8);
 	font-family: $font-secondary;
-	font-weight: 700;
+	font-weight: 400;
 	margin: 0 0 30px 0;
 }
 ::-webkit-selection {
@@ -758,7 +763,7 @@ header{
 				height: 700px;
 				h2 {
 					font-size: 60px;
-					font-weight: 700;
+					font-weight: 400;
 					color: $brand-white;
 					@media screen and (max-width: $screen-sm) {
 						font-size: 40px;
