@@ -38,13 +38,13 @@ body {
     overflow-y: hidden; }
 
 a {
-  color: #282b2d;
+  color: white;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s; }
   a:hover {
     text-decoration: underline;
-    color: #282b2d; }
+    color: white; }
   a:focus, a:active {
     outline: none; }
 
@@ -61,7 +61,7 @@ span {
 
 h1, h2, h3, h4, h5, h6 {
   color: rgba(0, 0, 0, 0.8);
-  font-family: "Qg", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-weight: 400;
   margin: 0 0 30px 0; }
 
@@ -176,7 +176,7 @@ h1, h2, h3, h4, h5, h6 {
       padding: 0;
       margin: 0;
       display: inline-block;
-      font-family: "Qg", Arial, sans-serif; }
+      font-family: "Open Sans", Arial, sans-serif; }
       #fh5co-main-nav ul li a {
         display: block;
         width: 100%;
@@ -236,18 +236,18 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff !important; }
 
 .btn-primary {
-  background: #282b2d;
+  background: white;
   color: #fff;
-  border: 2px solid #282b2d; }
+  border: 2px solid white; }
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-    background: #34383b !important;
-    border-color: #34383b !important; }
+    background: white !important;
+    border-color: white !important; }
   .btn-primary.btn-outline {
     background: transparent;
-    color: #282b2d;
-    border: 2px solid #282b2d; }
+    color: white;
+    border: 2px solid white; }
     .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
-      background: #282b2d;
+      background: white;
       color: #fff !important; }
 
 .btn-success {
@@ -369,7 +369,7 @@ header {
     header .fh5co-navbar-brand h1 {
       width: 20%;
       display: block;
-      font-family: "Qg", Arial, sans-serif;
+      font-family: "Open Sans", Arial, sans-serif;
       margin-bottom: 0; }
     header .fh5co-navbar-brand .fh5co-logo {
       display: block;
@@ -574,16 +574,17 @@ header {
         vertical-align: middle;
         height: 700px; }
         #fh5co-hero .flexslider .slider-text > .slider-text-inner h2 {
-          font-size: 60px;
-          font-weight: 400;
-          color: #fff; }
+          font-size: 40px;
+          font-weight: 300;
+          text-transform: uppercase;
+          color: #000; }
           @media screen and (max-width: 768px) {
             #fh5co-hero .flexslider .slider-text > .slider-text-inner h2 {
               font-size: 40px; } }
         #fh5co-hero .flexslider .slider-text > .slider-text-inner p {
-          color: rgba(255, 255, 255, 0.8); }
+          color: rgba(0, 0, 0, 0.8); }
           #fh5co-hero .flexslider .slider-text > .slider-text-inner p .btn:hover {
-            color: #fff !important; }
+            color: #000 !important; }
         #fh5co-hero .flexslider .slider-text > .slider-text-inner span {
           color: rgba(255, 255, 255, 0.8);
           text-transform: uppercase;
@@ -597,8 +598,8 @@ header {
           #fh5co-hero .flexslider .slider-text > .slider-text-inner .fh5co-lead a:hover {
             text-decoration: none; }
         #fh5co-hero .flexslider .slider-text > .slider-text-inner .desc {
-          padding: 5em;
-          background: rgba(40, 43, 45, 0.9);
+          padding: 4em;
+          background: rgba(255, 255, 255, 0.9);
           -webkit-box-shadow: 0px 10px 30px -13px rgba(0, 0, 0, 0.75);
           -moz-box-shadow: 0px 10px 30px -13px rgba(0, 0, 0, 0.75);
           box-shadow: 0px 10px 30px -13px rgba(0, 0, 0, 0.75); }
@@ -609,6 +610,8 @@ header {
               -webkit-box-shadow: 0px 10px 30px -13px rgba(0, 0, 0, 0);
               -moz-box-shadow: 0px 10px 30px -13px rgba(0, 0, 0, 0);
               box-shadow: 0px 10px 30px -13px rgba(0, 0, 0, 0); } }
+        #fh5co-hero .flexslider .slider-text > .slider-text-inner .h2-title {
+          font-size: 60px; }
 
 #fh5co-featured,
 #fh5co-about,
@@ -768,7 +771,7 @@ header {
         height: inherit; } }
   .post-entry .desc {
     padding: 5em;
-    background: rgba(40, 43, 45, 0.9);
+    background: rgba(255, 255, 255, 0.9);
     -webkit-box-shadow: 0px 10px 30px -13px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 10px 30px -13px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 10px 30px -13px rgba(0, 0, 0, 0.75); }
@@ -880,7 +883,7 @@ header {
     display: block;
     font-size: 16px; }
   .fh5co-staff:hover img {
-    background: rgba(40, 43, 45, 0.2); }
+    background: rgba(255, 255, 255, 0.2); }
 
 .fh5co-blog {
   margin-bottom: 60px; }
@@ -918,7 +921,7 @@ header {
         .fh5co-blog .blog-text span.comment a {
           color: rgba(0, 0, 0, 0.3); }
           .fh5co-blog .blog-text span.comment a i {
-            color: #282b2d;
+            color: white;
             padding-left: 7px; }
       .fh5co-blog .blog-text span.posted_on {
         font-size: 13px;
@@ -1031,7 +1034,7 @@ input[type="text"] {
     color: black; }
     #footer a:hover, #footer a:focus {
       text-decoration: none;
-      color: #282b2d; }
+      color: white; }
   #footer .form-inline .form-group {
     width: 100% !important;
     margin-bottom: 10px; }
@@ -1051,7 +1054,7 @@ input[type="text"] {
     right: 10px;
     border-top-left-radius: 0px !important;
     border-bottom-left-radius: 0px !important;
-    background: #282b2d;
+    background: white;
     border: none; }
     #footer #fh5co-header-subscribe button i {
       color: #fff;

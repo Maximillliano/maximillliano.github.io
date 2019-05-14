@@ -1,11 +1,11 @@
 $font-primary: 'Open Sans', Arial, sans-serif;
-$font-secondary: 'Qg', Arial, sans-serif;
+$font-secondary: 'Open Sans', Arial, sans-serif;
 // Overrides
 $grid-gutter-width: 40px !default; 
 $border-radius-base:  4px !default;
 $padding-base-vertical: 14px !default;
 
-$brand-primary: #282b2d !default;
+$brand-primary: white !default;
 $brand-secondary: #1fb5f6 !default; 
 
 $brand-white: #fff;
@@ -762,18 +762,19 @@ header{
 				vertical-align: middle;
 				height: 700px;
 				h2 {
-					font-size: 60px;
-					font-weight: 400;
-					color: $brand-white;
+					font-size: 40px;
+					font-weight: 300;
+					text-transform: uppercase;
+					color: $brand-black;
 					@media screen and (max-width: $screen-sm) {
 						font-size: 40px;
 					}
 				}
 				p{
-					color: rgba($brand-white,.8);
+					color: rgba($brand-black,.8);
 					.btn{
 						&:hover{
-							color: $brand-white !important;
+							color: $brand-black !important;
 						}
 					}
 				}
@@ -795,7 +796,7 @@ header{
 					}
 				}
 				.desc{
-					padding: 5em;
+					padding: 4em;
 					background: rgba($brand-primary,.9);
 					-webkit-box-shadow: 0px 10px 30px -13px rgba(0,0,0,0.75);
 					-moz-box-shadow: 0px 10px 30px -13px rgba(0,0,0,0.75);
@@ -808,6 +809,7 @@ header{
 						box-shadow: 0px 10px 30px -13px rgba(0,0,0,0.0);
 					}
 				}
+				.h2-title {font-size: 60px;}
 			}
 		}
 	}
