@@ -701,6 +701,18 @@ header {
   color: white;
   font-size: 22px; }
 
+#fh5co-featured {
+  background: url(../images/slide_2.jpg) no-repeat;
+  background-size: cover; }
+
+.section-form {
+  margin-top: 4em;
+  padding: 8em 0;
+  background-image: url(../images/featured-1.jpg);
+  background-color: black; }
+  .section-form h3 {
+    color: #fff; }
+
 .post-entry {
   width: 100%;
   min-height: 700px;
@@ -709,17 +721,6 @@ header {
     .post-entry {
       display: block;
       min-height: 400px; } }
-  .post-entry .post-image {
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    position: relative;
-    margin-top: 100px;
-    height: 500px; }
-    @media screen and (max-width: 768px) {
-      .post-entry .post-image {
-        display: block;
-        height: 500px; } }
   .post-entry form {
     display: flex;
     position: absolute;
@@ -776,11 +777,11 @@ header {
     -moz-box-shadow: 0px 10px 30px -13px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 10px 30px -13px rgba(0, 0, 0, 0.75); }
     .post-entry .desc h3 {
-      color: #fff;
+      color: #000;
       font-size: 40px;
       line-height: 54px; }
     .post-entry .desc p {
-      color: rgba(255, 255, 255, 0.8);
+      color: rgba(0, 0, 0, 0.8);
       margin-bottom: 0; }
     .post-entry .desc .date {
       display: block;
@@ -847,7 +848,7 @@ header {
     color: #fff;
     font-family: "Open Sans", Arial, sans-serif;
     width: 100%;
-    font-weight: 700;
+    font-weight: 300;
     margin-bottom: .3em; }
   .fh5co-counters .fh5co-counter-label {
     color: #fff;
@@ -1008,8 +1009,8 @@ input[type="text"] {
   margin-bottom: 30px; }
 
 #footer {
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 4em 0; }
+  padding-top: 2em;
+  background-color: #000; }
   #footer .section-title {
     font-size: 24px;
     font-weight: 400; }
@@ -1028,10 +1029,8 @@ input[type="text"] {
     @media screen and (max-width: 768px) {
       #footer .float {
         width: 100%; } }
-  #footer .copy-right {
-    padding-top: 4em; }
   #footer a {
-    color: black; }
+    color: #727272; }
     #footer a:hover, #footer a:focus {
       text-decoration: none;
       color: white; }
