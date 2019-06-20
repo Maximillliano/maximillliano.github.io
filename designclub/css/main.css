@@ -151,6 +151,7 @@ div.element_left:last-child {
 	font-size: .6em;
 	padding-right: .5em;
 	text-decoration: none;
+	transition: .6s;
 }
 
 .socials a.fa:hover {
@@ -217,7 +218,6 @@ div.element_right:last-child {
 	right: 2.4em;
 	font-size: 2.7em;
 	color: #646464;
-	transition-duration: .5s;
 }
 
 
