@@ -15,7 +15,6 @@ a {
 	flex-direction: row;
 	justify-content: space-between;
 	align-content: center;
-	width: 93%;
 	margin: 2% 3%;
 	background: linear-gradient(to bottom left, #e8e8eb, #f5f6f6);
 	border-radius: 2em;
@@ -368,6 +367,7 @@ form {
 
 form input {
 	margin: 0 10%;
+	padding-left: 4px;
 	width: 80%;
 	margin-bottom: 15px;
 	line-height: 2.5em;
