@@ -111,7 +111,7 @@ body {
 	font-family: $font-primary;
 	line-height: 1.8;
 	font-size: 20px;
-	background: #ffff;
+	background: lighten($brand-black, 94%);
 	background-image: url(images/photography.png);
 	font-weight: 300;
 	overflow-x: hidden;
@@ -156,7 +156,9 @@ span{
 }
 
 h1, h2, h3, h4, h5, h6 {
+	color: rgba($brand-black,.8);
 	font-family: $font-secondary;
+	font-weight: 400;
 }
 ::-webkit-selection {
   color: $brand-body-color;
@@ -505,7 +507,7 @@ header {
 	background-color: rgb(0, 0, 0);
 	height: 100px;
 	@media screen and (max-width: $screen-sm) {
-	
+		padding: 2em 0;
 	}
 	
 	.fh5co-navbar-brand{
@@ -514,13 +516,14 @@ header {
 		position: relative;
 		padding: 0;
 		h1{
-			
+			width: 20%;
 			display: block;
 			font-family: $font-secondary;
 			margin-bottom: 0;
 		}
 		.fh5co-logo{
 			display: block;
+			font-size: 24px;
 			text-transform: uppercase;
 			color: $brand-white;
 			font-weight: 700;
@@ -757,7 +760,6 @@ header {
 			opacity: 0;
 			height: 700px;
 			z-index: 9;
-			padding: 0px;
 			@media screen and (max-width: $screen-sm) {
 				text-align: center;
 			}
@@ -767,10 +769,9 @@ header {
 				height: 700px;
 				h2 {
 					font-size: 70px;
-					font-weight: 500;
-					margin-top: 27px;
+					font-weight: 300;
 					text-transform: uppercase;
-					color: #FFFFFF;
+					color: $brand-white;
 					@media screen and (max-width: $screen-sm) {
 						font-size: 30px;
 					}
@@ -812,8 +813,7 @@ header {
 						box-shadow: 0px 10px 30px -13px rgba(0,0,0,0.0);
 					}
 				}
-				.h2-title {font-size: 70px;
-			}
+				.h2-title {font-size: 70px;}
 			}
 		}
 	}
@@ -821,47 +821,32 @@ header {
 }
 
 #fh5co-featured,
+#fh5co-about,
 #fh5co-blog,
 #fh5co-contact-section, 
 #fh5co-work-section,
 #fh5co-about-section,
-#fh5co-map-section
-#fh5co-about-contact {
+#fh5co-map-section{
 	padding-bottom: 3em;
-	background-color: #FFF;
 }
-
-#fh5co-about{
-	background-color: #F5F5F5;
-}
-
 #fh5co-intro-section{
 	margin-top: 7em;
 	// border-bottom: 1px solid rgba($brand-black,.06);
 }
 
  #fh5co-work-section{
-	padding-top: 2em;
-	background-color: #fff;
+	padding-top: 3em;
 }
 .fh5co-work-section{
 	padding-top: 0 !important;
 }
 
 .fh5co-heading{
-
+	margin-bottom: 1em;
 	h2{
-		font-size: 50px;
-		font-weight: 500;
+		font-size: 40px;
+		font-weight: 300;
 		line-height: 1.5;
-		color: #222222;
-		margin-top: 1em;
-	}
-	p{
-		font-size: 20px;
-		color: #222222;
-		padding-bottom: 30px;
-		margin-top: -20px;
 	}
 }
 
@@ -925,7 +910,7 @@ header {
 
 .phone {
 	position: absolute;
-	
+	right: 70px;
 	top: 13px;
 	color: white;
 	&:hover {
@@ -937,36 +922,8 @@ header {
 	font-size: 22px;
 }
 #fh5co-featured{
-	margin-top: 160px;
+	
 	background-size: cover;
-	display: flex;
-	justify-content: space-evenly;
-}
-.form-registration{
-	display: flex;
-	margin-top: 5em;
-	margin-left: 50px;
-}
-
-.mes{
-	margin-left: 290px;
-	P{
-		font-size: 16px;
-line-height: 138%;
-color: #FFFFFF;
-}
-}
-.dizain_bloks{
-	margin-top: 10em;
-display: block;
-}
-
-.dizain_progect{
-	display: flex;
-}
-
-.kontacts_block{
-	display: flex;
 }
 .section-form {
 	margin-top: 4em;
@@ -987,22 +944,17 @@ p{
 .desc{
 
 	h3{
-		font-weight: 500;
-font-size: 50px;
-line-height: 150%;
-		color: #FFFFFF;
-
+		font-size: 50px;
 	}
 	p{
 		font-size: 16px;
 		margin-top: 20px;
-line-height: 150%;
-color: #FFFFFF;
 	}
 }
 
 .kontacts{
 	margin-top: 20px;
+    margin-left: -10px;
 }
 .fh5co-counters{
 	img{
@@ -1111,11 +1063,11 @@ color: #FFFFFF;
 	background-position: center center;
 	background-repeat: no-repeat;
 	position: relative;
-	height: 370px;
+	height: 400px;
 	margin-bottom: 30px;
 	.view{
 		width: 100%;
-		height: 370px;
+		height: 400px;
 		display: table;
 		// border: 1px solid $brand-black;
 		opacity: 0;
@@ -1128,7 +1080,7 @@ color: #FFFFFF;
 			opacity: 1;
 		}
 		span, i{
-			height: 370px;
+			height: 400px;
 			display: table-cell;
 			vertical-align: middle;
 			font-size: 12px;
@@ -1154,10 +1106,7 @@ color: #FFFFFF;
 .text_header{
 	p3{
 		font-size: 16px;
-		color: #F2F2F2;
-		position: absolute;
-width: 416.43px;
-height: 48px;
+		color: #dadede;
 	}
 }
 .fh5co-counters {
@@ -1174,21 +1123,22 @@ height: 48px;
 		}
 	}
 	.fh5co-counter {
-		font-size: 70px;
+		font-size: 60px;
 		display: block;
 		color: $brand-white;
 		font-family: $font-primary;
 		width: 100%;
-		font-weight: 500;
+		font-weight: 300;
+		margin-bottom: .3em;
+		margin-top: 65px;
 	}
 	.fh5co-counter-label {
 		color: $brand-white;
-		
-		font-size: 20px;
-		letter-spacing: 1px;
+		text-transform: uppercase;
+		font-size: 13px;
+		letter-spacing: 5px;
 		margin-bottom: 2em;
 		display: block;
-		margin-top: -25px;
 	}
 }
 
@@ -1209,125 +1159,50 @@ height: 48px;
 	margin-top: 10em;
 	h1{
 		font-size: 50px;
-		font-weight: 500;
-		color: #222222;
-		line-height: 130%;
 	}
 h2{
 	font-size: 20px;
 	margin-top: 60px;
-	line-height: 130%;
-	color: #222222;
+	line-height : 1.5em;
 }
 p1{
 	font-size: 16px;
 	color: #6A6A6A;
 	margin-top: 10px;
-	line-height: 130%;
 }
 p{
-	font-size: 16px;
-	color: #222222;
+	font-size: 20px;
+	color: black;
 	margin-top: 25px;
-	width: 622px;
-	height: 144px;
-	line-height: 150%;
 }
-}
-.cont{
-	p{
-		font-weight: 500;
-font-size: 50px;
-line-height: 61px;
-color: #222222;
-	}
 }
 
-.client{
-	margin-top: -70px;
-	p{
-		width: 575px;
-		height: 90px;
-		font-weight: 500;
-		font-size: 20px;
-		line-height: 150%;
-		color: #222222;
-	}
-}
-.time{
-	margin-top: 65px;
-	
-	P{
-		font-size: 20px;
-		line-height: 24px;
-	}
-	p1{
-		font-size: 22px;
-		color: #000000;
-	}
-}
 .studio{
 	width: 500px;
-	margin-top: -80px;
-
+    margin-left: 200px;
+	margin-top: 100px;
 h1{
 	font-size: 50px;
 	color: white;
-	line-height: 61px;
+	margin-top: 20px;
 }
 h2{
 	font-size: 30px;
 	color: white;
-	margin-top: 60px;
+	margin-top: 40px;
 	margin-bottom: 25px;
-	width: 590px;
-	height: 78px;
-	line-height: 130%;
-	font-weight: 500;
+	width: 637px;
 }
 p{
 	font-size: 16px;
 	color: white;
-	font-weight: 100;
 }
 }
-
-
-
-.tel{
-p{
-	font-size: 16px;
-	color: #FFFFFF;
-	line-height: 150%;
-	text-align: left;
-}
-
-h{
-	font-size: 16px;
-	color: #FFFFFF;
-	line-height: 150%;
-}
-}
-
-.messege{
-	width: 500px;
-    color: white;
-}
-
-
 
 .foto {
 	margin-bottom: 5em;
-	margin-top: 9em;
-	margin-left: 130px;
-width: 385px;
-		height: 442px;
-	}
-.block_studia{
-	display: flex;
-	justify-content: space-evenly;
-	margin-top: 110px;
-    margin-bottom: 110px;
+	margin-top: 7em;
+	margin-left: 150px;
 }
 
 .fh5co-staff { 
@@ -1494,7 +1369,14 @@ width: 385px;
 input[type="text"] {
 	height: 50px;
 }
+.form-group {
+	margin-bottom: 30px;
+	margin-left: 380px;
+}
 
+.form-registration{
+	display: flex;
+}
 
 .name_input{
 	text-align: left;
@@ -1503,11 +1385,10 @@ input[type="text"] {
 .numbers{
 	margin-left: 20px;
 	color: white;
-	margin-top: -2px
 }
 
 
-// footer
+// footerf
 #footer{
 	padding-top: 2em;
 	background-color: $brand-black;
@@ -1523,7 +1404,6 @@ input[type="text"] {
 			font-size: 18px;
 			list-style: none;
 			margin-bottom: 0;
-			
 			a{
 				color: $brand-lighter;
 			}
@@ -1639,15 +1519,20 @@ input[type="text"] {
 		}
 }
 .sotial_network, .sotial_network_footer {
-list-style-type: none;
-display: flex;
+	display: flex;
+	list-style-type: none;
+	display: flex;
+    list-style-type: none;
+    margin-left: 40px;
 
-ul{
-display: flex;
-padding: 0px;
-}
+
+	
+	ul{
+		display: flex;
+		text-decoration: none;
+	}
 	li{
-		margin-left: 21px;
+		margin-left: 10px;
 		text-decoration: none;
 		margin-top: 15px;
 		list-style-type: none;
@@ -1655,15 +1540,11 @@ padding: 0px;
 	}
 }
 
-.phonee{
-	margin-left: 51px;
-}
-
 .network_footer {
 list-style: none;
 display: flex;
 margin-top: -20px;
-justify-content: flex-end;
+margin-left: 40px;
 	li{
 		margin-top: 0px;
 		margin-left: 10px;
@@ -1672,194 +1553,113 @@ justify-content: flex-end;
 }
 
 
-.form{
-	width: 230px;
-    text-align: left;
-    line-height: 3rem;
- h{
+.form h{
 	color: white;
     font-size: 16px;
-}}
-
-.bloc_contact{
-	display: flex;
-    justify-content: space-evenly;
-    margin-top: 70px;
 }
 
-.progect, .progectss {
+.phonee{
+	margin-left: 160px;
+}
+.progect, .progectss, .consultation{
 	color: inherit;
     font: inherit;
     margin: 0;
     background-color: #ffffff00;
     color: rgb(255, 255, 255);
     border: 3px solid #ffff;
+    width: 2;
     width: 233px;
     height: 50px;
 	border-radius: 1px;
-	margin-top: 100px;
-	p1{
-		font-size: 20px;
-		font-weight: 700;
-	}
+	margin-top: 45px;
+	
 }
- .progectss{
+
+.consultation , .progectss{
 	margin-top: 0px;
 }
 
-.bt{
-	justify-content: center;
-    display: flex;
-}
-
 .portfolio{
-width: 294px;
+	margin-left: 45%;
+	width: 294px;
     height: 50px;
 	margin-top: 60px;
-	background-color: #ffffff00;
-border: 3px solid #222222;
+	background-color: white;
+border: 3px solid #000;
 border-radius: 1px;
 p{
 	font-size: 20px;
 	font-weight: bold;
-	color: #222222;
+	color: black;
 }}
-
-.knopka{
-	display: flex;
-	justify-content: center;
-}
-
-.block_portfolio{
-	width: 327px;
-	height: 50px;
-	background-color: #ffffff00;
-	border: 3px solid #222222;
-border-radius: 1px;
-p{
-	font-size: 20px;
-	font-weight: bold;
-	color: #222222;
-}
-}
-
-.col-md-13 {
-	margin-top: 2em;
-}
 
 .fh5co-intro-section {
 	background: url(../images/konsultation.jpg)
 	 no-repeat;
 }
 
-.step{
-display: flex;
-    justify-content: center;
-	margin-top: 5em;
+
+.foto{
+	width: 385px;
+	height: 442px;
+margin-top: 300px;}
+
+.col-md-8{
+	
+	
 	p{
-		font-size: 50px;
-		font-weight: 500;
-		line-height: 61px;
+		font-size: 16px;
+		height: 86px;
 	}
+	
 }
-
-
-.about{
-	display: flex;
-}
-
-
 .img-responsive{
 	width: 840px;
 	height: 370px;
 	border-radius: 1px;
 }
-.dizain_block ,.dizain_block_one{
-	display: flex;
-	margin-top: 90px;
 
-}
-.circle, .circle_two{
-    margin-top: 80px;
-  border: 1px solid #222222;
+.circle ,.circlee ,.circle_three{
+margin-top: 100px;
+  border: 1px solid #000000;
   border-radius: 50%;
   height: 100px;
   width: 100px;
   p{
 	  text-align: center;
 	  font-size: 50px;
-	  color: #222222;
-	  font-weight: 500;
+	  color: #000;
   }}
 
-  .circle_two{
-	  margin-left: 57px;
-  }
-
-.texts ,.texts_two , .texts_three{
-margin-left: 25px;
-margin-top: 50px;
-	h1{
-		font-weight: 500;
-font-size: 30px;
-line-height: 37px;
-color: #222222;
-width: 325px;
-height: 37px;
-	}
-	p1{
-		font-size: 16px;
-line-height: 150%;
-position: absolute;
-width: 325px;
-height: 96px;
-color: #222222;
-	}
+  .texts ,.textss,.texts_three{
+	margin-left: 120px;
+	margin-top: -150px;
+  h3{
+	 font-size: 30px;
+	 width: 250px;
+	 text-align: initial;
+  }}
+  .dizain ,.dizainn,.dizain_three{
+	  text-align: left;
+	width: 260px;
+	height: 96px;
+  p1{
+	  font-size: 16px;
+ }
 }
-
-.texts_three{
-p1{margin-top: 35px;
-}}
-
-.works, .works_two{
-	margin-left: 57px;
-	width: 640px;
-    height: 300px;
-	background-size: cover;
-}
-.works_two{
-	margin-left: 0px;
-}
-
 
 .konsultation{
-	
+	margin: 5em;
+	margin-top: 100px;
 	h2{
 		font-size: 50px;
 		color: white;
-		font-weight: 500;
-		padding-top: 150px;
 	}
-	h3{
-		font-size: 20px;
-line-height: 150%;
-color: #FFFFFF;
-font-weight: 400;
-	}
-}
-
-.consultation{
-	width: 311px;
-	height: 50px;
-	border: 3px solid #FFFFFF;
-box-sizing: border-box;
-border-radius: 1px;
-background-color: #0000;
-color: #ffff;
 }
 
 .form-input_name, .form-input_tell {
-	width: 311px;
+	width: 250px;
     display: inline-block;
     border-width: 0;
     border-bottom: 1px solid #e9e8e8;
@@ -1878,23 +1678,6 @@ color: #ffff;
 	margin-left: 150px;
 }
 
-.form-input_tell {
-	background: url(../images/Flag.jpg)
-	no-repeat;
-	padding-left: 55px;
-
-}
-
-
-.step{
-	h2{
-		font-size: 50px;
-		font-weight: 500;
-		text-align: center;
-	}
-}
-
-
 .row_footer{
 display: flex;
 }
@@ -1904,11 +1687,13 @@ display: flex;
 	color: white;
 	ul{
 	display: flex;
+	width: 150px;
+	height: 24px;
 	li{
-		margin-left: 138px;
+		margin-left: 150px;
 		
 	}
-	p1{
+	p{
 		color: white;
 		font-size: 20px;
 		width: 50px;
@@ -1916,7 +1701,8 @@ display: flex;
 }}
 
 .number{
-	
+	margin-left: 335px;
+    margin-top: -20px;
 p{
 	font-size: 20px;
 	color: white;
@@ -1929,7 +1715,7 @@ p{
 
 
 .form-inputs{
-	width: 650px;
+	width: 520px;
 	color: white;
 	margin-bottom: 20px;
     background-color: rgba(0, 0, 0, 0);
@@ -1944,6 +1730,11 @@ p{
 	border-bottom: 1px solid #e9e8e8;
 }
 
+.messege{
+margin-top: 40px;
+color: white;
+margin-left: 380px;
+}
 
 .progects{
 	width: 339px;
@@ -1955,21 +1746,18 @@ p{
     border: 3px solid #ffff;
     border-radius: 1px;
 	margin-top: 61px;
- 
+    margin-left: 380px;
 
 }
 
-.fot{
-	display: flex;
-	justify-content: center;
-}
+
 .sotial_network{
 	width: 0px;
 }
 
 .fh5co-logo img {
-    width: 193px;
-    height: 45px;
+    width: 242px;
+    height: 57px;
 }
 
 .circle_mob ,.texts_mob ,.dizain_mob ,.work_mob
@@ -1977,243 +1765,712 @@ p{
 	display: none;
 }
 
-.one_blockk ,.two_blockk{
-	display: flex;
-}
 
-.logo_burger{
-	display: none;
-}
+
 
 
 @media (max-width: 1200px){
-	.bloc_contact{
-		display: block;
-	}
-	.form{
-		margin-left: 60px;
-	}
+	html,body{overflow-x:hidden;}
+	.portfolio {
+		margin-left: 40%;
+	
 }
+.studio {
+    margin-left: 40px;
+}
+
+	.network_footer{
+		margin-left: 0px;
+	}
+	.number p{
+		margin-left: 25px;
+	}
+	.ph{
+		margin-left: -25px;
+	}
+	.form-input_name, .form-input_tell {
+		width: 210px;
+	}
+	.consultation{
+		margin-top: 40px;
+	}
+	.form-registration{
+margin-left: -100px;
+display: block;
+	}
+	.name_input, .numbers{
+width: 300px;
+margin-top: 20px;
+	}
+	.numbers{
+	margin-left: -40px;
+	}
+	.messege{
+		margin-left: 290px;
+	}
+	.form-inputs{
+		width: 310px;
+	}
+	.progects{
+		margin-left: 290px;
+	}
+	.display-tc{
+		margin-left: 20px;
+	}
+	
+}
+
+
+
+@media (max-width: 1124px){
+.phonee{
+	margin-left: 60px;
+}
+
+.ph{
+	margin-left: -220px;
+    margin-top: 80px;
+	
+}
+
+.number{
+	margin-top: 50px;
+    margin-left: 180px;
+}
+}
+
 @media (max-width: 1000px){
-
-	.sotial_network{
-		 display: none;}
-
+	html,body{overflow-x:hidden;}
+	.portfolio {
+		margin-left: 30%;
 	
 }
 
-@media (max-width: 800px){
-
-	
+.work_three{
+	margin-top: 50px;
 }
+.circle_three{
 
-@media (max-width: 600px){
+margin-left: -30px;
 
-	#fh5co-hero .flexslider .slider-text > .slider-text-inner p {
-		font-size: 14px;
-    color: #fff;
-    line-height: 150%;
-    width: 203px;
-    height: 43.57px;
-    text-align: left;
+}
+#fh5co-main-nav ul {
+	padding: 0px;
+margin-left: 30px;
+margin-top: 150px;
+}
+#fh5co-main-nav ul li a {
+    font-size: 50px;
+    padding: 10px 20px;}
+
+	.consultation{
+		margin-top: 0px;
 	}
-	.text_header{
-margin-top: 20em;
+	.work_one{
+		display: none;
+	} 
+	.work {
+		margin-top: 50px;
 	}
-	#fh5co-hero .flexslider .slider-text > .slider-text-inner h2 {
-		line-height: 37px;
-		font-weight: 500;
-		color: #FFFFFF;
-		text-align: left;
-		margin-top: -3px;
-		
-	}
+	.texts, .textss, .texts_three {
+		margin-left: 120px;
+		margin-top: -120px;}
 
-	.text_header p3{
-		font-size: 12px;
-line-height: 125%;
-margin-left: -130px;
-width: 273px;
-height: 52.29px;
-text-align: left;
+.form-input_name, .form-input_tell {
+		width: 230px;
+		width: 230px;
 	}
 
-		.fh5co-logo img {
-			width: 105px;
-			height: 30px;}
 
-			.progect, .progectss {
-				color: inherit;
-				font: inherit;
-				margin: 0;
-				background-color: #ffffff00;
-				color: white;
-				border: 3px solid #ffff;
-				width: 233px;
-				height: 50px;
-				border-radius: 1px;
-				margin-top: 56px;
-			    margin-left: -15px;
-			}
-
-			.fh5co-heading h2 {
-				font-weight: 500;
-font-size: 32px;
-line-height: 39px;
-text-align: left;	
-width: 294px;
-height: 78px;
-				margin-top: 70px;
-			}
-
-			.fh5co-heading p{
-				font-size: 14px;
-line-height: 130%;
-text-align: left;
-margin-top: 15px;
-width: 241px;
-height: 36px;
-
-			}
-
-			.konsultation h2{
-			font-weight: 500;
-			font-size: 32px;
-			line-height: 39px;
-			text-align: left;
-			margin-left: 20px;
-			}
-
-			.form {
-				margin-left: 20px;
-				margin-top: -52px;
-			}
-			.form_one{
-				text-align: left;
-				margin-left: 18px;
-			
-			}
-
-.form_three{
-			margin-top: 40px;
-			text-align: left;
-			margin-left: 20px;
+.dizain {
+	width: 500px;
 }
 
-.form_two{
-
-    margin-top: 10px;
+.dizainn, .dizain_three{
+	width: 500px;
 }
-
-
-.one_blockk{
-	display: flex;
-}
-
-.step p {
-	font-weight: 500;
-	font-size: 32px;
-	line-height: 150%;
-	width: 294px;
-	height: 146px;
-	margin-left: -50px;
-}
-
-
-
-.circle, .circle_two {
-
-    height: 42px;
-    width: 42px;
-P{
-	font-weight: 500;
-font-size: 24px;
-line-height: 29px;
-text-align: center;
-}}
-
-.texts h1, .texts_two h1, .texts_three h1 {
-    font-weight: 500;
-font-size: 18px;
-line-height: 22px;
-  
-}
-
-.texts p1, .texts_two p1, .texts_three p1 {
-	width: 210px;
-	height: 105px;
-	font-size: 14px;
-line-height: 150%;
-
-}
-
-#fh5co-featured{
+.work_mob{
 	display: block;
+	height: 370px;
+	width: 720px;
 }
-.kontacts_block{
+
+.form-registration{
 	display: block;
+    margin-top: -250px;
+    margin-left: 150px;
 }
+.display-tc {
+    margin-top: -150px;}
 
-.form-registration, .dizain_progect{
-	display: block;
-}
-
-
-.desc 
-{
-	margin-top: 68px;
-	h3{
-margin-left: 20px;
-font-weight: 500;
-font-size: 30px;
-line-height: 150%;
-}}
-
-.desc p{
-	width: 272px;
-height: 68px;
-font-size: 15px;
-line-height: 150%;
-margin-left: 20px;
-}
-.mes{
-	margin-left: 20px;
-}
-
-.fot{
-	display: block;
+	.form-input_tell {
+		margin-bottom: 40px;
 }
 .footer_menu ul{
 	display: block;
-}
-.footer_menu ul li{
-display: block;
-}
-
-.logo_footer{
-	margin-left: 20px;
+	margin-top: 50px;
 }
 
 .network_footer{
-	justify-content: space-evenly;
-	margin-top: 50px;
+	margin-top: 150px;
 }
-.numbe{
+
+.ph {
+	margin-top: -260px;
+    margin-left: 150px;
+}
+
+.sotial_network ul{
 	display: none;
 }
 
-#footer a{
-	font-size: 10px;
-	color: #F2F2F2;
-	line-height: 12px;
+
+
+
+.konsultation h2 {
+    margin-top: -40px;
+}
+.form{
+	text-align: center;
+	margin-top: -50px;
+}
+.text_header{
+	text-align: left;
+}
+.form-registration{
+margin-left: 70px;
+margin-top: -300px;
+}
+.form-input_name{
+	margin-left: 0px;
 }
 
-.kontacts{
-	margin-left: 20px;
+.form-inputs {
+    width: 288px;
 }
-.logo_burger{
-	display: block;
+.messege{
+	margin-left: 450px;
+    width: 300px;
+    text-align: left;
+    margin-top: -20px;
+}
+.progects {
+    margin-left: 0em;
+}
+.number p{
+	margin-left: 130px;
+    margin-top: -70px;
+}
+.network_footer{
+	justify-content: flex-end;
+}
+}
+
+@media (max-width: 770px){
+	.progect{
+		margin-left: -180px;
+	}
+	.fh5co-logo img{
+		margin-top: -2em;
+	}
+}
+
+
+@media (max-width: 520px){
+	.portfolio {
+		margin-left: 20%;
+}
+.konsultation h2 {
+    margin-top: -70px;
+}
+.footer_menu{
+    margin-left: -200px;
+    margin-top: 100px;
+}
+.number p {
+	margin-left: 80px;
+    margin-top: -170px;
+}
+.ph{
+	margin-top: -460px;
+	margin-left: 100px;
+}
+
+.foto{
+margin-top: 0;
+margin-left: 10px;
+    margin-left: 40px;
+}
+.studio h2 ,.studio p {
+	width: 400px;
+
+}
+
+.form-group{
+	margin-left: 0px;
+	margin-top: 400px;
+}
+.desc{
+	margin-left: 20px;
+	margin-top: -200px;
+	h3{
+		font-size: 30px;
+	}}
+	.cons{
+		margin-top: -50px;
+	}
+
+.form-registration {
+    margin-left: 0px;
+    margin-top: -350px;
+}
+.messege{
+	margin-left: 0px;
+}
+.kontacts{
+	margin-left: 0px;
+}
+}
+
+@media (max-width: 440px){
+	html,body{overflow-x:hidden;}
+	.portfolio {
+		margin-left: 8%;	
+}
+.fh5co-logo img{
 	width: 105px;
 	height: 30px;
+	margin-top: -70px;
+	}
+	
+	.fh5co-nav-toggle{
+		margin-top: -20px;
+	}
+	
+	.phone{
+		display: none;
+	}
+	
+	.form-registration{
+		margin-top: 20px;
+	}
+	header{
+		height: 60px;
+	}
+
+.konsultation{
+	margin: 0px;
+	margin-top: 60px;
+	h2{
+		font-size: 32px;
+		text-align: left;
+		margin-top: 50px;
+
+	}
 }
+
+
+
+.form{
+	margin-top: 20px;
+	h{
+		font-size: 15px;
+	}
 }
+
+.consultation{
+	margin-left: -90px;
+}
+	.fh5co-heading h2 {
+		text-align: left;
+		font-size: 32px;
+width: 250px;
+	}
+	
+	.circle ,.circle_three{
+		width: 42px;
+		height: 42px;
+		margin-top: 0px;
+		p{
+			font-size: 24px;
+		}
+	}
+.circle_three{
+	margin-top: 350px;
+    margin-left: -30px;
+}
+	.texts{
+		margin-left: 60px;
+		margin-top: -60px;
+	h1{
+	font-size: 18px;
+	}}
+
+	.texts_three{
+		margin-top: -60px;
+    margin-left: 60px;
+		h3{
+			font-size: 18px;
+		}
+	}
+.work_mob{
+	margin-top: 50px;
+width: 320px}
+
+	.dizain, .dizain_three{
+		line-height: 1em;
+		width: 250px;
+		p1{
+			font-size: 14px;
+		}
+	}
+
+
+	.work, .work_three{
+	
+		height: 170px;
+		margin-top: 120px;
+	}
+	.work_three{
+	margin-left: -20px;
+	margin-top: 150px;
+	}
+	.circlee, .textss ,.dizainn ,.work_one {
+		display: none;
+	}
+
+	.circle_mob ,.texts_mob, .dizain_mob , .work_mob{
+		display: block;
+	}
+
+	.circle_mob{
+		width: 42px;
+		height: 42px;
+		border-radius: 50px;
+		border: 1px solid #000000;
+		margin-left: -15px;
+		p{
+			font-size: 24px;
+		}
+	}
+
+	.texts_mob{
+		margin-left: 60px;
+		margin-top: -60px;
+	h1{
+	font-size: 18px;
+	width: 200px;
+    text-align: left;
+	}}
+
+	.dizain_mob{
+		text-align: left;
+		width: 260px;
+		height: 96px;
+		line-height: 1em;
+		p1{
+			font-size: 14px;
+		}
+	}
+	.work_mob{
+	 background-size: cover;
+	 height: 170px;
+    margin-left: -20px;
+	}
+
+	.text_header
+	{
+		text-align: left;
+		font-size: 12px;
+		line-height: 1.5m;
+	}
+	
+		.col-md-8 p {
+			font-size: 14px;
+			text-align: left;
+			width: 190px;
+			margin-top: 20px;
+		}
+	
+	#fh5co-hero .flexslider .slider-text > .slider-text-inner {
+		font-size: 20px;
+		color: #fff;
+		margin-top: 100px;
+		p{
+			text-align: left;
+		font-size: 14px;
+		}
+		h2{
+			font-size: 30px;
+		text-align: left;
+		}
+		.form {
+			margin-top: 40px;
+			width: 250px;
+			line-height: 1em;
+			h{
+			font-size: 15px;
+		
+		}}
+		
+		#fh5co-main-nav ul {
+			padding: 0px;
+		margin-left: 30px;
+		margin-top: 150px;
+		}
+		
+		#fh5co-main-nav ul li a {
+			font-size: 24px;
+			padding: 10px 20px;}
+		
+		 .fh5co-heading h2 {
+			margin: 0em;
+			text-align: left;
+			font-size: 32px;
+			margin-top: 50px;
+			line-height: 1.5em;
+			width: 220px;
+			}
+			.fh5co-heading h2 {
+				margin-top: 0px;
+				line-height: 1.5em;
+			}
+			.circle, .circlee {
+				margin-top: 0px;
+				border: 1px solid #000000;
+				border-radius: 50%;
+				height: 42px;
+				width: 42px;
+				p{
+					font-size: 24px;
+				}
+			}
+			
+			.circlee{
+				margin-top: -250px;
+			}
+			
+			.texts {
+				margin-left: 60px;
+				margin-top: -60px;
+				line-height: 1.5em;
+				h1 {
+			font-size: 18px;
+			width: 300px;
+				text-align: left;
+				}
+			p1{
+			font-size: 14px;
+			}}
+			
+			.textss{
+				margin-left: 60px;
+				margin-top: -60px;
+				line-height: 1.5em;
+				h1 {
+					font-size: 18px;
+					width: 300px;
+						text-align: left;
+						}
+					p1{
+					font-size: 14px;
+					}}
+			
+			.work {
+				margin-top: 100px;
+					height: 170px;
+				img{
+				margin-top: 500px;
+			}}
+			
+			.desc{
+
+				margin-left: -20px;
+			}
+			.post-entry .numbers{
+				margin-left: -260px;
+			}
+			
+			
+			.progect{
+				margin-left: -70px;
+			}
+
+	
+
+			.form {
+				margin-top: 20px;
+			}
+
+			
+			.footer_menu{
+				margin-left: -80px;
+				margin-top: 20px;
+			}
+			
+			ul{
+				display: block;
+				width: 150px;
+				height: 24px;
+			}
+			
+			.ph{
+				margin-top: -325px;
+				margin-left: -25px;
+			}
+			
+			
+			.kontacts{
+				margin-left: 0px;
+			}
+			.name_input{
+			margin-top: 50px;
+			}			
+
+	}
+	.post-entry .desc p {
+   
+		font-size: 15px;
+		}
+	
+	
+		#footer a{
+			font-size: 10px;
+		}
+	
+		#footer {
+			
+			ul {
+			margin: 0;
+			padding: 0; 
+			 margin-top: 25px;
+			display: block;
+			}
+		}
+
+		.about-content{
+			h1{font-size: 32px;
+		}
+		h2{
+			font-size: 24px;
+			margin-top: 0px;
+		}
+		p1{
+	font-size: 12px;
+		}
+		p{
+			font-size: 14px;
+		}
+		}
+	
+		.number {
+			margin-left: 200px;
+	font-size: 12px;
+	margin-top: 90px;
+
+		}
+	
+	.studio{
+		margin-left: 20px;
+		width: 360px;
+		h1{
+			font-size: 32px;
+		}
+		h2{
+			font-size: 20px;
+			width: 288px;
+			line-height: 1.5em;
+		}
+		p{
+			font-size: 14px;
+			width: 340px;
+		}
+	}
+	.foto{
+		width: 320px;
+		height: 360px;
+		margin-left: 0px;
+		margin-top: 0px;
+	}
+
+	.desc{
+		h3{
+			font-size: 30px;
+		
+			line-height: 1.5em;
+		}
+		p{
+			font-size: 15px;
+	
+		}
+	}
+	.kontacts{
+		margin-left: 10px;
+		font-size: 15px;
+}
+
+.display-tc {
+    margin-top: -200px;
+}
+
+.form-group{
+	margin-left: 20px;
+	margin-top: 50px;
+}
+
+.form-registration{
+	display: block;
+	margin-left: -10px;
+}
+.form-input_name, .form-input_tell{
+	margin-left: 0px;
+}
+.messege{
+	margin-left: 10px;
+    text-align: left;
+    font-size: 14px;
+    margin-top: -30px;
+}
+.name_input , .numbers{
+	font-size: 15px;
+}
+
+.numbers{
+	color: white;
+    text-align: left;
+    margin-top: 30px;
+	margin-left: 0;
+}
+
+.form-inputs{
+	width: 288px;
+}
+
+.progects{
+	margin-left: 0px;
+	font-size: 15px;
+}
+.number p{
+	font-size: 12px;
+    margin-left: 40px;
+}
+.ph{
+	width: 18px;
+    height: 18px;
+    margin-top: -380px;
+    margin-left: 70px;
+
+}
+.footer_menu{
+	margin-left: -120px;
+	margin-top: 60px;
+}
+
+
+
+.footer_menu ul p{
+	font-size: 18px;
+}
+
+}
+
