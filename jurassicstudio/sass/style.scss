@@ -8,7 +8,7 @@ $padding-base-vertical: 14px !default;
 $brand-primary: white !default;
 
 $brand-white: #fff;
-$brand-black: #000;
+$brand-black: #222;
 $brand-lighter: #727272;
 $brand-selection-color: #b7c2c2;
 $brand-body-color: #fcfcfc;
@@ -131,17 +131,7 @@ body {
 		overflow-y: hidden;
 	}
 }	
-a {
-	
-	@include transition(.5s);
-	&:hover{
-		text-decoration: underline;
-		color: white;
-	}
-	&:focus, &:active {
-		outline: none;
-	}
-}
+
 p, span {
 	font-size: 20px;
 	color: black;
@@ -502,7 +492,7 @@ header  {
 	position: fixed;
 	top: 0;
 	z-index: 2;
-	background-color: #222222;
+	background-color: $brand-black;
 	height: 90px;
 	@media screen and (max-width: $screen-sm) {
 	
@@ -835,6 +825,7 @@ header  {
 
 #fh5co-about{
 	background-color: #F5F5F5;
+	padding: 120px 0;
 }
 
 #fh5co-intro-section{
@@ -856,12 +847,12 @@ header  {
 		font-size: 50px;
 		font-weight: 500;
 		line-height: 1.5;
-		color: #222222;
+		color: $brand-black;
 		margin-top: 1em;
 	}
 	p{
 		font-size: 20px;
-		color: #222222;
+		color: $brand-black;
 		padding-bottom: 30px;
 		margin-top: -15px;
 line-height: 24px;
@@ -1242,14 +1233,14 @@ width: 45%;
 	h1{
 		font-size: 50px;
 		font-weight: 500;
-		color: #222222;
+		color: $brand-black;
 		line-height: 130%;
 	}
 h2{
 	font-size: 30px;
 	margin-top: 60px;
 	line-height: 130%;
-	color: #222222;
+	color: $brand-black;
 }
 p1{
 	font-size: 16px;
@@ -1259,7 +1250,7 @@ p1{
 }
 p{
 	font-size: 16px;
-	color: #222222;
+	color: $brand-black;
 	margin-top: 20px;
 
 	line-height: 150%;
@@ -1283,7 +1274,7 @@ p{
 		font-weight: 500;
 font-size: 50px;
 line-height: 61px;
-color: #222222;
+color: $brand-black;
 	}
 }
 
@@ -1296,7 +1287,7 @@ margin-top: 20px;
 		font-weight: 500;
 		font-size: 20px;
 		line-height: 150%;
-		color: #222222;
+		color: $brand-black;
 	}
 }
 .time{
@@ -1580,7 +1571,7 @@ input[type="text"] {
 // footer
 #footer{
 	padding-top: 2em;
-	background-color: #222222 {
+	background-color: $brand-black {
 
     filter: alpha (Opacity=50);/* прозрачность для IE */
     opacity: 0.50;/* прозрачность для других браузеров */
@@ -1839,7 +1830,7 @@ line-height: 138%;
     display: flex;
 }
 .portfolio:hover{
-	background-color: #222222;
+	background-color: $brand-black;
 	p{
 		color: #F2F2F2;
 }}
@@ -1849,12 +1840,12 @@ width: 294px;
     height: 50px;
 	margin-top: 60px;
 	background-color: #ffffff00;
-border: 3px solid #222222;
+border: 3px solid $brand-black;
 border-radius: 1px;
 p{
 	font-size: 20px;
 	font-weight: bold;
-	color: #222222;
+	color: $brand-black;
 	margin-top: 9px;
 	line-height: 24px;
 }}
@@ -1870,19 +1861,19 @@ p{
 	width: 327px;
 	height: 50px;
 	background-color: #ffffff00;
-	border: 3px solid #222222;
+	border: 3px solid $brand-black;
 border-radius: 1px;
 margin-bottom: 40px;
 p{
 	font-size: 20px;
 	font-weight: bold;
-	color: #222222;
+	color: $brand-black;
 	margin-top: 2px;
 	}
 }
 
 .block_portfolio:hover{
-	background-color: #222222;
+	background-color: $brand-black;
 	p{
 		color: #F2F2F2;
 	}
@@ -1925,7 +1916,7 @@ display: flex;
 	p{
 		transform: rotate(90deg);
 		transform-origin: left top 0;
-		color: #fffff;
+		color: #ffffff;
 	}
 }
 
@@ -1946,14 +1937,14 @@ display: flex;
 }
 .circle, .circle_two{
     margin-top: 80px;
-  border: 2px solid #222222;
+  border: 2px solid $brand-black;
   border-radius: 50%;
   height: 100px;
   width: 100px;
   p{
 	  text-align: center;
 	  font-size: 50px;
-	  color: #222222;
+	  color: $brand-black;
 	  font-weight: 500;
 	  margin-top: 3px;
   }}
@@ -1972,7 +1963,7 @@ margin-top: 50px;
 		font-weight: 500;
 font-size: 30px;
 line-height: 37px;
-color: #222222;
+color: $brand-black;
 width: 325px;
 height: 37px;
 	}
@@ -1982,7 +1973,7 @@ line-height: 150%;
 position: absolute;
 width: 325px;
 height: 96px;
-color: #222222;
+color: $brand-black;
 	}
 }
 
@@ -2474,8 +2465,7 @@ margin-top: 0px;
 }
 
 
-@media (max-width: 800px){
-	overflow-x:hidden;
+@media (max-width: 800px) {overflow-x: hidden;
 #footer ul li{
 margin-left: 30px;
 }
@@ -2517,18 +2507,92 @@ span img{
 }
 }
 
+// Section accordeon
+
+.accordion-item hr, .container hr{
+  border: 1px solid $brand-black;
+}
+
+.accordion a {
+	color: $brand-black;
+	text-decoration: none;
+}
+
+.accordion-link{
+  color: $brand-black;
+  text-decoration: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.accordion-link h3{
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.accordion-link span{
+  color: $brand-black;
+  padding-right: 8px;
+  font-size: 35px;
+  text-align: right;
+}
+
+.accordion-link div{
+  display: flex;
+}
+
+.accordion-link .iconify.arrow{
+  display: none;
+}
+
+.answer{
+  max-height: 0;
+  overflow: hidden;
+  position: relative;
+  transition: max-height 650ms;
+}
+
+.answer ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+.answer li {
+  color: $brand-black;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.accordion-item:target .answer{
+  max-height: 40rem;
+  padding-bottom: 30px;
+}
+
+.iconify {
+	font-size: 30px;
+}
+
+.accordion-item:target .accordion-link .iconify.plus{
+  display: none
+}
+
+.accordion-item:target .accordion-link .iconify.arrow{
+  display: block;
+}
+
 @media (max-width: 780px){
-	.text_header{
-text-align: left;
+	.text_header {text-align: left;}
+	.progect {
+		justify-content: left;
+		display: flex ;
 	}
-	.progect{
-justify-content: left;
-display: flex ;
-	p1{
+	p1 {
 		margin-left: 15%;
 	}
-
-}}
+}
 
 
 @media (max-width: 500px){
@@ -2774,7 +2838,7 @@ margin-bottom: 30px;
 	display: flex;
 }
 .phone_header{
-	display: none;
+	display: block;
 }
 .texts{
 margin-left: 0px;
