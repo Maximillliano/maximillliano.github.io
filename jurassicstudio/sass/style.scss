@@ -1301,7 +1301,7 @@ margin-top: 60px;}
 		color: #000000;
 		line-height: 130%;
 	}
-	p2{
+	sup {
 		font-weight: 500;
 font-size: 22px;
 line-height: 27px;
@@ -1900,16 +1900,32 @@ display: flex;
 }
 
 .text_card{
+	width: 100%;
 	p{
+		position: absolute;
 		font-size: 16px;
 		line-height: 130%;
-		color: #FFFFFF;
+		color: #a59898;
 	}
 	p1{
-
+		position: absolute;
+		font-size: 14px;
+		color: #FFFFFF;
 	}
-	p2{
 
+	div {
+		font-size: 16px;
+		display: flex;
+    	align-items: flex-end;
+		color: #FFFFFF;
+		position: absolute;
+	}
+
+	img {
+		position: relative;
+		width: 100%; 
+		height: 100%;
+    	object-fit: cover;	
 	}
 }
 .flat{
@@ -1995,29 +2011,6 @@ p1{margin-top: 35px;
 	margin-left: 0px;
 }
 
-.works_two:hover {
-
-    filter: alpha (Opacity=50);/* прозрачность для IE */
-
-    opacity: 0.50;/* прозрачность для других браузеров */
-
-}
-
-.works:hover {
-
-    filter: alpha (Opacity=50);/* прозрачность для IE */
-
-    opacity: 0.50;/* прозрачность для других браузеров */
-
-}
-
-.works_three:hover {
-
-    filter: alpha (Opacity=50);/* прозрачность для IE */
-
-    opacity: 0.50;/* прозрачность для других браузеров */
-
-}
 
 
 .konsultation{
@@ -2209,14 +2202,13 @@ p{
 }
 
 
-.work {
-	
-    -moz-transition: all 1s ease-out;
--o-transition: all 1s ease-out;
--webkit-transition: all 1s ease-out;
+.work img{
+-moz-transition: all .5s ease-out;
+-o-transition: all .5s ease-out;
+-webkit-transition: all .5s ease-out;
 }
 
-.work:hover {
+.work:hover img {
 	-webkit-transform: scale(1.1);
 	-moz-transform: scale(1.1);
 	-o-transform: scale(1.1);
@@ -2465,7 +2457,7 @@ margin-top: 0px;
 }
 
 
-@media (max-width: 800px) {overflow-x: hidden;
+@media (max-width: 800px) {
 #footer ul li{
 margin-left: 30px;
 }
