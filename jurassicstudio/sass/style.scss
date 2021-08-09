@@ -95,15 +95,6 @@ $form-group-margin-bottom: 30px !default;
 @import 'bootstrap/variables';
 
 
-
-
-/* =======================================================
-*
-* 	Template Style 
-*	Edit this section
-*
-* ======================================================= */
-
 // Template Base
 body {
 	font-family: $font-primary;
@@ -121,6 +112,14 @@ body {
 		width: 100%;
 	}
 }
+
+a:hover, a:focus {
+	color: $brand-white;
+	font-weight: 300;
+	text-decoration: underline;
+
+}
+
 #fh5co-wrapper {
 	height: 100%;
 	width: 100%;
@@ -259,8 +258,8 @@ h1, h2, h3, h4, h5, h6 {
 		padding: 50px 0 50px 0;
 		margin: 0;
 		list-style-type: none;
-margin-left: 150px;
-margin-top: -100px;
+		margin-left: 150px;
+		margin-top: -100px;
 		@media screen and (max-width: $screen-sm) {
 			padding: 20px 0 0 0;
 		}
@@ -269,14 +268,19 @@ margin-top: -100px;
 			margin: 0;
 			font-family: $font-secondary;
 			margin-top: 40px;
+			.active-menu {
+				font-weight: 900;
+				font-size: 65px;
+			}
 			a {
 				display: block;
 				width: 100%;
 				color: rgba($brand-white,.8);
 				font-weight: 500;
-font-size: 50px;
-line-height: 61px;
+				font-size: 30px;
+				line-height: 30px;
 				padding: 10px 20px;
+				transition: .8s;
 
 				@media screen and (max-width: $screen-sm) {
 					font-size: 30px;
@@ -286,6 +290,7 @@ line-height: 61px;
 					color: rgba($brand-white,1);
 					outline: none;
 					text-decoration: none;
+					padding-left: 80px;
 				}
 			}
 			@media screen and (max-width: $screen-sm) {
@@ -924,11 +929,14 @@ font-size: 20px;
 line-height: 24px;
 	margin-top: 9px;
 	margin-left: 5px;
-	color: white;}
+	text-decoration: none;
+	color: white;
+}
 
 	.phone:hover{
-			text-decoration: underline;
-		}
+		font-weight: 600;
+		letter-spacing: -.5px;
+	}
 
 .phone-burger {
 	color:$brand-white;
@@ -1384,9 +1392,6 @@ width: 385px;
     margin-bottom: 110px;
 	margin-top: 200px;
 }
-.one ,.two{
-	margin-top: -50px;
-}
 
 .fh5co-staff { 
 	// text-align: center;
@@ -1792,25 +1797,25 @@ ul{
 .progect, .progectss {
 	color: inherit;
     font: inherit;
+	border: none;
     margin: 0;
-    background-color: #ffffff00;
-    color: rgb(255, 255, 255);
-    border: 3px solid #ffff;
+    background-color: rgba(255,255,255,.8);
+    color: #888;
     width: 233px;
     height: 50px;
 	border-radius: 1px;
 	margin-top: 100px;
-	p1{
+	transition: .8s;
+	p1 {
 		font-size: 20px;
-		font-weight: 700;
+		font-weight: 600;
 	}
 }
+
 .progect:hover{
-color: #A4A4A4;
-background-color: white;
-}
-
-
+	background-color: white;
+	transform: scale(1.1);
+	}
 
  .progectss{
 	margin-top: 0px;
@@ -1840,6 +1845,7 @@ width: 294px;
     height: 50px;
 	margin-top: 60px;
 	background-color: #ffffff00;
+	text-align: center;
 border: 3px solid $brand-black;
 border-radius: 1px;
 p{
@@ -2138,6 +2144,7 @@ p{
 
 .form-inputs{
 	width: 603px;
+	font-size: 14px;
 	color: white;
 	margin-bottom: 20px;
     background-color: rgba(0, 0, 0, 0);
@@ -2190,7 +2197,10 @@ p{
 
 .one_blockk ,.two_blockk{
 	display: flex;
-	
+}
+
+.one, .two{
+	margin-top: -60px;
 }
 
 .logo_burger,.number_burger ,.cotial_burger{
@@ -2619,13 +2629,6 @@ span img{
 		}
 	}
 
-	.one {
-		margin-top: 40px;
-	}
-	.two{
-margin-top: 15px;
-	}
-
 	.about-content_progect{
 		margin-bottom: 60px;
     margin-top: 140px;
@@ -2711,6 +2714,7 @@ text-align: left;
 		padding: 0px;
 		margin-top: -40px;
 	}
+
 	.line{
 		display: none;
 	}
@@ -3053,6 +3057,7 @@ p2{
 	line-height: 130%;
 }}
 
+
 .time_mail p{
 	width: 250px;
 }
@@ -3136,6 +3141,8 @@ margin-top: 20px;
 	}
 
 }
+
+p2 {font-weight: 600;}
 
 @media (max-width: 380px){
 .foto{

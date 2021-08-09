@@ -11,12 +11,6 @@
   font-style: normal;
 }
 
-/* =======================================================
-*
-* 	Template Style 
-*	Edit this section
-*
-* ======================================================= */
 body {
   font-family: "Montserrat";
   line-height: 1.8;
@@ -32,6 +26,12 @@ body.menu-show {
   position: fixed;
   height: 100%;
   width: 100%;
+}
+
+a:hover, a:focus {
+  color: #fff;
+  font-weight: 300;
+  text-decoration: underline;
 }
 
 #fh5co-wrapper {
@@ -188,14 +188,21 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 40px;
 }
 
+#fh5co-main-nav ul li .active-menu {
+  font-weight: 900;
+  font-size: 65px;
+}
+
 #fh5co-main-nav ul li a {
   display: block;
   width: 100%;
   color: rgba(255, 255, 255, 0.8);
   font-weight: 500;
-  font-size: 50px;
-  line-height: 61px;
+  font-size: 30px;
+  line-height: 30px;
   padding: 10px 20px;
+  -webkit-transition: .8s;
+  transition: .8s;
 }
 
 @media screen and (max-width: 768px) {
@@ -209,6 +216,7 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
   outline: none;
   text-decoration: none;
+  padding-left: 80px;
 }
 
 @media screen and (max-width: 768px) {
@@ -943,11 +951,13 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
   line-height: 24px;
   margin-top: 9px;
   margin-left: 5px;
+  text-decoration: none;
   color: white;
 }
 
 .phone:hover {
-  text-decoration: underline;
+  font-weight: 600;
+  letter-spacing: -.5px;
 }
 
 .phone-burger {
@@ -1439,10 +1449,6 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
   margin-top: 200px;
 }
 
-.one, .two {
-  margin-top: -50px;
-}
-
 .fh5co-staff {
   margin-bottom: 30px;
 }
@@ -1889,24 +1895,27 @@ input[type="text"] {
 .progect, .progectss {
   color: inherit;
   font: inherit;
+  border: none;
   margin: 0;
-  background-color: #ffffff00;
-  color: white;
-  border: 3px solid #ffff;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #888;
   width: 233px;
   height: 50px;
   border-radius: 1px;
   margin-top: 100px;
+  -webkit-transition: .8s;
+  transition: .8s;
 }
 
 .progect p1, .progectss p1 {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .progect:hover {
-  color: #A4A4A4;
   background-color: white;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .progectss {
@@ -1942,6 +1951,7 @@ input[type="text"] {
   height: 50px;
   margin-top: 60px;
   background-color: #ffffff00;
+  text-align: center;
   border: 3px solid #222;
   border-radius: 1px;
 }
@@ -2274,6 +2284,7 @@ input {
 
 .form-inputs {
   width: 603px;
+  font-size: 14px;
   color: white;
   margin-bottom: 20px;
   background-color: rgba(0, 0, 0, 0);
@@ -2324,6 +2335,10 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.one, .two {
+  margin-top: -60px;
 }
 
 .logo_burger, .number_burger, .cotial_burger {
@@ -2744,12 +2759,6 @@ input {
     width: 240px;
     font-size: 14px;
     line-height: 150%;
-  }
-  .one {
-    margin-top: 40px;
-  }
-  .two {
-    margin-top: 15px;
   }
   .about-content_progect {
     margin-bottom: 60px;
@@ -3205,6 +3214,10 @@ input {
     line-height: 22px;
     margin-top: 8px;
   }
+}
+
+p2 {
+  font-weight: 600;
 }
 
 @media (max-width: 380px) {
