@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @font-face {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat';
+  src: url();
 }
 
 @font-face {
@@ -64,17 +65,17 @@ h1, h2, h3, h4, h5, h6 {
 
 ::-webkit-selection {
   color: #fcfcfc;
-  background: #b7c2c2;
+  background: #000;
 }
 
 ::-moz-selection {
   color: #fcfcfc;
-  background: #b7c2c2;
+  background: #000;
 }
 
 ::selection {
   color: #fcfcfc;
-  background: #b7c2c2;
+  background: #000;
 }
 
 #fh5co-page {
@@ -801,7 +802,8 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
 }
 
 #fh5co-hero .flexslider .slider-text > .slider-text-inner .desc {
-  -moz-box-shadow: 0px 10px 30px -13px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 10px 30px -13px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 10px 30px -13px rgba(0, 0, 0, 0.75);
 }
 
 @media screen and (max-width: 992px) {
@@ -1236,7 +1238,8 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
 }
 
 .fh5co-counters {
-  padding: 1em 0;
+  line-height: normal;
+  padding: 2em 0;
   background: white;
   background-size: cover;
   background-attachment: fixed;
@@ -1263,9 +1266,7 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
   text-align: center;
   font-size: 20px;
   letter-spacing: 1px;
-  margin-bottom: 2em;
   display: block;
-  margin-top: -25px;
 }
 
 .work {
@@ -1546,9 +1547,6 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
 
 .fh5co-blog .blog-text h3 a {
   color: #222222;
-}
-
-.fh5co-blog .blog-text h3 a {
   text-decoration: none;
 }
 
@@ -1760,6 +1758,7 @@ input[type="text"] {
 .mfp-with-zoom.mfp-bg {
   opacity: 0;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   /* ideally, transition speed should match zoom duration */
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
@@ -1859,11 +1858,6 @@ input[type="text"] {
 .network_footer li {
   margin-top: 0px;
   margin-left: 21px;
-}
-
-.network_footer :hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
 }
 
 .cotial_burger {
@@ -2341,24 +2335,18 @@ input {
   margin-top: -60px;
 }
 
-.logo_burger, .number_burger, .cotial_burger {
-  display: none;
-}
-
-.cont_footer_adpt {
+.logo_burger, .number_burger, .cotial_burger, .cont_footer_adpt {
   display: none;
 }
 
 .work img {
-  -moz-transition: all .5s ease-out;
-  -o-transition: all .5s ease-out;
   -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
 }
 
 .work:hover img {
   -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -o-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .dizain_block_one_adapt {
@@ -2379,13 +2367,7 @@ input {
   .bloc_contact {
     text-align: left;
   }
-  .cont_footer_adpt {
-    display: none;
-  }
-  .dizain_block_one_adapt {
-    display: none;
-  }
-  .dizain_block_two {
+  .cont_footer_adpt, .dizain_block_one_adapt, .dizain_block_two {
     display: none;
   }
 }
