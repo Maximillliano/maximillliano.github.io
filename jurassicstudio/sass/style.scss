@@ -130,6 +130,7 @@ p, span {
 	color: black;
 	font-weight: 300;
 	font-family: $font-primary;
+	margin: 0;
 }
 span{
 	font-size: 18px;
@@ -138,6 +139,7 @@ span{
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: $font-secondary;
+	margin: 0;
 }
 
 ::-webkit-selection {
@@ -714,7 +716,7 @@ header  {
 					left: 0;
 					right: 0;
 					content: '';
-					background: rgba($brand-black,.1);
+					background: rgba($brand-black,.4);
 					z-index: 1;
 				}
 			}
@@ -760,7 +762,7 @@ header  {
 				h2 {
 					font-size: 70px;
 					font-weight: 500;
-					margin-top: 27px;
+					margin: 10px 0;
 					text-transform: uppercase;
 					color: #FFFFFF;
 					@media screen and (max-width: $screen-sm) {
@@ -818,13 +820,13 @@ header  {
 #fh5co-about-section,
 #fh5co-map-section
 #fh5co-about-contact {
-	padding-bottom: 3em;
+	padding-bottom: 6em;
 	background-color: #FFF;
 }
 
 #fh5co-about {
 	background-color: #F5F5F5;
-	padding: 120px 0;
+	padding: 160px 0;
 }
 
 #fh5co-intro-section {
@@ -833,7 +835,7 @@ header  {
 }
 
  #fh5co-work-section {
-	padding-top: 2em;
+	padding-top: 8em;
 	background-color: #fff;
 }
 .fh5co-work-section {
@@ -846,13 +848,11 @@ header  {
 		font-weight: 500;
 		line-height: 1.5;
 		color: $brand-black;
-		margin-top: 1em;
 	}
 	p {
 		font-size: 20px;
 		color: $brand-black;
-		padding-bottom: 30px;
-		margin-top: -15px;
+		padding-bottom: 60px;
 		line-height: 24px;
 	}
 }
@@ -917,17 +917,12 @@ header  {
 .phone {
 	position: absolute;
 	font-weight: 500;
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 24px;
 	margin-top: 9px;
 	margin-left: 5px;
 	text-decoration: none;
 	color: white;
-}
-
-.phone:hover {
-	font-weight: 600;
-	letter-spacing: -.5px;
 }
 
 .phone-burger {
@@ -1762,13 +1757,13 @@ display: flex;
 	ul {
 	display: flex;
 	padding: 0px;
+	margin-bottom: 0;
+	margin-top: 18px;
 	}
 	li{
 		margin-left: 21px;
 		text-decoration: none;
-		margin-top: 15px;
 		list-style-type: none;
-	
 	}
 }
 
@@ -1812,14 +1807,15 @@ margin-left: 120px;}
 	margin-top: 6px;
 	h {
 		color: white;
-		font-size: 16px;
+		font-size: 13px;
 	}
 }
 
 .bloc_contact {
 	display: flex;
     justify-content: space-between;
-    margin-top: 70px;
+    margin-top: 58px;
+	align-items: center;
 }
 
 .progect, .progectss {
@@ -1828,15 +1824,15 @@ margin-left: 120px;}
 	border: none;
     margin: 0;
     background-color: rgba(255,255,255,.8);
-    color: #888;
+    color: $brand-black;
     width: 233px;
     height: 50px;
 	border-radius: 1px;
-	margin-top: 100px;
+	margin-top: 80px;
 	transition: .8s;
 	p1 {
 		font-size: 20px;
-		font-weight: 600;
+		font-weight: 400;
 	}
 }
 
@@ -1862,16 +1858,16 @@ margin-left: 120px;}
 }
 
 .portfolio {
+	margin-top: 20px;
 	width: 294px;
     height: 50px;
-	background-color: #ffffff00;
 	text-align: center;
-	border: 3px solid $brand-black;
+	border: 2px solid $brand-black;
 	border-radius: 1px;
 	transition: all 0.8s ease 0s;
 	p {
 		font-size: 20px;
-		font-weight: bold;
+		font-weight: 300;
 		color: $brand-black;
 		margin-top: 9px;
 		line-height: 24px;
@@ -1924,10 +1920,14 @@ margin-left: 120px;}
 	 no-repeat;
 }
 
+.threestep {
+	padding: 160px 0;
+}
+
 .step {
 	display: flex;
     justify-content: center;
-	margin-top: 5em;
+	text-align: center;
 	p {
 		font-size: 50px;
 		font-weight: 500;
@@ -1983,7 +1983,7 @@ margin-left: 120px;}
 
 .dizain_block ,.dizain_block_one {
 	display: flex;
-	margin-top: 90px;
+	margin-top: 50px;
 
 }
 
@@ -2058,7 +2058,7 @@ margin-left: 120px;}
 		font-size: 50px;
 		color: white;
 		font-weight: 500;
-		padding-top: 150px;
+		padding-top: 180px;
 	}
 	h3 {
 		font-size: 20px;
@@ -2071,27 +2071,26 @@ margin-left: 120px;}
 .consultation{
 	width: 311px;
 	height: 50px;
-	border: 3px solid #FFFFFF;
+	border: none;
 	box-sizing: border-box;
-	border-radius: 1px;
-	background-color: #0000;
-	color: #ffff;
+	background-color: rgba(255, 255, 255, 0.8);
+	color: $brand-black;
 	transition: all 0.8s ease 0s;
 	p1 {
 		font-size: 20px;
 		line-height: 24px;
-		font-weight: bold;
+		font-weight: 300;
 	}
 }
 
 .consultation:hover {
-	color: #A4A4A4;
+	color: $brand-black;
 	background-color: white;
 	transform: scale(1.1);
 }
 
 .form-input_name, .form-input_tell ,.input_name_dizain ,.input_tell_dizain {
-	width: 194px;
+	width: 250px;
     display: inline-block;
     border-width: 0;
     border-bottom: 1px solid #e9e8e8;
@@ -2132,15 +2131,15 @@ margin-left: 120px;}
 	}
 }
 
-input{
+input {
 	font-size: 16px;
 }
 
-.row_footer{
+.row_footer {
 	display: flex;
 }
 
-.footer_menu{
+.footer_menu {
 	color: white;
 	ul {
 	display: flex;
@@ -2222,6 +2221,7 @@ input{
 .fh5co-logo img {
     width: 193px;
     height: 45px;
+	margin-top: 20px;
 }
 
 .circle_mob ,.texts_mob ,.dizain_mob ,.work_mob {
@@ -2245,13 +2245,6 @@ input{
 	-o-transition: all .5s ease-out;
 	-webkit-transition: all .5s ease-out;
 	transition: all .5s ease-out;
-}
-
-.work:hover img {
-	-webkit-transform: scale(1.1);
-	-moz-transform: scale(1.1);
-	-o-transform: scale(1.1);
-	transform: scale(1.1);
 }
 
 .dizain_block_one_adapt {
@@ -3084,3 +3077,69 @@ p2 {font-weight: 600;}
 		width: 300px;
 	}
 }
+
+// Scroll icon
+$mouse_color: #ffffff;
+$mouse_width: 30px;
+$mouse_height: 50px;
+$border_width: 2px;
+
+@mixin keyframes($animationName) {
+  @-webkit-keyframes #{$animationName} {
+    @content;
+  }
+  @-moz-keyframes #{$animationName} {
+    @content;
+  }
+  @-o-keyframes #{$animationName} {
+    @content;
+  }
+  @keyframes #{$animationName} {
+    @content;
+  }
+}
+
+@mixin animation($animations) {
+  -webkit-animation: $animations;
+  -moz-animation:    $animations;
+  -o-animation:      $animations;
+  animation:         $animations;
+}
+
+$wheel_size: $border_width * 3;
+
+@include keyframes(mouse-scroll) {
+  0%   { top: 10%; opacity: 1; }
+  80% { opacity: 1; }
+  100% { top: 30%; opacity: 0; }
+}
+
+.scroll-msg-container {
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  z-index: 2;
+  width: $mouse_width + $border_width*2;
+  height: $mouse_height + $border_width*2;
+  margin-top: - ($mouse_height + $border_width * 2) * 0.5;
+  margin-left: - ($mouse_width + $border_width * 2) * 0.5;
+}
+  .scroll-msg-inner {
+    width: $mouse_width;
+    height: $mouse_height;
+    position: relative;
+    border-radius: $mouse_width/2 + $border_width * 2;
+    border: $border_width solid $mouse_color;
+  }
+      .scroll-msg-wheel {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        width: $wheel_size;
+        height: $wheel_size;
+        margin-left: -$wheel_size/2;
+        border-radius: 50%;
+        background-color: $mouse_color;
+        
+        @include animation(mouse-scroll .9s infinite);
+      }

@@ -1,4 +1,4 @@
-;(function () {
+(function () {
 	
 	'use strict';
 
@@ -139,6 +139,5 @@
 		contentWayPoint();
 		counterWayPoint();
 	});
-
 
 }());
