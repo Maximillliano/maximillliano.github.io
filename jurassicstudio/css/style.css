@@ -1160,6 +1160,79 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
   }
 }
 
+.fh5co-work-section .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.card {
+  position: relative;
+  height: 450px;
+  width: 100%;
+  background-size: cover;
+  -webkit-background-size: cover;
+  margin-bottom: 2px;
+}
+
+.card .circle {
+  display: none;
+  position: absolute;
+  z-index: 3;
+  border: none;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: calc((100% - 100px)/2);
+}
+
+.card p {
+  font-size: 16px;
+  position: absolute;
+  margin: 0;
+  margin-left: 15px;
+  margin-top: 15px;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  z-index: 2;
+  color: white;
+}
+
+.card .area {
+  top: 30px;
+  font-size: 14px;
+}
+
+.card .vertical {
+  font-size: 14px;
+  margin-left: 10px;
+  bottom: 20px;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.card .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: #222222;
+  opacity: 0.8;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.card:hover .overlay, .card:hover p {
+  opacity: 0;
+}
+
+.card:hover .circle {
+  display: block;
+}
+
 .work, .work_three, .work_studia {
   background-size: cover;
   background-position: center center;
@@ -1322,7 +1395,7 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
 }
 
 .about-content_progect {
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 .abou {
@@ -1932,22 +2005,15 @@ input[type="text"] {
   display: flex;
 }
 
-.portfolio:hover {
-  background-color: #222;
-}
-
-.portfolio:hover p {
-  color: #F2F2F2;
-}
-
 .portfolio {
   width: 294px;
   height: 50px;
-  margin-top: 60px;
   background-color: #ffffff00;
   text-align: center;
   border: 3px solid #222;
   border-radius: 1px;
+  -webkit-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
 }
 
 .portfolio p {
@@ -1958,6 +2024,17 @@ input[type="text"] {
   line-height: 24px;
 }
 
+.portfolio:hover {
+  background-color: #222;
+  text-decoration: none;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.portfolio:hover p {
+  color: #F2F2F2;
+}
+
 .knopka {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1965,7 +2042,7 @@ input[type="text"] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 60px;
+  margin-top: 20px;
 }
 
 .block_portfolio {
@@ -1974,7 +2051,7 @@ input[type="text"] {
   background-color: #ffffff00;
   border: 3px solid #222;
   border-radius: 1px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .block_portfolio p {
@@ -2169,6 +2246,8 @@ input[type="text"] {
   border-radius: 1px;
   background-color: #0000;
   color: #ffff;
+  -webkit-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
 }
 
 .consultation p1 {
@@ -2180,6 +2259,8 @@ input[type="text"] {
 .consultation:hover {
   color: #A4A4A4;
   background-color: white;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .form-input_name, .form-input_tell, .input_name_dizain, .input_tell_dizain {
@@ -2303,11 +2384,15 @@ input {
   border-radius: 1px;
   margin-top: 56px;
   font-weight: bold;
+  -webkit-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
 }
 
 .progects:hover {
   color: #A4A4A4;
   background-color: white;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .fot {
