@@ -524,7 +524,7 @@ header  {
 			color: $brand-white;
 			font-weight: 700;
 			img {
-				margin-top: 18px;
+				margin-top: 22px;
 			}
 			&:hover{
 				text-decoration: none !important;
@@ -673,7 +673,7 @@ header  {
 	display: block;
 	margin: 0 auto;
 	cursor: pointer;
-	margin-top: 18px;
+	margin-top: 22px;
   	@media screen and (max-width: $screen-sm) {
   		display: block;
   		top: 0px;
@@ -1768,7 +1768,7 @@ display: flex;
 	display: flex;
 	padding: 0px;
 	margin-bottom: 0;
-	margin-top: 18px;
+	margin-top: 22px;
 	}
 	li{
 		margin-left: 21px;
@@ -2178,7 +2178,7 @@ input {
 }
 
 .phone_header {
-	margin-top: 15px;
+	margin-top: 20px;
     margin-left: 45px;
 }
 

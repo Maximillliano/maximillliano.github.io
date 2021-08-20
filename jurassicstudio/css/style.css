@@ -485,7 +485,7 @@ header .fh5co-navbar-brand .fh5co-logo {
 }
 
 header .fh5co-navbar-brand .fh5co-logo img {
-  margin-top: 18px;
+  margin-top: 22px;
 }
 
 header .fh5co-navbar-brand .fh5co-logo:hover {
@@ -651,7 +651,7 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
   display: block;
   margin: 0 auto;
   cursor: pointer;
-  margin-top: 18px;
+  margin-top: 22px;
 }
 
 @media screen and (max-width: 768px) {
@@ -1904,7 +1904,7 @@ input[type="text"] {
   display: flex;
   padding: 0px;
   margin-bottom: 0;
-  margin-top: 18px;
+  margin-top: 22px;
 }
 
 .sotial_network li, .sotial_network_footer li {
@@ -2383,7 +2383,7 @@ input {
 }
 
 .phone_header {
-  margin-top: 15px;
+  margin-top: 20px;
   margin-left: 45px;
 }
 
