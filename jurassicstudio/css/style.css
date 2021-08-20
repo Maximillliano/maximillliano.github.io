@@ -1963,13 +1963,23 @@ input[type="text"] {
 }
 
 .form {
-  width: 230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   text-align: left;
   line-height: 1em;
   margin-top: 6px;
 }
 
 .form h {
+  width: 20%;
   color: white;
   font-size: 13px;
 }

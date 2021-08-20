@@ -1816,11 +1816,15 @@ margin-left: 120px;}
 }
 
 .form {
-	width: 230px;
+	display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
     text-align: left;
     line-height: 1em;
 	margin-top: 6px;
 	h {
+		width: 20%;
 		color: white;
 		font-size: 13px;
 	}
