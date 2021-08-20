@@ -264,7 +264,7 @@ h1, h2, h3, h4, h5, h6 {
 #fh5co-featured {
   background: url(../images/zakaz.jpg) no-repeat;
   background-size: cover;
-  height: 827px;
+  padding: 15em 0;
 }
 
 .btn {
@@ -482,6 +482,10 @@ header .fh5co-navbar-brand .fh5co-logo {
   text-transform: uppercase;
   color: #fff;
   font-weight: 700;
+}
+
+header .fh5co-navbar-brand .fh5co-logo img {
+  margin-top: 18px;
 }
 
 header .fh5co-navbar-brand .fh5co-logo:hover {
@@ -821,7 +825,6 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
   font-size: 70px;
 }
 
-#fh5co-featured,
 #fh5co-blog,
 #fh5co-contact-section,
 #fh5co-work-section,
@@ -963,7 +966,6 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
 }
 
 #fh5co-featured {
-  margin-top: 160px;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -977,7 +979,15 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 5em;
+}
+
+.numbers, .form-registration {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .woks {
@@ -1000,7 +1010,6 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
 }
 
 .dizain_bloks {
-  margin-top: 10em;
   display: block;
 }
 
@@ -1011,6 +1020,9 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .section-form {
@@ -1034,19 +1046,24 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
 .desc h3 {
   font-weight: 500;
   font-size: 50px;
-  line-height: 150%;
+  line-height: 120%;
   color: #FFFFFF;
 }
 
 .desc p {
   font-size: 16px;
-  margin-top: 20px;
+  margin-top: 60px;
   line-height: 150%;
   color: #FFFFFF;
+  max-width: 500px;
 }
 
 .kontacts {
-  margin-top: 73px;
+  margin-top: 60px;
+}
+
+.kontacts .pho, .kontacts .mail {
+  margin-right: 10px;
 }
 
 .fh5co-counters img {
@@ -1476,6 +1493,10 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
   font-weight: 500;
 }
 
+.tel {
+  width: 100%;
+}
+
 .tel p {
   font-size: 16px;
   color: #FFFFFF;
@@ -1701,9 +1722,14 @@ input[type="text"] {
 }
 
 .numbers {
+  width: 100%;
   margin-left: 20px;
   color: white;
   margin-top: -2px;
+}
+
+.numbers .tel {
+  line-height: 1.5;
 }
 
 .line {
@@ -1711,7 +1737,7 @@ input[type="text"] {
 }
 
 #footer {
-  padding-top: 2em;
+  padding: 2em 0 1em 0;
   background-color: #222;
   background-color-filter: alpha Opacity=50;
   /* прозрачность для IE */
@@ -1727,11 +1753,9 @@ input[type="text"] {
 #footer ul {
   margin: 0;
   padding: 0;
-  margin-top: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 120px;
 }
 
 #footer ul li {
@@ -1755,7 +1779,6 @@ input[type="text"] {
 }
 
 #footer .numbe {
-  margin-left: 120px;
   text-align: end;
 }
 
@@ -1894,7 +1917,7 @@ input[type="text"] {
   margin-left: 120px;
 }
 
-.sotial_network li:hover {
+.sotial_network li:hover, .network_footer li:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
@@ -1912,12 +1935,14 @@ input[type="text"] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: -15px;
+  margin-top: 10px;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
   -webkit-transition: 1s;
   transition: 1s;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 .network_footer ul {
@@ -1927,6 +1952,10 @@ input[type="text"] {
 .network_footer li {
   margin-top: 0px;
   margin-left: 21px;
+}
+
+.copyright {
+  margin-top: 45px;
 }
 
 .cotial_burger {
@@ -1989,7 +2018,6 @@ input[type="text"] {
 }
 
 .phon {
-  margin-left: 15px;
   color: white;
   font-size: 20px;
   line-height: 138%;
@@ -2153,15 +2181,21 @@ input[type="text"] {
   border-radius: 1px;
 }
 
+.dizain_block {
+  margin-top: 50px;
+}
+
 .dizain_block, .dizain_block_one {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 90px;
 }
 
 .circle, .circle_two {
-  margin-top: 80px;
   border: 2px solid #222;
   border-radius: 50%;
   height: 100px;
@@ -2186,29 +2220,19 @@ input[type="text"] {
 
 .texts, .texts_two, .texts_three {
   margin-left: 25px;
-  margin-top: 50px;
 }
 
 .texts h1, .texts_two h1, .texts_three h1 {
+  margin-bottom: 15px;
   font-weight: 500;
   font-size: 30px;
-  line-height: 37px;
   color: #222;
-  width: 325px;
-  height: 37px;
 }
 
-.texts p1, .texts_two p1, .texts_three p1 {
+.texts p, .texts_two p, .texts_three p {
   font-size: 16px;
   line-height: 150%;
-  position: absolute;
-  width: 325px;
-  height: 96px;
   color: #222;
-}
-
-.texts_two p1 {
-  width: 260px;
 }
 
 .texts_three p1 {
@@ -2216,7 +2240,6 @@ input[type="text"] {
 }
 
 .works, .works_two, .works_three {
-  margin-left: 57px;
   width: 640px;
   height: 300px;
   background-size: cover;
@@ -2266,8 +2289,8 @@ input[type="text"] {
 }
 
 .form-input_name, .form-input_tell, .input_name_dizain, .input_tell_dizain {
-  width: 250px;
   display: inline-block;
+  width: 100%;
   border-width: 0;
   border-bottom: 1px solid #e9e8e8;
   -webkit-box-sizing: border-box;
@@ -2299,7 +2322,6 @@ input[type="text"] {
 }
 
 .input_name_dizain, .input_tell_dizain {
-  width: 290px;
   font-size: 14px;
 }
 
@@ -2320,6 +2342,16 @@ input {
 }
 
 .footer_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
   color: white;
 }
 
@@ -2360,7 +2392,7 @@ input {
 }
 
 .form-inputs {
-  width: 603px;
+  width: 100%;
   font-size: 14px;
   color: white;
   margin-bottom: 20px;
@@ -2380,18 +2412,17 @@ input {
   height: 50px;
   font: inherit;
   margin: 0;
-  background-color: #ffffff00;
-  color: white;
-  border: 3px solid #ffff;
-  border-radius: 1px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  color: #222;
   margin-top: 56px;
-  font-weight: bold;
+  font-weight: 300;
   -webkit-transition: all 0.8s ease 0s;
   transition: all 0.8s ease 0s;
 }
 
 .progects:hover {
-  color: #A4A4A4;
+  color: #222;
   background-color: white;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -2406,7 +2437,6 @@ input {
 .fh5co-logo img {
   width: 193px;
   height: 45px;
-  margin-top: 20px;
 }
 
 .circle_mob, .texts_mob, .dizain_mob, .work_mob {
@@ -2417,6 +2447,9 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .one, .two {
@@ -2476,9 +2509,6 @@ input {
   }
   .desc h3 {
     font-size: 45px;
-  }
-  .input_name_dizain, .input_tell_dizain {
-    width: 200px;
   }
   .form-inputs {
     width: 400px;
@@ -3098,7 +3128,7 @@ input {
   }
   #fh5co-featured {
     display: block;
-    margin-top: -0px;
+    margin-top: 0px;
   }
   .kontacts_block {
     display: block;
@@ -3113,9 +3143,6 @@ input {
   }
   .progects p {
     font-size: 18px;
-  }
-  .input_name_dizain, .input_tell_dizain {
-    width: 288px;
   }
   .messege {
     margin-top: 30px;
