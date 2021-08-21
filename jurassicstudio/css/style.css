@@ -1352,7 +1352,7 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
   font-size: 20px;
   letter-spacing: 1px;
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 65px;
 }
 
 .work {
@@ -1370,8 +1370,7 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
 }
 
 .about-content, .about-content_progect, .about-contentss {
-  margin-bottom: 5em;
-  margin-top: 10em;
+  margin-top: 12em;
   width: 45%;
 }
 
@@ -1400,6 +1399,7 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
   font-size: 14px;
   color: #222;
   margin-top: 20px;
+  width: 400px;
 }
 
 .about-contentss {
@@ -1420,7 +1420,7 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
 }
 
 .cont p {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 50px;
   line-height: 61px;
   color: #222;
@@ -1439,11 +1439,11 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
 }
 
 .time {
-  margin-top: 60px;
+  margin-top: 18px;
 }
 
 .time p, .time_vel p, .time_mts p {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 24px;
   color: #000000;
   line-height: 130%;
@@ -1468,10 +1468,9 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
 }
 
 .studio h2 {
-  font-size: 30px;
+  font-size: 22px;
   color: white;
-  margin-top: 50px;
-  margin-bottom: 25px;
+  margin: 50px 0;
   width: 590px;
   line-height: 130%;
   font-weight: 500;
@@ -1481,7 +1480,6 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
   font-size: 16px;
   color: white;
   line-height: 150%;
-  margin-top: 54px;
 }
 
 .fh5co-counters_studia {
@@ -1491,6 +1489,7 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
   font-family: "Montserrat";
   width: 100%;
   font-weight: 500;
+  text-align: center;
 }
 
 .tel {
@@ -1537,8 +1536,11 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 110px;
-  margin-top: 200px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 6em;
+  margin-bottom: 5em;
 }
 
 .fh5co-staff {
@@ -2108,8 +2110,9 @@ input[type="text"] {
   color: #F2F2F2;
 }
 
-.col-md-13 {
-  margin-top: 2em;
+iframe {
+  margin-top: 90px;
+  height: 700px;
 }
 
 .fh5co-intro-section {

@@ -1266,7 +1266,7 @@ header  {
 		font-size: 20px;
 		letter-spacing: 1px;
 		display: block;
-		margin-bottom: 20px;
+		margin-bottom: 65px;
 	}
 }
 
@@ -1283,8 +1283,7 @@ header  {
 }
 
 .about-content, .about-content_progect, .about-contentss {
-	margin-bottom: 5em;
-	margin-top: 10em;
+	margin-top: 12em;
 	width: 45%;
 	h1{
 		font-size: 40px;
@@ -1308,6 +1307,7 @@ header  {
 		font-size: 14px;
 		color: $brand-black;
 		margin-top: 20px;
+		width: 400px;
 	}
 }
 
@@ -1327,7 +1327,7 @@ header  {
 
 .cont {
 	p {
-		font-weight: 500;
+		font-weight: 600;
 		font-size: 50px;
 		line-height: 61px;
 		color: $brand-black;
@@ -1346,12 +1346,12 @@ header  {
 }
 
 .time {
-	margin-top: 60px;
+	margin-top: 18px;
 }
 
 .time , .time_vel, .time_mts {
 	p {
-		font-size: 20px;
+		font-size: 18px;
 		line-height: 24px;
 		color: #000000;
 		line-height: 130%;
@@ -1373,10 +1373,9 @@ header  {
 		line-height: 61px;
 	}
 	h2 {
-		font-size: 30px;
+		font-size: 22px;
 		color: white;
-		margin-top: 50px;
-		margin-bottom: 25px;
+		margin: 50px 0;
 		width: 590px;
 		line-height: 130%;
 		font-weight: 500;
@@ -1385,7 +1384,6 @@ header  {
 		font-size: 16px;
 		color: white;
 		line-height: 150%;
-		margin-top: 54px;
 	}
 }
 
@@ -1396,6 +1394,7 @@ header  {
     font-family: "Montserrat";
     width: 100%;
     font-weight: 500;
+	text-align: center;
 }
 
 .tel {
@@ -1435,8 +1434,10 @@ header  {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-    margin-bottom: 110px;
-	margin-top: 200px;
+	align-items: center;
+	margin-top: 6em;
+    margin-bottom: 5em;
+	
 }
 
 .fh5co-staff { 
@@ -1931,13 +1932,14 @@ margin-left: 120px;}
 	}
 }
 
-.col-md-13 {
-	margin-top: 2em;
+iframe {
+	margin-top: 90px;
+	height: 700px;
+
 }
 
 .fh5co-intro-section {
-	background: url(../images/konsultation.jpg)
-	 no-repeat;
+	background: url(../images/konsultation.jpg) no-repeat;
 }
 
 .threestep {
