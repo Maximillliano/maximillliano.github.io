@@ -764,7 +764,7 @@ header  {
 				height: 700px;
 				h2 {
 					font-size: 70px;
-					font-weight: 500;
+					font-weight: 600;
 					margin: 10px 0;
 					text-transform: uppercase;
 					color: #FFFFFF;
@@ -846,13 +846,13 @@ header  {
 
 .fh5co-heading {
 	h2 {
-		font-size: 50px;
-		font-weight: 500;
+		font-size: 45px;
+		font-weight: 600;
 		line-height: 1.5;
 		color: $brand-black;
 	}
 	p {
-		font-size: 20px;
+		font-size: 18px;
 		color: $brand-black;
 		padding-bottom: 60px;
 		line-height: 24px;
@@ -992,7 +992,7 @@ header  {
 
 .desc {
 	h3 {
-		font-weight: 500;
+		font-weight: 600;
 		font-size: 50px;
 		line-height: 120%;
 		color: #FFFFFF;
@@ -1266,6 +1266,7 @@ header  {
 		font-size: 20px;
 		letter-spacing: 1px;
 		display: block;
+		margin-bottom: 20px;
 	}
 }
 
@@ -1286,8 +1287,8 @@ header  {
 	margin-top: 10em;
 	width: 45%;
 	h1{
-		font-size: 50px;
-		font-weight: 500;
+		font-size: 40px;
+		font-weight: 600;
 		color: $brand-black;
 		line-height: 130%;
 	}
@@ -1298,16 +1299,15 @@ header  {
 		color: $brand-black;
 	}
 	p1 {
-		font-size: 16px;
+		font-size: 14px;
 		color: #6A6A6A;
 		margin-top: 10px;
 		line-height: 130%;
 	}
 	p {
-		font-size: 16px;
+		font-size: 14px;
 		color: $brand-black;
 		margin-top: 20px;
-		line-height: 150%;
 	}
 }
 
@@ -1368,6 +1368,7 @@ header  {
 	margin-top: -40px;
 	h1 {
 		font-size: 50px;
+		font-weight: 600;
 		color: white;
 		line-height: 61px;
 	}
@@ -1377,7 +1378,6 @@ header  {
 		margin-top: 50px;
 		margin-bottom: 25px;
 		width: 590px;
-		height: 78px;
 		line-height: 130%;
 		font-weight: 500;
 	}
@@ -1424,9 +1424,11 @@ header  {
 }
 
 .foto {
-		width: 385px;
-		height: 442px;
-		margin-top: 10em;
+	background-image: url(/images/Photo.jpg);
+	background-size: cover;
+	background-position: center right;
+	height: 100%;
+	width: 500px;
 }
 
 .block_studia {
@@ -1470,8 +1472,8 @@ header  {
 }
 
 // BLOG
-.fh5co-blog {
-	margin-bottom: 60px;
+#fh5co-blog {
+	padding-bottom: 0;
 	> a {
 		display: block;
 		position: relative;
@@ -1947,8 +1949,8 @@ margin-left: 120px;}
     justify-content: center;
 	text-align: center;
 	p {
-		font-size: 50px;
-		font-weight: 500;
+		font-size: 45px;
+		font-weight: 600;
 		line-height: 61px;
 	}
 }
@@ -2003,7 +2005,7 @@ margin-left: 120px;}
 .dizain_block ,.dizain_block_one {
 	display: flex;
 	align-items: center;
-	margin-bottom: 90px;
+	margin-bottom: 50px;
 }
 
 
@@ -2052,7 +2054,7 @@ margin-left: 120px;}
 
 .works, .works_two ,.works_three {
 	width: 640px;
-    height: 300px;
+    height: 240px;
 	background-size: cover;
 }
 
@@ -2241,10 +2243,6 @@ input {
 .one_blockk ,.two_blockk {
 	display: flex;
 	align-items: center;
-}
-
-.one, .two {
-	margin-top: -60px;
 }
 
 .logo_burger,.number_burger ,.cotial_burger, .cont_footer_adpt {

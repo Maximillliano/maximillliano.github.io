@@ -768,7 +768,7 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
 
 #fh5co-hero .flexslider .slider-text > .slider-text-inner h2 {
   font-size: 70px;
-  font-weight: 500;
+  font-weight: 600;
   margin: 10px 0;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -854,14 +854,14 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
 }
 
 .fh5co-heading h2 {
-  font-size: 50px;
-  font-weight: 500;
+  font-size: 45px;
+  font-weight: 600;
   line-height: 1.5;
   color: #222;
 }
 
 .fh5co-heading p {
-  font-size: 20px;
+  font-size: 18px;
   color: #222;
   padding-bottom: 60px;
   line-height: 24px;
@@ -1044,7 +1044,7 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
 }
 
 .desc h3 {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 50px;
   line-height: 120%;
   color: #FFFFFF;
@@ -1352,6 +1352,7 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
   font-size: 20px;
   letter-spacing: 1px;
   display: block;
+  margin-bottom: 20px;
 }
 
 .work {
@@ -1375,8 +1376,8 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
 }
 
 .about-content h1, .about-content_progect h1, .about-contentss h1 {
-  font-size: 50px;
-  font-weight: 500;
+  font-size: 40px;
+  font-weight: 600;
   color: #222;
   line-height: 130%;
 }
@@ -1389,17 +1390,16 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
 }
 
 .about-content p1, .about-content_progect p1, .about-contentss p1 {
-  font-size: 16px;
+  font-size: 14px;
   color: #6A6A6A;
   margin-top: 10px;
   line-height: 130%;
 }
 
 .about-content p, .about-content_progect p, .about-contentss p {
-  font-size: 16px;
+  font-size: 14px;
   color: #222;
   margin-top: 20px;
-  line-height: 150%;
 }
 
 .about-contentss {
@@ -1462,6 +1462,7 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
 
 .studio h1 {
   font-size: 50px;
+  font-weight: 600;
   color: white;
   line-height: 61px;
 }
@@ -1472,7 +1473,6 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
   margin-top: 50px;
   margin-bottom: 25px;
   width: 590px;
-  height: 78px;
   line-height: 130%;
   font-weight: 500;
 }
@@ -1521,9 +1521,11 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
 }
 
 .foto {
-  width: 385px;
-  height: 442px;
-  margin-top: 10em;
+  background-image: url(/images/Photo.jpg);
+  background-size: cover;
+  background-position: center right;
+  height: 100%;
+  width: 500px;
 }
 
 .block_studia {
@@ -1573,28 +1575,28 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
   background: rgba(255, 255, 255, 0.2);
 }
 
-.fh5co-blog {
-  margin-bottom: 60px;
+#fh5co-blog {
+  padding-bottom: 0;
 }
 
-.fh5co-blog > a {
+#fh5co-blog > a {
   display: block;
   position: relative;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-.fh5co-blog > a img {
+#fh5co-blog > a img {
   width: 100%;
 }
 
 @media screen and (max-width: 768px) {
-  .fh5co-blog {
+  #fh5co-blog {
     width: 100%;
   }
 }
 
-.fh5co-blog .blog-text {
+#fh5co-blog .blog-text {
   margin-bottom: 30px;
   position: relative;
   width: 100%;
@@ -1603,38 +1605,38 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
   transition: 0.3s;
 }
 
-.fh5co-blog .blog-text span {
+#fh5co-blog .blog-text span {
   display: inline-block;
   margin-bottom: 20px;
 }
 
-.fh5co-blog .blog-text span.comment {
+#fh5co-blog .blog-text span.comment {
   float: right;
   font-size: 14px;
 }
 
-.fh5co-blog .blog-text span.comment a {
+#fh5co-blog .blog-text span.comment a {
   color: rgba(34, 34, 34, 0.3);
 }
 
-.fh5co-blog .blog-text span.comment a i {
+#fh5co-blog .blog-text span.comment a i {
   color: white;
   padding-left: 7px;
 }
 
-.fh5co-blog .blog-text span.posted_on {
+#fh5co-blog .blog-text span.posted_on {
   font-size: 13px;
   letter-spacing: 5px;
   text-transform: uppercase;
 }
 
-.fh5co-blog .blog-text h3 {
+#fh5co-blog .blog-text h3 {
   font-size: 30px;
   margin-bottom: 20px;
   line-height: 1.5;
 }
 
-.fh5co-blog .blog-text h3 a {
+#fh5co-blog .blog-text h3 a {
   color: #222222;
   text-decoration: none;
 }
@@ -2129,8 +2131,8 @@ input[type="text"] {
 }
 
 .step p {
-  font-size: 50px;
-  font-weight: 500;
+  font-size: 45px;
+  font-weight: 600;
   line-height: 61px;
 }
 
@@ -2202,7 +2204,7 @@ input[type="text"] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 90px;
+  margin-bottom: 50px;
 }
 
 .circle, .circle_two {
@@ -2251,7 +2253,7 @@ input[type="text"] {
 
 .works, .works_two, .works_three {
   width: 640px;
-  height: 300px;
+  height: 240px;
   background-size: cover;
 }
 
@@ -2460,10 +2462,6 @@ input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.one, .two {
-  margin-top: -60px;
 }
 
 .logo_burger, .number_burger, .cotial_burger, .cont_footer_adpt {
