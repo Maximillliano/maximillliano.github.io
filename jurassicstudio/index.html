@@ -249,32 +249,32 @@
 			</div>
 
 			<div class="col-md-13 col-md-offset-0 animate-box text-center">
-				<li style="background-image: url(images/konsultation.jpg); width: 100%;   position: relative; opacity: 1; display: block; z-index: 2; height: 540px";>
+				<li class="contc_align">
 					<div class="container">
-						<div class="contcts">
-							<div class="konsultation">
-								<h2>Получить бесплатную консультацию!</h2>
-							</div>
-						</div>
 
-						<div class="bloc_contact">
-							<div class="form">
-								<h>Заполните простую форму и мы вам перезвоним в течении 1 часа.</h>
-							
-								<div class="form_one">
-									<input class="form-input_name" id="fname_one" name="Ваше имя" placeholder="Ваше имя" required> 
-								</div>
-								<div class="form_two">
-									<input class="form-input_tell" type="tel" id="tel_one" name="Телефон" placeholder="+375" value="+375" minlength="11" maxlength="13" required>
-								</div>
-
-								<div class="form_three">
-									<button class="consultation" type="button">
-										<p1>Бесплатная консультация</p1>
-									</button>
+							<div class="contcts">
+								<div class="konsultation">
+									<h2>Получить бесплатную консультацию!</h2>
 								</div>
 							</div>
-						</div>						
+							<div class="bloc_contact">
+								<div class="form">
+									<h>Заполните простую форму и мы вам перезвоним в течении 1 часа.</h>
+								
+									<div class="form_one">
+										<input class="form-input_name" id="fname_one" name="Ваше имя" placeholder="Ваше имя" required> 
+									</div>
+									<div class="form_two">
+										<input class="form-input_tell" type="tel" id="tel_one" name="Телефон" placeholder="+375" value="+375" minlength="11" maxlength="13" required>
+									</div>
+
+									<div class="form_three">
+										<button class="consultation" type="button">
+											<p1>Бесплатная консультация</p1>
+										</button>
+									</div>
+								</div>
+							</div>					
 					</div>
 				</li>
 			</div>
@@ -471,29 +471,37 @@
 							</div>
 						</div>	
 						<div class="inp col-md-6">
-							<div class="reg">
-								<form class="form-registration">
+							<form class="form-registration">
+								<div class="reg">
 									<div class="tel">
 										<p>Введите ваше имя</p> 
 										<input class="input_name_dizain" id="fname_two" name="Ваше имя" placeholder="Ваше имя" required>
 									</div>
-									<div class="numbers">
-										<div class="tel">
-											<h>Введите номер телефона</h>
-										</div>
+									<div class="tel">
+										<p>Введите номер телефона</p>
 										<input class="input_tell_dizain" type="tel" id="tel_two" name="Телефон" placeholder="+375" value="+375" minlength="11" maxlength="13" required>
-									</div> 
-								</form>			
-							</div>
-							<div class="messege">
-								<div class="mes">
-									<p>Сообщение</p>
-									<textarea class="form-inputs" name="Введите ваше сообшение" placeholder="Введите ваше сообшение" rows="1"></textarea>
-									<div class="cons">
-										<button class="progects" type="button">Отправить</button>
+									</div> 	
+								</div>
+								<div class="messege">
+									<div class="mes">
+										<p>Сообщение</p>
+										<textarea class="form-inputs" name="Введите ваше сообшение" placeholder="Введите ваше сообшение" rows="1"></textarea>
+										<div class="cons">
+											<button type="button" class="progects" data-toggle="modal" data-target=".bd-example-modal-lg">Отправить</button>
+										</div>
 									</div>
 								</div>
-							</div>
+
+								<!-- Modal -->
+								<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+									<div class="modal-dialog modal-lg">
+										<div class="modal-content">
+											<h3>Спасибо за обратную связь!</h3>
+											<p>Мы вам обязательно перезоним и ответим на ваши интересующие вопросы!</p>
+										</div>
+									</div>
+								</div>
+							</form>	
 						</div>
 					</div>
 				</div>

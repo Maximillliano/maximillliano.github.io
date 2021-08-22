@@ -93,6 +93,7 @@ body {
 	background: #ffff;
 	font-weight: 300;
 	overflow-x: hidden;
+	position: relative;
 
 	&.menu-show {
 		overflow: hidden;
@@ -933,6 +934,7 @@ header  {
 
 .form-registration {
 	display: flex;
+	flex-direction: column;
 }
 .numbers, .form-registration {
 	justify-content: space-between;
@@ -1041,6 +1043,7 @@ header  {
 		background-color: #f9f6f3;
 		border: 2px solid #000;
 		outline: none;
+		max-width: 100%;
 	}
 	.btn {
 		display: inline-block;
@@ -1391,6 +1394,15 @@ header  {
 	text-align: center;
 }
 
+.reg {
+	display: flex;
+	width: 100%;
+}
+
+.reg .tel:first-child {
+	margin-right: 20px;
+}
+
 .tel {
 	width: 100%;
 	p {
@@ -1409,6 +1421,7 @@ header  {
 .messege {
     color: white;
 	margin-top: 50px;
+	width: 100%;
 }
 
 .col-md-3 {
@@ -1595,7 +1608,6 @@ input[type="text"] {
 	width: 100%;
 	margin-left: 20px;
 	color: white;
-	margin-top: -2px;
 	.tel {
 		line-height: 1.5;
 	}
@@ -1816,7 +1828,6 @@ margin-left: 120px;}
     justify-content: space-between;
     text-align: left;
     line-height: 1em;
-	margin-top: 6px;
 	h {
 		width: 20%;
 		color: white;
@@ -2046,7 +2057,6 @@ iframe {
 }
 
 .works, .works_two ,.works_three {
-	width: 640px;
     height: 240px;
 	background-size: cover;
 }
@@ -2055,14 +2065,20 @@ iframe {
 	margin-left: 0px;
 }
 
-
+.contc_align {
+	display: flex;
+	align-items: center;
+	background-image: url(/images/konsultation.jpg); 
+	width: 100%;
+	z-index: 2;
+	height: 540px;
+}
 
 .konsultation {
 	h2 {
 		font-size: 50px;
 		color: white;
-		font-weight: 500;
-		padding-top: 180px;
+		font-weight: 600;
 	}
 	h3 {
 		font-size: 20px;
@@ -2115,7 +2131,6 @@ iframe {
 .form-input_tell, .input_tell_dizain {
 	background: url(../images/Flag.jpg); 
 	background-repeat: no-repeat ;
-	vertical-align: middle;
 	padding-left: 25px;
 	background-position: left;
 	height: min-content;
@@ -2206,6 +2221,7 @@ input {
 	height: 50px;
 	font: inherit;
     margin: 0;
+	margin-top: 30px;
     background-color:  rgba(255, 255, 255, 0.8);
 	border: none;
     color: $brand-black;
@@ -2263,10 +2279,6 @@ input {
 
 
 @media (max-width: 1500px) {
-	.konsultation h2 {
-		padding-top: 50px;
-	}
-
 	.bloc_contact{
 		text-align: left;
 	}
@@ -2278,15 +2290,28 @@ input {
 
 
 @media (max-width: 1200px) {
-	.bloc_contact {
-		flex-wrap: wrap;
+	.contcts {
+		display: flex;
+		align-items: center;
 	}
 	.form {
-		margin-left: 60px;
+		flex-direction: column;
+		margin: o auto;
+		h {
+			width: 100%;
+			text-align: center;
+		}
 	}
-	.works {
-		width: 443px;
+
+	#fh5co-featured {
+		padding-top: 8em;
+		padding-bottom: 8em;
 	}
+
+	#footer ul li {
+		margin-left: 40px;
+	}
+
 	.sotial_network ul {
 		margin-left: 0px;
 	}
@@ -2312,24 +2337,13 @@ input {
 	.step p ,.fh5co-heading h2 ,.konsultation h2 {
 		font-size: 45px;
 	}
-	
-	.bloc_contact {
-		text-align: left;
-		flex-direction: column;
-	}
-	.form {
-		margin-left: 0px;
-		width: 500px;
-	}
+
 	.form_one ,.form-input_tell {
 		margin-top: 30px;
 	}
 	.consultation {
 		margin-top: 40px;
 	}
-}
-	
-@media (max-width: 1200px){
 	.form-input_name ,.form-input_tell {
 		width: 450px;
 	}	
@@ -3116,32 +3130,26 @@ $wheel_size: $border_width * 3;
   100% { top: 30%; opacity: 0; }
 }
 
-.scroll-msg-container {
-  position: absolute;
-  bottom: 2%;
-  left: 50%;
-  z-index: 2;
-  width: $mouse_width + $border_width*2;
-  height: $mouse_height + $border_width*2;
-  margin-top: - ($mouse_height + $border_width * 2) * 0.5;
-  margin-left: - ($mouse_width + $border_width * 2) * 0.5;
+.modal-open {
+	padding-right: 0!important;
 }
-  .scroll-msg-inner {
-    width: $mouse_width;
-    height: $mouse_height;
-    position: relative;
-    border-radius: $mouse_width/2 + $border_width * 2;
-    border: $border_width solid $mouse_color;
-  }
-      .scroll-msg-wheel {
-        position: absolute;
-        top: 10%;
-        left: 50%;
-        width: $wheel_size;
-        height: $wheel_size;
-        margin-left: -$wheel_size/2;
-        border-radius: 50%;
-        background-color: $mouse_color;
-        
-        @include animation(mouse-scroll .9s infinite);
-      }
+
+.modal-dialog {
+	width: 500px;
+	margin-top: calc( 50vh - (216px/2));
+}
+
+.modal-content {
+	padding: 40px;
+	text-align: center;
+	h3 {
+		font-weight: 600;
+		font-size: 25px;
+		line-height: 150%;
+	}
+	p {
+		margin-top: 10px;
+		font-size: 14px;
+		line-height: 150%;
+	}
+}
