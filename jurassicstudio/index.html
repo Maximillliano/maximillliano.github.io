@@ -262,10 +262,10 @@
 								<h>Заполните простую форму и мы вам перезвоним в течении 1 часа.</h>
 							
 								<div class="form_one">
-									<input class="form-input_name" id="fname" name="Ваше имя" placeholder="Ваше имя"> 
+									<input class="form-input_name" id="fname_one" name="Ваше имя" placeholder="Ваше имя" required> 
 								</div>
 								<div class="form_two">
-									<input class="form-input_tell" type="tel" id="tel" name="Телефон" placeholder="+375">
+									<input class="form-input_tell" type="tel" id="tel_one" name="Телефон" placeholder="+375" value="+375" minlength="11" maxlength="13" required>
 								</div>
 
 								<div class="form_three">
@@ -273,7 +273,7 @@
 										<p1>Бесплатная консультация</p1>
 									</button>
 								</div>
-						</div>
+							</div>
 						</div>						
 					</div>
 				</li>
@@ -475,20 +475,20 @@
 								<form class="form-registration">
 									<div class="tel">
 										<p>Введите ваше имя</p> 
-										<input class="input_name_dizain" id="fname" name="Ваше имя" placeholder="Ваше имя">
+										<input class="input_name_dizain" id="fname_two" name="Ваше имя" placeholder="Ваше имя" required>
 									</div>
 									<div class="numbers">
 										<div class="tel">
 											<h>Введите номер телефона</h>
 										</div>
-										<input class="input_tell_dizain" type="tel" id="tel" name="Телефон" placeholder="+375">
+										<input class="input_tell_dizain" type="tel" id="tel_two" name="Телефон" placeholder="+375" value="+375" minlength="11" maxlength="13" required>
 									</div> 
 								</form>			
 							</div>
 							<div class="messege">
 								<div class="mes">
 									<p>Сообщение</p>
-									<input class="form-inputs" type="tel" id="tel" name="Введите ваше сообшение" placeholder="Введите ваше сообшение">
+									<textarea class="form-inputs" name="Введите ваше сообшение" placeholder="Введите ваше сообшение" rows="1"></textarea>
 									<div class="cons">
 										<button class="progects" type="button">Отправить</button>
 									</div>

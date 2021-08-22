@@ -56,11 +56,6 @@ $form-group-margin-bottom: 30px !default;
 }
 
 @font-face {
-	font-family: 'Montserrat';
-	src: url();
-}
-
-@font-face {
 	font-family: 'icomoon';
 	src:url('../fonts/icomoon/icomoon.eot?srf3rx');
 	src:url('../fonts/icomoon/icomoon.eot?srf3rx#iefix') format('embedded-opentype'),
@@ -96,7 +91,6 @@ body {
 	line-height: 1.8;
 	font-size: 20px;
 	background: #ffff;
-	background-image: url(images/photography.png);
 	font-weight: 300;
 	overflow-x: hidden;
 
@@ -684,7 +678,6 @@ header  {
 //fh5co-hero
 #fh5co-hero {
 	min-height: 700px;
-	background: $brand-white url(../images/loader.gif) no-repeat center center;
 	z-index: 1;
 	@media screen and (max-width: $screen-md){
 		width: 100%;
@@ -1069,7 +1062,6 @@ header  {
 		height: 700px;
 		@media screen and (max-width: $screen-md){
 			display: block;
-			vertical-align: none;
 			text-align: left;
 			height: inherit;
 		}
@@ -1266,7 +1258,6 @@ header  {
 		font-size: 20px;
 		letter-spacing: 1px;
 		display: block;
-		margin-bottom: 65px;
 	}
 }
 
@@ -1280,6 +1271,10 @@ header  {
 }
 .work_two{
 	display: none;
+}
+
+.about-content {
+	margin-bottom: 8em;
 }
 
 .about-content, .about-content_progect, .about-contentss {
@@ -1365,7 +1360,6 @@ header  {
 
 .studio {
 	width: 500px;
-	margin-top: -40px;
 	h1 {
 		font-size: 50px;
 		font-weight: 600;
@@ -1614,10 +1608,7 @@ input[type="text"] {
 // footer
 #footer {
 	padding: 2em 0 1em 0;
-	background-color: $brand-black {
-		filter: alpha (Opacity=50);/* прозрачность для IE */
-		opacity: 0.50;/* прозрачность для других браузеров */
-	}
+	background-color: $brand-black;
 	.section-title {
 		font-size: 24px;
 		font-weight: 400;
@@ -2036,7 +2027,7 @@ iframe {
 	margin-left: 25px;
 	h1 {
 		margin-bottom: 15px;
-		font-weight: 500;
+		font-weight: 600;
 		font-size: 30px;
 		color: $brand-black;
 	}
@@ -2218,7 +2209,6 @@ input {
     background-color:  rgba(255, 255, 255, 0.8);
 	border: none;
     color: $brand-black;
-	margin-top: 56px;
 	font-weight: 300;
 	transition: all 0.8s ease 0s;
 }
@@ -2236,6 +2226,10 @@ input {
 .fh5co-logo img {
     width: 193px;
     height: 45px;
+}
+
+.count_one {
+	margin-bottom: 50px;
 }
 
 .circle_mob ,.texts_mob ,.dizain_mob ,.work_mob {
@@ -2515,6 +2509,9 @@ input {
 .accordion a {
 	color: $brand-black;
 	text-decoration: none;
+}
+.accordion a:hover {
+	color: #777;
 }
 .accordion-link {
 	color: $brand-black;
