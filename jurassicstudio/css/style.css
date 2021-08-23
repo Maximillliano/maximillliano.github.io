@@ -860,7 +860,7 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
 .fh5co-heading p {
   font-size: 18px;
   color: #222;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
   line-height: 24px;
 }
 
@@ -2024,7 +2024,7 @@ input[type="text"] {
   width: 233px;
   height: 50px;
   border-radius: 1px;
-  margin-top: 80px;
+  margin-top: 30px;
   -webkit-transition: .8s;
   transition: .8s;
 }
