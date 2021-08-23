@@ -259,9 +259,6 @@ h1, h2, h3, h4, h5, h6 {
 		list-style-type: none;
 		margin-left: 150px;
 		margin-top: -100px;
-		@media screen and (max-width: $screen-sm) {
-			padding: 20px 0 0 0;
-		}
 		li {
 			padding: 0;
 			margin: 0;
@@ -281,10 +278,6 @@ h1, h2, h3, h4, h5, h6 {
 				padding: 10px 20px;
 				transition: .8s;
 
-				@media screen and (max-width: $screen-sm) {
-					font-size: 30px;
-					padding: 10px 0;
-				}
 				&:hover, &:active, &:focus {
 					color: rgba($brand-white,1);
 					outline: none;
@@ -292,9 +285,6 @@ h1, h2, h3, h4, h5, h6 {
 					padding-left: 80px;
 				}
 			}
-			@media screen and (max-width: $screen-sm) {
-				display: block;
-			}	
 		}
 	}
 
@@ -310,21 +300,11 @@ h1, h2, h3, h4, h5, h6 {
 	display: table;
 	width: 100%;
 	height: 100%;
-	@media screen and (max-width: $screen-sm) {
-		display: block!important;
-		height: inherit!important;
-		width: inherit!important;
-	}
 	.fh5co-table-cell {
 		width: 100%;
 		height: 100%;
 		display: table-cell;
 		vertical-align: middle;
-		@media screen and (max-width: $screen-sm) {
-			display: block!important;
-			height: inherit!important;
-			width: inherit!important;
-		}
 	}
 }
 
@@ -550,15 +530,7 @@ header  {
 			padding-right: 50px;
 			a{
 				margin-bottom: 0;
-				@media screen and (max-width: $screen-md) {
-					i{
-						color: rgba($brand-white,.5);
-					}
-			  	}
 			}
-			@media screen and (max-width: $screen-xs) {
-				display: none;
-		  	}
 		}
 	}
 }
@@ -612,12 +584,6 @@ header  {
 				background: $brand-white;
 			}
 	 		@include transition(.2s);
-	   }
-	   @media screen and (max-width: $screen-md){
-			background: rgba($brand-white,.8);
-			&::before, &::after {
-			   background: rgba($brand-white,.8);
-		   }
 	   }
   }
   &.dark {
@@ -673,20 +639,12 @@ header  {
 	margin: 0 auto;
 	cursor: pointer;
 	margin-top: 22px;
-  	@media screen and (max-width: $screen-sm) {
-  		display: block;
-  		top: 0px;
-  		// margin-top: 2.5em;
-  	}
 }
 
 //fh5co-hero
 #fh5co-hero {
 	min-height: 700px;
 	z-index: 1;
-	@media screen and (max-width: $screen-md){
-		width: 100%;
-	}
 	.btn {
 		font-size: 24px;
 		&.btn-primary {
@@ -701,9 +659,6 @@ header  {
 		.slides {
 			position: relative;
 			// overflow: hidden;
-			@media screen and (max-width: $screen-sm) {
-				overflow: hidden;
-			}
 			li {
 				background-repeat: no-repeat;
 				background-size: cover;
@@ -726,9 +681,6 @@ header  {
 			position: absolute;
 			bottom: 5em;
 			z-index: 1000;
-			@media screen and (max-width: $screen-sm) {
-				bottom: 1em;
-			}
 
 			li {
 				a {
@@ -753,9 +705,6 @@ header  {
 			height: 700px;
 			z-index: 9;
 			padding: 0px;
-			@media screen and (max-width: $screen-sm) {
-				text-align: center;
-			}
 			> .slider-text-inner {
 				display: table-cell;
 				vertical-align: middle;
@@ -766,9 +715,6 @@ header  {
 					margin: 10px 0;
 					text-transform: uppercase;
 					color: #FFFFFF;
-					@media screen and (max-width: $screen-sm) {
-						font-size: 30px;
-					}
 				}
 				p{
 					font-size: 20px;
@@ -799,14 +745,6 @@ header  {
 				.desc {
 					-moz-box-shadow: 0px 10px 30px -13px rgba(0,0,0,0.75);
 					box-shadow: 0px 10px 30px -13px rgba(0,0,0,0.75);
-				
-					@media screen and (max-width: $screen-md){
-						padding: 0;
-						background: none;
-						-webkit-box-shadow: 0px 10px 30px -13px rgba(0,0,0,0.0);
-						-moz-box-shadow: 0px 10px 30px -13px rgba(0,0,0,0.0);
-						box-shadow: 0px 10px 30px -13px rgba(0,0,0,0.0);
-					}
 				}
 				.h2-title {font-size: 70px;}
 			}
@@ -866,9 +804,6 @@ header  {
 	font-size: 40px;
 	font-weight: 300;
 	line-height: 1.5;
-	@media screen and (max-width: $screen-sm){
-		font-size: 30px;
-	}
 }
 
 //icon-scroll
@@ -1022,10 +957,6 @@ header  {
 	width: 100%;
 	min-height: 700px;
 	display: table;
-	@media screen and (max-width: $screen-md){
-		display: block;
-		min-height: 400px;
-	}
 	form {
 		z-index: 2;
 		top: 100px;
@@ -1067,11 +998,6 @@ header  {
 		display: table-cell;
 		vertical-align: middle;
 		height: 700px;
-		@media screen and (max-width: $screen-md){
-			display: block;
-			text-align: left;
-			height: inherit;
-		}
 	}
 	.desc{
 		h3{
@@ -1092,12 +1018,6 @@ header  {
 			font-size: 12px;
 			text-transform: uppercase;
 			letter-spacing: 5px;
-		}
-		@media screen and (max-width: $screen-sm){
-			padding: 1.5em;
-			h3{
-				font-size: 30px;
-			}
 		}
 	}
 }
@@ -1182,9 +1102,6 @@ header  {
 		text-decoration: none;
 		color: $brand-white;
 		
-		@media screen and (max-width: $screen-sm) {
-			opacity: 1;
-		}
 		span, i {
 			height: 370px;
 			display: table-cell;
@@ -1299,11 +1216,12 @@ header  {
 		line-height: 130%;
 		color: $brand-black;
 	}
-	p1 {
-		font-size: 14px;
-		color: #6A6A6A;
+	.note {
+		font-size: 12px;
+		color: $brand-black;
 		margin-top: 10px;
 		line-height: 130%;
+		font-weight: 400;
 	}
 	p {
 		font-size: 14px;
@@ -1366,7 +1284,7 @@ header  {
 }
 
 .studio {
-	width: 500px;
+	width: 50%;
 	h1 {
 		font-size: 50px;
 		font-weight: 600;
@@ -1493,10 +1411,6 @@ header  {
 		img {
 			width: 100%;
 		}
-
-	}
-	@media screen and (max-width: $screen-sm) {
-		width: 100%;
 	}
 	.blog-text {
 		margin-bottom: 30px;
@@ -1662,9 +1576,6 @@ input[type="text"] {
 	.float {
 		width: 50%;
 		float: left;
-		@media screen and (max-width: $screen-sm) {
-			width: 100%;
-		}
 	}
 
 	a {
@@ -2466,6 +2377,9 @@ $wheel_size: $border_width * 3;
 			text-align: center;
 		}
 	}
+	#fh5co-hero .flexslider .slider-text > .slider-text-inner h2 {
+		width: 100%;
+	}
 
 	#fh5co-featured {
 		padding-top: 8em;
@@ -2507,7 +2421,19 @@ $wheel_size: $border_width * 3;
 	}
 	.form-input_name ,.form-input_tell {
 		width: 450px;
-	}	
+	}
+
+
+	//ABOUT PAGE
+	.fh5co-counters_studia {
+		font-size: 70px;
+	}
+	.fh5co-counters .fh5co-counter-label {
+		font-size: 16px;
+	}
+	.count_one {
+		margin-bottom: 100px;
+	}
 }
 
 @media (max-width: 1000px){
@@ -2516,12 +2442,19 @@ $wheel_size: $border_width * 3;
 		display: flex;
 		flex-wrap: wrap;
 	}
-	.two_blockk {
+	.fh5co-counter-label {
+		margin-bottom: 40px;
+		.last-number {
+			margin-bottom: 0;
+		}
+	}
+	.two_blockk, .one_blockk {
 		flex-wrap: wrap;
 	}
 	.works_two_adapt {
 		display: block;
 		margin-top: 50px;
+		margin-right: -20px;
 	img {
 		width: 750px;
 		height: 300px;
@@ -2533,6 +2466,10 @@ $wheel_size: $border_width * 3;
 		text-align: left;
 		margin-left: 160px;
 		padding: 10px;
+	}
+	.phone {
+		position: absolute;
+		right: 60px;
 	}
 	.ph {
 		p1 {
@@ -2568,9 +2505,7 @@ $wheel_size: $border_width * 3;
 	.sotial_network {
 		display: none;
 	}
-	.dizain_block, .one_blockk {
-		flex-wrap: wrap;
-	}
+
 	.dizain_progect {
 		flex-wrap: wrap;
 	}
@@ -2596,18 +2531,11 @@ $wheel_size: $border_width * 3;
 		margin-left: 30px;
 	}
 
-	.studio h2 {
-		width: 400px;
-	}
 	.step p, .fh5co-heading h2 {
 		font-size: 35px;
 	}
 	.dizain_block {
 		margin-top: 0px;
-	}
-
-	.studio {
-		width: 300px;
 	}
 
 	.works ,.works_three {
@@ -2618,166 +2546,9 @@ $wheel_size: $border_width * 3;
 	.dizain_block_two {
 		display: block;
 	}
-}
-
-
-@media (max-width: 800px) {
-	#footer ul li {
-		margin-left: 30px;
-	}
-	.cont ,.about-content_progect h1 {
-		margin-top: -40px;
-	}
-	.about-content_progect h1 {
-		margin-bottom: -20px;
-	}
-	span {
-		display: none;
-	}
-	.works_two_adapt img {
-		width: 670px;
-	}
-	.phone_header {
-		display: none;
-	}
-	span img {
-		opacity:0;
-	}
-	.abou {
-		flex-direction: column;
-		margin-top: -60px;
-	}
-	.foto {
-		margin-top: 0px;
-		margin-left: 15px;
-	}
-	.about-content {
-		width: 500px;
-		margin-bottom: 12px;
-	}
-}
-
-@media (max-width: 780px){
-	.text_header {
-		text-align: left;
-	}
-	.progect {
-		justify-content: left;
-		display: flex;
-	}
-}
-
-
-@media (max-width: 500px){
-	
-}
-
-
-
-@media (max-width: 380px){
-	
-	//Header
-	header {
-		height: inherit;
-		.phone_header {
-			display: none;
-		}
-		.fh5co-navbar-brand {
-			height: 60px;
-			.fh5co-logo img {
-				margin-top: 7px;
-				width: 160px;
-			}
-		}
-		.fh5co-nav-toggle {
-			margin-top: 6px;
-			i, i::before, i::after {
-				background: $brand-body-color;
-			}
-			i::before {
-				top: -10px;
-			}
-			i::after {
-				bottom: -10px;
-			}	
-		}
-	}
-
-	//Burger-menu
-	.logo_burger {
-		display: block;
-		text-align: left;
+	#fh5co-about {
 		padding-left: 15px;
-		.burger {
-			width: 160px;
-		}
-	}
-	#fh5co-main-nav .fh5co-nav-toggle {
-		right: 15px;
-	}
-	#fh5co-main-nav ul {
-		margin-left: 0;
-		padding-left: 20px;
-		margin-top: 40%;
-		li {
-			margin-top: 15px;
-			.active-menu {
-				font-size: 40px;
-			}
-			a {
-				padding-bottom: 0px;
-				font-size: 24px;
-			}
-		}
-	}
-
-	//Main
-	#fh5co-hero .flexslider .slider-text > .slider-text-inner {
-		p {
-			font-size: 12px;
-			color: #fff;
-			line-height: 150%;
-			text-align: left;
-		}
-		h2 {
-			font-weight: 600;
-			color: #FFFFFF;
-			text-align: left;
-			font-size: 34px;
-			margin: 20px 0;
-		}
-		.subtitle {
-			font-size: 13px;
-			line-height: 150%;
-			width: 100%;
-			text-align: left;
-		}	
-	}
-	.progect {
-		margin-top: 20px;
-		p1 {
-			font-size: 18px;
-			margin-top: 7px;
-			width: 100%;
-			text-align: center;
-		}
-	}
-	.scroll-msg-container {
-		bottom: 10%;
-	}
-
-	//Numbers
-	.fh5co-counters {
-		padding: 60px 0;
-		.fh5co-counter {
-			font-size: 50px;
-		}
-	}
-	.fh5co-counter-label {
-		margin-bottom: 3em;
-	}
-	.last-number {
-		margin-bottom: 0;
+		padding-right: 15px;
 	}
 
 	//Portfolio
@@ -2813,74 +2584,6 @@ $wheel_size: $border_width * 3;
 		margin-top: 10px;
 		p {
 			font-size: 18px;
-		}
-	}
-
-	//Call us
-	.contc_align {
-		padding: 120px 0;
-		height: auto;
-		.konsultation {	
-			h2 {
-				font-size: 32px;
-				line-height: 39px;
-				text-align: left;
-			}
-			h3 {
-				font-size: 15px;
-				line-height: 150%;
-				text-align: left;
-			}
-		}
-	}
-
-	.form {
-		align-items: flex-start;
-		font-size: 15px;
-		line-height: 140%;
-		h {
-			margin-top: 28px;
-			font-size: 15px;
-			text-align: left;
-		}
-		.form_one, .form_two {
-			width: 100%;
-			margin-top: 50px;
-			.form-input_tell {
-				margin-top: 0;
-			}
-		}
-		.form_three {
-			margin-top: 40px;
-		}
-		.form-input_name, .form-input_tell {
-			width: 100%;
-		}
-		.consultation {
-			margin-top: 0;
-		}
-	}
-	
-	//Services
-	#fh5co-about {
-		padding: 70px 15px;
-		.accordion-link {
-			h3 {
-				font-size: 18px;
-				font-weight: 600;
-			}
-			svg {
-				width: 25px;
-			}
-			.accordion a {
-				padding: 15px 0;
-			}
-		}
-		.answer li {
-			font-size: 15px;
-		}
-		hr {
-			margin: 0;
 		}
 	}
 
@@ -2974,18 +2677,22 @@ $wheel_size: $border_width * 3;
 	//Footer
 	.logo_footer {
 		img {
-			width: 120px;
+			width: 145px;
 			height: inherit;
 		}
 	}
 	#footer {
 		ul {
 			display: none;
+			li {
+				margin-top: 15px;
+			}
 		}
 		.footer_none {
 			display: block;
 			ul {
 				display: block;
+				text-align: center;
 				margin-top: 50px;
 				li {
 					margin-left: 0;
@@ -3013,19 +2720,222 @@ $wheel_size: $border_width * 3;
 		}
 	}
 
-	
-	
-	#footer ul li {
-		margin-top: 15px;
+	//ABOUT PAGE
+	.abou {
+		flex-direction: column;
+		.about-content {
+			margin-top: 150px;
+			margin-bottom: 60px;
+		}
+		.about-content, .about-content_progect, .about-contentss {
+			width: 100%;
+		}
+		.about-content p, .about-content_progect p, .about-contentss p {
+			width: 100%;
+		}
+		
+		.foto {
+			height: 378px;
+			width: 100%;
+			margin-bottom: 60px;
+		}
+	}
+	.studio h2 {
+		width: 100%;
+	}
+	.card {
+		margin-bottom: 15px;
+	}
+}
+
+@media (max-width: 600px){
+	.text_header {
+		text-align: left;
+	}
+	.progect {
+		justify-content: left;
+		display: flex;
+	}
+	//Header
+	header {
+		height: inherit;
+		.phone_header {
+			display: none;
+		}
+		.fh5co-navbar-brand {
+			height: 60px;
+			.fh5co-logo img {
+				margin-top: 7px;
+				width: 160px;
+			}
+		}
+		.fh5co-nav-toggle {
+			margin-top: 6px;
+			i, i::before, i::after {
+				background: $brand-body-color;
+			}
+			i::before {
+				top: -10px;
+			}
+			i::after {
+				bottom: -10px;
+			}	
+		}
 	}
 
+	//Burger-menu
+	.logo_burger {
+		display: block;
+		text-align: left;
+		padding-left: 15px;
+		.burger {
+			width: 160px;
+		}
+	}
+	#fh5co-main-nav .fh5co-nav-toggle {
+		right: 15px;
+	}
+	#fh5co-main-nav ul {
+		margin-left: 0;
+		padding-left: 20px;
+		margin-top: 40%;
+		li {
+			margin-top: 15px;
+			.active-menu {
+				font-size: 40px;
+			}
+			a {
+				padding-bottom: 0px;
+				font-size: 24px;
+			}
+		}
+	}
+
+	//Main
+	#fh5co-hero .flexslider .slider-text > .slider-text-inner {
+		p {
+			font-size: 12px;
+			color: #fff;
+			line-height: 150%;
+			text-align: left;
+		}
+		h2 {
+			font-weight: 600;
+			color: #FFFFFF;
+			text-align: left;
+			font-size: 34px;
+			margin: 20px 0;
+		}
+		.subtitle {
+			font-size: 13px;
+			line-height: 150%;
+			width: 80%;
+			text-align: left;
+		}	
+	}
+	.progect {
+		margin-top: 20px;
+		p1 {
+			font-size: 18px;
+			margin-top: 7px;
+			width: 100%;
+			text-align: center;
+		}
+	}
+	.scroll-msg-container {
+		bottom: 10%;
+	}
+
+	//Numbers
+	.fh5co-counters {
+		padding: 60px 0;
+		.fh5co-counter {
+			font-size: 50px;
+		}
+	}
+	.fh5co-counter-label {
+		margin-bottom: 3em;
+	}
+	.last-number {
+		margin-bottom: 0;
+	}
+
+	//Call us
+	.contc_align {
+		padding: 120px 0;
+		height: auto;
+		.konsultation {	
+			h2 {
+				font-size: 32px;
+				line-height: 39px;
+				text-align: left;
+			}
+			h3 {
+				font-size: 15px;
+				line-height: 150%;
+				text-align: left;
+			}
+		}
+	}
+
+	.form {
+		align-items: flex-start;
+		font-size: 15px;
+		line-height: 140%;
+		h {
+			margin-top: 28px;
+			font-size: 15px;
+			text-align: left;
+		}
+		.form_one, .form_two {
+			width: 100%;
+			margin-top: 50px;
+			.form-input_tell {
+				margin-top: 0;
+			}
+		}
+		.form_three {
+			margin-top: 40px;
+		}
+		.form-input_name, .form-input_tell {
+			width: 100%;
+		}
+		.consultation {
+			margin-top: 0;
+		}
+	}
+	
+	//Services
+	#fh5co-about {
+		padding: 70px 15px;
+		.accordion-link {
+			h3 {
+				font-size: 18px;
+				font-weight: 600;
+			}
+			svg {
+				width: 25px;
+			}
+			.accordion a {
+				padding: 15px 0;
+			}
+		}
+		.answer li {
+			font-size: 15px;
+		}
+		hr {
+			margin: 0;
+		}
+	}
+
+	//ABOUT PAGE
+
 	.about-content {
-		width: 200px;
-		margin-left: 15px;
-		margin-top: 140px;
+		padding-left: 15px;
+		padding-right: 15px;
+		margin-top: 150px;
 		h1 {
-			width: 254px;
-			font-weight: 500;
+			font-weight: 600;
 			font-size: 32px;
 			line-height: 140%;
 		}
@@ -3043,17 +2953,18 @@ $wheel_size: $border_width * 3;
 			width: 200px;
 		}
 		p {
-			width: 240px;
 			font-size: 14px;
 			line-height: 150%;
 		}
 	}
+	.abou .foto {
+		margin-bottom: 0;
+	}
 	.about-content_progect {
-		margin-bottom: 60px;
 		margin-top: 140px;
 	}
 	.about-content_progect h1 {
-		font-weight: 500;
+		font-weight: 600;
 		font-size: 32px;
 		line-height: 130%;
 	}
@@ -3101,10 +3012,6 @@ $wheel_size: $border_width * 3;
 		text-decoration: none;
 		margin-left: 15px;
 	}
-
-
-	
-	
 	.texts {
 		margin-left: 0px;
 	}
@@ -3173,7 +3080,6 @@ $wheel_size: $border_width * 3;
 	}
 
 	#footer a {
-		color: #F2F2F2;
 		line-height: 12px;
 	}
 	.footer_menu p1 {
@@ -3229,31 +3135,39 @@ $wheel_size: $border_width * 3;
 	}
 
 	.block_studia {
-		margin-top: 70px;
+		margin-top: 0;
+		margin-bottom: 0;
 		flex-direction: column;
 	}
 	.studio {
+		width: 100%;
 		h1 {
-			font-weight: 500;
+			font-weight: 600;
 			font-size: 32px;
 			line-height: 39px;
 		}
 		h2 {
-			width: 300px;
 			font-weight: 500;
 			font-size: 20px;
 			line-height: 130%;
-			margin-top: 20px;
+			margin-top: 40px;
+			margin-bottom: 0;
 		}
-		p{
+		p {
 			font-size: 14px;
 			line-height: 150%;
-			margin-top: 10px;
+			margin-top: 20px;
 			
 		}
 	}
+	.one {
+		margin-top: 40px;
+	}
+	.count_one {
+		margin-bottom: 20px;
+	}
 	.fh5co-counters_studia {
-		font-size: 45px;
+		
 		text-align: center;
 	}
 	.block_portfolio {
