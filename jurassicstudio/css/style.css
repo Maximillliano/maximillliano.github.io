@@ -1923,6 +1923,11 @@ input[type="text"] {
   line-height: 138%;
 }
 
+.ph {
+  -webkit-animation: phone 5s ease-in-out infinite;
+          animation: phone 5s ease-in-out infinite;
+}
+
 .bt {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -2552,7 +2557,7 @@ p2 {
 }
 
 .modal-dialog {
-  width: 500px;
+  max-width: 500px;
   margin-top: calc( 50vh - (216px/2));
 }
 
@@ -3355,9 +3360,6 @@ p2 {
     font-size: 18px;
     line-height: 130%;
   }
-  .time_mail p {
-    width: 250px;
-  }
   .block_studia {
     margin-top: 0;
     margin-bottom: 0;
@@ -3441,5 +3443,14 @@ p2 {
   }
   iframe {
     margin-bottom: 15px;
+  }
+  .time_mail p2, .time_mts p2, .time_vel p2 {
+    display: block;
+  }
+  .modal-content h3 {
+    font-size: 16px;
+  }
+  .modal-content p {
+    font-size: 13px;
   }
 }

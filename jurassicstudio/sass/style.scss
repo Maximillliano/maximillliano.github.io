@@ -1797,6 +1797,10 @@ margin-left: 120px;}
 	line-height: 138%;
 }
 
+.ph {
+	animation: phone 5s ease-in-out infinite;
+}
+
 .bt {
 	justify-content: center;
     display: flex;
@@ -2343,7 +2347,7 @@ $wheel_size: $border_width * 3;
 }
 
 .modal-dialog {
-	width: 500px;
+	max-width: 500px;
 	margin-top: calc( 50vh - (216px/2));
 }
 
@@ -3180,9 +3184,7 @@ $wheel_size: $border_width * 3;
 			line-height: 130%;
 		}
 	}
-	.time_mail p {
-		width: 250px;
-	}
+
 
 	.block_studia {
 		margin-top: 0;
@@ -3265,6 +3267,19 @@ $wheel_size: $border_width * 3;
 	}
 	iframe {
 		margin-bottom: 15px;
+	}
+	.time_mail p2, .time_mts p2, .time_vel p2 {
+		display: block;
+	}
+
+	//Modal
+	.modal-content {
+		h3 {
+			font-size: 16px;	
+		}
+		p {
+			font-size: 13px;
+		}
 	}
 
 	
