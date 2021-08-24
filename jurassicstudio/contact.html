@@ -122,7 +122,7 @@
 			<div id="fh5co-about-contact">
 				<div class="container">
 					<div class="row animate-box">
-						<div class="col-md-5 col-md-offset-0 text-left animate-box">
+						<div class="col-md-5 col-sm-12 col-md-offset-0 text-left animate-box">
 							<div class="about-contentss">
 								<div class="cont">
 									<p>Контакты</p>
@@ -150,59 +150,66 @@
 								</div>
 							</div>
 						</div>
-						<iframe class="col-md-7" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad3a8217140d6d7f646a903c53e17a926fe21cac460686bd9d9dced7de53ab7a0&amp;source=constructor" frameborder="0"></iframe>
+						<iframe class="col-7 col-md-6 col-sm-12" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad3a8217140d6d7f646a903c53e17a926fe21cac460686bd9d9dced7de53ab7a0&amp;source=constructor" frameborder="0"></iframe>
 					</div>
 				</div>					
 			</div>
 
 			<!--Contacts-->
-			<div id="fh5co-featured">
-				<div class="container">
-					<div class="dizain_bloks">
-						<div class="dizain_progect">
-							<div class="desc col-md-6">
-								<h3>Напишите нам</h3>
-								<p>
-									Закажите дизайн-проект и получите комплексное решение всех вопросов,
-									связанных с ремонтом будущего дома 
-								</p>
-								<div class="kontacts">	
-									<a href="tel:+375296727206" class="phon">
-										<img class="pho" src="images/Phone.svg">
-										+375 (29) 672-72-06
-									</a>
-										<br>
-									<a href="mailto:order@bu-one.ru"class="phon">
-										<img class="mail" src="images/mail.svg">
-										order@bu-one.ru
-									</a>
-								</div>
-							</div>	
-							<div class="inp col-md-6">
+		<div id="fh5co-featured">
+			<div class="container">
+				<div class="dizain_bloks">
+					<div class="dizain_progect">
+						<div class="desc col-md-6">
+							<h3>Напишите нам</h3>
+							<p>
+								Закажите дизайн-проект и получите комплексное решение всех вопросов,
+								связанных с ремонтом будущего дома 
+							</p>
+							<div class="kontacts">	
+								<a href="tel:+375296727206" class="phon">
+									<img class="pho" src="images/Phone.svg">
+									+375 (29) 672-72-06
+								</a>
+									<br>
+								<a href="mailto:order@bu-one.ru"class="phon">
+									<img class="mail" src="images/mail.svg">
+									order@bu-one.ru
+								</a>
+							</div>
+						</div>	
+						<div class="inp col-md-6">
+							<form class="form-registration">
 								<div class="reg">
-									<form class="form-registration">
-										<div class="tel">
-											<p>Введите ваше имя</p> 
-											<input class="input_name_dizain" id="fname" name="Ваше имя" placeholder="Ваше имя" required>
-										</div>
-										<div class="numbers">
-											<div class="tel">
-												<h>Введите номер телефона</h>
-											</div>
-											<input class="input_tell_dizain" type="tel" id="tel" name="Телефон" placeholder="+375" value="+375" minlength="11" maxlength="13" required>
-										</div> 
-									</form>			
+									<div class="tel">
+										<p>Введите ваше имя</p> 
+										<input class="input_name_dizain" id="fname_two" name="Ваше имя" placeholder="Ваше имя" required>
+									</div>
+									<div class="tel">
+										<p>Введите номер телефона</p>
+										<input class="input_tell_dizain" type="tel" id="tel_two" name="Телефон" placeholder="+375" value="+375" minlength="11" maxlength="13" required>
+									</div> 	
 								</div>
 								<div class="messege">
 									<div class="mes">
 										<p>Сообщение</p>
 										<textarea class="form-inputs" name="Введите ваше сообшение" placeholder="Введите ваше сообшение" rows="1"></textarea>
 										<div class="cons">
-											<button class="progects" type="button">Отправить</button>
+											<button type="button" class="progects" data-toggle="modal" data-target=".bd-example-modal-lg">Отправить</button>
 										</div>
 									</div>
 								</div>
-							</div>
+
+								<!-- Modal -->
+								<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+									<div class="modal-dialog modal-lg">
+										<div class="modal-content">
+											<h3>Спасибо за обратную связь!</h3>
+											<p>Мы вам обязательно перезоним и ответим на ваши интересующие вопросы!</p>
+										</div>
+									</div>
+								</div>
+							</form>	
 						</div>
 					</div>
 				</div>
@@ -254,7 +261,25 @@
 						</div>
 					</div>
 				</div>
-
+				<div class="container footer_menu footer_none">
+					<ul>
+						<li>
+							<a href="about.html">
+								<p1> О нас</p1>
+							</a>
+						</li>
+						<li>
+							<a href="work.html">
+								<p1>Проекты</p1>
+							</a>
+						</li>
+						<li>
+							<a href="contact.html">
+								<p1>Контакты</p1>
+							</a>
+						</li>
+					</ul>
+				</div>
 				<div class="container">
 					<div class="network_footer">
 						<li>

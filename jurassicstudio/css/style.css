@@ -99,7 +99,6 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.93);
-  padding: 3em 0;
   z-index: 1002;
   text-align: center;
   visibility: hidden;
@@ -172,8 +171,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 50px 0 50px 0;
   margin: 0;
   list-style-type: none;
-  margin-left: 150px;
-  margin-top: -100px;
+  margin-left: 50px;
 }
 
 #fh5co-main-nav ul li {
@@ -184,7 +182,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #fh5co-main-nav ul li .active-menu {
-  font-weight: 900;
+  font-weight: 600;
   font-size: 65px;
 }
 
@@ -195,7 +193,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   font-size: 30px;
   line-height: 30px;
-  padding: 10px 20px;
   -webkit-transition: .8s;
   transition: .8s;
 }
@@ -222,6 +219,10 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   display: table-cell;
   vertical-align: middle;
+}
+
+.fh5co-table .fh5co-table-cell .phone_header, .fh5co-table .fh5co-table-cell .sotial_network {
+  display: none;
 }
 
 #fh5co-featured {
@@ -441,7 +442,6 @@ header .fh5co-navbar-brand h1 {
 }
 
 header .fh5co-navbar-brand .fh5co-logo {
-  display: block;
   text-transform: uppercase;
   color: #fff;
   font-weight: 700;
@@ -835,6 +835,28 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
     -webkit-transform: translateY(36px) scaleY(2);
             transform: translateY(36px) scaleY(2);
     opacity: 0;
+  }
+}
+
+@-webkit-keyframes phone {
+  30% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  50%, 90% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes phone {
+  30% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  50%, 90% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
 }
 
@@ -1288,7 +1310,7 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
 
 .cont p {
   font-weight: 600;
-  font-size: 50px;
+  font-size: 40px;
   line-height: 61px;
   color: #222;
 }
@@ -2040,6 +2062,11 @@ iframe {
      object-fit: cover;
 }
 
+.phonee {
+  -webkit-animation: phone 5s ease-in-out infinite;
+          animation: phone 5s ease-in-out infinite;
+}
+
 .flat p {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
@@ -2274,6 +2301,10 @@ input {
 .phone_header {
   margin-top: 20px;
   margin-left: 45px;
+}
+
+.phone_adaptive {
+  display: none;
 }
 
 .works_two_adapt {
@@ -2690,7 +2721,6 @@ p2 {
     margin-top: 0px;
   }
   #fh5co-main-nav ul {
-    margin-top: 100px;
     padding: 0px;
   }
   .sotial_network {
@@ -2925,6 +2955,17 @@ p2 {
   .card {
     margin-bottom: 15px;
   }
+  .about-contentss {
+    width: 100%;
+  }
+  .about-content p, .about-content_progect p, .about-contentss p {
+    width: 100%;
+  }
+  iframe {
+    width: 100%;
+    margin: 40px 0 7em 0;
+    height: 300px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -2943,7 +2984,19 @@ p2 {
     height: inherit;
   }
   header .phone_header {
+    margin: 0;
+  }
+  header .phone_header .phone {
     display: none;
+  }
+  header .phone_header .phone_adaptive {
+    display: block;
+    position: absolute;
+    right: 2.5em;
+    margin-top: 5px;
+  }
+  header .phone_header .phone_adaptive img {
+    width: 28px;
   }
   header .fh5co-navbar-brand {
     height: 60px;
@@ -2967,7 +3020,9 @@ p2 {
   .logo_burger {
     display: block;
     text-align: left;
-    padding-left: 15px;
+    padding-left: 20px;
+    position: absolute;
+    top: 60px;
   }
   .logo_burger .burger {
     width: 160px;
@@ -2975,13 +3030,40 @@ p2 {
   #fh5co-main-nav .fh5co-nav-toggle {
     right: 15px;
   }
+  #fh5co-main-nav .phone_header {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  #fh5co-main-nav .phone_header .phone {
+    left: 0;
+    bottom: 110px;
+    text-align: left;
+    margin-top: 0;
+    margin-left: 0;
+    padding-left: 20px;
+  }
+  #fh5co-main-nav .sotial_network {
+    display: block;
+  }
+  #fh5co-main-nav .sotial_network img {
+    width: 25px;
+    margin-right: 18px;
+  }
+  #fh5co-main-nav .sotial_network ul {
+    position: absolute;
+    bottom: 60px;
+  }
+  #fh5co-main-nav .sotial_network ul li {
+    margin-top: 0;
+  }
   #fh5co-main-nav ul {
     margin-left: 0;
     padding-left: 20px;
-    margin-top: 40%;
+    margin-top: 0;
   }
   #fh5co-main-nav ul li {
-    margin-top: 15px;
+    margin-top: 50px;
   }
   #fh5co-main-nav ul li .active-menu {
     font-size: 40px;
@@ -3217,6 +3299,12 @@ p2 {
   .phonee_footer_adapt img {
     margin-top: 3px;
     width: 12px;
+    -webkit-animation: phone 5s ease-in-out infinite;
+            animation: phone 5s ease-in-out infinite;
+  }
+  .phonee {
+    -webkit-animation: phone 5s ease-in-out infinite;
+            animation: phone 5s ease-in-out infinite;
   }
   .texts_two p1, .texts_three p1 {
     width: 236px;
@@ -3252,29 +3340,8 @@ p2 {
   .numbers {
     margin-left: 0px;
   }
-  .cont p {
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 130%;
-  }
   .about-contentss {
     width: 300px;
-  }
-  .client {
-    font-weight: 500;
-    line-height: 150%;
-    width: 248px;
-    height: 115px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .client p5 {
-    font-size: 15px;
-    line-height: 150%;
-    font-weight: 500;
   }
   .time, .time_vel, .time_mts {
     width: 224px;
@@ -3290,10 +3357,6 @@ p2 {
   }
   .time_mail p {
     width: 250px;
-  }
-  .time {
-    margin-top: -20px;
-    width: 180px;
   }
   .block_studia {
     margin-top: 0;
@@ -3348,5 +3411,35 @@ p2 {
   }
   #fh5co-blog {
     padding-bottom: 0px;
+  }
+  .about-contentss {
+    width: 100%;
+  }
+  .time, .time_vel, .time_mts {
+    width: 100%;
+  }
+  .time p, .time_vel p, .time_mts p {
+    font-size: 12px;
+  }
+  .client {
+    margin-top: 0;
+    font-weight: 500;
+    line-height: 150%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .client p {
+    margin-top: 0;
+  }
+  .client p5 {
+    font-size: 15px;
+    line-height: 150%;
+    font-weight: 500;
+  }
+  iframe {
+    margin-bottom: 15px;
   }
 }
