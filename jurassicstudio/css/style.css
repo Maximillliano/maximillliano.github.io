@@ -171,7 +171,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 50px 0 50px 0;
   margin: 0;
   list-style-type: none;
-  margin-left: 50px;
+  margin-left: 10%;
 }
 
 #fh5co-main-nav ul li {
@@ -744,10 +744,6 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
   background-color: #fff;
 }
 
-.fh5co-work-section {
-  padding-top: 0 !important;
-}
-
 .fh5co-heading h2 {
   font-size: 45px;
   font-weight: 600;
@@ -760,6 +756,14 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
   color: #222;
   padding-bottom: 40px;
   line-height: 24px;
+}
+
+.fh5co-work-section {
+  padding-top: 0 !important;
+}
+
+.fh5co-heading h2 {
+  margin-bottom: 40px;
 }
 
 .fh5co-bg-section {
@@ -1068,6 +1072,10 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
   margin-right: 0;
 }
 
+.caption_img {
+  display: none;
+}
+
 .card {
   position: relative;
   height: 450px;
@@ -1075,6 +1083,7 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
   background-size: cover;
   -webkit-background-size: cover;
   margin-bottom: 2px;
+  cursor: pointer;
 }
 
 .card .circle {
@@ -1123,7 +1132,7 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
   right: 0;
   left: 0;
   background: #222222;
-  opacity: 0.8;
+  opacity: 0.5;
   -webkit-transition: .5s ease;
   transition: .5s ease;
 }
@@ -1241,6 +1250,7 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
 
 .work {
   height: 370px;
+  cursor: pointer;
 }
 
 .work_one {
@@ -1956,6 +1966,10 @@ input[type="text"] {
   line-height: 24px;
 }
 
+.portfolio:focus {
+  text-decoration: none;
+}
+
 .portfolio:hover {
   background-color: #222;
   text-decoration: none;
@@ -2578,6 +2592,20 @@ p2 {
   line-height: 150%;
 }
 
+.a-enter-vr {
+  top: 0;
+  margin-top: 100px;
+  right: 0;
+  bottom: 0;
+}
+
+.footer_360 {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+}
+
 @media (max-width: 1500px) {
   .bloc_contact {
     text-align: left;
@@ -3105,9 +3133,6 @@ p2 {
     width: 100%;
     text-align: center;
   }
-  .scroll-msg-container {
-    bottom: 10%;
-  }
   .fh5co-counters {
     padding: 60px 0;
   }
@@ -3164,6 +3189,9 @@ p2 {
   }
   #fh5co-about {
     padding: 70px 15px;
+  }
+  #fh5co-about .fh5co-heading h2 {
+    margin-bottom: 0;
   }
   #fh5co-about .accordion-link h3 {
     font-size: 18px;
@@ -3225,7 +3253,6 @@ p2 {
   .about-contentss {
     margin-bottom: 0px;
     margin-top: 150px;
-    width: 250px;
   }
   .knopka {
     margin-top: 19px;
@@ -3414,6 +3441,9 @@ p2 {
   #fh5co-blog {
     padding-bottom: 0px;
   }
+  .cont p {
+    margin-top: 0;
+  }
   .about-contentss {
     width: 100%;
   }
@@ -3446,6 +3476,9 @@ p2 {
   }
   .time_mail p2, .time_mts p2, .time_vel p2 {
     display: block;
+  }
+  .card:hover, .work:hover {
+    display: none;
   }
   .modal-content h3 {
     font-size: 16px;

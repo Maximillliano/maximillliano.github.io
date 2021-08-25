@@ -6,7 +6,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>Contact</title>
+		<title>Work</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="1234" />
 		<meta name="keywords" content="design, 1234" />
@@ -33,6 +33,8 @@
 		<!-- Flexslider  -->
 		<link rel="stylesheet" href="css/flexslider.css">
 		<link rel="stylesheet" href="css/style.css">
+		<!-- Fancybox  -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
 
 		<!-- Modernizr JS -->
 		<script src="js/modernizr-2.6.2.min.js"></script>
@@ -44,7 +46,6 @@
 
 	<body>
 
-	
 		<!-- Burger menu-->
 		<nav id="fh5co-main-nav" role="navigation">
 			<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle active">
@@ -59,7 +60,7 @@
 						<li><a href="index.html">Главная</a></li>
 						<li><a href="about.html">О нас</a></li>
 						<li><a href="work.html">Проекты</a></li>
-						<li><a class="active-menu" href="contact.html">Контакты</a></li>
+						<li><a href="contact.html">Контакты</a></li>
 					</ul>
 					<div class="phone_header">
 						<li>
@@ -93,7 +94,6 @@
 		</nav>
 	
 		<div id="fh5co-page">
-
 			<!--Header-->
 			<header>
 				<div class="container">
@@ -145,106 +145,19 @@
 					</div>
 				</div>	
 			</header>
+		</div>
+	
 
-			<div id="fh5co-about-contact">
-				<div class="container">
-					<div class="row animate-box">
-						<div class="col-5 col-md-6 col-sm-12 col-md-offset-0 text-left animate-box">
-							<div class="about-contentss">
-								<div class="cont">
-									<p>Контакты</p>
-								</div>
-								<div class="client">
-									<p>Уважаемые клиенты, если вы живете за пределами Минска, мы готовы работать над проектом удаленно, но все так же качественно.  </p>
-								</div>
-								<div class="time">
-									<p> Мы работаем в будние дни с <p2> 10:00</p2> до <p2> 21:00</p2> </p>
-								</div>
-								<div class="time_vel">	
-									<p>Velcom:
-										<p2>+375 (29) 672-72-06</p2>
-									</p>
-									<div class="time_mts">
-										<p>	MTS:
-											<p2>+375 (33) 302-17-17</p2>
-										</p>
-										<div class="time_mail">
-											<p>Эл.почта: 
-												<p2>jurassicstudio@tut.by</p2>
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<iframe class="col-7 col-md-6 col-sm-12" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad3a8217140d6d7f646a903c53e17a926fe21cac460686bd9d9dced7de53ab7a0&amp;source=constructor" frameborder="0"></iframe>
-					</div>
-				</div>					
-			</div>
-
-			<!--Contacts-->
-		<div id="fh5co-featured">
+		<div class="fh5co-counters">
 			<div class="container">
-				<div class="dizain_bloks">
-					<div class="dizain_progect">
-						<div class="desc col-md-6">
-							<h3>Напишите нам</h3>
-							<p>
-								Закажите дизайн-проект и получите комплексное решение всех вопросов,
-								связанных с ремонтом будущего дома 
-							</p>
-							<div class="kontacts">	
-								<a href="tel:+375296727206" class="phon">
-									<img class="pho" src="images/Phone.svg">
-									+375 (29) 672-72-06
-								</a>
-									<br>
-								<a href="mailto:order@bu-one.ru"class="phon">
-									<img class="mail" src="images/mail.svg">
-									order@bu-one.ru
-								</a>
-							</div>
-						</div>	
-						<div class="inp col-md-6">
-							<form class="form-registration">
-								<div class="reg">
-									<div class="tel">
-										<p>Введите ваше имя</p> 
-										<input class="input_name_dizain" id="fname_two" name="Ваше имя" placeholder="Ваше имя" required>
-									</div>
-									<div class="tel">
-										<p>Введите номер телефона</p>
-										<input class="input_tell_dizain" type="tel" id="tel_two" name="Телефон" placeholder="+375" value="+375" minlength="11" maxlength="13" required>
-									</div> 	
-								</div>
-								<div class="messege">
-									<div class="mes">
-										<p>Сообщение</p>
-										<textarea class="form-inputs" name="Введите ваше сообшение" placeholder="Введите ваше сообшение" rows="1"></textarea>
-										<div class="cons">
-											<button type="button" class="progects" data-toggle="modal" data-target=".bd-example-modal-lg">Отправить</button>
-										</div>
-									</div>
-								</div>
-
-								<!-- Modal -->
-								<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-									<div class="modal-dialog modal-lg">
-										<div class="modal-content">
-											<h3>Спасибо за обратную связь!</h3>
-											<p>Мы вам обязательно перезоним и ответим на ваши интересующие вопросы!</p>
-										</div>
-									</div>
-								</div>
-							</form>	
-						</div>
-					</div>
-				</div>
+				<a-scene>
+					<a-sky src="images/360.jpg"></a-sky>
+				</a-scene> 
 			</div>
 		</div>
 
 		<footer>
-			<div id="footer">
+			<div id="footer" class="footer_360">
 				<div class="container">
 					<div class="foot">
 						<div class="fot">
@@ -335,20 +248,24 @@
 			</div>
 		</footer>
 
-			<!-- jQuery -->
-			<script src="js/jquery.min.js"></script>
-			<!-- jQuery Easing -->
-			<script src="js/jquery.easing.1.3.js"></script>
-			<!-- Bootstrap -->
-			<script src="js/bootstrap.min.js"></script>
-			<!-- Waypoints -->
-			<script src="js/jquery.waypoints.min.js"></script>
-			<!-- Counters -->
-			<script src="js/jquery.countTo.js"></script>
-			<!-- Flexslider -->
-			<script src="js/jquery.flexslider-min.js"></script>
-			<!-- Main JS (Do not remove) -->
-			<script src="js/main.js"></script>
+		<!-- jQuery -->
+		<script src="js/jquery.min.js"></script>
+		<!-- jQuery Easing -->
+		<script src="js/jquery.easing.1.3.js"></script>
+		<!-- Bootstrap -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Waypoints -->
+		<script src="js/jquery.waypoints.min.js"></script>
+		<!-- Counters -->
+		<script src="js/jquery.countTo.js"></script>
+		<!-- Flexslider -->
+		<script src="js/jquery.flexslider-min.js"></script>
+		<!-- Fancybox -->
+		<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+		<!-- 360 -->
+		<script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+		<!-- Main JS (Do not remove) -->
+		<script src="js/main.js"></script>
+
 	</body>
 </html>
-

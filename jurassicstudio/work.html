@@ -33,6 +33,8 @@
 		<!-- Flexslider  -->
 		<link rel="stylesheet" href="css/flexslider.css">
 		<link rel="stylesheet" href="css/style.css">
+		<!-- Fancybox  -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
 
 		<!-- Modernizr JS -->
 		<script src="js/modernizr-2.6.2.min.js"></script>
@@ -51,15 +53,42 @@
 			</a>
 			<div class="js-fullheight fh5co-table">
 				<div class="fh5co-table-cell js-fullheight">
-					<div class="logo_burger">
+					<a class="logo_burger" href="index.html">
 						<img class="burger" src="images/Logo.svg">
-					</div>
+					</a>
 					<ul>
 						<li><a href="index.html">Главная</a></li>
 						<li><a href="about.html">О нас</a></li>
 						<li><a class="active-menu" href="work.html">Проекты</a></li>
 						<li><a href="contact.html">Контакты</a></li>
 					</ul>
+					<div class="phone_header">
+						<li>
+							<a href="tel:+375296727206" class="phone">
+								<img class="phonee" src="images/Phone.svg">
+								+375 (29) 672-72-06 
+							</a>
+						</li>	
+					</div>
+					<div class="sotial_network">
+						<ul>
+							<li>	
+								<a href="#">
+									<img class="instagram" src="images/inst.svg">
+								</a>
+							</li>
+							<li>	
+								<a href="https://vk.com/jurassicstudio" target="_blank">
+									<img class="vk" src="images/vk.svg">
+								</a>
+							</li>
+							<li>	
+								<a href="#">
+									<img class="linkid" src="images/linkedin.svg">
+								</a>
+							</li>
+						</ul>
+					</div>
 				</div> 
 			</div>
 		</nav>
@@ -123,116 +152,125 @@
 				<div class="about-content_progect">
 					<h1>Проекты</h1>
 				</div>
-						
+				
 				<div class="row">	
-					<div class="col-md-3 text-center animate-box">
-						<a href="#">
-							<div class="card" style="background-image: url(images/table.jpg);">
-								<div class="circle">
-									<img src="/images/lypa.svg" alt="search icon">
+						<div class="col-md-3 text-center animate-box">
+							<a data-fancybox="gallery" data-src="images/slide_1.jpg" data-caption="Project 1">
+								<div class="card" style="background-image: url(images/table.jpg);">
+									<div class="circle">
+										<img class="caption_img" src="images/slide_1.jpg"/>
+										<img src="images/lypa.svg" alt="search icon">
+									</div>
+									<img class="caption_img" src="images/slide_1.jpg"/>
+									<p>Пр. Дзержинского, 19</p>
+									<p class="area">60 м<sup>2</sup></p>
+									<p class="vertical">квартира</p>
+									<div class="overlay"></div>
 								</div>
-								<p>Пр. Дзержинского, 19</p>
-								<p class="area">60 м<sup>2</sup></p>
-								<p class="vertical">квартира</p>
-								<div class="overlay"></div>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-3 text-center animate-box">
-						<a href="#">
-							<div class="card" style="background-image: url(images/table.jpg);">
-								<div class="circle">
-									<img src="/images/lypa.svg" alt="search icon">
+							</a>
+						</div>
+						<div class="col-md-3 text-center animate-box">
+							<a data-fancybox="gallery" data-src="images/slide_1.jpg" data-caption="Project 1">
+								<div class="card" style="background-image: url(images/table.jpg);">
+									<div class="circle">
+										<img class="caption_img" src="images/slide_1.jpg"/>
+										<img src="images/lypa.svg" alt="search icon">
+									</div>
+									<p>Пр. Дзержинского, 19</p>
+									<p class="area">60 м<sup>2</sup></p>
+									<p class="vertical">квартира</p>
+									<div class="overlay"></div>
 								</div>
-								<p>Пр. Дзержинского, 19</p>
-								<p class="area">60 м<sup>2</sup></p>
-								<p class="vertical">квартира</p>
-								<div class="overlay"></div>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-3 text-center animate-box">
-						<a href="#">
-							<div class="card" style="background-image: url(images/table.jpg);">
-								<div class="circle">
-									<img src="/images/lypa.svg" alt="search icon">
+							</a>
+						</div>
+						<div class="col-md-3 text-center animate-box">
+							<a data-fancybox="gallery" data-src="images/slide_1.jpg" data-caption="Project 1">
+								<div class="card" style="background-image: url(images/table.jpg);">
+									<div class="circle">
+										<img class="caption_img" src="images/slide_1.jpg"/>
+										<img src="images/lypa.svg" alt="search icon">
+									</div>
+									<p>Пр. Дзержинского, 19</p>
+									<p class="area">60 м<sup>2</sup></p>
+									<p class="vertical">квартира</p>
+									<div class="overlay"></div>
 								</div>
-								<p>Пр. Дзержинского, 19</p>
-								<p class="area">60 м<sup>2</sup></p>
-								<p class="vertical">квартира</p>
-								<div class="overlay"></div>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-3 text-center animate-box">
-						<a href="#">
-							<div class="card" style="background-image: url(images/table.jpg);">
-								<div class="circle">
-									<img src="/images/lypa.svg" alt="search icon">
+							</a>
+						</div>
+						<div class="col-md-3 text-center animate-box">
+							<a data-fancybox="gallery" data-src="images/slide_1.jpg" data-caption="Project 1">
+								<div class="card" style="background-image: url(images/table.jpg);">
+									<div class="circle">
+										<img class="caption_img" src="images/slide_1.jpg"/>
+										<img src="images/lypa.svg" alt="search icon">
+									</div>
+									<p>Пр. Дзержинского, 19</p>
+									<p class="area">60 м<sup>2</sup></p>
+									<p class="vertical">квартира</p>
+									<div class="overlay"></div>
 								</div>
-								<p>Пр. Дзержинского, 19</p>
-								<p class="area">60 м<sup>2</sup></p>
-								<p class="vertical">квартира</p>
-								<div class="overlay"></div>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-3 text-center animate-box">
-						<a href="#">
-							<div class="card" style="background-image: url(images/table.jpg);">
-								<div class="circle">
-									<img src="/images/lypa.svg" alt="search icon">
+							</a>
+						</div>
+						<div class="col-md-3 text-center animate-box">
+							<a data-fancybox="gallery" data-src="images/slide_1.jpg" data-caption="Project 1">
+								<div class="card" style="background-image: url(images/table.jpg);">
+									<div class="circle">
+										<img class="caption_img" src="images/slide_1.jpg"/>
+										<img src="images/lypa.svg" alt="search icon">
+									</div>
+									<p>Пр. Дзержинского, 19</p>
+									<p class="area">60 м<sup>2</sup></p>
+									<p class="vertical">квартира</p>
+									<div class="overlay"></div>
 								</div>
-								<p>Пр. Дзержинского, 19</p>
-								<p class="area">60 м<sup>2</sup></p>
-								<p class="vertical">квартира</p>
-								<div class="overlay"></div>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-3 text-center animate-box">
-						<a href="#">
-							<div class="card" style="background-image: url(images/table.jpg);">
-								<div class="circle">
-									<img src="/images/lypa.svg" alt="search icon">
+							</a>
+						</div>
+						<div class="col-md-3 text-center animate-box">
+							<a data-fancybox="gallery" data-src="images/slide_1.jpg" data-caption="Project 1">
+								<div class="card" style="background-image: url(images/table.jpg);">
+									<div class="circle">
+										<img class="caption_img" src="images/slide_1.jpg"/>
+										<img src="images/lypa.svg" alt="search icon">
+									</div>
+									<p>Пр. Дзержинского, 19</p>
+									<p class="area">60 м<sup>2</sup></p>
+									<p class="vertical">квартира</p>
+									<div class="overlay"></div>
 								</div>
-								<p>Пр. Дзержинского, 19</p>
-								<p class="area">60 м<sup>2</sup></p>
-								<p class="vertical">квартира</p>
-								<div class="overlay"></div>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-3 text-center animate-box">
-						<a href="#">
-							<div class="card" style="background-image: url(images/table.jpg);">
-								<div class="circle">
-									<img src="/images/lypa.svg" alt="search icon">
+							</a>
+						</div>
+						<div class="col-md-3 text-center animate-box">
+							<a data-fancybox="gallery" data-src="images/slide_1.jpg" data-caption="Project 1">
+								<div class="card" style="background-image: url(images/table.jpg);">
+									<div class="circle">
+										<img class="caption_img" src="images/slide_1.jpg"/>
+										<img src="images/lypa.svg" alt="search icon">
+									</div>
+									<p>Пр. Дзержинского, 19</p>
+									<p class="area">60 м<sup>2</sup></p>
+									<p class="vertical">квартира</p>
+									<div class="overlay"></div>
 								</div>
-								<p>Пр. Дзержинского, 19</p>
-								<p class="area">60 м<sup>2</sup></p>
-								<p class="vertical">квартира</p>
-								<div class="overlay"></div>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-3 text-center animate-box">
-						<a href="#">
-							<div class="card" style="background-image: url(images/table.jpg);">
-								<div class="circle">
-									<img src="/images/lypa.svg" alt="search icon">
+							</a>
+						</div>
+						<div class="col-md-3 text-center animate-box">
+							<a data-fancybox="gallery" data-src="images/slide_1.jpg" data-caption="Project 1">
+								<div class="card" style="background-image: url(images/table.jpg);">
+									<div class="circle">
+										<img class="caption_img" src="images/slide_1.jpg"/>
+										<img src="images/lypa.svg" alt="search icon">
+									</div>
+									<p>Пр. Дзержинского, 19</p>
+									<p class="area">60 м<sup>2</sup></p>
+									<p class="vertical">квартира</p>
+									<div class="overlay"></div>
 								</div>
-								<p>Пр. Дзержинского, 19</p>
-								<p class="area">60 м<sup>2</sup></p>
-								<p class="vertical">квартира</p>
-								<div class="overlay"></div>
-							</div>
-						</a>
-					</div>
+							</a>
+						</div>
 				</div>
 
 				<div class="bt">
-					<a class="portfolio" href="index.html#fh5co-featured">
+					<a class="portfolio" href="contact.html">
 						<p>Заказать проект</p>
 					</a>
 				</div>
@@ -343,6 +381,8 @@
 		<script src="js/jquery.countTo.js"></script>
 		<!-- Flexslider -->
 		<script src="js/jquery.flexslider-min.js"></script>
+		<!-- Fancybox -->
+		<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
 		<!-- Main JS (Do not remove) -->
 		<script src="js/main.js"></script>
 

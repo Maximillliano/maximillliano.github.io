@@ -256,7 +256,7 @@ h1, h2, h3, h4, h5, h6 {
 		padding: 50px 0 50px 0;
 		margin: 0;
 		list-style-type: none;
-		margin-left: 50px;
+		margin-left: 10%;
 		li {
 			padding: 0;
 			margin: 0;
@@ -775,9 +775,6 @@ header  {
 	padding-top: 8em;
 	background-color: #fff;
 }
-.fh5co-work-section {
-	padding-top: 0 !important;
-}
 
 .fh5co-heading {
 	h2 {
@@ -792,6 +789,14 @@ header  {
 		padding-bottom: 40px;
 		line-height: 24px;
 	}
+}
+
+.fh5co-work-section {
+	padding-top: 0 !important;
+}
+
+.fh5co-heading h2 {
+	margin-bottom: 40px;
 }
 
 .fh5co-bg-section {
@@ -1032,6 +1037,9 @@ header  {
 	margin-left: 0;
 	margin-right: 0;
 }
+.caption_img {
+	display: none;
+}
 .card {
 	position: relative;
 	height: 450px;
@@ -1039,6 +1047,7 @@ header  {
 	background-size: cover;
 	-webkit-background-size: cover;
 	margin-bottom: 2px;
+	cursor: pointer;
 	.circle {
 		display: none;
 		position: absolute;
@@ -1077,7 +1086,7 @@ header  {
 		right: 0;
 		left: 0;
 		background: #222222;
-		opacity: 0.8;
+		opacity: 0.5;
 		transition: .5s ease;
 	}
 	&:hover .overlay, &:hover p {
@@ -1191,6 +1200,7 @@ header  {
 
 .work {
 	height: 370px;
+	cursor: pointer;
 }
 .work_one{
 	height: 370px;
@@ -1823,6 +1833,10 @@ margin-left: 120px;}
 	}
 }
 
+.portfolio:focus {
+	text-decoration: none;
+}
+
 .portfolio:hover {
 	background-color: $brand-black;
 	text-decoration: none;
@@ -2364,6 +2378,20 @@ $wheel_size: $border_width * 3;
 		font-size: 14px;
 		line-height: 150%;
 	}
+}
+
+.a-enter-vr {
+	top: 0;
+	margin-top: 100px;
+	right: 0;
+	bottom: 0;
+}
+
+.footer_360 {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	z-index: 100;
 }
 
 @media (max-width: 1500px) {
@@ -2915,10 +2943,7 @@ $wheel_size: $border_width * 3;
 			text-align: center;
 		}
 	}
-	.scroll-msg-container {
-		bottom: 10%;
-	}
-
+	
 	//Numbers
 	.fh5co-counters {
 		padding: 60px 0;
@@ -2981,6 +3006,9 @@ $wheel_size: $border_width * 3;
 	//Services
 	#fh5co-about {
 		padding: 70px 15px;
+		.fh5co-heading h2 {
+			margin-bottom: 0;
+		}
 		.accordion-link {
 			h3 {
 				font-size: 18px;
@@ -3044,7 +3072,6 @@ $wheel_size: $border_width * 3;
 	.about-contentss {
 		margin-bottom: 0px;
 		margin-top: 150px;
-		width: 250px;
 	}
 
 	.knopka {
@@ -3241,6 +3268,9 @@ $wheel_size: $border_width * 3;
 	}
 
 	//CONTACTS PAGE
+	.cont p {
+		margin-top: 0;
+	}
 	.about-contentss {
 		width: 100%;
 	}
@@ -3272,6 +3302,10 @@ $wheel_size: $border_width * 3;
 		display: block;
 	}
 
+	.card:hover, .work:hover {
+		display: none;
+	}
+
 	//Modal
 	.modal-content {
 		h3 {
@@ -3281,7 +3315,4 @@ $wheel_size: $border_width * 3;
 			font-size: 13px;
 		}
 	}
-
-	
-
 }

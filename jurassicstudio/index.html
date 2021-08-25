@@ -30,6 +30,8 @@
 		<link rel="stylesheet" href="css/icomoon.css">
 		<!-- Bootstrap  -->
 		<link rel="stylesheet" href="css/bootstrap.css">
+		<!-- Fancybox  -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
 		<!-- Flexslider  -->
 		<link rel="stylesheet" href="css/flexslider.css">
 		<link rel="stylesheet" href="css/style.css">
@@ -51,9 +53,9 @@
 			</a>
 			<div class="js-fullheight fh5co-table">
 				<div class="fh5co-table-cell js-fullheight">
-					<div class="logo_burger">
+					<a class="logo_burger" href="index.html">
 						<img class="burger" src="images/Logo.svg">
-					</div>
+					</a>
 					<ul>
 						<li><a class="active-menu" href="index.html">Главная</a></li>
 						<li><a href="about.html">О нас</a></li>
@@ -213,57 +215,81 @@
 					<div class="row">
 						<div class="col-md-4 text-center animate-box">
 							<div class="work" style="background-image: url(images/slide_1.jpg);">
-								<a href="#" class="view">
-									<span><img class="" src="images/lypa.svg"> </span>
+								<a class="view" data-fancybox="gallery" data-src="images/slide_1.jpg" data-caption="Project 1">
+									<span>
+										<img class="caption_img" src="images/slide_1.jpg"/>
+										<img src="images/lypa.svg">
+									</span>
 								</a>
 							</div>     
 						</div>
 						<div class="col-md-8 text-center animate-box">
 							<div class="work" style="background-image: url(images/slide_2.jpg);">
-								<a href="#" class="view">
-									<span><img class="" src="images/black.svg"></span>
+								<a class="view" data-fancybox="gallery" data-src="images/slide_1.jpg" data-caption="Project 1">
+									<span>
+										<img class="caption_img" src="images/slide_1.jpg"/>
+										<img src="images/black.svg">
+									</span>
 								</a>
 							</div>
 						</div>
 						<div class="col-md-7 text-center animate-box">
 							<div class="work" style="background-image: url(images/slide_1.jpg);">
-								<a href="#" class="view">
-									<span><img class="" src="images/lypa.svg"></span>
+								<a class="view" data-fancybox="gallery" data-src="images/slide_1.jpg" data-caption="Project 1">
+									<span>
+										<img class="caption_img" src="images/slide_1.jpg"/>
+										<img src="images/lypa.svg">
+									</span>
 								</a>
 							</div>
 						</div>
 						<div class="col-md-5 text-center animate-box">
 							<div class="work" style="background-image: url(images/slide_2.jpg);">
-								<a href="#" class="view">
-									<span><img class="" src="images/black.svg"></span>
+								<a class="view" data-fancybox="gallery" data-src="images/slide_1.jpg" data-caption="Project 1">
+									<span>
+										<img class="caption_img" src="images/slide_1.jpg"/>
+										<img src="images/black.svg">
+									</span>
 								</a>
 							</div>
 						</div>
 						<div class="col-md-4 text-center animate-box">
 							<div class="work work_disabled" style="background-image: url(images/slide_1.jpg);">
-								<a href="#" class="view">
-									<span><img class="" src="images/lypa.svg"></span>
+								<a class="view" data-fancybox="gallery" data-src="images/slide_1.jpg" data-caption="Project 1">
+									<span>
+										<img class="caption_img" src="images/slide_1.jpg"/>
+										<img src="images/lypa.svg">
+									</span>
 								</a>
 							</div>
 						</div>
 						<div class="col-md-8 text-center animate-box">
 							<div class="work work_disabled" style="background-image: url(images/slide_2.jpg);">
-								<a href="#" class="view">
-									<span><img class="" src="images/black.svg"></span>
+								<a class="view" data-fancybox="gallery" data-src="images/slide_1.jpg" data-caption="Project 1">
+									<span>
+										<img class="caption_img" src="images/slide_1.jpg"/>
+										<img src="images/black.svg">
+									</span>
 								</a>
 							</div>
 						</div>
 						<div class="col-md-7 text-center animate-box">
 							<div class="work work_disabled" style="background-image: url(images/slide_1.jpg);">
-								<a href="#" class="view">
-									<span><img class="" src="images/lypa.svg"></span>
+								<a class="view" data-fancybox="gallery" data-src="images/slide_1.jpg" data-caption="Project 1">
+									<span>
+										<img class="caption_img" src="images/slide_1.jpg"/>
+										<img src="images/lypa.svg">
+									</span>
 								</a>
 							</div>
 						</div>
 						<div class="col-md-5 text-center animate-box">
 							<div class="work work_disabled" style="background-image: url(images/slide_2.jpg);">
-								<a href="#" class="view">
-									<span><img class="" src="images/black.svg"></span>
+								<a class="view" data-fancybox="gallery" data-src="images/slide_1.jpg" data-caption="Project 1">
+									<span>
+										<img class="caption_img" src="images/slide_1.jpg"/>
+										<img src="images/black.svg">
+									</span>
 								</a>
 							</div>
 						</div>
@@ -297,7 +323,7 @@
 									</div>
 
 									<div class="form_three">
-										<button class="consultation" type="button">
+										<button class="consultation" type="button" data-toggle="modal" data-target=".bd-example-modal-lg">
 											<p1>Бесплатная консультация</p1>
 										</button>
 									</div>
@@ -628,6 +654,8 @@
 		<script src="js/jquery.countTo.js"></script>
 		<!-- Flexslider -->
 		<script src="js/jquery.flexslider-min.js"></script>
+		<!-- Fancybox -->
+		<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
 		<!-- Iconify-->
 		<script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
 		<!-- Main JS (Do not remove) -->
