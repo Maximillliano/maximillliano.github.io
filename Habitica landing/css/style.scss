@@ -1,0 +1,43 @@
+$bg-darker: #F9F9F9;
+$bg: #fff;
+$accent-main: #9A62FF;
+$accent-additional: #4F2A93;
+$text-main: #343A40;
+$text-white: #fff;
+$text-descr: #6C757D;
+
+
+* {
+    box-sizing: border-box;
+}
+
+*::before, ::after {
+    box-sizing: border-box;
+}
+
+body {
+ font-family: "Manrope",sans-serif;
+ font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+}
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.btn-reset {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* Hero block */
+.hero {
+    background-color: $bg-darker;
+}

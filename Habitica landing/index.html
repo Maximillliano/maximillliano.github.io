@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Habitica landing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -32,12 +37,15 @@
                     </li>
                 </ul>
             </nav>
-            <div class="lang">
-                <select name="lang-select" id="lang-changer">
-                    <option lang="en" value="english" selected>English</option>
-                    <option lang="ru" value="russian">Русский</option>
-                    <option lang="ch" value="chinese">China</option>
-                </select>
+            <div class="header-function">
+                <div class="lang">
+                    <select name="lang-select" id="lang-changer">
+                        <option lang="en" value="english" selected>English</option>
+                        <option lang="ru" value="russian">Русский</option>
+                        <option lang="ch" value="chinese">China</option>
+                    </select>
+                </div>
+                <button class="but-reg" aria-label="Login in Habitica">Log in</button>
             </div>
         </div>
     </header>
@@ -61,7 +69,7 @@
                     </ul>
                 </div>
                 <div class="hero-image">
-                    <img src="#" alt="Laptop with image of Website Habitica">
+                    <img src="img/hero-macbook-habitica.png" alt="Laptop with image of Website Habitica">
                     <ul class="benefits">
                         <li class="benefits-item">
                             <div class="benefits-number">4+</div>
@@ -283,10 +291,10 @@
                     <span class="registration-desc">
                         Join the exciting and exciting world of&nbsp;Habitica and achieve your goals!
                     </span>
-                    <form action="#">
+                    <form action="#" method="post">
                         <input type="text">
                         <input type="password">
-                        <button class="but-reg" aria-label="Registration in Habitica">Join Habitica Today</button>
+                        <input type="submit" class="but-reg" value="Join Habitica Today">
                     </form>
                 </div>
                 
