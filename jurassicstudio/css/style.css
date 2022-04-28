@@ -763,7 +763,7 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
 }
 
 .fh5co-heading h2 {
-  margin-bottom: 40px;
+  margin-bottom: 15px;
 }
 
 .fh5co-bg-section {
@@ -869,10 +869,13 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
-  margin-top: 9px;
   margin-left: 5px;
   text-decoration: none;
   color: white;
+}
+
+.phone:nth-child(3) {
+  margin-top: 27px;
 }
 
 .phone-burger {
@@ -1681,6 +1684,11 @@ input[type="text"] {
   font-size: 14px;
 }
 
+#footer ul:first-child {
+  padding-left: 0;
+  color: red;
+}
+
 #footer .copy-right {
   font-size: 14px;
 }
@@ -1899,12 +1907,11 @@ input[type="text"] {
 
 .progect, .progectss {
   color: inherit;
-  font: inherit;
   border: none;
+  padding: 0 20px;
   margin: 0;
   background-color: rgba(255, 255, 255, 0.8);
   color: #222;
-  width: 233px;
   height: 50px;
   border-radius: 1px;
   margin-top: 30px;
@@ -2376,6 +2383,10 @@ input {
 .fh5co-logo img {
   width: 193px;
   height: 45px;
+}
+
+.fh5co-logo img:hover {
+  width: 300px;
 }
 
 .count_one {
