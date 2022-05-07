@@ -1,6 +1,7 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  cursor: url(/img/cursor-sword.png), auto;
 }
 
 *::before, ::after {
