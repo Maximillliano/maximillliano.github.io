@@ -15,36 +15,38 @@
     <title>Habitica landing</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <header class="header">
-        <div class="container">
-            <a class="logo">
-                <img src="#" alt="Habitica logo">
-            </a>
-            <nav class="menu">
-                <ul>
-                    <li class="menu-item">
-                        <a href="#" class="menu-item-link">Functions</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#" class="menu-item-link">Mobile app</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#" class="menu-item-link">FAQ</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#" class="menu-item-link">Premium</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#" class="menu-item-link">Blog</a>
-                    </li>
-                </ul>
-            </nav>
+        <div class="container header-container">
+            <div class="header-menu">
+                <a class="logo">
+                    <img src="img/logo.svg" alt="Habitica logo">
+                </a>
+                <nav class="menu">
+                    <ul class="menu-list list-reset">
+                        <li class="menu-item">
+                            <a href="#" class="menu-item-link">Functions</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-item-link">Mobile app</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-item-link">FAQ</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-item-link">Premium</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-item-link">Blog</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
             <div class="header-function">
                 <div class="lang">
                     <select name="lang-select" id="lang-changer">
@@ -53,7 +55,7 @@
                         <option lang="ch" value="chinese">China</option>
                     </select>
                 </div>
-                <button class="but-reg" aria-label="Login in Habitica">Log in</button>
+                <button class="but-reg btn-reset" aria-label="Login in Habitica">Log in</button>
             </div>
         </div>
     </header>
@@ -61,18 +63,18 @@
     <main>
 
         <section class="hero">
-            <div class="container">
+            <div class="container hero-container">
                 <div class="hero-content">
                     <h1 class="hero-title">Habitica</h1>
                     <span class="hero-descr">Task manager with gamification</span>
                     <p class="hero-parag">Join the world of&nbsp;Habitica and upgrade your life, completing tasks one after another!</p>
-                    <button class="but-reg" aria-label="Registration in Habitica">Join Habitica Today</button>
-                    <ul class="app-download">
+                    <button class="but-reg btn-reset" aria-label="Registration in Habitica">Join Habitica Today</button>
+                    <ul class="app-download list-reset">
                         <li class="app-download-item">
-                            <a href="#" class="app-download-link app-download-link-gp" target="_blank" aria-label="link to Google Play"></a>
+                            <a href="https://play.google.com/store/apps/details?id=com.habitrpg.android.habitica" class="app-download-link app-download-link-gp" target="_blank" aria-label="link to Google Play"><img src="img/but-googleplay.svg" alt="Google play button"></a>
                         </li>
                         <li class="app-download-item">
-                            <a href="#" class="app-download-link app-download-link-as" target="_blank" aria-label="link to App Store"></a>
+                            <a href="https://itunes.apple.com/us/app/habitica-gamified-task-manager/id994882113?mt=8" class="app-download-link app-download-link-as" target="_blank" aria-label="link to App Store"><img src="img/but-appstore.svg" alt="Apple store button"></a>
                         </li>
                     </ul>
                 </div>
