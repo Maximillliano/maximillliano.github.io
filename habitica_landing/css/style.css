@@ -73,20 +73,17 @@ img {
 }
 
 .app-download-item a {
-  text-decoration: none;
   display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
 }
 
-.app-download-item img {
-  cursor: pointer;
+.app-download-item svg {
   transition: fill 0.3s ease-in-out;
 }
 
-.app-download-item img:hover {
+.app-download-item:hover .app-download-item-color{
   fill: red;
-  background: red;
-  stroke: red;
-  color: red;
 }
 
 .container {
@@ -94,6 +91,8 @@ img {
   margin: 0 auto;
   padding: 0 15px;
 }
+
+/* Header */
 
 .header-container {
   display: flex;
@@ -109,9 +108,27 @@ img {
   padding: 40px 0;
 }
 
+.header-menu, .header-function {
+  display: flex;
+}
+
 .menu-list {
   display: flex;
 }
+
+.menu-item a {
+  font-family: var(--font-family-secondary);
+  font-size: 18px;
+  line-height: 160%;
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+.menu-item a:hover {
+
+}
+
+
 
 /* Hero block */
 .hero {
