@@ -311,7 +311,7 @@ h1, h2, h3, h4, h5, h6 {
 #fh5co-featured {
     background: url(../images/zakaz.jpg) no-repeat;
     background-size: cover;
-	padding: 15em 0;
+	padding: 120px 0;
 }
 
 // Buttons
@@ -763,7 +763,8 @@ header  {
 
 #fh5co-about {
 	background-color: #F5F5F5;
-	padding: 160px 0;
+	padding-top: 160px;
+	padding-bottom: 80px;
 }
 
 #fh5co-intro-section {
@@ -918,6 +919,9 @@ header  {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	.col-md-6 {
+		padding: 0;
+	}
 }
 
 .section-form {
@@ -945,7 +949,8 @@ header  {
 	}
 	p {
 		font-size: 16px;
-		margin-top: 60px;
+		margin-top: 30px;
+		margin-bottom: 30px;
 		line-height: 150%;
 		color: #FFFFFF;
 		max-width: 500px;
@@ -953,7 +958,6 @@ header  {
 }
 
 .kontacts {
-	margin-top: 60px;
 	.pho, .mail {
 		margin-right: 10px;
 	}
@@ -1185,7 +1189,7 @@ header  {
 		}
 	}
 	.fh5co-counter {
-		font-size: 70px;
+		font-size: 55px;
 		display: block;
 		color: $brand-white;
 		font-family: $font-primary;
@@ -1195,7 +1199,7 @@ header  {
 	.fh5co-counter-label {
 		color: $brand-white;
 		text-align: center;
-		font-size: 20px;
+		font-size: 16px;
 		letter-spacing: 1px;
 		display: block;
 	}
@@ -1243,7 +1247,7 @@ header  {
 	p {
 		font-size: 14px;
 		color: $brand-black;
-		margin-top: 20px;
+		margin-top: 40px;
 		width: 400px;
 	}
 }
@@ -1324,7 +1328,7 @@ header  {
 }
 
 .fh5co-counters_studia {
-    font-size: 90px;
+    font-size: 70px;
     display: block;
     color: #fff;
     font-family: "Montserrat";
@@ -1784,7 +1788,7 @@ margin-left: 120px;}
 .progect, .progectss {
 	color: inherit;
 	border: none;
-	padding: 0 20px;
+	padding: 0 24px;
     margin: 0;
     background-color: rgba(255,255,255,.8);
     color: $brand-black;
@@ -1793,7 +1797,7 @@ margin-left: 120px;}
 	margin-top: 30px;
 	transition: .8s;
 	p1 {
-		font-size: 20px;
+		font-size: 15px;
 		font-weight: 400;
 	}
 }
@@ -1809,7 +1813,7 @@ margin-left: 120px;}
 
 .phon {
 	color: white;
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 138%;
 }
 
@@ -1824,18 +1828,17 @@ margin-left: 120px;}
 
 .portfolio {
 	margin-top: 20px;
-	width: 294px;
+	padding: 0 24px;
     height: 50px;
 	text-align: center;
 	border: 2px solid $brand-black;
 	border-radius: 1px;
 	transition: all 0.8s ease 0s;
 	p {
-		font-size: 20px;
+		font-size: 15px;
 		font-weight: 300;
 		color: $brand-black;
 		margin-top: 10px;
-		line-height: 24px;
 	}
 }
 
@@ -1891,7 +1894,8 @@ iframe {
 }
 
 .threestep {
-	padding: 160px 0;
+	padding-top: 160px;
+	padding-bottom: 80px;
 }
 
 .step {
@@ -1991,9 +1995,15 @@ iframe {
 		color: $brand-black;
 	}
 	p {
-		font-size: 16px;
+		font-size: 14px;
 		line-height: 150%;
 		color: $brand-black;
+	}
+	ul {
+		padding-left: 15px;
+	}
+	li {
+		font-size: 14px;
 	}
 }
 
@@ -2019,7 +2029,8 @@ iframe {
 	background-image: url(../images/konsultation.jpg); 
 	width: 100%;
 	z-index: 2;
-	height: 540px;
+	padding-top: 120px;
+	padding-bottom: 120px;
 }
 
 .konsultation {
@@ -2037,7 +2048,7 @@ iframe {
 }
 
 .consultation{
-	width: 311px;
+	padding: 0 24px;
 	height: 50px;
 	border: none;
 	box-sizing: border-box;
@@ -2045,7 +2056,7 @@ iframe {
 	color: $brand-black;
 	transition: all 0.8s ease 0s;
 	p1 {
-		font-size: 20px;
+		font-size: 15px;
 		line-height: 24px;
 		font-weight: 300;
 	}
@@ -2168,9 +2179,9 @@ input {
 }
 
 .progects {
-	width: 339px;
+	padding: 0 24px;
 	height: 50px;
-	font: inherit;
+	font-size: 16px;
     margin: 0;
 	margin-top: 30px;
     background-color:  rgba(255, 255, 255, 0.8);
@@ -2194,7 +2205,7 @@ input {
     width: 193px;
     height: 45px;
 	&:hover {
-		width: 300px;
+		background-color: rgba(255,255,255,.2);
 	}
 }
 
@@ -2209,6 +2220,7 @@ input {
 .one_blockk ,.two_blockk {
 	display: flex;
 	align-items: center;
+	width: 100%;
 }
 
 .logo_burger,.number_burger ,.cotial_burger, .cont_footer_adpt {
@@ -2220,6 +2232,7 @@ input {
 	-o-transition: all .5s ease-out;
 	-webkit-transition: all .5s ease-out;
 	transition: all .5s ease-out;
+	width: 70px;
 }
 
 .dizain_block_one_adapt {
@@ -2228,12 +2241,19 @@ input {
 
 .contacts {
 	display: flex;
-	margin-top: 5px;
 }
 
 // Section accordeon
+
+#question1, #question2, #question3, #question4{
+    padding-top: 80px;
+    margin-top: -80px;
+}
+
 .accordion-item hr, .container hr {
-	border: 1px solid $brand-black;
+	border: .5px solid #c9c9c9;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 .accordion a {
   color: $brand-black;
@@ -2253,7 +2273,7 @@ input {
 }
 .accordion-link h3 {
   font-weight: 500;
-  font-size: 30px;
+  font-size: 22px;
 }
 .accordion-link span {
   color: $brand-black;
@@ -2280,10 +2300,10 @@ input {
 .answer li {
   color: $brand-black;
   margin-bottom: 10px;
-  font-size: 20px;
+  font-size: 16px;
 }
 .accordion-item:target .answer {
-  max-height: 40rem;
+  max-height: 44rem;
   padding-bottom: 30px;
 }
 .iconify {
