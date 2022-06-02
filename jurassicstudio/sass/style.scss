@@ -862,9 +862,8 @@ header  {
 .phone {
 	position: absolute;
 	font-weight: 500;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 24px;
-	margin-left: 5px;
 	text-decoration: none;
 	color: white;
 }
@@ -1575,7 +1574,6 @@ input[type="text"] {
 			font-size: 18px;
 			list-style: none;
 			margin-bottom: 0;
-			margin-left: 76px;
 			:hover {
 				text-decoration: underline;
 			}
@@ -1590,12 +1588,17 @@ input[type="text"] {
 		}
 	}
 
+	.phone {
+		position: relative;
+	}
+
 	.copy-right {
 		font-size: 14px;
 	}
 
 	.numbe {
-		text-align: end;
+		display: flex;
+    	flex-direction: column;
 	}
 
 	.float {
@@ -1729,6 +1732,10 @@ display: flex;
 .sotial_network ul {
 margin-left: 120px;}
 
+.sotial_network li {
+	transform: scale(1);
+}
+
 .sotial_network li:hover, .network_footer li:hover {
 	transform: scale(1.2);
 }
@@ -1743,7 +1750,6 @@ margin-left: 120px;}
 .network_footer {
 	list-style: none;
 	display: flex;
-	margin-top: 10px;
 	justify-content: flex-end;
 	transition: 1s;
 	transition: all 1s ease;
@@ -1787,28 +1793,103 @@ margin-left: 120px;}
 
 .progect, .progectss {
 	color: inherit;
-	border: none;
+	border: 3px solid $brand-white;
+	border-radius: 1px;
 	padding: 0 24px;
     margin: 0;
-    background-color: rgba(255,255,255,.8);
-    color: $brand-black;
+	background-color: transparent;
+    //background-color: rgba(255,255,255,.8);
+    color: $brand-white;
     height: 50px;
-	border-radius: 1px;
 	margin-top: 30px;
 	transition: .8s;
 	p1 {
 		font-size: 15px;
-		font-weight: 400;
+		font-weight: 500;
 	}
 }
 
 .progect:hover {
 	background-color: white;
-	transform: scale(1.1);
+	transform: scale(1.05);
+	color: $brand-black;
 }
 
 .progectss {
 	margin-top: 0px;
+}
+
+.progects {
+	padding: 0 24px;
+	height: 50px;
+	font-size: 15px;
+    margin: 0;
+	margin-top: 30px;
+    background-color: transparent;
+	border: 3px solid $brand-white;
+    color: $brand-white;
+	font-weight: 500;
+	transition: all 0.8s ease 0s;
+}
+
+.progects:hover {
+	color: $brand-black;
+	background-color: white;
+	transform: scale(1.05);
+}
+
+.portfolio {
+	margin-top: 20px;
+	padding: 0 24px;
+    height: 50px;
+	text-align: center;
+	border: 3px solid $brand-black;
+	border-radius: 1px;
+	transition: all 0.8s ease 0s;
+	p {
+		font-size: 15px;
+		font-weight: 500;
+		color: $brand-black;
+		margin-top: 10px;
+	}
+}
+
+.portfolio:focus {
+	text-decoration: none;
+}
+
+.portfolio:hover {
+	background-color: $brand-black;
+	text-decoration: none;
+	transform: scale(1.05);
+	p {
+		color: $brand-white;
+	}
+}
+
+.consultation {
+	padding: 0 24px;
+	height: 50px;
+	border: 3px solid $brand-white;
+	border-radius: 1px;
+	box-sizing: border-box;
+	background-color: transparent;
+	color: $brand-black;
+	transition: all 0.8s ease 0s;
+	p1 {
+		color: $brand-white;
+		font-size: 15px;
+		line-height: 24px;
+		font-weight: 500;
+	}
+}
+
+.consultation:hover {
+	background-color: white;
+	transform: scale(1.05);
+	p1 {
+		color: $brand-black;
+	}
 }
 
 .phon {
@@ -1824,35 +1905,6 @@ margin-left: 120px;}
 .bt {
 	justify-content: center;
     display: flex;
-}
-
-.portfolio {
-	margin-top: 20px;
-	padding: 0 24px;
-    height: 50px;
-	text-align: center;
-	border: 2px solid $brand-black;
-	border-radius: 1px;
-	transition: all 0.8s ease 0s;
-	p {
-		font-size: 15px;
-		font-weight: 300;
-		color: $brand-black;
-		margin-top: 10px;
-	}
-}
-
-.portfolio:focus {
-	text-decoration: none;
-}
-
-.portfolio:hover {
-	background-color: $brand-black;
-	text-decoration: none;
-	transform: scale(1.1);
-	p {
-		color: #F2F2F2;
-	}
 }
 
 .knopka {
@@ -1966,22 +2018,20 @@ iframe {
 
 
 .circle, .circle_two {
-	border: 2px solid $brand-black;
+	border: 1px solid $brand-black;
 	border-radius: 50%;
-	height: 100px;
-	width: 100px;
+	padding: 20px;
   p {
 	  text-align: center;
-	  font-size: 50px;
+	  font-size: 30px;
 	  color: $brand-black;
 	  font-weight: 500;
-	  margin-top: 3px;
   }
 }
 
 .circle_two{
 	margin-left: 57px;
-	p{
+	p {
 		margin-left: 2px;
 	}
 }
@@ -1991,12 +2041,12 @@ iframe {
 	h1 {
 		margin-bottom: 15px;
 		font-weight: 600;
-		font-size: 30px;
+		font-size: 28px;
 		color: $brand-black;
 	}
 	p {
-		font-size: 14px;
-		line-height: 150%;
+		font-size: 12px;
+		line-height: 180%;
 		color: $brand-black;
 	}
 	ul {
@@ -2045,27 +2095,6 @@ iframe {
 		color: #FFFFFF;
 		font-weight: 400;
 	}
-}
-
-.consultation{
-	padding: 0 24px;
-	height: 50px;
-	border: none;
-	box-sizing: border-box;
-	background-color: rgba(255, 255, 255, 0.8);
-	color: $brand-black;
-	transition: all 0.8s ease 0s;
-	p1 {
-		font-size: 15px;
-		line-height: 24px;
-		font-weight: 300;
-	}
-}
-
-.consultation:hover {
-	color: $brand-black;
-	background-color: white;
-	transform: scale(1.1);
 }
 
 .form-input_name, .form-input_tell ,.input_name_dizain ,.input_tell_dizain {
@@ -2124,19 +2153,22 @@ input {
 	color: white;
 	ul {
 	display: flex;
-		li {
-			margin-left: 138px;
-		
+		li:nth-child(2) {
+			margin-left: 76px;
+			margin-right: 76px;
 		}
 	}
 }
 
 .footer_menu p1 {
 	color: white;
-	font-size: 20px;
+	font-size: 16px;
 	font-weight: 500;
-	font-size: 20px;
 	line-height: 24px;
+}
+
+.footer_menu p1:hover {
+	text-decoration: underline;
 }
 
 .number{
@@ -2152,7 +2184,7 @@ input {
 
 .phone_header {
 	margin-top: 20px;
-    margin-left: 45px;
+    margin-left: 62px;
 }
 .phone_adaptive {
 	display: none;
@@ -2178,25 +2210,6 @@ input {
 	border-bottom: 1px solid #e9e8e8;
 }
 
-.progects {
-	padding: 0 24px;
-	height: 50px;
-	font-size: 16px;
-    margin: 0;
-	margin-top: 30px;
-    background-color:  rgba(255, 255, 255, 0.8);
-	border: none;
-    color: $brand-black;
-	font-weight: 300;
-	transition: all 0.8s ease 0s;
-}
-
-.progects:hover {
-	color: $brand-black;
-	background-color: white;
-	transform: scale(1.1);
-}
-
 .fot {
 	display: flex;
 }
@@ -2219,7 +2232,7 @@ input {
 
 .one_blockk ,.two_blockk {
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	width: 100%;
 }
 

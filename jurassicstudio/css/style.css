@@ -868,9 +868,8 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
 .phone {
   position: absolute;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 24px;
-  margin-left: 5px;
   text-decoration: none;
   color: white;
 }
@@ -1674,7 +1673,6 @@ input[type="text"] {
   font-size: 18px;
   list-style: none;
   margin-bottom: 0;
-  margin-left: 76px;
 }
 
 #footer ul li :hover {
@@ -1691,12 +1689,22 @@ input[type="text"] {
   color: red;
 }
 
+#footer .phone {
+  position: relative;
+}
+
 #footer .copy-right {
   font-size: 14px;
 }
 
 #footer .numbe {
-  text-align: end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #footer .float {
@@ -1828,6 +1836,11 @@ input[type="text"] {
   margin-left: 120px;
 }
 
+.sotial_network li {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
 .sotial_network li:hover, .network_footer li:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
@@ -1846,7 +1859,6 @@ input[type="text"] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 10px;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -1909,13 +1921,13 @@ input[type="text"] {
 
 .progect, .progectss {
   color: inherit;
-  border: none;
+  border: 3px solid #fff;
+  border-radius: 1px;
   padding: 0 24px;
   margin: 0;
-  background-color: rgba(255, 255, 255, 0.8);
-  color: #222;
+  background-color: transparent;
+  color: #fff;
   height: 50px;
-  border-radius: 1px;
   margin-top: 30px;
   -webkit-transition: .8s;
   transition: .8s;
@@ -1923,17 +1935,102 @@ input[type="text"] {
 
 .progect p1, .progectss p1 {
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .progect:hover {
   background-color: white;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  color: #222;
 }
 
 .progectss {
   margin-top: 0px;
+}
+
+.progects {
+  padding: 0 24px;
+  height: 50px;
+  font-size: 15px;
+  margin: 0;
+  margin-top: 30px;
+  background-color: transparent;
+  border: 3px solid #fff;
+  color: #fff;
+  font-weight: 500;
+  -webkit-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+}
+
+.progects:hover {
+  color: #222;
+  background-color: white;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.portfolio {
+  margin-top: 20px;
+  padding: 0 24px;
+  height: 50px;
+  text-align: center;
+  border: 3px solid #222;
+  border-radius: 1px;
+  -webkit-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+}
+
+.portfolio p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #222;
+  margin-top: 10px;
+}
+
+.portfolio:focus {
+  text-decoration: none;
+}
+
+.portfolio:hover {
+  background-color: #222;
+  text-decoration: none;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.portfolio:hover p {
+  color: #fff;
+}
+
+.consultation {
+  padding: 0 24px;
+  height: 50px;
+  border: 3px solid #fff;
+  border-radius: 1px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: transparent;
+  color: #222;
+  -webkit-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+}
+
+.consultation p1 {
+  color: #fff;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.consultation:hover {
+  background-color: white;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.consultation:hover p1 {
+  color: #222;
 }
 
 .phon {
@@ -1954,39 +2051,6 @@ input[type="text"] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.portfolio {
-  margin-top: 20px;
-  padding: 0 24px;
-  height: 50px;
-  text-align: center;
-  border: 2px solid #222;
-  border-radius: 1px;
-  -webkit-transition: all 0.8s ease 0s;
-  transition: all 0.8s ease 0s;
-}
-
-.portfolio p {
-  font-size: 15px;
-  font-weight: 300;
-  color: #222;
-  margin-top: 10px;
-}
-
-.portfolio:focus {
-  text-decoration: none;
-}
-
-.portfolio:hover {
-  background-color: #222;
-  text-decoration: none;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.portfolio:hover p {
-  color: #F2F2F2;
 }
 
 .knopka {
@@ -2130,18 +2194,16 @@ iframe {
 }
 
 .circle, .circle_two {
-  border: 2px solid #222;
+  border: 1px solid #222;
   border-radius: 50%;
-  height: 100px;
-  width: 100px;
+  padding: 20px;
 }
 
 .circle p, .circle_two p {
   text-align: center;
-  font-size: 50px;
+  font-size: 30px;
   color: #222;
   font-weight: 500;
-  margin-top: 3px;
 }
 
 .circle_two {
@@ -2159,13 +2221,13 @@ iframe {
 .texts h1, .texts_two h1, .texts_three h1 {
   margin-bottom: 15px;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 28px;
   color: #222;
 }
 
 .texts p, .texts_two p, .texts_three p {
-  font-size: 14px;
-  line-height: 150%;
+  font-size: 12px;
+  line-height: 180%;
   color: #222;
 }
 
@@ -2215,31 +2277,6 @@ iframe {
   line-height: 150%;
   color: #FFFFFF;
   font-weight: 400;
-}
-
-.consultation {
-  padding: 0 24px;
-  height: 50px;
-  border: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  background-color: rgba(255, 255, 255, 0.8);
-  color: #222;
-  -webkit-transition: all 0.8s ease 0s;
-  transition: all 0.8s ease 0s;
-}
-
-.consultation p1 {
-  font-size: 15px;
-  line-height: 24px;
-  font-weight: 300;
-}
-
-.consultation:hover {
-  color: #222;
-  background-color: white;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
 }
 
 .form-input_name, .form-input_tell, .input_name_dizain, .input_tell_dizain {
@@ -2314,16 +2351,20 @@ input {
   display: flex;
 }
 
-.footer_menu ul li {
-  margin-left: 138px;
+.footer_menu ul li:nth-child(2) {
+  margin-left: 76px;
+  margin-right: 76px;
 }
 
 .footer_menu p1 {
   color: white;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
-  font-size: 20px;
   line-height: 24px;
+}
+
+.footer_menu p1:hover {
+  text-decoration: underline;
 }
 
 .number p {
@@ -2337,7 +2378,7 @@ input {
 
 .phone_header {
   margin-top: 20px;
-  margin-left: 45px;
+  margin-left: 62px;
 }
 
 .phone_adaptive {
@@ -2362,27 +2403,6 @@ input {
   box-sizing: border-box;
   color: white;
   border-bottom: 1px solid #e9e8e8;
-}
-
-.progects {
-  padding: 0 24px;
-  height: 50px;
-  font-size: 16px;
-  margin: 0;
-  margin-top: 30px;
-  background-color: rgba(255, 255, 255, 0.8);
-  border: none;
-  color: #222;
-  font-weight: 300;
-  -webkit-transition: all 0.8s ease 0s;
-  transition: all 0.8s ease 0s;
-}
-
-.progects:hover {
-  color: #222;
-  background-color: white;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
 }
 
 .fot {
@@ -2412,9 +2432,9 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 100%;
 }
 
