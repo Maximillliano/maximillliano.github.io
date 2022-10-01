@@ -1222,7 +1222,7 @@ header  {
 }
 
 .about-content, .about-content_progect, .about-contentss {
-	margin-top: 12em;
+	margin-top: 8em;
 	width: 45%;
 	h1{
 		font-size: 40px;
@@ -1840,7 +1840,7 @@ margin-left: 120px;}
 
 .portfolio {
 	margin-top: 20px;
-	padding: 0 24px;
+	padding: 10px 24px;
     height: 50px;
 	text-align: center;
 	border: 3px solid $brand-black;
@@ -1850,7 +1850,7 @@ margin-left: 120px;}
 		font-size: 15px;
 		font-weight: 500;
 		color: $brand-black;
-		margin-top: 10px;
+		line-height: normal;
 	}
 }
 
@@ -2552,7 +2552,6 @@ $wheel_size: $border_width * 3;
 	}
 	.phone {
 		position: absolute;
-		right: 60px;
 	}
 	.ph {
 		p1 {
@@ -2643,7 +2642,6 @@ $wheel_size: $border_width * 3;
 		line-height: 39px;
 		text-align: left;	
 		width: 294px;
-		height: 78px;
 	}
 	.fh5co-heading p {
 		font-size: 14px;
@@ -2663,7 +2661,6 @@ $wheel_size: $border_width * 3;
 		display: none;
 	}
 	.portfolio {
-		margin-top: 10px;
 		p {
 			font-size: 18px;
 		}
@@ -2677,21 +2674,20 @@ $wheel_size: $border_width * 3;
 			margin-bottom: 60px;
 		}
 		.circle, .circle_two {
-			display: none;
-			height: 80px;
-			width: 80px;
+			height: 60px;
+			width: 60px;
 			margin-left: 0px;
 			P {
-				font-weight: 600;
+				font-weight: 300;
 				font-size: 35px;
-				line-height: 70px;
+				line-height: 20px;
 				text-align: center;
 			}
 		}
 		.texts h1, .texts_two h1, .texts_three h1 {
 			font-weight: 600;
 			font-size: 24px;
-			line-height: 22px;
+			line-height: 40px;
 			margin-top: 7px;
 		}
 		.texts p, .texts_two p, .texts_three p {
@@ -2704,7 +2700,9 @@ $wheel_size: $border_width * 3;
 		}
 		.texts, .texts_two, .texts_three {
 			margin-left: 0;
-			margin-top: 20px;
+			margin-top: 0;
+			padding-left: 0;
+			padding-right: 0;
 		}
 		.texts.col-md-4, .texts_two.col-md-4, .texts_three.col-md-4 {
 			padding: 0 !important;
@@ -2759,7 +2757,7 @@ $wheel_size: $border_width * 3;
 	//Footer
 	.logo_footer {
 		img {
-			width: 145px;
+			width: 200px;
 			height: inherit;
 		}
 	}
@@ -2772,10 +2770,10 @@ $wheel_size: $border_width * 3;
 		}
 		.footer_none {
 			display: block;
+			margin-top: 40px;
 			ul {
 				display: block;
 				text-align: center;
-				margin-top: 50px;
 				li {
 					margin-left: 0;
 					img {
@@ -2791,8 +2789,8 @@ $wheel_size: $border_width * 3;
 		}
 		.network_footer {
 			justify-content: center;
-			margin-top: 50px;
-			margin-bottom: 50px;
+			margin-top: 20px;
+			margin-bottom: 20px;
 			li:first-child {
 				margin-left: 0;
 			}
@@ -2865,7 +2863,7 @@ $wheel_size: $border_width * 3;
 				display: block;
 				position: absolute;
 				right: 2.5em;
-				margin-top: 5px;
+				margin-top: 10px;
 				img {
 					width: 28px;
 				}
@@ -2925,7 +2923,7 @@ $wheel_size: $border_width * 3;
 		.sotial_network {
 			display: block;
 			img {
-				width: 25px;
+				width: 38px;
 				margin-right: 18px;
 			}
 			ul {
@@ -2966,7 +2964,7 @@ $wheel_size: $border_width * 3;
 			font-weight: 600;
 			color: #FFFFFF;
 			text-align: left;
-			font-size: 34px;
+			font-size: 36px;
 			margin: 20px 0;
 		}
 		.subtitle {
@@ -2974,6 +2972,7 @@ $wheel_size: $border_width * 3;
 			line-height: 150%;
 			width: 80%;
 			text-align: left;
+			height: auto;
 		}	
 	}
 	.progect {
@@ -3047,10 +3046,7 @@ $wheel_size: $border_width * 3;
 	
 	//Services
 	#fh5co-about {
-		padding: 70px 15px;
-		.fh5co-heading h2 {
-			margin-bottom: 0;
-		}
+		padding: 70px 0;
 		.accordion-link {
 			h3 {
 				font-size: 18px;
@@ -3207,6 +3203,8 @@ $wheel_size: $border_width * 3;
 
 	#fh5co-featured {
 		display: block;
+		padding-left: 15px;
+		padding-right: 15px;
 		margin-top: 0px;
 	}
 	.kontacts_block {
@@ -3218,6 +3216,9 @@ $wheel_size: $border_width * 3;
 	.fot {
 		display: block;
 	}
+	.footer_menu {
+		flex-direction: column;
+	}
 	.footer_menu ul {
 		display: block;
 	}
@@ -3225,8 +3226,18 @@ $wheel_size: $border_width * 3;
 	display: block;
 	}
 
+	.footer_menu ul li:nth-child(2) {
+		margin: 0;
+	}
+	#fh5co-main-nav ul li a.phone {
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+
 	#footer a {
-		line-height: 12px;
+		line-height: 40px;
+		color: white;
+		text-align: center;
 	}
 	.footer_menu p1 {
 		font-size: 18px;
@@ -3307,6 +3318,10 @@ $wheel_size: $border_width * 3;
 	}
 	#fh5co-blog {
 		padding-bottom:0px;
+	}
+
+	a:hover {
+		padding-left: 0;
 	}
 
 	//CONTACTS PAGE
