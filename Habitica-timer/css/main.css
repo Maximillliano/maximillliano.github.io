@@ -1,0 +1,163 @@
+:root {
+    --bg-light-color: #fff;
+    --bg-dark-color: #;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    background-color: var(--bg-light-color);
+    background-image: url(/imgs/theme-light/bg.png);
+    background-repeat: no-repeat;
+    padding: 26px;
+}
+
+main {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header, footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.but__music, .but__sound {
+    padding: 0;
+    width: 64px;
+    height: 64px;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid #865AD7;
+    border-radius: 50%;
+}
+
+/* ----- Switch ----- */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 82px;
+    height: 38px;
+}
+
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #865AD7;
+    filter: drop-shadow(0px 0px 2.96429px #9A63FF);
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    left: 4px;
+    bottom: 3px;
+    background-color: #865AD7;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+    background-image: url(/imgs/theme-light/switch-sun.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 60%;
+
+}
+  
+input:checked + .slider {
+    /* background-color: #2196F3; */
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(43px);
+    -ms-transform: translateX(43px);
+    transform: translateX(43px);
+}
+
+/* ----- Timer ----- */
+.clock {
+    text-align: center;
+}
+.timer {
+    width: 475px;
+    height: 475px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url(/imgs/theme-light/timer-cells.png) no-repeat;
+    z-index: 3;
+}
+
+.timer__part {
+    font-size: 110px;
+    font-weight: 300;
+    line-height: 133px;
+    color: #442D71;
+}
+
+.timer__btn {
+    padding: 10px 40px;
+    margin-left: 16px;
+    border-radius: 26px;
+    max-width: 132px;
+    border: none;
+    color: #442D71;
+    background: none;
+    cursor: pointer;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.timer__btn--start {
+    background: #F8F5FF;
+    border: 1px solid #6C40BF;
+    border-radius: 26px;
+}
+
+.timer__btn--stop {
+    border: 1px solid #6C40BF;
+}
+
+/* ----- Background ----- */
+.bg-icon {
+    position: absolute;
+    height: 60%;
+    top: calc(40%/2);
+    bottom: 0;
+    left: 165px;
+    z-index: 2;
+    animation: icon-fly 7s ease-in-out infinite;
+    animation-delay: 5s;
+}
+
+.bg-icon__right {
+    left: auto;
+    right: 165px;
+}
+
+/* ----- Animation ----- */
+@keyframes icon-fly {
+    from {margin-top: 0px;}
+    40% {margin-top: 40px;}
+    to {margin-top: 0;}
+}

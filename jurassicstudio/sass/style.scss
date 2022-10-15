@@ -279,7 +279,9 @@ h1, h2, h3, h4, h5, h6 {
 					color: rgba($brand-white,1);
 					outline: none;
 					text-decoration: none;
-					padding-left: 80px;
+				}
+				&:hover {
+					text-decoration: underline;
 				}
 			}
 		}
@@ -1372,11 +1374,12 @@ header  {
 }
 
 .foto {
-	background-image: url(../images/Photo.jpg);
+	background-image: url(../images/about.jpg);
 	background-size: cover;
-	background-position: center right;
+	background-position: center center;
+	filter: grayscale(100%);
 	height: 100%;
-	width: 500px;
+	width: 600px;
 }
 
 .block_studia {
@@ -1795,12 +1798,11 @@ margin-left: 120px;}
 	color: inherit;
 	border: 3px solid $brand-white;
 	border-radius: 1px;
-	padding: 0 24px;
+	padding: 5px 24px;
     margin: 0;
 	background-color: transparent;
     //background-color: rgba(255,255,255,.8);
     color: $brand-white;
-    height: 50px;
 	margin-top: 30px;
 	transition: .8s;
 	p1 {
@@ -1841,7 +1843,6 @@ margin-left: 120px;}
 .portfolio {
 	margin-top: 20px;
 	padding: 10px 24px;
-    height: 50px;
 	text-align: center;
 	border: 3px solid $brand-black;
 	border-radius: 1px;
@@ -2008,7 +2009,6 @@ iframe {
 	height: 370px;
 	border-radius: 1px;
 }
-.dizain_block {margin-top: 50px;}
 
 .dizain_block ,.dizain_block_one {
 	display: flex;
@@ -2473,6 +2473,10 @@ $wheel_size: $border_width * 3;
 		margin-left: 40px;
 	}
 
+	#footer ul li:nth-child(2) {
+		margin-right: 0;
+	}
+
 	.sotial_network ul {
 		margin-left: 0px;
 	}
@@ -2520,6 +2524,9 @@ $wheel_size: $border_width * 3;
 }
 
 @media (max-width: 1000px){
+	.konsultation h2 {
+		margin-bottom: 10px;
+	}
 	.dizain_block_one_adapt {
 		display:block;
 		display: flex;
