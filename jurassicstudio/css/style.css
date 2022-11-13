@@ -229,8 +229,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #fh5co-featured {
-  background: url(../images/zakaz.jpg) no-repeat;
+  background: url(../images/bg-contacts.jpg) no-repeat;
   background-size: cover;
+  background-position: 70% 100%;
   padding: 120px 0;
 }
 
@@ -637,7 +638,7 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
   left: 0;
   right: 0;
   content: '';
-  background: rgba(34, 34, 34, 0.4);
+  background: rgba(34, 34, 34, 0.7);
   z-index: 1;
 }
 
@@ -1089,6 +1090,7 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
   width: 100%;
   background-size: cover;
   -webkit-background-size: cover;
+  background-position: center center;
   margin-bottom: 2px;
   cursor: pointer;
 }
@@ -2096,7 +2098,7 @@ iframe {
 }
 
 .fh5co-intro-section {
-  background: url(../images/konsultation.jpg) no-repeat;
+  background: url(../images/bg-consult.jpg) no-repeat;
 }
 
 .threestep {
@@ -2258,7 +2260,9 @@ iframe {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url(../images/konsultation.jpg);
+  background-image: url(../images/bg-consult.jpg);
+  background-size: cover;
+  background-position: 20% 100%;
   width: 100%;
   z-index: 2;
   padding-top: 120px;
