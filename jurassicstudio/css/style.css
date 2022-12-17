@@ -1075,6 +1075,10 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
   letter-spacing: 5px;
 }
 
+.hidden {
+  display: none;
+}
+
 .fh5co-work-section .row {
   margin-left: 0;
   margin-right: 0;
@@ -1086,8 +1090,7 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
 
 .card {
   position: relative;
-  height: 450px;
-  width: 100%;
+  padding: 0;
   background-size: cover;
   -webkit-background-size: cover;
   background-position: center center;
@@ -1141,13 +1144,13 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
   right: 0;
   left: 0;
   background: #222222;
-  opacity: 0.5;
+  opacity: 0.7;
   -webkit-transition: .5s ease;
   transition: .5s ease;
 }
 
 .card:hover .overlay, .card:hover p {
-  opacity: 0;
+  display: none;
 }
 
 .card:hover .circle {
@@ -1194,6 +1197,10 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
 
 .work:hover .view, .work:focus .view, .work_three:hover .view, .work_three:focus .view, .work_studia:hover .view, .work_studia:focus .view {
   opacity: 1;
+}
+
+.work {
+  margin-bottom: 0;
 }
 
 .work_studia {
@@ -3559,5 +3566,9 @@ p2 {
   .modal-content p {
     font-size: 13px;
   }
+}
+
+.fancybox__thumbs .carousel__slide .fancybox__thumb::after {
+  border-color: white;
 }
 /*# sourceMappingURL=style.css.map */
