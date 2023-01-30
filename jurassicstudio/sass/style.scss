@@ -70,6 +70,11 @@ $form-group-margin-bottom: 30px !default;
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'QG'; 
+	src: url(/fonts/QG.ttf); 
+}
+
 @mixin icomoon() {
 	font-family: 'icomoon';
 	speak: none;
@@ -200,7 +205,7 @@ h1, h2, h3, h4, h5, h6 {
 	overflow-y: scroll;
 	.fh5co-nav-toggle {
 		position: absolute;
-		top: 30px;
+		top: 40px;
 		right: 30px;
 		padding: 20px;
 		height: 50px;
@@ -355,6 +360,28 @@ h1, h2, h3, h4, h5, h6 {
 			background: $brand-primary;
 			color: $brand-white !important;
 		}
+	}
+}
+
+.btn-additional {
+	padding: 10px 24px;
+	text-align: center;
+	border: 3px solid $brand-black;
+	border-radius: 1px;
+	transition: all 0.8s ease 0s;
+	font-size: 15px;
+	font-weight: 500;
+	color: $brand-black;
+	line-height: normal;
+	&:focus {
+		text-decoration: none;
+	}
+	
+	&:hover {
+		background-color: $brand-black;
+		text-decoration: none;
+		transform: scale(1.05);
+		color: $brand-white;
 	}
 }
 
@@ -712,14 +739,14 @@ header  {
 				vertical-align: middle;
 				height: 700px;
 				h2 {
-					font-size: 70px;
+					font-family: "QG", sans-serif;
+					font-size: 90px;
 					font-weight: 600;
 					margin: 10px 0;
 					text-transform: uppercase;
 					color: #FFFFFF;
 				}
 				p{
-					font-size: 20px;
 					color: #fff;
 					.btn {
 						&:hover {
@@ -1152,7 +1179,7 @@ header  {
 	}
 }
 
-.work {
+.fh5co-work-section .work {
 	margin-bottom: 0;
 }
 
@@ -1715,8 +1742,7 @@ input[type="text"] {
 
 .text_header {
 	p {
-		font-size: 20px;
-		text-transform:uppercase;
+		font-size: 16px;
 	}
 	p1 {
 		font-size: 16 px;
@@ -1728,11 +1754,12 @@ input[type="text"] {
 .sotial_network, .sotial_network_footer {
 list-style-type: none;
 display: flex;
+margin-top: 22px;
 	ul {
 	display: flex;
 	padding: 0px;
 	margin-bottom: 0;
-	margin-top: 22px;
+	margin-right: 40px;
 	}
 	li{
 		margin-left: 21px;
@@ -1750,6 +1777,17 @@ margin-left: 120px;}
 
 .sotial_network li:hover, .network_footer li:hover {
 	transform: scale(1.2);
+}
+
+.abou .sotial_network ul, .kontacts .sotial_network ul {
+	margin-left: 0;
+	li {
+		margin-left: 0;
+		padding: 5px;
+	}
+	img {
+		width: 35px;
+	}
 }
 
 .phone_header {
@@ -2226,7 +2264,6 @@ input {
 }
 
 .fh5co-logo img {
-    width: 193px;
     height: 45px;
 	&:hover {
 		background-color: rgba(255,255,255,.2);
@@ -2298,6 +2335,7 @@ input {
 .accordion-link h3 {
   font-weight: 500;
   font-size: 22px;
+  text-decoration: underline;
 }
 .accordion-link span {
   color: $brand-black;
@@ -2775,7 +2813,7 @@ $wheel_size: $border_width * 3;
 	//Footer
 	.logo_footer {
 		img {
-			width: 200px;
+			width: 100px;
 			height: inherit;
 		}
 	}
@@ -2837,6 +2875,10 @@ $wheel_size: $border_width * 3;
 			width: 100%;
 			margin-bottom: 60px;
 		}
+
+		.sotial_network {
+			display: flex;
+		}
 	}
 	.studio h2 {
 		width: 100%;
@@ -2893,7 +2935,6 @@ $wheel_size: $border_width * 3;
 			height: 60px;
 			.fh5co-logo img {
 				margin-top: 7px;
-				width: 160px;
 			}
 		}
 		.fh5co-nav-toggle {
@@ -2918,7 +2959,7 @@ $wheel_size: $border_width * 3;
 		position: absolute;
 		top: 60px;
 		.burger {
-			width: 160px;
+			width: 50px;
 		}
 	}
 	#fh5co-main-nav {
@@ -2982,7 +3023,7 @@ $wheel_size: $border_width * 3;
 			font-weight: 600;
 			color: #FFFFFF;
 			text-align: left;
-			font-size: 36px;
+			font-size: 50px;
 			margin: 20px 0;
 		}
 		.subtitle {
@@ -2997,7 +3038,6 @@ $wheel_size: $border_width * 3;
 		margin-top: 20px;
 		p1 {
 			font-size: 18px;
-			margin-top: 7px;
 			width: 100%;
 			text-align: center;
 		}
@@ -3391,6 +3431,8 @@ $wheel_size: $border_width * 3;
 		}
 	}
 }
+
+//Fancybox gallery
 
 .fancybox__thumbs .carousel__slide .fancybox__thumb::after {
 	border-color: white;
