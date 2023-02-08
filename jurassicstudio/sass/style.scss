@@ -375,6 +375,7 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: normal;
 	&:focus {
 		text-decoration: none;
+		color: $brand-black;
 	}
 	
 	&:hover {
@@ -2879,10 +2880,12 @@ $wheel_size: $border_width * 3;
 		.sotial_network {
 			display: flex;
 		}
+
 	}
 	.studio h2 {
 		width: 100%;
 	}
+
 	.card {
 		margin-bottom: 15px;
 	}
