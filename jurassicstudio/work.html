@@ -1,575 +1,3446 @@
 <!DOCTYPE html>
-	<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-	<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-	<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
-	<!--[if gt IE 8]><!--><html class="no-js" lang="ru"><!--<![endif]-->
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>Portfolio</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="Студия дизайна интерьера. Работы выполнены с применением последних технологий и направлений моды." />
-		<meta name="keywords" content="design, дизайн, интерьер, дизайн интерьера, дизайн квартиры, дизайн дома, квартира, планировка, дизайнер, 3д" />
-		<meta name="author" content="Антипенко Юрий Юрьевич" />
-		
-		<!-- Facebook and Twitter integration -->
-		<meta property="og:title" content="Портфолио студии дизайна интерьера Jurassic Studio"/>
-		<meta property="og:image" content="https://sun9-72.userapi.com/impg/__60toNAVqlBGDZaPFw3iVZxNmUi8MLnT5DQeQ/SpAgm1YhlIc.jpg?size=2508x1393&quality=95&sign=b664a121780faeaf8525d76e3ca8232c&type=album"/>
-		<meta property="og:url" content="http://jurassicstudio.by"/>
-		<meta property="og:site_name" content="Jurassic Studio"/>
-		<meta property="og:description" content="Студия дизайна интерьера. Работы выполнены с применением последних технологий и направлений моды."/>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="ru"><!--<![endif]-->
 
-		<link rel="shortcut icon" href="images/favicon.ico">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
-		
-		<!-- Animate.css -->
-		<link rel="stylesheet" href="css/animate.css">
-		<!-- Icomoon Icon Fonts-->
-		<link rel="stylesheet" href="css/icomoon.css">
-		<!-- Bootstrap  -->
-		<link rel="stylesheet" href="css/bootstrap.css">
-		<!-- Fancybox  -->
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
-		<!-- Flexslider  -->
-		<link rel="stylesheet" href="css/flexslider.css">
-		<link rel="stylesheet" href="css/style.css">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Portfolio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description"
+		content="Студия дизайна интерьера. Работы выполнены с применением последних технологий и направлений моды." />
+	<meta name="keywords"
+		content="design, дизайн, интерьер, дизайн интерьера, дизайн квартиры, дизайн дома, квартира, планировка, дизайнер, 3д" />
+	<meta name="author" content="Антипенко Юрий Юрьевич" />
 
-		<!-- Modernizr JS -->
-		<script src="js/modernizr-2.6.2.min.js"></script>
-		<!-- FOR IE9 below -->
-		<!--[if lt IE 9]>
+	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content="Портфолио студии дизайна интерьера Jurassic Studio" />
+	<meta property="og:image"
+		content="https://sun9-72.userapi.com/impg/__60toNAVqlBGDZaPFw3iVZxNmUi8MLnT5DQeQ/SpAgm1YhlIc.jpg?size=2508x1393&quality=95&sign=b664a121780faeaf8525d76e3ca8232c&type=album" />
+	<meta property="og:url" content="http://jurassicstudio.by" />
+	<meta property="og:site_name" content="Jurassic Studio" />
+	<meta property="og:description"
+		content="Студия дизайна интерьера. Работы выполнены с применением последних технологий и направлений моды." />
+
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Fancybox  -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
 		<script src="js/respond.min.js"></script>
 		<![endif]-->
 
-		<!-- Yandex.Metrika counter -->
-		<script type="text/javascript" >
-			(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-			m[i].l=1*new Date();
-			for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-			k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+	<!-- Yandex.Metrika counter -->
+	<script>
+		(function (m, e, t, r, i, k, a) {
+			m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+			m[i].l = 1 * new Date();
+			for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+			k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+		})
 			(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-		
-			ym(91744516, "init", {
-				clickmap:true,
-				trackLinks:true,
-				accurateTrackBounce:true,
-				webvisor:true
-			});
-		</script>
-		<noscript><div><img src="https://mc.yandex.ru/watch/91744516" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-		<!-- /Yandex.Metrika counter -->
-		
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-9YP9RDWRBE"></script>
-		<script>
+
+		ym(91744516, "init", {
+			clickmap: true,
+			trackLinks: true,
+			accurateTrackBounce: true,
+			webvisor: true
+		});
+	</script>
+	<noscript>
+		<img src="https://mc.yandex.ru/watch/91744516" style="position:absolute; left:-9999px;" alt="" />
+	</noscript>
+	<!-- /Yandex.Metrika counter -->
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-9YP9RDWRBE"></script>
+	<script>
 		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
+		function gtag() { dataLayer.push(arguments); }
 		gtag('js', new Date());
 		gtag('config', 'G-9YP9RDWRBE');
-		</script>
+	</script>
 
-	</head>
+</head>
 
-	<body>
+<body>
 
-		<!-- Burger menu-->
-		<nav id="fh5co-main-nav" role="navigation">
-			<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle active">
-				<i></i>
-			</a>
-			<div class="js-fullheight fh5co-table">
-				<div class="fh5co-table-cell js-fullheight">
-					<a class="logo_burger" href="index.html">
-						<img class="burger" src="images/Logo.svg" alt="logo Jurassic Studio">
-					</a>
+	<!-- Burger menu-->
+	<nav id="fh5co-main-nav">
+		<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle active">
+			<i></i>
+		</a>
+		<div class="js-fullheight fh5co-table">
+			<div class="fh5co-table-cell js-fullheight">
+				<a class="logo_burger" href="index.html">
+					<img class="burger" src="images/Logo.svg" alt="logo Jurassic Studio">
+				</a>
+				<ul>
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="about.html">О нас</a></li>
+					<li><a class="active-menu" href="work.html">Портфолио</a></li>
+					<li><a href="contact.html">Контакты</a></li>
+				</ul>
+				<ul class="phone_header">
+					<li>
+						<a href="tel:+375296727206" class="phone">
+							<img class="phonee" src="images/Phone.svg" alt="icon phone">
+							+375 (29) 672-72-06
+						</a>
+					</li>
+				</ul>
+				<div class="sotial_network">
 					<ul>
-						<li><a href="index.html">Главная</a></li>
-						<li><a href="about.html">О нас</a></li>
-						<li><a class="active-menu" href="work.html">Портфолио</a></li>
-						<li><a href="contact.html">Контакты</a></li>
-					</ul>
-					<ul class="phone_header">
 						<li>
-							<a href="tel:+375296727206" class="phone">
-								<img class="phonee" src="images/Phone.svg" alt="icon phone">
-								+375 (29) 672-72-06 
+							<a href="https://t.me/JurassicStudio" target="_blank">
+								<img class="instagram" src="images/icon-teleg.svg" alt="icon telegram">
 							</a>
-						</li>	
+						</li>
+						<li>
+							<a href="viber://chat?number=%2B375296727206" target="_blank">
+								<img class="vk" src="images/icon-viber.svg" alt="icon viber">
+							</a>
+						</li>
+						<li>
+							<a href="mailto:jurassicstudio@tut.by" target="_blank">
+								<img class="linkid" src="images/icon-mail.svg" alt="icon mail">
+							</a>
+						</li>
 					</ul>
-					<div class="sotial_network">
-						<ul>
-							<li>	
-								<a href="https://t.me/JurassicStudio" target="_blank">
-									<img class="instagram" src="images/icon-teleg.svg" alt="icon telegram">
-								</a>
-							</li>
-							<li>	
-								<a href="viber://chat?number=%2B375296727206" target="_blank">
-									<img class="vk" src="images/icon-viber.svg" alt="icon viber">
-								</a>
-							</li>
-							<li>	
-								<a href="mailto:jurassicstudio@tut.by" target="_blank">
-									<img class="linkid" src="images/icon-mail.svg"  alt="icon mail">
-								</a>
-							</li>
-						</ul>
-					</div>
 				</div>
 			</div>
-		</nav>
-	
-		<div id="fh5co-page">
-			<!--Header-->
-			<header>
-				<div class="container">
-					<div class="fh5co-navbar-brand">
-						<div class="row">
-							<div class="col-xs-6">
-								<h1 class="text-left"><a class="fh5co-logo" href="index.html"><img src="images/Logo.svg" alt="logo Jurassic Studio"></h1>
-							</div>
+		</div>
+	</nav>
 
-							<div class="a">
-								<div class="contacts">
-									<div class="sotial_network">
-										<ul>
-											<li>	
-												<a href="https://t.me/JurassicStudio" target="_blank">
-													<img class="instagram" src="images/icon-teleg.svg" alt="icon telegram">
-												</a>
-											</li>
-											<li>	
-												<a href="viber://chat?number=%2B375296727206" target="_blank">
-													<img class="vk" src="images/icon-viber.svg" alt="icon viber">
-												</a>
-											</li>
-											<li>	
-												<a href="mailto:jurassicstudio@tut.by" target="_blank">
-													<img class="linkid" src="images/icon-mail.svg" alt="icon mail">
-												</a>
-											</li>
-										</ul>
-									</div>
+	<div id="fh5co-page">
+		<!--Header-->
+		<header>
+			<div class="container">
+				<div class="fh5co-navbar-brand">
+					<div class="row">
+						<div class="col-xs-6">
+							<h1 class="text-left"><a class="fh5co-logo" href="index.html"><img src="images/Logo.svg"
+										alt="logo Jurassic Studio"></a></h1>
+						</div>
 
-									<div class="phone_header">
+						<div class="a">
+							<div class="contacts">
+								<div class="sotial_network">
+									<ul>
 										<li>
-											<a href="tel:+375296727206" class="phone_adaptive">
-												<img class="phonee" src="images/Phone.svg" alt="icon phone">
+											<a href="https://t.me/JurassicStudio" target="_blank">
+												<img class="instagram" src="images/icon-teleg.svg" alt="icon telegram">
 											</a>
-											<a href="tel:+375296727206" class="phone">
-												+375 (29) 672-72-06 
+										</li>
+										<li>
+											<a href="viber://chat?number=%2B375296727206" target="_blank">
+												<img class="vk" src="images/icon-viber.svg" alt="icon viber">
 											</a>
-											<a href="tel:+375333021717" class="phone">
-												+375 (33) 302-17-17
+										</li>
+										<li>
+											<a href="mailto:jurassicstudio@tut.by" target="_blank">
+												<img class="linkid" src="images/icon-mail.svg" alt="icon mail">
 											</a>
-										</li>	
-									</div>
+										</li>
+									</ul>
 								</div>
-								<div class="burger">
-									<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle">
-										<i></i>
-									</a> 
+
+								<div class="phone_header">
+									<li>
+										<a href="tel:+375296727206" class="phone_adaptive">
+											<img class="phonee" src="images/Phone.svg" alt="icon phone">
+										</a>
+										<a href="tel:+375296727206" class="phone">
+											+375 (29) 672-72-06
+										</a>
+										<a href="tel:+375333021717" class="phone">
+											+375 (33) 302-17-17
+										</a>
+									</li>
 								</div>
+							</div>
+							<div class="burger">
+								<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle">
+									<i></i>
+								</a>
 							</div>
 						</div>
 					</div>
-				</div>	
-			</header>
-	
+				</div>
+			</div>
+		</header>
+
 		<div id="fh5co-work-section" class="fh5co-work-section">
 			<div class="container">
 				<div class="about-content_progect">
-					<h1>Проекты</h1>
+					<h1>Портфолио</h1>
 				</div>
-				
+
 				<div class="row">
 
-					<!-- 1 -->
+					<!-- 0_Levada -->
 					<div class="col-md-3 text-center animate-box card">
-						<div class="work" style="background-image: url(images/portfolio/0_Левада/LevadGostKuch3c.png);">
+						<div class="work" style="background-image: url(images/portfolio/0_Levada/3.png);">
 							<div class="overlay"></div>
 							<p>ЖК Левада Минск</p>
-							<!-- <p class="area">60 м<sup>2</sup></p> -->
-							<!-- <p class="vertical"></p> -->
-							<a class="view" data-fancybox="project_e1" data-src="images/portfolio/0_Левада/LevadGostKuch3c.png" data-caption="Интерьер ЖК Левада Минск.  Современная кухня">
+
+							<a class="view" data-fancybox="project_e1" data-src="images/portfolio/0_Levada/1.png"
+								data-caption="Интерьер ЖК Левада Минск. Современная гостиная">
 								<span>
-									<img class="caption_img" src="images/portfolio/0_Левада/LevadGostKuch3c.png" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/0_Levada/1.png" alt="portfolio" />
 									<img src="images/lypa.svg" alt="icon zoom">
 								</span>
 							</a>
-							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/0_Левада/LevadKuch3a.png" data-caption="Интерьер ЖК Левада Минск. Современная кухня">
+
+							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/0_Levada/2.png"
+								data-caption="Интерьер ЖК Левада Минск. Современная студия">
 								<span>
-									<img class="caption_img" src="images/portfolio/0_Левада/LevadKuch3a.png" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/0_Levada/2.png" alt="portfolio" />
 								</span>
 							</a>
-							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/0_Левада/LevadGostKuch3b.png" data-caption="Интерьер ЖК Левада Минск. Современная кухня">
+							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/0_Levada/3.png"
+								data-caption="Интерьер ЖК Левада Минск. Современная гостиная с кухней">
 								<span>
-									<img class="caption_img" src="images/portfolio/0_Левада/LevadGostKuch3b.png" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/0_Levada/3.png" alt="portfolio" />
 								</span>
 							</a>
-							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/0_Левада/LevadGost3a.png" data-caption="Интерьер ЖК Левада Минск. Современная гостинная">
+							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/0_Levada/4.png"
+								data-caption="Интерьер ЖК Левада Минск. Современный холл">
 								<span>
-									<img class="caption_img" src="images/portfolio/0_Левада/LevadGost3a.png" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/0_Levada/4.png" alt="portfolio" />
 								</span>
 							</a>
-							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/0_Левада/LevadKor3b.png" data-caption="Интерьер ЖК Левада Минск. Современный корридор">
+							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/0_Levada/5.png"
+								data-caption="Интерьер ЖК Левада Минск. Современная кухня">
 								<span>
-									<img class="caption_img" src="images/portfolio/0_Левада/LevadKor3b.png" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/0_Levada/5.png" alt="portfolio" />
 								</span>
 							</a>
-							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/0_Левада/LevadSpal5a.png" data-caption="Интерьер ЖК Левада Минск. Современная спальня">
+							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/0_Levada/6.png"
+								data-caption="Интерьер ЖК Левада Минск. Современная гостиная">
 								<span>
-									<img class="caption_img" src="images/portfolio/0_Левада/LevadSpal5a.png" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/0_Levada/6.png" alt="portfolio" />
 								</span>
 							</a>
-							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/0_Левада/LevadSpal5b.png" data-caption="Интерьер ЖК Левада Минск.  Современная спальня">
+							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/0_Levada/7.png"
+								data-caption="Интерьер ЖК Левада Минск. Современная спальня">
 								<span>
-									<img class="caption_img" src="images/portfolio/0_Левада/LevadSpal5b.png" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/0_Levada/7.png" alt="portfolio" />
 								</span>
 							</a>
-							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/0_Левада/LevadSpal6c1.png" data-caption="Интерьер ЖК Левада Минск. Современная спальня">
+							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/0_Levada/8.png"
+								data-caption="Интерьер ЖК Левада Минск. Современная спальня">
 								<span>
-									<img class="caption_img" src="images/portfolio/0_Левада/LevadSpal6c1.png" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/0_Levada/8.png" alt="portfolio" />
 								</span>
 							</a>
-							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/0_Левада/LevadTual2a.png" data-caption="Интерьер ЖК Левада Минск. Современный туалет">
+							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/0_Levada/9.png"
+								data-caption="Интерьер ЖК Левада Минск. Современная спальня">
 								<span>
-									<img class="caption_img" src="images/portfolio/0_Левада/LevadTual2a.png" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/0_Levada/9.png" alt="portfolio" />
 								</span>
 							</a>
-							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/0_Левада/LevadTual2b.png" data-caption="Интерьер ЖК Левада Минск. Современный туалет">
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/0_Levada/10.png"
+								data-caption="Интерьер ЖК Левада Минск. Современный санузел">
 								<span>
-									<img class="caption_img" src="images/portfolio/0_Левада/LevadTual2b.png" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/0_Levada/10.png" alt="portfolio" />
 								</span>
 							</a>
-							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/0_Левада/LevadTual4a.png" data-caption="Интерьер ЖК Левада Минск. Современный туалет">
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/0_Levada/11.png"
+								data-caption="Интерьер ЖК Левада Минск. Современный санузел">
 								<span>
-									<img class="caption_img" src="images/portfolio/0_Левада/LevadTual4a.png" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/0_Levada/11.png" alt="portfolio" />
 								</span>
 							</a>
-							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/0_Левада/LevadTual4b.png" data-caption="Интерьер ЖК Левада Минск. Современный туалет">
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/0_Levada/12.png"
+								data-caption="Интерьер ЖК Левада Минск. Современный санузел">
 								<span>
-									<img class="caption_img" src="images/portfolio/0_Левада/LevadTual4b.png" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/0_Levada/12.png" alt="portfolio" />
 								</span>
 							</a>
-							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/0_Левада/LevadVan4a.png" data-caption="Интерьер ЖК Левада Минск. Современная ванна">
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/0_Levada/13.png"
+								data-caption="Интерьер ЖК Левада Минск. Современный санузел">
 								<span>
-									<img class="caption_img" src="images/portfolio/0_Левада/LevadVan4a.png" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/0_Levada/13.png" alt="portfolio" />
 								</span>
 							</a>
-							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/0_Левада/LevadVan9a.png" data-caption="Интерьер ЖК Левада Минск. Современная ванна">
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/0_Levada/14.png"
+								data-caption="Интерьер ЖК Левада Минск. Современная ванная">
 								<span>
-									<img class="caption_img" src="images/portfolio/0_Левада/LevadVan9a.png" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/0_Levada/14.png" alt="portfolio" />
 								</span>
 							</a>
-						</div>     
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/0_Levada/15.png"
+								data-caption="Интерьер ЖК Левада Минск. Современная ванная">
+								<span>
+									<img class="caption_img" src="images/portfolio/0_Levada/15.png" alt="portfolio" />
+								</span>
+							</a>
+						</div>
 					</div>
-					<!-- 2 -->
+
+					<!-- 1_ZelenayaGavan -->
 					<div class="col-md-3 text-center animate-box card">
-						<div class="work" style="background-image: url(images/portfolio/1_Зеленаягавань/ZelGostKuch1a.jpg);">
+						<div class="work" style="background-image: url(images/portfolio/1_ZelenayaGavan/7.jpg);">
 							<div class="overlay"></div>
-							<p>Проект 2</p>
-							<!-- <p class="area">60 м<sup>2</sup></p> -->
-							<!-- <p class="vertical"></p> -->
-							<a class="view" data-fancybox="project_e1" data-src="images/portfolio/1_Зеленаягавань/ZelGostKuch1a.jpg" data-caption="Проект №2">
+							<p>Зеленая Гавань</p>
+
+							<a class="view" data-fancybox="project_e1" data-src="images/portfolio/1_ZelenayaGavan/1.jpg"
+								data-caption="Интерьер ЖК Зеленая Гавань Минск. Современный душ">
 								<span>
-									<img class="caption_img" src="images/portfolio/1_Зеленаягавань/ZelGostKuch1a.jpg" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/1_ZelenayaGavan/1.jpg"
+										alt="portfolio" />
 									<img src="images/lypa.svg" alt="icon zoom">
 								</span>
 							</a>
-							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/project_e2/1.jpg" data-caption="Проект №2">
+
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/1_ZelenayaGavan/2.jpg"
+								data-caption="Интерьер ЖК Зеленая Гавань Минск. Современный санузел">
 								<span>
-									<img class="caption_img" src="images/portfolio/project_e2/1.jpg" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/1_ZelenayaGavan/2.jpg"
+										alt="portfolio" />
 								</span>
 							</a>
-							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/project_e2/2.jpg" data-caption="Проект №2">
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/1_ZelenayaGavan/3.jpg"
+								data-caption="Интерьер ЖК Зеленая Гавань Минск. Современный санузел">
 								<span>
-									<img class="caption_img" src="images/portfolio/project_e2/2.jpg" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/1_ZelenayaGavan/3.jpg"
+										alt="portfolio" />
 								</span>
 							</a>
-							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/project_e2/3.jpg" data-caption="Проект №2">
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/1_ZelenayaGavan/4.jpg"
+								data-caption="Интерьер ЖК Зеленая Гавань Минск. Современная гостиная">
 								<span>
-									<img class="caption_img" src="images/portfolio/project_e2/3.jpg" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/1_ZelenayaGavan/4.jpg"
+										alt="portfolio" />
 								</span>
 							</a>
-							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/project_e2/4.jpg" data-caption="Проект №2">
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/1_ZelenayaGavan/5.jpg"
+								data-caption="Интерьер ЖК Зеленая Гавань Минск. Современная студия">
 								<span>
-									<img class="caption_img" src="images/portfolio/project_e2/4.jpg" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/1_ZelenayaGavan/5.jpg"
+										alt="portfolio" />
 								</span>
 							</a>
-							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/project_e2/5.jpg" data-caption="Проект №2">
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/1_ZelenayaGavan/6.jpg"
+								data-caption="Интерьер ЖК Зеленая Гавань Минск. Современная студия">
 								<span>
-									<img class="caption_img" src="images/portfolio/project_e2/5.jpg" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/1_ZelenayaGavan/6.jpg"
+										alt="portfolio" />
 								</span>
 							</a>
-							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/project_e2/6.jpg" data-caption="Проект №2">
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/1_ZelenayaGavan/7.jpg"
+								data-caption="Интерьер ЖК Зеленая Гавань Минск. Современный холл">
 								<span>
-									<img class="caption_img" src="images/portfolio/project_e2/6.jpg" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/1_ZelenayaGavan/7.jpg"
+										alt="portfolio" />
 								</span>
 							</a>
-						</div>     
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/1_ZelenayaGavan/8.jpg"
+								data-caption="Интерьер ЖК Зеленая Гавань Минск. Современная гостиная">
+								<span>
+									<img class="caption_img" src="images/portfolio/1_ZelenayaGavan/8.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/1_ZelenayaGavan/9.jpg"
+								data-caption="Интерьер ЖК Зеленая Гавань Минск. Современный холл">
+								<span>
+									<img class="caption_img" src="images/portfolio/1_ZelenayaGavan/9.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/1_ZelenayaGavan/10.jpg"
+								data-caption="Интерьер ЖК Зеленая Гавань Минск. Современный коридор">
+								<span>
+									<img class="caption_img" src="images/portfolio/1_ZelenayaGavan/10.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/1_ZelenayaGavan/11.jpg"
+								data-caption="Интерьер ЖК Зеленая Гавань Минск. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/1_ZelenayaGavan/11.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/1_ZelenayaGavan/12.jpg"
+								data-caption="Интерьер ЖК Зеленая Гавань Минск. Современная студия">
+								<span>
+									<img class="caption_img" src="images/portfolio/1_ZelenayaGavan/12.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/1_ZelenayaGavan/13.jpg"
+								data-caption="Интерьер ЖК Зеленая Гавань Минск. Современная прихожая">
+								<span>
+									<img class="caption_img" src="images/portfolio/1_ZelenayaGavan/13.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/1_ZelenayaGavan/14.jpg"
+								data-caption="Интерьер ЖК Зеленая Гавань Минск. Современная прихожая">
+								<span>
+									<img class="caption_img" src="images/portfolio/1_ZelenayaGavan/14.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/1_ZelenayaGavan/15.jpg"
+								data-caption="Интерьер ЖК Зеленая Гавань Минск. Современный коридор">
+								<span>
+									<img class="caption_img" src="images/portfolio/1_ZelenayaGavan/15.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/1_ZelenayaGavan/16.jpg"
+								data-caption="Интерьер ЖК Зеленая Гавань Минск. Современная спальня">
+								<span>
+									<img class="caption_img" src="images/portfolio/1_ZelenayaGavan/16.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/1_ZelenayaGavan/17.jpg"
+								data-caption="Интерьер ЖК Зеленая Гавань Минск. Современная спальня">
+								<span>
+									<img class="caption_img" src="images/portfolio/1_ZelenayaGavan/17.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/1_ZelenayaGavan/18.jpg"
+								data-caption="Интерьер ЖК Зеленая Гавань Минск. Современная спальня">
+								<span>
+									<img class="caption_img" src="images/portfolio/1_ZelenayaGavan/18.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/1_ZelenayaGavan/19.jpg"
+								data-caption="Интерьер ЖК Зеленая Гавань Минск. Современная спальня">
+								<span>
+									<img class="caption_img" src="images/portfolio/1_ZelenayaGavan/19.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/1_ZelenayaGavan/20.jpg"
+								data-caption="Интерьер ЖК Зеленая Гавань Минск. Современная спальня">
+								<span>
+									<img class="caption_img" src="images/portfolio/1_ZelenayaGavan/20.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/1_ZelenayaGavan/21.jpg"
+								data-caption="Интерьер ЖК Зеленая Гавань Минск. Современная спальня">
+								<span>
+									<img class="caption_img" src="images/portfolio/1_ZelenayaGavan/21.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/1_ZelenayaGavan/22.jpg"
+								data-caption="Интерьер ЖК Зеленая Гавань Минск. Современный санузел">
+								<span>
+									<img class="caption_img" src="images/portfolio/1_ZelenayaGavan/22.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/1_ZelenayaGavan/23.jpg"
+								data-caption="Интерьер ЖК Зеленая Гавань Минск. Современный санузел">
+								<span>
+									<img class="caption_img" src="images/portfolio/1_ZelenayaGavan/23.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/1_ZelenayaGavan/24.jpg"
+								data-caption="Интерьер ЖК Зеленая Гавань Минск. Современная ванная">
+								<span>
+									<img class="caption_img" src="images/portfolio/1_ZelenayaGavan/24.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/1_ZelenayaGavan/25.jpg"
+								data-caption="Интерьер ЖК Зеленая Гавань Минск. Современная ванная">
+								<span>
+									<img class="caption_img" src="images/portfolio/1_ZelenayaGavan/25.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+						</div>
 					</div>
-					<!-- 3 -->
+
+					<!-- 2_KomfortPark -->
 					<div class="col-md-3 text-center animate-box card">
-						<div class="work" style="background-image: url(images/portfolio/project_e3/cover.jpg);">
+						<div class="work" style="background-image: url(images/portfolio/2_KomfortPark/2.jpg);">
 							<div class="overlay"></div>
-							<p>Проект 3</p>
-							<!-- <p class="area">60 м<sup>2</sup></p> -->
-							<!-- <p class="vertical"></p> -->
-							<a class="view" data-fancybox="project_e1" data-src="images/portfolio/project_e3/cover.jpg" data-caption="Проект №3">
+							<p>Комфорт Парк</p>
+
+							<a class="view" data-fancybox="project_e1" data-src="images/portfolio/2_KomfortPark/1.jpg"
+								data-caption="Интерьер ЖК Комфорт Парк Минск. Современный санузел">
 								<span>
-									<img class="caption_img" src="images/portfolio/project_e3/cover.jpg" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/2_KomfortPark/1.jpg"
+										alt="portfolio" />
 									<img src="images/lypa.svg" alt="icon zoom">
 								</span>
 							</a>
-							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/project_e3/1.jpg" data-caption="Проект №3">
+
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/2_KomfortPark/2.jpg"
+								data-caption="Интерьер ЖК Комфорт Парк Минск. Современная ванна">
 								<span>
-									<img class="caption_img" src="images/portfolio/project_e3/1.jpg" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/2_KomfortPark/2.jpg"
+										alt="portfolio" />
 								</span>
 							</a>
-							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/project_e3/2.jpg" data-caption="Проект №3">
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/2_KomfortPark/3.jpg"
+								data-caption="Интерьер ЖК Комфорт Парк Минск. Современный санузел">
 								<span>
-									<img class="caption_img" src="images/portfolio/project_e3/2.jpg" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/2_KomfortPark/3.jpg"
+										alt="portfolio" />
 								</span>
 							</a>
-							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/project_e3/3.jpg" data-caption="Проект №3">
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/2_KomfortPark/4.jpg"
+								data-caption="Интерьер ЖК Комфорт Парк Минск. Современная ванна">
 								<span>
-									<img class="caption_img" src="images/portfolio/project_e3/3.jpg" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/2_KomfortPark/4.jpg"
+										alt="portfolio" />
 								</span>
 							</a>
-							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/project_e3/4.jpg" data-caption="Проект №3">
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/2_KomfortPark/5.jpg"
+								data-caption="Интерьер ЖК Комфорт Парк Минск. Современная холл">
 								<span>
-									<img class="caption_img" src="images/portfolio/project_e3/4.jpg" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/2_KomfortPark/5.jpg"
+										alt="portfolio" />
 								</span>
 							</a>
-							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/project_e3/5.jpg" data-caption="Проект №3">
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/2_KomfortPark/6.jpg"
+								data-caption="Интерьер ЖК Комфорт Парк Минск. Современная студия">
 								<span>
-									<img class="caption_img" src="images/portfolio/project_e3/5.jpg" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/2_KomfortPark/6.jpg"
+										alt="portfolio" />
 								</span>
 							</a>
-							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/project_e3/6.jpg" data-caption="Проект №3">
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/2_KomfortPark/7.jpg"
+								data-caption="Интерьер ЖК Комфорт Парк Минск. Современный холл">
 								<span>
-									<img class="caption_img" src="images/portfolio/project_e3/6.jpg" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/2_KomfortPark/7.jpg"
+										alt="portfolio" />
 								</span>
 							</a>
-						</div>     
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/2_KomfortPark/8.jpg"
+								data-caption="Интерьер ЖК Комфорт Парк Минск. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/2_KomfortPark/8.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/2_KomfortPark/9.jpg"
+								data-caption="Интерьер ЖК Комфорт Парк Минск. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/2_KomfortPark/9.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/2_KomfortPark/10.jpg"
+								data-caption="Интерьер ЖК Комфорт Парк Минск. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/2_KomfortPark/10.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/2_KomfortPark/11.jpg"
+								data-caption="Интерьер ЖК Комфорт Парк Минск. Современная гостиная">
+								<span>
+									<img class="caption_img" src="images/portfolio/2_KomfortPark/11.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/2_KomfortPark/12.jpg"
+								data-caption="Интерьер ЖК Комфорт Парк Минск. Современная гостиная">
+								<span>
+									<img class="caption_img" src="images/portfolio/2_KomfortPark/12.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/2_KomfortPark/13.jpg"
+								data-caption="Интерьер ЖК Комфорт Парк Минск. Современная гостиная">
+								<span>
+									<img class="caption_img" src="images/portfolio/2_KomfortPark/13.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/2_KomfortPark/14.jpg"
+								data-caption="Интерьер ЖК Комфорт Парк Минск. Современная гостиная">
+								<span>
+									<img class="caption_img" src="images/portfolio/2_KomfortPark/14.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+						</div>
 					</div>
-					<!-- 4 -->
+
+					<!-- 3_Vog -->
 					<div class="col-md-3 text-center animate-box card">
-						<div class="work" style="background-image: url(images/portfolio/project_e4/cover.jpg);">
+						<div class="work" style="background-image: url(images/portfolio/3_Vog/2.jpg);">
 							<div class="overlay"></div>
-							<p>Проект 4</p>
-							<!-- <p class="area">60 м<sup>2</sup></p> -->
-							<!-- <p class="vertical"></p> -->
-							<a class="view" data-fancybox="project_e1" data-src="images/portfolio/project_e4/cover.jpg" data-caption="Проект №4">
+							<p>Вог</p>
+
+							<a class="view" data-fancybox="project_e1" data-src="images/portfolio/3_Vog/1.jpg"
+								data-caption="Интерьер ЖК Вог Минск. Современная ванна">
 								<span>
-									<img class="caption_img" src="images/portfolio/project_e4/cover.jpg" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/3_Vog/1.jpg" alt="portfolio" />
 									<img src="images/lypa.svg" alt="icon zoom">
 								</span>
 							</a>
-							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/project_e4/1.jpg" data-caption="Проект №4">
+
+							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/3_Vog/2.jpg"
+								data-caption="Интерьер ЖК Вог Минск. Современный санузел">
 								<span>
-									<img class="caption_img" src="images/portfolio/project_e4/1.jpg" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/3_Vog/2.jpg" alt="portfolio" />
 								</span>
 							</a>
-							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/project_e4/2.jpg" data-caption="Проект №4">
+							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/3_Vog/3.jpg"
+								data-caption="Интерьер ЖК Вог Минск. Современная спальня">
 								<span>
-									<img class="caption_img" src="images/portfolio/project_e4/2.jpg" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/3_Vog/3.jpg" alt="portfolio" />
 								</span>
 							</a>
-							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/project_e4/3.jpg" data-caption="Проект №4">
+							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/3_Vog/4.jpg"
+								data-caption="Интерьер ЖК Вог Минск. Современная спальня">
 								<span>
-									<img class="caption_img" src="images/portfolio/project_e4/3.jpg" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/3_Vog/4.jpg" alt="portfolio" />
 								</span>
 							</a>
-							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/project_e4/4.jpg" data-caption="Проект №4">
+							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/3_Vog/5.jpg"
+								data-caption="Интерьер ЖК Вог Минск. Современная кухня">
 								<span>
-									<img class="caption_img" src="images/portfolio/project_e4/4.jpg" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/3_Vog/5.jpg" alt="portfolio" />
 								</span>
 							</a>
-						</div>     
+							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/3_Vog/6.jpg"
+								data-caption="Интерьер ЖК Вог Минск. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/3_Vog/6.jpg" alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/3_Vog/7.jpg"
+								data-caption="Интерьер ЖК Вог Минск. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/3_Vog/7.jpg" alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/3_Vog/8.jpg"
+								data-caption="Интерьер ЖК Вог Минск. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/3_Vog/8.jpg" alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/3_Vog/9.jpg"
+								data-caption="Интерьер ЖК Вог Минск. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/3_Vog/9.jpg" alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/3_Vog/10.jpg"
+								data-caption="Интерьер ЖК Вог Минск. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/3_Vog/10.jpg" alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/3_Vog/11.jpg"
+								data-caption="Интерьер ЖК Вог Минск. Современная прихожая">
+								<span>
+									<img class="caption_img" src="images/portfolio/3_Vog/11.jpg" alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/3_Vog/12.jpg"
+								data-caption="Интерьер ЖК Вог Минск. Современная студия">
+								<span>
+									<img class="caption_img" src="images/portfolio/3_Vog/12.jpg" alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/3_Vog/13.jpg"
+								data-caption="Интерьер ЖК Вог Минск. Современная студия">
+								<span>
+									<img class="caption_img" src="images/portfolio/3_Vog/13.jpg" alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/3_Vog/14.jpg"
+								data-caption="Интерьер ЖК Вог Минск. Современная прихожая">
+								<span>
+									<img class="caption_img" src="images/portfolio/3_Vog/14.jpg" alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/3_Vog/15.jpg"
+								data-caption="Интерьер ЖК Вог Минск. Современная гостиная">
+								<span>
+									<img class="caption_img" src="images/portfolio/3_Vog/15.jpg" alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/3_Vog/16.jpg"
+								data-caption="Интерьер ЖК Вог Минск. Современная гостиная">
+								<span>
+									<img class="caption_img" src="images/portfolio/3_Vog/16.jpg" alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/3_Vog/17.jpg"
+								data-caption="Интерьер ЖК Вог Минск. Современная гостиная">
+								<span>
+									<img class="caption_img" src="images/portfolio/3_Vog/17.jpg" alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/3_Vog/18.jpg"
+								data-caption="Интерьер ЖК Вог Минск. Современная комната">
+								<span>
+									<img class="caption_img" src="images/portfolio/3_Vog/18.jpg" alt="portfolio" />
+								</span>
+							</a>
+						</div>
 					</div>
-					<!-- 5 -->
+
+					<!-- 4_Pirs -->
 					<div class="col-md-3 text-center animate-box card">
-						<div class="work" style="background-image: url(images/portfolio/project_e5/cover.jpg);">
+						<div class="work" style="background-image: url(images/portfolio/4_Pirs/4.jpg);">
 							<div class="overlay"></div>
-							<p>Проект 5</p>
-							<!-- <p class="area">60 м<sup>2</sup></p> -->
-							<!-- <p class="vertical"></p> -->
-							<a class="view" data-fancybox="project_e1" data-src="images/portfolio/project_e5/cover.jpg" data-caption="Проект №5">
+							<p>Пирс</p>
+
+							<a class="view" data-fancybox="project_e1" data-src="images/portfolio/4_Pirs/1.jpg"
+								data-caption="Интерьер ЖК Пирс Минск. Современная ванна">
 								<span>
-									<img class="caption_img" src="images/portfolio/project_e5/cover.jpg" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/4_Pirs/1.jpg" alt="portfolio" />
 									<img src="images/lypa.svg" alt="icon zoom">
 								</span>
 							</a>
-							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/project_e5/1.jpg" data-caption="Проект №5">
+
+							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/4_Pirs/2.jpg"
+								data-caption="Интерьер ЖК Пирс Минск. Современная спальня">
 								<span>
-									<img class="caption_img" src="images/portfolio/project_e5/1.jpg" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/4_Pirs/2.jpg" alt="portfolio" />
 								</span>
 							</a>
-							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/project_e5/2.jpg" data-caption="Проект №5">
+							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/4_Pirs/3.jpg"
+								data-caption="Интерьер ЖК Пирс Минск. Современная спальня">
 								<span>
-									<img class="caption_img" src="images/portfolio/project_e5/2.jpg" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/4_Pirs/3.jpg" alt="portfolio" />
 								</span>
 							</a>
-							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/project_e5/3.jpg" data-caption="Проект №5">
+							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/4_Pirs/4.jpg"
+								data-caption="Интерьер ЖК Пирс Минск. Современная студия">
 								<span>
-									<img class="caption_img" src="images/portfolio/project_e5/3.jpg" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/4_Pirs/4.jpg" alt="portfolio" />
 								</span>
 							</a>
-							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/project_e5/4.jpg" data-caption="Проект №5">
+							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/4_Pirs/5.jpg"
+								data-caption="Интерьер ЖК Пирс Минск. Современная гостиная">
 								<span>
-									<img class="caption_img" src="images/portfolio/project_e5/4.jpg" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/4_Pirs/5.jpg" alt="portfolio" />
 								</span>
 							</a>
-						</div>     
+							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/4_Pirs/6.jpg"
+								data-caption="Интерьер ЖК Пирс Минск. Современная гостиная">
+								<span>
+									<img class="caption_img" src="images/portfolio/4_Pirs/6.jpg" alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/4_Pirs/7.jpg"
+								data-caption="Интерьер ЖК Пирс Минск. Современная студия">
+								<span>
+									<img class="caption_img" src="images/portfolio/4_Pirs/7.jpg" alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/4_Pirs/8.jpg"
+								data-caption="Интерьер ЖК Пирс Минск. Современная студия">
+								<span>
+									<img class="caption_img" src="images/portfolio/4_Pirs/8.jpg" alt="portfolio" />
+								</span>
+							</a>
+						</div>
 					</div>
-					<!-- 6 -->
+
+					<!-- 5_Treskovshchina -->
 					<div class="col-md-3 text-center animate-box card">
-						<div class="work" style="background-image: url(images/portfolio/project_e6/cover.jpg);">
+						<div class="work" style="background-image: url(images/portfolio/5_Treskovshchina/32.jpg);">
 							<div class="overlay"></div>
-							<p>Проект 6</p>
-							<!-- <p class="area">60 м<sup>2</sup></p> -->
-							<!-- <p class="vertical"></p> -->
-							<a class="view" data-fancybox="project_e1" data-src="images/portfolio/project_e6/cover.jpg" data-caption="Проект №6">
+							<p>Тресковщина</p>
+
+							<a class="view" data-fancybox="project_e1"
+								data-src="images/portfolio/5_Treskovshchina/1.jpg"
+								data-caption="Интерьер Тресковщина Минская область. Современная ванна">
 								<span>
-									<img class="caption_img" src="images/portfolio/project_e6/cover.jpg" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/5_Treskovshchina/1.jpg"
+										alt="portfolio" />
 									<img src="images/lypa.svg" alt="icon zoom">
 								</span>
 							</a>
-							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/project_e6/1.jpg" data-caption="Проект №6">
+
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/5_Treskovshchina/2.jpg"
+								data-caption="Интерьер Тресковщина Минская область. Современная ванна">
 								<span>
-									<img class="caption_img" src="images/portfolio/project_e6/1.jpg" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/5_Treskovshchina/2.jpg"
+										alt="portfolio" />
 								</span>
 							</a>
-							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/project_e6/2.jpg" data-caption="Проект №6">
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/5_Treskovshchina/3.jpg"
+								data-caption="Интерьер Тресковщина Минская область. Современный кабинет">
 								<span>
-									<img class="caption_img" src="images/portfolio/project_e6/2.jpg" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/5_Treskovshchina/3.jpg"
+										alt="portfolio" />
 								</span>
 							</a>
-							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/project_e6/3.jpg" data-caption="Проект №6">
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/5_Treskovshchina/4.jpg"
+								data-caption="Интерьер Тресковщина Минская область. Современный кабинет">
 								<span>
-									<img class="caption_img" src="images/portfolio/project_e6/3.jpg" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/5_Treskovshchina/4.jpg"
+										alt="portfolio" />
 								</span>
 							</a>
-							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/project_e6/4.jpg" data-caption="Проект №6">
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/5_Treskovshchina/5.jpg"
+								data-caption="Интерьер Тресковщина Минская область. Современная кабинет">
 								<span>
-									<img class="caption_img" src="images/portfolio/project_e6/4.jpg" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/5_Treskovshchina/5.jpg"
+										alt="portfolio" />
 								</span>
 							</a>
-							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/project_e6/5.jpg" data-caption="Проект №6">
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/5_Treskovshchina/6.jpg"
+								data-caption="Интерьер Тресковщина Минская область. Современная спальня">
 								<span>
-									<img class="caption_img" src="images/portfolio/project_e6/5.jpg" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/5_Treskovshchina/6.jpg"
+										alt="portfolio" />
 								</span>
 							</a>
-							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/project_e6/6.jpg" data-caption="Проект №6">
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/5_Treskovshchina/7.jpg"
+								data-caption="Интерьер Тресковщина Минская область. Современная спальня">
 								<span>
-									<img class="caption_img" src="images/portfolio/project_e6/6.jpg" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/5_Treskovshchina/7.jpg"
+										alt="portfolio" />
 								</span>
 							</a>
-						</div>     
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/5_Treskovshchina/8.jpg"
+								data-caption="Интерьер Тресковщина Минская область. Современный душ">
+								<span>
+									<img class="caption_img" src="images/portfolio/5_Treskovshchina/8.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/5_Treskovshchina/9.jpg"
+								data-caption="Интерьер Тресковщина Минская область. Современный душ">
+								<span>
+									<img class="caption_img" src="images/portfolio/5_Treskovshchina/9.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/5_Treskovshchina/10.jpg"
+								data-caption="Интерьер Тресковщина Минская область. Современный санузел">
+								<span>
+									<img class="caption_img" src="images/portfolio/5_Treskovshchina/10.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/5_Treskovshchina/11.jpg"
+								data-caption="Интерьер Тресковщина Минская область. Современный санузел">
+								<span>
+									<img class="caption_img" src="images/portfolio/5_Treskovshchina/11.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/5_Treskovshchina/12.jpg"
+								data-caption="Интерьер Тресковщина Минская область. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/5_Treskovshchina/12.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/5_Treskovshchina/13.jpg"
+								data-caption="Интерьер Тресковщина Минская область. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/5_Treskovshchina/13.jpg"
+										alt="portfolio" />
+								</span>Современная
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/5_Treskovshchina/14.jpg"
+								data-caption="Интерьер Тресковщина Минская область. Современный коридор">
+								<span>
+									<img class="caption_img" src="images/portfolio/5_Treskovshchina/14.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/5_Treskovshchina/15.jpg"
+								data-caption="Интерьер Тресковщина Минская область. Современный коридор">
+								<span>
+									<img class="caption_img" src="images/portfolio/5_Treskovshchina/15.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/5_Treskovshchina/16.jpg"
+								data-caption="Интерьер Тресковщина Минская область. Современный холл">
+								<span>
+									<img class="caption_img" src="images/portfolio/5_Treskovshchina/16.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/5_Treskovshchina/17.jpg"
+								data-caption="Интерьер Тресковщина Минская область. Современный холл">
+								<span>
+									<img class="caption_img" src="images/portfolio/5_Treskovshchina/17.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/5_Treskovshchina/18.jpg"
+								data-caption="Интерьер Тресковщина Минская область. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/5_Treskovshchina/18.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/5_Treskovshchina/19.jpg"
+								data-caption="Интерьер Тресковщина Минская область. Современный холл">
+								<span>
+									<img class="caption_img" src="images/portfolio/5_Treskovshchina/19.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/5_Treskovshchina/20.jpg"
+								data-caption="Интерьер Тресковщина Минская область. Современная спальня">
+								<span>
+									<img class="caption_img" src="images/portfolio/5_Treskovshchina/20.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/5_Treskovshchina/21.jpg"
+								data-caption="Интерьер Тресковщина Минская область. Современная спальня">
+								<span>
+									<img class="caption_img" src="images/portfolio/5_Treskovshchina/21.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/5_Treskovshchina/22.jpg"
+								data-caption="Интерьер Тресковщина Минская область. Современная спальня">
+								<span>
+									<img class="caption_img" src="images/portfolio/5_Treskovshchina/22.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/5_Treskovshchina/23.jpg"
+								data-caption="Интерьер Тресковщина Минская область. Современная спальня">
+								<span>
+									<img class="caption_img" src="images/portfolio/5_Treskovshchina/23.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/5_Treskovshchina/24.jpg"
+								data-caption="Интерьер Тресковщина Минская область. Современная спальня">
+								<span>
+									<img class="caption_img" src="images/portfolio/5_Treskovshchina/24.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/5_Treskovshchina/25.jpg"
+								data-caption="Интерьер Тресковщина Минская область. Современная спальня">
+								<span>
+									<img class="caption_img" src="images/portfolio/5_Treskovshchina/25.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/5_Treskovshchina/26.jpg"
+								data-caption="Интерьер Тресковщина Минская область. Современная спальня">
+								<span>
+									<img class="caption_img" src="images/portfolio/5_Treskovshchina/26.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/5_Treskovshchina/27.jpg"
+								data-caption="Интерьер Тресковщина Минская область. Современная спальня">
+								<span>
+									<img class="caption_img" src="images/portfolio/5_Treskovshchina/27.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/5_Treskovshchina/28.jpg"
+								data-caption="Интерьер Тресковщина Минская область. Современная студия">
+								<span>
+									<img class="caption_img" src="images/portfolio/5_Treskovshchina/28.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/5_Treskovshchina/29.jpg"
+								data-caption="Интерьер Тресковщина Минская область. Современная студия">
+								<span>
+									<img class="caption_img" src="images/portfolio/5_Treskovshchina/29.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/5_Treskovshchina/30.jpg"
+								data-caption="Интерьер Тресковщина Минская область. Современная гостинная">
+								<span>
+									<img class="caption_img" src="images/portfolio/5_Treskovshchina/30.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/5_Treskovshchina/31.jpg"
+								data-caption="Интерьер Тресковщина Минская область. Современная гостиная">
+								<span>
+									<img class="caption_img" src="images/portfolio/5_Treskovshchina/31.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/5_Treskovshchina/32.jpg"
+								data-caption="Интерьер Тресковщина Минская область. Современная комната">
+								<span>
+									<img class="caption_img" src="images/portfolio/5_Treskovshchina/32.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/5_Treskovshchina/33.jpg"
+								data-caption="Интерьер Тресковщина Минская область. Современная коината">
+								<span>
+									<img class="caption_img" src="images/portfolio/5_Treskovshchina/33.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/5_Treskovshchina/34.jpg"
+								data-caption="Интерьер Тресковщина Минская область. Современная комната">
+								<span>
+									<img class="caption_img" src="images/portfolio/5_Treskovshchina/34.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/5_Treskovshchina/35.jpg"
+								data-caption="Интерьер Тресковщина Минская область. Современная комната">
+								<span>
+									<img class="caption_img" src="images/portfolio/5_Treskovshchina/35.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+						</div>
 					</div>
-					<!-- 7 -->
+
+					<!-- 6_Bogdanovicha -->
 					<div class="col-md-3 text-center animate-box card">
-						<div class="work" style="background-image: url(images/portfolio/project_e7/cover.jpg);">
+						<div class="work" style="background-image: url(images/portfolio/6_Bogdanovicha/2.jpg);">
 							<div class="overlay"></div>
-							<p>Проект 7</p>
-							<!-- <p class="area">60 м<sup>2</sup></p> -->
-							<!-- <p class="vertical"></p> -->
-							<a class="view" data-fancybox="project_e1" data-src="images/portfolio/project_e7/cover.jpg" data-caption="Проект №7">
+							<p>Богдановича</p>
+
+							<a class="view" data-fancybox="project_e1" data-src="images/portfolio/6_Bogdanovicha/1.jpg"
+								data-caption="Интерьер Богдановича Минск. Современная спальня">
 								<span>
-									<img class="caption_img" src="images/portfolio/project_e7/cover.jpg" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/6_Bogdanovicha/1.jpg"
+										alt="portfolio" />
 									<img src="images/lypa.svg" alt="icon zoom">
 								</span>
 							</a>
-							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/project_e7/1.jpg" data-caption="Проект №7">
+
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/6_Bogdanovicha/2.jpg"
+								data-caption="Интерьер Богдановича Минск. Современная гостиная">
 								<span>
-									<img class="caption_img" src="images/portfolio/project_e7/1.jpg" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/6_Bogdanovicha/2.jpg"
+										alt="portfolio" />
 								</span>
 							</a>
-							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/project_e7/2.jpg" data-caption="Проект №7">
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/6_Bogdanovicha/3.jpg"
+								data-caption="Интерьер Богдановича Минск. Современная гостиная">
 								<span>
-									<img class="caption_img" src="images/portfolio/project_e7/2.jpg" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/6_Bogdanovicha/3.jpg"
+										alt="portfolio" />
 								</span>
 							</a>
-							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/project_e7/3.jpg" data-caption="Проект №7">
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/6_Bogdanovicha/4.jpg"
+								data-caption="Интерьер Богдановича Минск. Современная гостиная">
 								<span>
-									<img class="caption_img" src="images/portfolio/project_e7/3.jpg" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/6_Bogdanovicha/4.jpg"
+										alt="portfolio" />
 								</span>
 							</a>
-							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/project_e7/4.jpg" data-caption="Проект №7">
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/6_Bogdanovicha/5.jpg"
+								data-caption="Интерьер Богдановича Минск. Современная гостиная">
 								<span>
-									<img class="caption_img" src="images/portfolio/project_e7/4.jpg" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/6_Bogdanovicha/5.jpg"
+										alt="portfolio" />
 								</span>
 							</a>
-							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/project_e7/5.jpg" data-caption="Проект №7">
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/6_Bogdanovicha/6.jpg"
+								data-caption="Интерьер Богдановича Минск. Современная гостиная">
 								<span>
-									<img class="caption_img" src="images/portfolio/project_e7/5.jpg" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/6_Bogdanovicha/6.jpg"
+										alt="portfolio" />
 								</span>
 							</a>
-							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/project_e7/6.jpg" data-caption="Проект №7">
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/6_Bogdanovicha/7.jpg"
+								data-caption="Интерьер Богдановича Минск. Современная гостиная">
 								<span>
-									<img class="caption_img" src="images/portfolio/project_e7/6.jpg" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/6_Bogdanovicha/7.jpg"
+										alt="portfolio" />
 								</span>
 							</a>
-							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/project_e7/7.jpg" data-caption="Проект №7">
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/6_Bogdanovicha/8.jpg"
+								data-caption="Интерьер Богдановича Минск. Современная гостиная">
 								<span>
-									<img class="caption_img" src="images/portfolio/project_e7/7.jpg" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/6_Bogdanovicha/8.jpg"
+										alt="portfolio" />
 								</span>
 							</a>
-						</div>     
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/6_Bogdanovicha/9.jpg"
+								data-caption="Интерьер Богдановича Минск. Современная гостиная">
+								<span>
+									<img class="caption_img" src="images/portfolio/6_Bogdanovicha/9.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/6_Bogdanovicha/10.jpg"
+								data-caption="Интерьер Богдановича Минск. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/6_Bogdanovicha/10.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/6_Bogdanovicha/11.jpg"
+								data-caption="Интерьер Богдановича Минск. Современная гостиная">
+								<span>
+									<img class="caption_img" src="images/portfolio/6_Bogdanovicha/11.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+						</div>
 					</div>
-					<!-- 8 -->
+
+					<!-- 7_Zhdanovichi -->
 					<div class="col-md-3 text-center animate-box card">
-						<div class="work" style="background-image: url(images/portfolio/project_e8/cover.jpg);">
+						<div class="work" style="background-image: url(images/portfolio/7_Zhdanovichi/11.jpg);">
 							<div class="overlay"></div>
-							<p>Проект 8</p>
-							<!-- <p class="area">60 м<sup>2</sup></p> -->
-							<!-- <p class="vertical"></p> -->
-							<a class="view" data-fancybox="project_e1" data-src="images/portfolio/project_e8/cover.jpg" data-caption="Проект №8">
+							<p>Ждановичи</p>
+
+							<a class="view" data-fancybox="project_e1" data-src="images/portfolio/7_Zhdanovichi/1.jpg"
+								data-caption="Интерьер Ждановичи Минск. Современная ваная">
 								<span>
-									<img class="caption_img" src="images/portfolio/project_e8/cover.jpg" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/7_Zhdanovichi/1.jpg"
+										alt="portfolio" />
 									<img src="images/lypa.svg" alt="icon zoom">
 								</span>
 							</a>
-							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/project_e8/1.jpg" data-caption="Проект №8">
+
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/7_Zhdanovichi/2.jpg"
+								data-caption="Интерьер Ждановичи Минск. Современная ваная">
 								<span>
-									<img class="caption_img" src="images/portfolio/project_e8/1.jpg" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/7_Zhdanovichi/2.jpg"
+										alt="portfolio" />
 								</span>
 							</a>
-							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/project_e8/2.jpg" data-caption="Проект №8">
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/7_Zhdanovichi/3.jpg"
+								data-caption="Интерьер Ждановичи Минск. Современная спальня">
 								<span>
-									<img class="caption_img" src="images/portfolio/project_e8/2.jpg" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/7_Zhdanovichi/3.jpg"
+										alt="portfolio" />
 								</span>
 							</a>
-							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/project_e8/3.jpg" data-caption="Проект №8">
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/7_Zhdanovichi/4.jpg"
+								data-caption="Интерьер Ждановичи Минск. Современная спальня">
 								<span>
-									<img class="caption_img" src="images/portfolio/project_e8/3.jpg" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/7_Zhdanovichi/4.jpg"
+										alt="portfolio" />
 								</span>
 							</a>
-							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/project_e8/4.jpg" data-caption="Проект №8">
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/7_Zhdanovichi/5.jpg"
+								data-caption="Интерьер Ждановичи Минск. Современная спальня">
 								<span>
-									<img class="caption_img" src="images/portfolio/project_e8/4.jpg" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/7_Zhdanovichi/5.jpg"
+										alt="portfolio" />
 								</span>
 							</a>
-							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/project_e8/5.jpg" data-caption="Проект №8">
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/7_Zhdanovichi/6.jpg"
+								data-caption="Интерьер Ждановичи Минск. Современный кабинет">
 								<span>
-									<img class="caption_img" src="images/portfolio/project_e8/5.jpg" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/7_Zhdanovichi/6.jpg"
+										alt="portfolio" />
 								</span>
 							</a>
-							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/project_e8/6.jpg" data-caption="Проект №8">
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/7_Zhdanovichi/7.jpg"
+								data-caption="Интерьер Ждановичи Минск. Современный кабинет">
 								<span>
-									<img class="caption_img" src="images/portfolio/project_e8/6.jpg" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/7_Zhdanovichi/7.jpg"
+										alt="portfolio" />
 								</span>
 							</a>
-							<a class="view hidden" data-fancybox="project_e1" data-src="images/portfolio/project_e8/7.jpg" data-caption="Проект №8">
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/7_Zhdanovichi/8.jpg"
+								data-caption="Интерьер Ждановичи Минск. Современная кухня">
 								<span>
-									<img class="caption_img" src="images/portfolio/project_e8/7.jpg" alt="portfolio"/>
+									<img class="caption_img" src="images/portfolio/7_Zhdanovichi/8.jpg"
+										alt="portfolio" />
 								</span>
 							</a>
-						</div>     
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/7_Zhdanovichi/9.jpg"
+								data-caption="Интерьер Ждановичи Минск. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/7_Zhdanovichi/9.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/7_Zhdanovichi/10.jpg"
+								data-caption="Интерьер Ждановичи Минск. Современный холл">
+								<span>
+									<img class="caption_img" src="images/portfolio/7_Zhdanovichi/10.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/7_Zhdanovichi/11.jpg"
+								data-caption="Интерьер Ждановичи Минск. Современный холл">
+								<span>
+									<img class="caption_img" src="images/portfolio/7_Zhdanovichi/11.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/7_Zhdanovichi/12.jpg"
+								data-caption="Интерьер Ждановичи Минск. Современная прихожая">
+								<span>
+									<img class="caption_img" src="images/portfolio/7_Zhdanovichi/12.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/7_Zhdanovichi/13.jpg"
+								data-caption="Интерьер Ждановичи Минск. Современная прихожая">
+								<span>
+									<img class="caption_img" src="images/portfolio/7_Zhdanovichi/13.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/7_Zhdanovichi/14.jpg"
+								data-caption="Интерьер Ждановичи Минск. Современная комната">
+								<span>
+									<img class="caption_img" src="images/portfolio/7_Zhdanovichi/14.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/7_Zhdanovichi/15.jpg"
+								data-caption="Интерьер Ждановичи Минск. Современная комната">
+								<span>
+									<img class="caption_img" src="images/portfolio/7_Zhdanovichi/15.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/7_Zhdanovichi/16.jpg"
+								data-caption="Интерьер Ждановичи Минск. Современная комната">
+								<span>
+									<img class="caption_img" src="images/portfolio/7_Zhdanovichi/16.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/7_Zhdanovichi/17.jpg"
+								data-caption="Интерьер Ждановичи Минск. Современная комната">
+								<span>
+									<img class="caption_img" src="images/portfolio/7_Zhdanovichi/17.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+						</div>
+					</div>
+
+					<!-- 8_Rybalko -->
+					<div class="col-md-3 text-center animate-box card">
+						<div class="work" style="background-image: url(images/portfolio/8_Rybalko/5.jpg);">
+							<div class="overlay"></div>
+							<p>Рыбалко</p>
+
+							<a class="view" data-fancybox="project_e1" data-src="images/portfolio/8_Rybalko/1.jpg"
+								data-caption="Интерьер Рыбалко Минск. Современный санузел">
+								<span>
+									<img class="caption_img" src="images/portfolio/8_Rybalko/1.jpg" alt="portfolio" />
+									<img src="images/lypa.svg" alt="icon zoom">
+								</span>
+							</a>
+
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/8_Rybalko/2.jpg"
+								data-caption="Интерьер Рыбалко Минск. Современная спальня">
+								<span>
+									<img class="caption_img" src="images/portfolio/8_Rybalko/2.jpg" alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/8_Rybalko/3.jpg"
+								data-caption="Интерьер Рыбалко Минск. Современная спальня">
+								<span>
+									<img class="caption_img" src="images/portfolio/8_Rybalko/3.jpg" alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/8_Rybalko/4.jpg"
+								data-caption="Интерьер Рыбалко Минск. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/8_Rybalko/4.jpg" alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/8_Rybalko/5.jpg"
+								data-caption="Интерьер Рыбалко Минск. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/8_Rybalko/5.jpg" alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/8_Rybalko/6.jpg"
+								data-caption="Интерьер Рыбалко Минск. Современная прихожая">
+								<span>
+									<img class="caption_img" src="images/portfolio/8_Rybalko/6.jpg" alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/8_Rybalko/7.jpg"
+								data-caption="Интерьер Рыбалко Минск. Современный коридор">
+								<span>
+									<img class="caption_img" src="images/portfolio/8_Rybalko/7.jpg" alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/8_Rybalko/8.jpg"
+								data-caption="Интерьер Рыбалко Минск. Современная комната">
+								<span>
+									<img class="caption_img" src="images/portfolio/8_Rybalko/8.jpg" alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/8_Rybalko/9.jpg"
+								data-caption="Интерьер Рыбалко Минск. Современная комната">
+								<span>
+									<img class="caption_img" src="images/portfolio/8_Rybalko/9.jpg" alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/8_Rybalko/10.jpg"
+								data-caption="Интерьер Рыбалко Минск. Современная комната">
+								<span>
+									<img class="caption_img" src="images/portfolio/8_Rybalko/10.jpg" alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/8_Rybalko/11.jpg"
+								data-caption="Интерьер Рыбалко Минск. Современная комната">
+								<span>
+									<img class="caption_img" src="images/portfolio/8_Rybalko/11.jpg" alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/8_Rybalko/12.jpg"
+								data-caption="Интерьер Рыбалко Минск. Современная комната">
+								<span>
+									<img class="caption_img" src="images/portfolio/8_Rybalko/12.jpg" alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/8_Rybalko/13.jpg"
+								data-caption="Интерьер Рыбалко Минск. Современная комната">
+								<span>
+									<img class="caption_img" src="images/portfolio/8_Rybalko/13.jpg" alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/8_Rybalko/14.jpg"
+								data-caption="Интерьер Рыбалко Минск. Современная комната">
+								<span>
+									<img class="caption_img" src="images/portfolio/8_Rybalko/14.jpg" alt="portfolio" />
+								</span>
+							</a>
+						</div>
+					</div>
+
+					<!-- 9_Timiryazeva -->
+					<div class="col-md-3 text-center animate-box card">
+						<div class="work" style="background-image: url(images/portfolio/9_Timiryazeva/15.jpg);">
+							<div class="overlay"></div>
+							<p>Тимирязева</p>
+
+							<a class="view" data-fancybox="project_e1" data-src="images/portfolio/9_Timiryazeva/1.jpg"
+								data-caption="Интерьер Тимирязева Минск. Современная спальня">
+								<span>
+									<img class="caption_img" src="images/portfolio/9_Timiryazeva/1.jpg"
+										alt="portfolio" />
+									<img src="images/lypa.svg" alt="icon zoom">
+								</span>
+							</a>
+
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/9_Timiryazeva/2.jpg"
+								data-caption="Интерьер Тимирязева Минск. Современная спальня">
+								<span>
+									<img class="caption_img" src="images/portfolio/9_Timiryazeva/2.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/9_Timiryazeva/3.jpg"
+								data-caption="Интерьер Тимирязева Минск. Современный санузел">
+								<span>
+									<img class="caption_img" src="images/portfolio/9_Timiryazeva/3.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/9_Timiryazeva/4.jpg"
+								data-caption="Интерьер Тимирязева Минск. Современная ванная">
+								<span>
+									<img class="caption_img" src="images/portfolio/9_Timiryazeva/4.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/9_Timiryazeva/5.jpg"
+								data-caption="Интерьер Тимирязева Минск. Современная ванная">
+								<span>
+									<img class="caption_img" src="images/portfolio/9_Timiryazeva/5.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/9_Timiryazeva/6.jpg"
+								data-caption="Интерьер Тимирязева Минск. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/9_Timiryazeva/6.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/9_Timiryazeva/7.jpg"
+								data-caption="Интерьер Тимирязева Минск. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/9_Timiryazeva/7.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/9_Timiryazeva/8.jpg"
+								data-caption="Интерьер Тимирязева Минск. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/9_Timiryazeva/8.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/9_Timiryazeva/9.jpg"
+								data-caption="Интерьер Тимирязева Минск. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/9_Timiryazeva/9.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/9_Timiryazeva/10.jpg"
+								data-caption="Интерьер Тимирязева Минск. Современная прихожая">
+								<span>
+									<img class="caption_img" src="images/portfolio/9_Timiryazeva/10.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/9_Timiryazeva/11.jpg"
+								data-caption="Интерьер Тимирязева Минск. Современная прихожая">
+								<span>
+									<img class="caption_img" src="images/portfolio/9_Timiryazeva/11.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/9_Timiryazeva/12.jpg"
+								data-caption="Интерьер Тимирязева Минск. Современная прихожая">
+								<span>
+									<img class="caption_img" src="images/portfolio/9_Timiryazeva/12.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/9_Timiryazeva/13.jpg"
+								data-caption="Интерьер Тимирязева Минск. Современная гостиная">
+								<span>
+									<img class="caption_img" src="images/portfolio/9_Timiryazeva/13.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/9_Timiryazeva/14.jpg"
+								data-caption="Интерьер Тимирязева Минск. Современная гостиная">
+								<span>
+									<img class="caption_img" src="images/portfolio/9_Timiryazeva/14.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/9_Timiryazeva/15.jpg"
+								data-caption="Интерьер Тимирязева Минск. Современная гостиная">
+								<span>
+									<img class="caption_img" src="images/portfolio/9_Timiryazeva/15.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/9_Timiryazeva/16.jpg"
+								data-caption="Интерьер Тимирязева Минск. Современная комната">
+								<span>
+									<img class="caption_img" src="images/portfolio/9_Timiryazeva/16.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/9_Timiryazeva/17.jpg"
+								data-caption="Интерьер Тимирязева Минск. Современная комната">
+								<span>
+									<img class="caption_img" src="images/portfolio/9_Timiryazeva/17.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+						</div>
+					</div>
+
+					<!-- 10_Belinskogo -->
+					<div class="col-md-3 text-center animate-box card">
+						<div class="work" style="background-image: url(images/portfolio/10_Belinskogo/5.jpg);">
+							<div class="overlay"></div>
+							<p>Белинского</p>
+
+							<a class="view" data-fancybox="project_e1" data-src="images/portfolio/10_Belinskogo/1.jpg"
+								data-caption="Интерьер Белинского Минск. Современная детская комната">
+								<span>
+									<img class="caption_img" src="images/portfolio/10_Belinskogo/1.jpg"
+										alt="portfolio" />
+									<img src="images/lypa.svg" alt="icon zoom">
+								</span>
+							</a>
+
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/10_Belinskogo/2.jpg"
+								data-caption="Интерьер Белинского Минск. Современная детская комната">
+								<span>
+									<img class="caption_img" src="images/portfolio/10_Belinskogo/2.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/10_Belinskogo/3.jpg"
+								data-caption="Интерьер Белинского Минск. Современная гостиная">
+								<span>
+									<img class="caption_img" src="images/portfolio/10_Belinskogo/3.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/10_Belinskogo/4.jpg"
+								data-caption="Интерьер Белинского Минск. Современная гостиная">
+								<span>
+									<img class="caption_img" src="images/portfolio/10_Belinskogo/4.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/10_Belinskogo/5.jpg"
+								data-caption="Интерьер Белинского Минск. Современная гостиная">
+								<span>
+									<img class="caption_img" src="images/portfolio/10_Belinskogo/5.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/10_Belinskogo/6.jpg"
+								data-caption="Интерьер Белинского Минск. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/10_Belinskogo/6.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/10_Belinskogo/7.jpg"
+								data-caption="Интерьер Белинского Минск. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/10_Belinskogo/7.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/10_Belinskogo/8.jpg"
+								data-caption="Интерьер Белинского Минск. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/10_Belinskogo/8.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/10_Belinskogo/9.jpg"
+								data-caption="Интерьер Белинского Минск. Современная прихожая">
+								<span>
+									<img class="caption_img" src="images/portfolio/10_Belinskogo/9.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/10_Belinskogo/10.jpg"
+								data-caption="Интерьер Белинского Минск. Современная прихожая">
+								<span>
+									<img class="caption_img" src="images/portfolio/10_Belinskogo/10.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/10_Belinskogo/11.jpg"
+								data-caption="Интерьер Белинского Минск. Современная спальня">
+								<span>
+									<img class="caption_img" src="images/portfolio/10_Belinskogo/11.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/10_Belinskogo/12.jpg"
+								data-caption="Интерьер Белинского Минск. Современная спальня">
+								<span>
+									<img class="caption_img" src="images/portfolio/10_Belinskogo/12.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/10_Belinskogo/13.jpg"
+								data-caption="Интерьер Белинского Минск. Современный санузел">
+								<span>
+									<img class="caption_img" src="images/portfolio/10_Belinskogo/13.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/10_Belinskogo/14.jpg"
+								data-caption="Интерьер Белинского Минск. Современный санузел">
+								<span>
+									<img class="caption_img" src="images/portfolio/10_Belinskogo/14.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/10_Belinskogo/15.jpg"
+								data-caption="Интерьер Белинского Минск. Современная ваная">
+								<span>
+									<img class="caption_img" src="images/portfolio/10_Belinskogo/15.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/10_Belinskogo/16.jpg"
+								data-caption="Интерьер Белинского Минск. Современная ваная">
+								<span>
+									<img class="caption_img" src="images/portfolio/10_Belinskogo/16.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/10_Belinskogo/17.jpg"
+								data-caption="Интерьер Белинского Минск. Современная ваная">
+								<span>
+									<img class="caption_img" src="images/portfolio/10_Belinskogo/17.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+						</div>
+					</div>
+
+					<!-- 11_Kiseleva -->
+					<div class="col-md-3 text-center animate-box card">
+						<div class="work" style="background-image: url(images/portfolio/11_Kiseleva/5.jpg);">
+							<div class="overlay"></div>
+							<p>Киселева</p>
+
+							<a class="view" data-fancybox="project_e1" data-src="images/portfolio/11_Kiseleva/1.jpg"
+								data-caption="Интерьер Киселева Минск. Современная спальня">
+								<span>
+									<img class="caption_img" src="images/portfolio/11_Kiseleva/1.jpg" alt="portfolio" />
+									<img src="images/lypa.svg" alt="icon zoom">
+								</span>
+							</a>
+
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/11_Kiseleva/2.jpg"
+								data-caption="Интерьер Киселева Минск. Современная спальня">
+								<span>
+									<img class="caption_img" src="images/portfolio/11_Kiseleva/2.jpg" alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/11_Kiseleva/3.jpg"
+								data-caption="Интерьер Киселева Минск. Современная ваная">
+								<span>
+									<img class="caption_img" src="images/portfolio/11_Kiseleva/3.jpg" alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/11_Kiseleva/4.jpg"
+								data-caption="Интерьер Киселева Минск. Современная ваная">
+								<span>
+									<img class="caption_img" src="images/portfolio/11_Kiseleva/4.jpg" alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/11_Kiseleva/5.jpg"
+								data-caption="Интерьер Киселева Минск. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/11_Kiseleva/5.jpg" alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/11_Kiseleva/6.jpg"
+								data-caption="Интерьер Киселева Минск. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/11_Kiseleva/6.jpg" alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/11_Kiseleva/7.jpg"
+								data-caption="Интерьер Киселева Минск. Современная прихожая">
+								<span>
+									<img class="caption_img" src="images/portfolio/11_Kiseleva/7.jpg" alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/11_Kiseleva/8.jpg"
+								data-caption="Интерьер Киселева Минск. Современная гостиная">
+								<span>
+									<img class="caption_img" src="images/portfolio/11_Kiseleva/8.jpg" alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/11_Kiseleva/9.jpg"
+								data-caption="Интерьер Киселева Минск. Современная гостиная">
+								<span>
+									<img class="caption_img" src="images/portfolio/11_Kiseleva/9.jpg" alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/11_Kiseleva/10.jpg"
+								data-caption="Интерьер Киселева Минск. Современная гостиная">
+								<span>
+									<img class="caption_img" src="images/portfolio/11_Kiseleva/10.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/11_Kiseleva/11.jpg"
+								data-caption="Интерьер Киселева Минск. Современная комната">
+								<span>
+									<img class="caption_img" src="images/portfolio/11_Kiseleva/11.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/11_Kiseleva/12.jpg"
+								data-caption="Интерьер Киселева Минск. Современная комната">
+								<span>
+									<img class="caption_img" src="images/portfolio/11_Kiseleva/12.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/11_Kiseleva/13.jpg"
+								data-caption="Интерьер Киселева Минск. Современная комната">
+								<span>
+									<img class="caption_img" src="images/portfolio/11_Kiseleva/13.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+						</div>
+					</div>
+
+					<!-- 12_Belomorskaya -->
+					<div class="col-md-3 text-center animate-box card">
+						<div class="work" style="background-image: url(images/portfolio/12_Belomorskaya/5.jpg);">
+							<div class="overlay"></div>
+							<p>Беломорская</p>
+
+							<a class="view" data-fancybox="project_e1" data-src="images/portfolio/12_Belomorskaya/1.jpg"
+								data-caption="Интерьер Беломорская Минск. Современная ваная">
+								<span>
+									<img class="caption_img" src="images/portfolio/12_Belomorskaya/1.jpg"
+										alt="portfolio" />
+									<img src="images/lypa.svg" alt="icon zoom">
+								</span>
+							</a>
+
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/12_Belomorskaya/2.jpg"
+								data-caption="Интерьер Беломорская Минск. Современный санузел">
+								<span>
+									<img class="caption_img" src="images/portfolio/12_Belomorskaya/2.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/12_Belomorskaya/3.jpg"
+								data-caption="Интерьер Беломорская Минск. Современная спальня">
+								<span>
+									<img class="caption_img" src="images/portfolio/12_Belomorskaya/3.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/12_Belomorskaya/4.jpg"
+								data-caption="Интерьер Беломорская Минск. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/12_Belomorskaya/4.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/12_Belomorskaya/5.jpg"
+								data-caption="Интерьер Беломорская Минск. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/12_Belomorskaya/5.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/12_Belomorskaya/6.jpg"
+								data-caption="Интерьер Беломорская Минск. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/12_Belomorskaya/6.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/12_Belomorskaya/7.jpg"
+								data-caption="Интерьер Беломорская Минск. Современная гостиная">
+								<span>
+									<img class="caption_img" src="images/portfolio/12_Belomorskaya/7.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/12_Belomorskaya/8.jpg"
+								data-caption="Интерьер Беломорская Минск. Современная прихожая">
+								<span>
+									<img class="caption_img" src="images/portfolio/12_Belomorskaya/8.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/12_Belomorskaya/9.jpg"
+								data-caption="Интерьер Беломорская Минск. Современная прихожая">
+								<span>
+									<img class="caption_img" src="images/portfolio/12_Belomorskaya/9.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/12_Belomorskaya/10.jpg"
+								data-caption="Интерьер Беломорская Минск. Современная гостиная">
+								<span>
+									<img class="caption_img" src="images/portfolio/12_Belomorskaya/10.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/12_Belomorskaya/11.jpg"
+								data-caption="Интерьер Беломорская Минск. Современная гостиная">
+								<span>
+									<img class="caption_img" src="images/portfolio/12_Belomorskaya/11.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/12_Belomorskaya/12.jpg"
+								data-caption="Интерьер Беломорская Минск. Современная детская комната">
+								<span>
+									<img class="caption_img" src="images/portfolio/12_Belomorskaya/12.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+						</div>
+					</div>
+
+					<!-- 13_Masyukovshchina -->
+					<div class="col-md-3 text-center animate-box card">
+						<div class="work" style="background-image: url(images/portfolio/13_Masyukovshchina/1.jpg);">
+							<div class="overlay"></div>
+							<p>Масюковщина</p>
+
+							<a class="view" data-fancybox="project_e1"
+								data-src="images/portfolio/13_Masyukovshchina/1.jpg"
+								data-caption="Интерьер Масюковщина Минск. Современная гостиная">
+								<span>
+									<img class="caption_img" src="images/portfolio/13_Masyukovshchina/1.jpg"
+										alt="portfolio" />
+									<img src="images/lypa.svg" alt="icon zoom">
+								</span>
+							</a>
+
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/13_Masyukovshchina/2.jpg"
+								data-caption="Интерьер Масюковщина Минск. Современная спальня">
+								<span>
+									<img class="caption_img" src="images/portfolio/13_Masyukovshchina/2.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/13_Masyukovshchina/3.jpg"
+								data-caption="Интерьер Масюковщина Минск. Современная спальня">
+								<span>
+									<img class="caption_img" src="images/portfolio/13_Masyukovshchina/3.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/13_Masyukovshchina/4.jpg"
+								data-caption="Интерьер Масюковщина Минск. Современная спальня">
+								<span>
+									<img class="caption_img" src="images/portfolio/13_Masyukovshchina/4.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/13_Masyukovshchina/5.jpg"
+								data-caption="Интерьер Масюковщина Минск. Современная ваная">
+								<span>
+									<img class="caption_img" src="images/portfolio/13_Masyukovshchina/5.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/13_Masyukovshchina/6.jpg"
+								data-caption="Интерьер Масюковщина Минск. Современная ваная">
+								<span>
+									<img class="caption_img" src="images/portfolio/13_Masyukovshchina/6.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/13_Masyukovshchina/7.jpg"
+								data-caption="Интерьер Масюковщина Минск. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/13_Masyukovshchina/7.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/13_Masyukovshchina/8.jpg"
+								data-caption="Интерьер Масюковщина Минск. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/13_Masyukovshchina/8.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/13_Masyukovshchina/9.jpg"
+								data-caption="Интерьер Масюковщина Минск. Современный холл">
+								<span>
+									<img class="caption_img" src="images/portfolio/13_Masyukovshchina/9.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/13_Masyukovshchina/10.jpg"
+								data-caption="Интерьер Масюковщина Минск. Современный холл">
+								<span>
+									<img class="caption_img" src="images/portfolio/13_Masyukovshchina/10.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/13_Masyukovshchina/11.jpg"
+								data-caption="Интерьер Масюковщина Минск. Современная гостиная">
+								<span>
+									<img class="caption_img" src="images/portfolio/13_Masyukovshchina/11.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/13_Masyukovshchina/12.jpg"
+								data-caption="Интерьер Масюковщина Минск. Современная гостиная">
+								<span>
+									<img class="caption_img" src="images/portfolio/13_Masyukovshchina/12.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/13_Masyukovshchina/13.jpg"
+								data-caption="Интерьер Масюковщина Минск. Современная комната">
+								<span>
+									<img class="caption_img" src="images/portfolio/13_Masyukovshchina/13.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/13_Masyukovshchina/14.jpg"
+								data-caption="Интерьер Масюковщина Минск. Современная комната">
+								<span>
+									<img class="caption_img" src="images/portfolio/13_Masyukovshchina/14.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/13_Masyukovshchina/15.jpg"
+								data-caption="Интерьер Масюковщина Минск. Современная детская комната">
+								<span>
+									<img class="caption_img" src="images/portfolio/13_Masyukovshchina/15.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/13_Masyukovshchina/16.jpg"
+								data-caption="Интерьер Масюковщина Минск. Современная детская комната">
+								<span>
+									<img class="caption_img" src="images/portfolio/13_Masyukovshchina/16.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/13_Masyukovshchina/17.jpg"
+								data-caption="Интерьер Масюковщина Минск. Современная детская комната">
+								<span>
+									<img class="caption_img" src="images/portfolio/13_Masyukovshchina/17.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/13_Masyukovshchina/18.jpg"
+								data-caption="Интерьер Масюковщина Минск. Современная спальня">
+								<span>
+									<img class="caption_img" src="images/portfolio/13_Masyukovshchina/18.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/13_Masyukovshchina/19.jpg"
+								data-caption="Интерьер Масюковщина Минск. Современная комната">
+								<span>
+									<img class="caption_img" src="images/portfolio/13_Masyukovshchina/19.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/13_Masyukovshchina/20.jpg"
+								data-caption="Интерьер Масюковщина Минск. Современная комната">
+								<span>
+									<img class="caption_img" src="images/portfolio/13_Masyukovshchina/20.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/13_Masyukovshchina/21.jpg"
+								data-caption="Интерьер Масюковщина Минск. Современная комната">
+								<span>
+									<img class="caption_img" src="images/portfolio/13_Masyukovshchina/21.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+						</div>
+					</div>
+
+					<!-- 14_Raubichi -->
+					<div class="col-md-3 text-center animate-box card">
+						<div class="work" style="background-image: url(images/portfolio/14_Raubichi/1.jpg);">
+							<div class="overlay"></div>
+							<p>Раубичи</p>
+
+							<a class="view" data-fancybox="project_e1" data-src="images/portfolio/14_Raubichi/1.jpg"
+								data-caption="Интерьер Раубичи Миснкая область. Современная спальня">
+								<span>
+									<img class="caption_img" src="images/portfolio/14_Raubichi/1.jpg" alt="portfolio" />
+									<img src="images/lypa.svg" alt="icon zoom">
+								</span>
+							</a>
+
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/14_Raubichi/2.jpg"
+								data-caption="Интерьер Раубичи Миснкая область. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/14_Raubichi/2.jpg" alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/14_Raubichi/3.jpg"
+								data-caption="Интерьер Раубичи Миснкая область. Современная гостиная">
+								<span>
+									<img class="caption_img" src="images/portfolio/14_Raubichi/3.jpg" alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/14_Raubichi/4.jpg"
+								data-caption="Интерьер Раубичи Миснкая область. Современная комната">
+								<span>
+									<img class="caption_img" src="images/portfolio/14_Raubichi/4.jpg" alt="portfolio" />
+								</span>
+							</a>
+						</div>
+					</div>
+
+					<!-- 15_Gdansk -->
+					<div class="col-md-3 text-center animate-box card">
+						<div class="work" style="background-image: url(images/portfolio/15_Gdansk/7.jpg);">
+							<div class="overlay"></div>
+							<p>Гданьск</p>
+
+							<a class="view" data-fancybox="project_e1" data-src="images/portfolio/15_Gdansk/1.jpg"
+								data-caption="Интерьер Гданьск Польша. Современная спальня">
+								<span>
+									<img class="caption_img" src="images/portfolio/15_Gdansk/1.jpg" alt="portfolio" />
+									<img src="images/lypa.svg" alt="icon zoom">
+								</span>
+							</a>
+
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/15_Gdansk/2.jpg"
+								data-caption="Интерьер Гданьск Польша. Современная спальня">
+								<span>
+									<img class="caption_img" src="images/portfolio/15_Gdansk/2.jpg" alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/15_Gdansk/3.jpg"
+								data-caption="Интерьер Гданьск Польша. Современная спальня">
+								<span>
+									<img class="caption_img" src="images/portfolio/15_Gdansk/3.jpg" alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/15_Gdansk/4.jpg"
+								data-caption="Интерьер Гданьск Польша. Современная спальня">
+								<span>
+									<img class="caption_img" src="images/portfolio/15_Gdansk/4.jpg" alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/15_Gdansk/5.jpg"
+								data-caption="Интерьер Гданьск Польша. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/15_Gdansk/5.jpg" alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/15_Gdansk/6.jpg"
+								data-caption="Интерьер Гданьск Польша. Современная гостиная ">
+								<span>
+									<img class="caption_img" src="images/portfolio/15_Gdansk/6.jpg" alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/15_Gdansk/7.jpg"
+								data-caption="Интерьер Гданьск Польша. Современная гостиная и кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/15_Gdansk/7.jpg" alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/15_Gdansk/8.jpg"
+								data-caption="Интерьер Гданьск Польша. Современная гостиная и кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/15_Gdansk/8.jpg" alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/15_Gdansk/9.jpg"
+								data-caption="Интерьер ЖК Левада Минск. Современная гостиная">
+								<span>
+									<img class="caption_img" src="images/portfolio/15_Gdansk/9.jpg" alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/15_Gdansk/10.jpg"
+								data-caption="ИИнтерьер Гданьск Польша. Современная комната">
+								<span>
+									<img class="caption_img" src="images/portfolio/15_Gdansk/10.jpg" alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/15_Gdansk/11.jpg"
+								data-caption="Интерьер Гданьск Польша Минск. Современная комната">
+								<span>
+									<img class="caption_img" src="images/portfolio/15_Gdansk/11.jpg" alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/15_Gdansk/12.jpg"
+								data-caption="Интерьер Гданьск Польша. Современная комната">
+								<span>
+									<img class="caption_img" src="images/portfolio/15_Gdansk/12.jpg" alt="portfolio" />
+								</span>
+							</a>
+						</div>
+					</div>
+
+					<!-- 16_Skryganova -->
+					<div class="col-md-3 text-center animate-box card">
+						<div class="work" style="background-image: url(images/portfolio/16_Skryganova/1.jpg);">
+							<div class="overlay"></div>
+							<p>Скрыганова</p>
+
+							<a class="view" data-fancybox="project_e1" data-src="images/portfolio/16_Skryganova/1.jpg"
+								data-caption="Интерьер Скрыганова Минск. Современная спальня">
+								<span>
+									<img class="caption_img" src="images/portfolio/16_Skryganova/1.jpg"
+										alt="portfolio" />
+									<img src="images/lypa.svg" alt="icon zoom">
+								</span>
+							</a>
+
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/16_Skryganova/2.jpg"
+								data-caption="Интерьер Скрыганова Минск. Современная прихожая">
+								<span>
+									<img class="caption_img" src="images/portfolio/16_Skryganova/2.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/16_Skryganova/3.jpg"
+								data-caption="Интерьер Скрыганова Минск. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/16_Skryganova/3.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/16_Skryganova/4.jpg"
+								data-caption="Интерьер Скрыганова Минск. Современная Кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/16_Skryganova/4.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/16_Skryganova/5.jpg"
+								data-caption="Интерьер Скрыганова Минск. Современная гостиная">
+								<span>
+									<img class="caption_img" src="images/portfolio/16_Skryganova/5.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+						</div>
+					</div>
+
+					<!-- 17_Stolichnyy -->
+					<div class="col-md-3 text-center animate-box card">
+						<div class="work" style="background-image: url(images/portfolio/17_Stolichnyy/17.jpg);">
+							<div class="overlay"></div>
+							<p>Столичный</p>
+
+							<a class="view" data-fancybox="project_e1" data-src="images/portfolio/17_Stolichnyy/1.jpg"
+								data-caption="Интерьер ЖК Столичный Минск. Современная спальня">
+								<span>
+									<img class="caption_img" src="images/portfolio/17_Stolichnyy/1.jpg"
+										alt="portfolio" />
+									<img src="images/lypa.svg" alt="icon zoom">
+								</span>
+							</a>
+
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/17_Stolichnyy/2.jpg"
+								data-caption="Интерьер ЖК Столичный Минск. Современная спальня">
+								<span>
+									<img class="caption_img" src="images/portfolio/17_Stolichnyy/2.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/17_Stolichnyy/3.jpg"
+								data-caption="Интерьер ЖК Столичный Минск. Современная вана">
+								<span>
+									<img class="caption_img" src="images/portfolio/17_Stolichnyy/3.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/17_Stolichnyy/4.jpg"
+								data-caption="Интерьер ЖК Столичный Минск. Современный кабинет">
+								<span>
+									<img class="caption_img" src="images/portfolio/17_Stolichnyy/4.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/17_Stolichnyy/5.jpg"
+								data-caption="Интерьер ЖК Столичный Минск. Современный кабинет">
+								<span>
+									<img class="caption_img" src="images/portfolio/17_Stolichnyy/5.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/17_Stolichnyy/6.jpg"
+								data-caption="Интерьер ЖК Столичный Минск. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/17_Stolichnyy/6.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/17_Stolichnyy/7.jpg"
+								data-caption="Интерьер ЖК Столичный Минск. Современная прихожая">
+								<span>
+									<img class="caption_img" src="images/portfolio/17_Stolichnyy/7.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/17_Stolichnyy/8.jpg"
+								data-caption="Интерьер ЖК Столичный Минск. Современная прихожая">
+								<span>
+									<img class="caption_img" src="images/portfolio/17_Stolichnyy/8.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/17_Stolichnyy/9.jpg"
+								data-caption="Интерьер ЖК Столичный Минск. Современная прихожая">
+								<span>
+									<img class="caption_img" src="images/portfolio/17_Stolichnyy/9.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/17_Stolichnyy/10.jpg"
+								data-caption="Интерьер ЖК Столичный Минск. Современная прихожая">
+								<span>
+									<img class="caption_img" src="images/portfolio/17_Stolichnyy/10.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/17_Stolichnyy/11.jpg"
+								data-caption="Интерьер ЖК Столичный Минск. Современная прихожая">
+								<span>
+									<img class="caption_img" src="images/portfolio/17_Stolichnyy/11.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/17_Stolichnyy/12.jpg"
+								data-caption="Интерьер ЖК Столичный Минск. Современная прихожая">
+								<span>
+									<img class="caption_img" src="images/portfolio/17_Stolichnyy/12.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/17_Stolichnyy/13.jpg"
+								data-caption="Интерьер ЖК Столичный Минск. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/17_Stolichnyy/13.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/17_Stolichnyy/14.jpg"
+								data-caption="Интерьер ЖК Столичный Минск. Современная гостиная">
+								<span>
+									<img class="caption_img" src="images/portfolio/17_Stolichnyy/14.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/17_Stolichnyy/15.jpg"
+								data-caption="Интерьер ЖК Столичный Минск. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/17_Stolichnyy/15.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/17_Stolichnyy/16.jpg"
+								data-caption="Интерьер ЖК Столичный Минск. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/17_Stolichnyy/16.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/17_Stolichnyy/17.jpg"
+								data-caption="Интерьер ЖК Столичный Минск. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/17_Stolichnyy/17.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/17_Stolichnyy/18.jpg"
+								data-caption="Интерьер ЖК Столичный Минск. Современная комната">
+								<span>
+									<img class="caption_img" src="images/portfolio/17_Stolichnyy/18.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/17_Stolichnyy/19.jpg"
+								data-caption="Интерьер ЖК Столичный Минск. Современная детская комната">
+								<span>
+									<img class="caption_img" src="images/portfolio/17_Stolichnyy/19.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/17_Stolichnyy/20.jpg"
+								data-caption="Интерьер ЖК Столичный Минск. Современная детская комната">
+								<span>
+									<img class="caption_img" src="images/portfolio/17_Stolichnyy/20.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/17_Stolichnyy/21.jpg"
+								data-caption="Интерьер ЖК Столичный Минск. Современная комната">
+								<span>
+									<img class="caption_img" src="images/portfolio/17_Stolichnyy/21.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/17_Stolichnyy/22.jpg"
+								data-caption="Интерьер ЖК Столичный Минск. Современная детская комната">
+								<span>
+									<img class="caption_img" src="images/portfolio/17_Stolichnyy/22.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+						</div>
+					</div>
+
+					<!-- 18_Storozhovskaya2 -->
+					<div class="col-md-3 text-center animate-box card">
+						<div class="work" style="background-image: url(images/portfolio/18_Storozhovskaya2/5.jpg);">
+							<div class="overlay"></div>
+							<p>Сторожовская 2</p>
+
+							<a class="view" data-fancybox="project_e1"
+								data-src="images/portfolio/18_Storozhovskaya2/1.jpg"
+								data-caption="Интерьер Сторожовская 2 Минск. Современная спальня">
+								<span>
+									<img class="caption_img" src="images/portfolio/18_Storozhovskaya2/1.jpg"
+										alt="portfolio" />
+									<img src="images/lypa.svg" alt="icon zoom">
+								</span>
+							</a>
+
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/18_Storozhovskaya2/2.jpg"
+								data-caption="Интерьер Сторожовская 2 Минск. Современная спальня">
+								<span>
+									<img class="caption_img" src="images/portfolio/18_Storozhovskaya2/2.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/18_Storozhovskaya2/3.jpg"
+								data-caption="Интерьер Сторожовская 2 Минск. Современная спальня">
+								<span>
+									<img class="caption_img" src="images/portfolio/18_Storozhovskaya2/3.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/18_Storozhovskaya2/4.jpg"
+								data-caption="Интерьер Сторожовская 2 Минск. Современная спальня">
+								<span>
+									<img class="caption_img" src="images/portfolio/18_Storozhovskaya2/4.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/18_Storozhovskaya2/5.jpg"
+								data-caption="Интерьер Сторожовская 2 Минск. Современная спальня">
+								<span>
+									<img class="caption_img" src="images/portfolio/18_Storozhovskaya2/5.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/18_Storozhovskaya2/6.jpg"
+								data-caption="Интерьер Сторожовская 2 Минск. Современная спальня">
+								<span>
+									<img class="caption_img" src="images/portfolio/18_Storozhovskaya2/6.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/18_Storozhovskaya2/7.jpg"
+								data-caption="Интерьер Сторожовская 2 Минск. Современная ванная">
+								<span>
+									<img class="caption_img" src="images/portfolio/18_Storozhovskaya2/7.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/18_Storozhovskaya2/8.jpg"
+								data-caption="Интерьер Сторожовская 2 Минск. Современная ванная">
+								<span>
+									<img class="caption_img" src="images/portfolio/18_Storozhovskaya2/8.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/18_Storozhovskaya2/9.jpg"
+								data-caption="Интерьер Сторожовская 2 Минск. Современная ванная">
+								<span>
+									<img class="caption_img" src="images/portfolio/18_Storozhovskaya2/9.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/18_Storozhovskaya2/10.jpg"
+								data-caption="Интерьер Сторожовская 2 Минск. Современная ванная">
+								<span>
+									<img class="caption_img" src="images/portfolio/18_Storozhovskaya2/10.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/18_Storozhovskaya2/11.jpg"
+								data-caption="Интерьер Сторожовская 2 Минск. Современная ванная">
+								<span>
+									<img class="caption_img" src="images/portfolio/18_Storozhovskaya2/11.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/18_Storozhovskaya2/12.jpg"
+								data-caption="Интерьер Сторожовская 2 Минск. Современная ванная">
+								<span>
+									<img class="caption_img" src="images/portfolio/18_Storozhovskaya2/12.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/18_Storozhovskaya2/13.jpg"
+								data-caption="Интерьер Сторожовская 2 Минск. Современная ванная">
+								<span>
+									<img class="caption_img" src="images/portfolio/18_Storozhovskaya2/13.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/18_Storozhovskaya2/14.jpg"
+								data-caption="Интерьер Сторожовская 2 Минск. Современная ванная">
+								<span>
+									<img class="caption_img" src="images/portfolio/18_Storozhovskaya2/14.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+						</div>
+					</div>
+
+					<!-- 19_Bratskaya -->
+					<div class="col-md-3 text-center animate-box card">
+						<div class="work" style="background-image: url(images/portfolio/19_Bratskaya/4.jpg);">
+							<div class="overlay"></div>
+							<p>Братская</p>
+
+							<a class="view" data-fancybox="project_e1" data-src="images/portfolio/19_Bratskaya/1.jpg"
+								data-caption="Интерьер Братская Минск. Современная спальня">
+								<span>
+									<img class="caption_img" src="images/portfolio/19_Bratskaya/1.jpg"
+										alt="portfolio" />
+									<img src="images/lypa.svg" alt="icon zoom">
+								</span>
+							</a>
+
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/19_Bratskaya/2.jpg"
+								data-caption="Интерьер Братская Минск. Современная спальня">
+								<span>
+									<img class="caption_img" src="images/portfolio/19_Bratskaya/2.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/19_Bratskaya/3.jpg"
+								data-caption="Интерьер Братская Минск. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/19_Bratskaya/3.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/19_Bratskaya/4.jpg"
+								data-caption="Интерьер Братская Минск. Современная гостиная">
+								<span>
+									<img class="caption_img" src="images/portfolio/19_Bratskaya/4.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/19_Bratskaya/5.jpg"
+								data-caption="Интерьер Братская Минск. Современная гостиная">
+								<span>
+									<img class="caption_img" src="images/portfolio/19_Bratskaya/5.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/19_Bratskaya/6.jpg"
+								data-caption="Интерьер Братская Минск. Современная детская комната">
+								<span>
+									<img class="caption_img" src="images/portfolio/19_Bratskaya/6.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/19_Bratskaya/7.jpg"
+								data-caption="Интерьер Братская Минск. Современная детская комната">
+								<span>
+									<img class="caption_img" src="images/portfolio/19_Bratskaya/7.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+						</div>
+					</div>
+
+					<!-- 20_Valeryanovo -->
+					<div class="col-md-3 text-center animate-box card">
+						<div class="work" style="background-image: url(images/portfolio/20_Valeryanovo/12.jpg);">
+							<div class="overlay"></div>
+							<p>Валерьяново</p>
+
+							<a class="view" data-fancybox="project_e1" data-src="images/portfolio/20_Valeryanovo/1.jpg"
+								data-caption="Интерьер Валерьяново Минская область. Современная спальня">
+								<span>
+									<img class="caption_img" src="images/portfolio/20_Valeryanovo/1.jpg"
+										alt="portfolio" />
+									<img src="images/lypa.svg" alt="icon zoom">
+								</span>
+							</a>
+
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/20_Valeryanovo/2.jpg"
+								data-caption="Интерьер Валерьяново Минская область. Современная спальня">
+								<span>
+									<img class="caption_img" src="images/portfolio/20_Valeryanovo/2.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/20_Valeryanovo/3.jpg"
+								data-caption="Интерьер Валерьяново Минская область. Современная ванная">
+								<span>
+									<img class="caption_img" src="images/portfolio/20_Valeryanovo/3.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/20_Valeryanovo/4.jpg"
+								data-caption="Интерьер Валерьяново Минская область. Современная ванная">
+								<span>
+									<img class="caption_img" src="images/portfolio/20_Valeryanovo/4.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/20_Valeryanovo/5.jpg"
+								data-caption="Интерьер Валерьяново Минская область. Современная ванная">
+								<span>
+									<img class="caption_img" src="images/portfolio/20_Valeryanovo/5.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/20_Valeryanovo/6.jpg"
+								data-caption="Интерьер Валерьяново Минская область. Современная ванная">
+								<span>
+									<img class="caption_img" src="images/portfolio/20_Valeryanovo/6.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/20_Valeryanovo/7.jpg"
+								data-caption="Интерьер Валерьяново Минская область. Современная игровая комната">
+								<span>
+									<img class="caption_img" src="images/portfolio/20_Valeryanovo/7.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/20_Valeryanovo/8.jpg"
+								data-caption="Интерьер Валерьяново Минская область. Современная игровая комната">
+								<span>
+									<img class="caption_img" src="images/portfolio/20_Valeryanovo/8.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/20_Valeryanovo/9.jpg"
+								data-caption="Интерьер Валерьяново Минская область. Современная игровая комната">
+								<span>
+									<img class="caption_img" src="images/portfolio/20_Valeryanovo/9.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/20_Valeryanovo/10.jpg"
+								data-caption="Интерьер Валерьяново Минская область. Современный холл">
+								<span>
+									<img class="caption_img" src="images/portfolio/20_Valeryanovo/10.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/20_Valeryanovo/11.jpg"
+								data-caption="Интерьер Валерьяново Минская область. Современный холл">
+								<span>
+									<img class="caption_img" src="images/portfolio/20_Valeryanovo/11.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/20_Valeryanovo/12.jpg"
+								data-caption="Интерьер Валерьяново Минская область. Современная гостиная">
+								<span>
+									<img class="caption_img" src="images/portfolio/20_Valeryanovo/12.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/20_Valeryanovo/13.jpg"
+								data-caption="Интерьер Валерьяново Минская область. Современная гостиная">
+								<span>
+									<img class="caption_img" src="images/portfolio/20_Valeryanovo/13.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/20_Valeryanovo/14.jpg"
+								data-caption="Интерьер Валерьяново Минская область. Современный кабинет">
+								<span>
+									<img class="caption_img" src="images/portfolio/20_Valeryanovo/14.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/20_Valeryanovo/15.jpg"
+								data-caption="Интерьер Валерьяново Минская область. Современный кабинет">
+								<span>
+									<img class="caption_img" src="images/portfolio/20_Valeryanovo/15.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+						</div>
+					</div>
+
+					<!-- 21_Levada2 -->
+					<div class="col-md-3 text-center animate-box card">
+						<div class="work" style="background-image: url(images/portfolio/21_Levada2/6.jpg);">
+							<div class="overlay"></div>
+							<p>Левада 2</p>
+
+							<a class="view" data-fancybox="project_e1" data-src="images/portfolio/21_Levada2/1.jpg"
+								data-caption="Интерьер ЖК Левада 2 Минск. Современная ванная">
+								<span>
+									<img class="caption_img" src="images/portfolio/21_Levada2/1.jpg" alt="portfolio" />
+									<img src="images/lypa.svg" alt="icon zoom">
+								</span>
+							</a>
+
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/21_Levada2/2.jpg"
+								data-caption="Интерьер ЖК Левада 2 Минск. Современная спальня">
+								<span>
+									<img class="caption_img" src="images/portfolio/21_Levada2/2.jpg" alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/21_Levada2/3.jpg"
+								data-caption="Интерьер ЖК Левада 2 Минск. Современная спальня">
+								<span>
+									<img class="caption_img" src="images/portfolio/21_Levada2/3.jpg" alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/21_Levada2/4.jpg"
+								data-caption="Интерьер ЖК Левада 2 Минск. Современная студия">
+								<span>
+									<img class="caption_img" src="images/portfolio/21_Levada2/4.jpg" alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/21_Levada2/5.jpg"
+								data-caption="Интерьер ЖК Левада 2 Минск. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/21_Levada2/5.jpg" alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/21_Levada2/6.jpg"
+								data-caption="Интерьер ЖК Левада 2 Минск. Современная гостиная">
+								<span>
+									<img class="caption_img" src="images/portfolio/21_Levada2/6.jpg" alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/21_Levada2/7.jpg"
+								data-caption="Интерьер ЖК Левада 2 Минск. Современная гостиная">
+								<span>
+									<img class="caption_img" src="images/portfolio/21_Levada2/7.jpg" alt="portfolio" />
+								</span>
+							</a>
+						</div>
+					</div>
+
+					<!-- 22_Dzerzhinskogo2 -->
+					<div class="col-md-3 text-center animate-box card">
+						<div class="work" style="background-image: url(images/portfolio/22_Dzerzhinskogo2/5.jpg);">
+							<div class="overlay"></div>
+							<p>Дзержинского 2</p>
+
+							<a class="view" data-fancybox="project_e1"
+								data-src="images/portfolio/22_Dzerzhinskogo2/1.jpg"
+								data-caption="Интерьер Дзержинского 2 Минск. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/22_Dzerzhinskogo2/1.jpg"
+										alt="portfolio" />
+									<img src="images/lypa.svg" alt="icon zoom">
+								</span>
+							</a>
+
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/22_Dzerzhinskogo2/2.jpg"
+								data-caption="Интерьер Дзержинского 2 Минск. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/22_Dzerzhinskogo2/2.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/22_Dzerzhinskogo2/3.jpg"
+								data-caption="Интерьер Дзержинского 2 Минск. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/22_Dzerzhinskogo2/3.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/22_Dzerzhinskogo2/4.jpg"
+								data-caption="ИнтерьерДзержинского 2 Минск. Современная гостиная">
+								<span>
+									<img class="caption_img" src="images/portfolio/22_Dzerzhinskogo2/4.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/22_Dzerzhinskogo2/5.jpg"
+								data-caption="Интерьер Дзержинского 2 Минск. Современная гостиная">
+								<span>
+									<img class="caption_img" src="images/portfolio/22_Dzerzhinskogo2/5.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/22_Dzerzhinskogo2/6.jpg"
+								data-caption="Интерьер Дзержинского 2 Минск. Современная гостиная">
+								<span>
+									<img class="caption_img" src="images/portfolio/22_Dzerzhinskogo2/6.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/22_Dzerzhinskogo2/7.jpg"
+								data-caption="Интерьер Дзержинского 2 Минск. Современная детская комната">
+								<span>
+									<img class="caption_img" src="images/portfolio/22_Dzerzhinskogo2/7.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/22_Dzerzhinskogo2/8.jpg"
+								data-caption="Интерьер Дзержинского 2 Минск. Современная детская комната">
+								<span>
+									<img class="caption_img" src="images/portfolio/22_Dzerzhinskogo2/8.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+						</div>
+					</div>
+
+					<!-- 23_Dzerzhinskogo3 -->
+					<div class="col-md-3 text-center animate-box card">
+						<div class="work" style="background-image: url(images/portfolio/23_Dzerzhinskogo3/3.jpg);">
+							<div class="overlay"></div>
+							<p>Дзержинского 3</p>
+
+							<a class="view" data-fancybox="project_e1"
+								data-src="images/portfolio/23_Dzerzhinskogo3/1.jpg"
+								data-caption="Интерьер Дзержинского 3 Минск. Современная студия">
+								<span>
+									<img class="caption_img" src="images/portfolio/23_Dzerzhinskogo3/1.jpg"
+										alt="portfolio" />
+									<img src="images/lypa.svg" alt="icon zoom">
+								</span>
+							</a>
+
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/23_Dzerzhinskogo3/2.jpg"
+								data-caption="Интерьер Дзержинского 3 Минск. Современная студия">
+								<span>
+									<img class="caption_img" src="images/portfolio/23_Dzerzhinskogo3/2.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/23_Dzerzhinskogo3/3.jpg"
+								data-caption="Интерьер Дзержинского 3 Минск. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/23_Dzerzhinskogo3/3.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/23_Dzerzhinskogo3/4.jpg"
+								data-caption="Интерьер Дзержинского 3 Минск. Современная гостиная">
+								<span>
+									<img class="caption_img" src="images/portfolio/23_Dzerzhinskogo3/4.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+						</div>
+					</div>
+
+					<!-- 24_Dzerzhinskogo4 -->
+					<div class="col-md-3 text-center animate-box card">
+						<div class="work" style="background-image: url(images/portfolio/24_Dzerzhinskogo4/8.jpg);">
+							<div class="overlay"></div>
+							<p>Дзержинского 4</p>
+
+							<a class="view" data-fancybox="project_e1"
+								data-src="images/portfolio/24_Dzerzhinskogo4/1.jpg"
+								data-caption="Интерьер Дзержинского 4 Минск. Современная спальня">
+								<span>
+									<img class="caption_img" src="images/portfolio/24_Dzerzhinskogo4/1.jpg"
+										alt="portfolio" />
+									<img src="images/lypa.svg" alt="icon zoom">
+								</span>
+							</a>
+
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/24_Dzerzhinskogo4/2.jpg"
+								data-caption="Интерьер Дзержинского 4 Минск. Современная спальня">
+								<span>
+									<img class="caption_img" src="images/portfolio/24_Dzerzhinskogo4/2.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/24_Dzerzhinskogo4/3.jpg"
+								data-caption="Интерьер Дзержинского 4 Минск. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/24_Dzerzhinskogo4/3.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/24_Dzerzhinskogo4/4.jpg"
+								data-caption="Интерьер Дзержинского 4 Минск. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/24_Dzerzhinskogo4/4.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/24_Dzerzhinskogo4/5.jpg"
+								data-caption="Интерьер Дзержинского 4 Минск. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/24_Dzerzhinskogo4/5.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/24_Dzerzhinskogo4/6.jpg"
+								data-caption="Интерьер Дзержинского 4 Минск. Современный холл">
+								<span>
+									<img class="caption_img" src="images/portfolio/24_Dzerzhinskogo4/6.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/24_Dzerzhinskogo4/7.jpg"
+								data-caption="Интерьер Дзержинского 4 Минск. Современная гостиная">
+								<span>
+									<img class="caption_img" src="images/portfolio/24_Dzerzhinskogo4/7.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/24_Dzerzhinskogo4/8.jpg"
+								data-caption="Интерьер Дзержинского 4 Минск. Современная гостиная">
+								<span>
+									<img class="caption_img" src="images/portfolio/24_Dzerzhinskogo4/8.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/24_Dzerzhinskogo4/9.jpg"
+								data-caption="Интерьер Дзержинского 4 Минск. Современная гостиная">
+								<span>
+									<img class="caption_img" src="images/portfolio/24_Dzerzhinskogo4/9.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+						</div>
+					</div>
+
+					<!-- 25_Skoriny -->
+					<div class="col-md-3 text-center animate-box card">
+						<div class="work" style="background-image: url(images/portfolio/25_Skoriny/3.jpg);">
+							<div class="overlay"></div>
+							<p>Скорины</p>
+
+							<a class="view" data-fancybox="project_e1" data-src="images/portfolio/25_Skoriny/1.jpg"
+								data-caption="Интерьер Скорины Минск. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/25_Skoriny/1.jpg" alt="portfolio" />
+									<img src="images/lypa.svg" alt="icon zoom">
+								</span>
+							</a>
+
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/25_Skoriny/2.jpg"
+								data-caption="Интерьер Скорины Минск. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/25_Skoriny/2.jpg" alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/25_Skoriny/3.jpg"
+								data-caption="Интерьер Скорины Минск. Современная гостинная">
+								<span>
+									<img class="caption_img" src="images/portfolio/25_Skoriny/3.jpg" alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/25_Skoriny/4.jpg"
+								data-caption="Интерьер Скорины Минск. Современная гостиная">
+								<span>
+									<img class="caption_img" src="images/portfolio/25_Skoriny/4.jpg" alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/25_Skoriny/5.jpg"
+								data-caption="Интерьер Скорины Минск. Современная гостиная">
+								<span>
+									<img class="caption_img" src="images/portfolio/25_Skoriny/5.jpg" alt="portfolio" />
+								</span>
+							</a>
+						</div>
+					</div>
+
+					<!-- 26_Kurgannaya -->
+					<div class="col-md-3 text-center animate-box card">
+						<div class="work" style="background-image: url(images/portfolio/26_Kurgannaya/5.jpg);">
+							<div class="overlay"></div>
+							<p>Курганная</p>
+
+							<a class="view" data-fancybox="project_e1" data-src="images/portfolio/26_Kurgannaya/1.jpg"
+								data-caption="Интерьер Курганная Минск. Современная бильярдная">
+								<span>
+									<img class="caption_img" src="images/portfolio/26_Kurgannaya/1.jpg"
+										alt="portfolio" />
+									<img src="images/lypa.svg" alt="icon zoom">
+								</span>
+							</a>
+
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/26_Kurgannaya/2.jpg"
+								data-caption="Интерьер Курганная Минск. Современная спальня">
+								<span>
+									<img class="caption_img" src="images/portfolio/26_Kurgannaya/2.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/26_Kurgannaya/3.jpg"
+								data-caption="Интерьер Курганная Минск. Современная ванная">
+								<span>
+									<img class="caption_img" src="images/portfolio/26_Kurgannaya/3.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/26_Kurgannaya/4.jpg"
+								data-caption="Интерьер Курганная Минск. Современная раюлчая зона">
+								<span>
+									<img class="caption_img" src="images/portfolio/26_Kurgannaya/4.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/26_Kurgannaya/5.jpg"
+								data-caption="Интерьер Курганная Минск. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/26_Kurgannaya/5.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/26_Kurgannaya/6.jpg"
+								data-caption="Интерьер Курганная Минск. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/26_Kurgannaya/6.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/26_Kurgannaya/7.jpg"
+								data-caption="Интерьер Курганная Минск. Современная гостиная">
+								<span>
+									<img class="caption_img" src="images/portfolio/26_Kurgannaya/7.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/26_Kurgannaya/8.jpg"
+								data-caption="Интерьер Курганная Минск. Современная гостиная">
+								<span>
+									<img class="caption_img" src="images/portfolio/26_Kurgannaya/8.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+						</div>
+					</div>
+
+					<!-- 27_Solnechnyy -->
+					<div class="col-md-3 text-center animate-box card">
+						<div class="work" style="background-image: url(images/portfolio/27_Solnechnyy/2.jpg);">
+							<div class="overlay"></div>
+							<p>Солнечный</p>
+
+							<a class="view" data-fancybox="project_e1" data-src="images/portfolio/27_Solnechnyy/1.jpg"
+								data-caption="Интерьер Солнечный. Современный санузел">
+								<span>
+									<img class="caption_img" src="images/portfolio/27_Solnechnyy/1.jpg"
+										alt="portfolio" />
+									<img src="images/lypa.svg" alt="icon zoom">
+								</span>
+							</a>
+
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/27_Solnechnyy/2.jpg"
+								data-caption="Интерьер Солнечный. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/27_Solnechnyy/2.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/27_Solnechnyy/3.jpg"
+								data-caption="Интерьер Солнечный. Современная гостиная">
+								<span>
+									<img class="caption_img" src="images/portfolio/27_Solnechnyy/3.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/27_Solnechnyy/4.jpg"
+								data-caption="Интерьер Солнечный. Современная детская комната">
+								<span>
+									<img class="caption_img" src="images/portfolio/27_Solnechnyy/4.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/27_Solnechnyy/5.jpg"
+								data-caption="Интерьер Солнечный. Современная детская комната">
+								<span>
+									<img class="caption_img" src="images/portfolio/27_Solnechnyy/5.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/27_Solnechnyy/6.jpg"
+								data-caption="Интерьер Солнечный. Современная детская комната">
+								<span>
+									<img class="caption_img" src="images/portfolio/27_Solnechnyy/6.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/27_Solnechnyy/7.jpg"
+								data-caption="Интерьер Солнечный. Современная детская комната">
+								<span>
+									<img class="caption_img" src="images/portfolio/27_Solnechnyy/7.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+						</div>
+					</div>
+
+					<!-- 28_Pritytskogo -->
+					<div class="col-md-3 text-center animate-box card">
+						<div class="work" style="background-image: url(images/portfolio/28_Pritytskogo/1.jpg);">
+							<div class="overlay"></div>
+							<p>Притыцкого</p>
+
+							<a class="view" data-fancybox="project_e1" data-src="images/portfolio/28_Pritytskogo/1.jpg"
+								data-caption="Интерьер Притыцкого Минск. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/28_Pritytskogo/1.jpg"
+										alt="portfolio" />
+									<img src="images/lypa.svg" alt="icon zoom">
+								</span>
+							</a>
+
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/28_Pritytskogo/2.jpg"
+								data-caption="Интерьер Притыцкого Минск. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/28_Pritytskogo/2.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/28_Pritytskogo/3.jpg"
+								data-caption="Интерьер Притыцкого Минск. Современная комната">
+								<span>
+									<img class="caption_img" src="images/portfolio/28_Pritytskogo/3.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/28_Pritytskogo/4.jpg"
+								data-caption="Интерьер Притыцкого Минск. Современная комната">
+								<span>
+									<img class="caption_img" src="images/portfolio/28_Pritytskogo/4.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+						</div>
+					</div>
+
+					<!-- 29_Kolodishchi2 -->
+					<div class="col-md-3 text-center animate-box card">
+						<div class="work" style="background-image: url(images/portfolio/29_Kolodishchi2/6.jpg);">
+							<div class="overlay"></div>
+							<p>Колодищи 2</p>
+
+							<a class="view" data-fancybox="project_e1" data-src="images/portfolio/29_Kolodishchi2/1.jpg"
+								data-caption="Интерьер Колодищи Минская область. Современная гостиная">
+								<span>
+									<img class="caption_img" src="images/portfolio/29_Kolodishchi2/1.jpg"
+										alt="portfolio" />
+									<img src="images/lypa.svg" alt="icon zoom">
+								</span>
+							</a>
+
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/29_Kolodishchi2/2.jpg"
+								data-caption="Интерьер Колодищи Минская область. Современная студия">
+								<span>
+									<img class="caption_img" src="images/portfolio/29_Kolodishchi2/2.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/29_Kolodishchi2/3.jpg"
+								data-caption="Интерьер Колодищи Минская область. Современная ванная">
+								<span>
+									<img class="caption_img" src="images/portfolio/29_Kolodishchi2/3.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/29_Kolodishchi2/4.jpg"
+								data-caption="Интерьер Колодищи Минская область. Современная ванная">
+								<span>
+									<img class="caption_img" src="images/portfolio/29_Kolodishchi2/4.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/29_Kolodishchi2/5.jpg"
+								data-caption="Интерьер Колодищи Минская область. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/29_Kolodishchi2/5.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/29_Kolodishchi2/6.jpg"
+								data-caption="Интерьер Колодищи Минская область. Современная кухня">
+								<span>
+									<img class="caption_img" src="images/portfolio/29_Kolodishchi2/6.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/29_Kolodishchi2/7.jpg"
+								data-caption="Интерьер Колодищи Минская область. Современная студия">
+								<span>
+									<img class="caption_img" src="images/portfolio/29_Kolodishchi2/7.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/29_Kolodishchi2/8.jpg"
+								data-caption=" Интерьер Колодищи Минская область. Современная студия.">
+								<span>
+									<img class="caption_img" src="images/portfolio/29_Kolodishchi2/8.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/29_Kolodishchi2/9.jpg"
+								data-caption="Интерьер Колодищи Минская область. Современная спальня">
+								<span>
+									<img class="caption_img" src="images/portfolio/29_Kolodishchi2/9.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/29_Kolodishchi2/10.jpg"
+								data-caption="Интерьер Колодищи Минская область Минск. Современная комната">
+								<span>
+									<img class="caption_img" src="images/portfolio/29_Kolodishchi2/10.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/29_Kolodishchi2/11.jpg"
+								data-caption="Интерьер Колодищи Минская область. Современная комната">
+								<span>
+									<img class="caption_img" src="images/portfolio/29_Kolodishchi2/11.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+						</div>
+					</div>
+
+					<!-- 30_Suharevskaya -->
+					<div class="col-md-3 text-center animate-box card">
+						<div class="work" style="background-image: url(images/portfolio/30_Suharevskaya/3.jpg);">
+							<div class="overlay"></div>
+							<p>Сухаревская</p>
+
+							<a class="view" data-fancybox="project_e1" data-src="images/portfolio/30_Suharevskaya/1.jpg"
+								data-caption="Интерьер Сухаревская Минск. Современная спальня">
+								<span>
+									<img class="caption_img" src="images/portfolio/30_Suharevskaya/1.jpg"
+										alt="portfolio" />
+									<img src="images/lypa.svg" alt="icon zoom">
+								</span>
+							</a>
+
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/30_Suharevskaya/2.jpg"
+								data-caption="Интерьер ЖК Сухаревская Минск. Современная гостиная">
+								<span>
+									<img class="caption_img" src="images/portfolio/30_Suharevskaya/2.jpg"
+										alt="portfolio" />
+								</span>
+							</a>
+							<a class="view hidden" data-fancybox="project_e1"
+								data-src="images/portfolio/30_Suharevskaya/3.jpg"
+								data-caption="Интерьер ЖК Сухаревская Минск. Современная гостиная">
+								<span>
+									<img class="caption_img" src="images/portfolio/30_Suharevskaya/3.jpg"
+										alt="portfolio" >
+								</span>
+							</a>
+						</div>
 					</div>
 
 				</div>
@@ -582,119 +3453,120 @@
 			</div>
 		</div>
 	</div>
-		<footer>
-			<div id="footer">
-				<div class="container">
-					<div class="foot">
-						<div class="fot">
-							<div class="cont_footer_adpt">
-								<div class="phonee_footer_adapt">
-									<img src="images/adapt.svg" alt="icon phone"> 
-									<a href="tel:+375296727206" class="phone_footer_ad">+375 (29) 672-72-06</a>	
-								</div>
+	<footer>
+		<div id="footer">
+			<div class="container">
+				<div class="foot">
+					<div class="fot">
+						<div class="cont_footer_adpt">
+							<div class="phonee_footer_adapt">
+								<img src="images/adapt.svg" alt="icon phone">
+								<a href="tel:+375296727206" class="phone_footer_ad">+375 (29) 672-72-06</a>
 							</div>
-							<div class="footer_menu">
-								<h1 class="logo_footer">
-									<a class="fh5co-logo" href="index.html">
-										<img src="images/Logo.svg" alt="logo Jurassic Studio">
+						</div>
+						<div class="footer_menu">
+							<h1 class="logo_footer">
+								<a class="fh5co-logo" href="index.html">
+									<img src="images/Logo.svg" alt="logo Jurassic Studio">
+								</a>
+							</h1>
+							<ul>
+								<li>
+									<a href="about.html">
+										<p1> О нас</p1>
 									</a>
-								</h1>
-								<ul>
-									<li>
-										<a href="about.html">
-											<p1> О нас</p1>
-										</a>
-									</li>
-									<li>
-										<a href="work.html">
-											<p1>Проекты</p1>
-										</a>
-									</li>
-									<li>
-										<a href="contact.html">
-											<p1>Контакты</p1>
-										</a>
-									</li>
-								</ul>
-
-								<div class="network_footer">
-									<li>
-										<a href="https://t.me/JurassicStudio" target="_blank">
-											<img class="instagram" src="images/icon-teleg.svg" alt="icon telegram">
-										</a>
-									</li>
-									<li>
-										<a href="viber://chat?number=%2B375296727206" target="_blank">
-											<img class="vk" src="images/icon-viber.svg" alt="icon viber">
-										</a>
-									</li>
-									<li>
-										<a href="mailto:jurassicstudio@tut.by" target="_blank">
-											<img class="linkid" src="images/icon-mail.svg" alt="icon mail">
-										</a>
-									</li>
-								</div>
-
-								<div class="numbe">
-											
-									<a href="tel:+375296727206" class="phone">
-										<p1>+375 (29) 672-72-06</p1>
+								</li>
+								<li>
+									<a href="work.html">
+										<p1>Портфолио</p1>
 									</a>
-									<a href="tel:+375333021717" class="phone">
-										<p1>+375 (33) 302-17-17</p1>
+								</li>
+								<li>
+									<a href="contact.html">
+										<p1>Контакты</p1>
 									</a>
-								</div>
+								</li>
+							</ul>
 
+							<div class="network_footer">
+								<li>
+									<a href="https://t.me/JurassicStudio" target="_blank">
+										<img class="instagram" src="images/icon-teleg.svg" alt="icon telegram">
+									</a>
+								</li>
+								<li>
+									<a href="viber://chat?number=%2B375296727206" target="_blank">
+										<img class="vk" src="images/icon-viber.svg" alt="icon viber">
+									</a>
+								</li>
+								<li>
+									<a href="mailto:jurassicstudio@tut.by" target="_blank">
+										<img class="linkid" src="images/icon-mail.svg" alt="icon mail">
+									</a>
+								</li>
 							</div>
+
+							<div class="numbe">
+
+								<a href="tel:+375296727206" class="phone">
+									<p1>+375 (29) 672-72-06</p1>
+								</a>
+								<a href="tel:+375333021717" class="phone">
+									<p1>+375 (33) 302-17-17</p1>
+								</a>
+							</div>
+
 						</div>
 					</div>
 				</div>
-				<div class="container footer_menu footer_none">
-					<ul>
-						<li>
-							<a href="about.html">
-								<p1> О нас</p1>
-							</a>
-						</li>
-						<li>
-							<a href="work.html">
-								<p1>Портфолио</p1>
-							</a>
-						</li>
-						<li>
-							<a href="contact.html">
-								<p1>Контакты</p1>
-							</a>
-						</li>
-					</ul>
-				</div>
-				<div class="container">
-					<div class="col-md-12 text-center copyright">
-						<p>
-							<a class="copy-right" href="http://t.me/amaximilian" target="_blank">© 2021 Cайт разработала студия Maximum</a>
-						</p>
-					</div>
+			</div>
+			<div class="container footer_menu footer_none">
+				<ul>
+					<li>
+						<a href="about.html">
+							<p1> О нас</p1>
+						</a>
+					</li>
+					<li>
+						<a href="work.html">
+							<p1>Портфолио</p1>
+						</a>
+					</li>
+					<li>
+						<a href="contact.html">
+							<p1>Контакты</p1>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="container">
+				<div class="col-md-12 text-center copyright">
+					<p>
+						<a class="copy-right" href="http://t.me/amaximilian" target="_blank">© 2021 Cайт разработала
+							студия Maximum</a>
+					</p>
 				</div>
 			</div>
-		</footer>
+		</div>
+	</footer>
 
-		<!-- jQuery -->
-		<script src="js/jquery.min.js"></script>
-		<!-- jQuery Easing -->
-		<script src="js/jquery.easing.1.3.js"></script>
-		<!-- Bootstrap -->
-		<script src="js/bootstrap.min.js"></script>
-		<!-- Waypoints -->
-		<script src="js/jquery.waypoints.min.js"></script>
-		<!-- Counters -->
-		<script src="js/jquery.countTo.js"></script>
-		<!-- Flexslider -->
-		<script src="js/jquery.flexslider-min.js"></script>
-		<!-- Fancybox -->
-		<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
-		<!-- Main JS (Do not remove) -->
-		<script src="js/main.js"></script>
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Counters -->
+	<script src="js/jquery.countTo.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Fancybox -->
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+	<!-- Main JS (Do not remove) -->
+	<script src="js/main.js"></script>
 
-	</body>
+</body>
+
 </html>
-
