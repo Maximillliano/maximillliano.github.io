@@ -21,7 +21,9 @@ body.menu-show {
   height: 100%;
   width: 100%;
 }
-
+iframe {
+  border:0 solid #fff;
+}
 a:hover, a:focus {
   color: #fff;
   font-weight: 300;
@@ -49,7 +51,7 @@ p, span {
 
 span {
   font-size: 18px;
-  color: rgba(114, 114, 114, 0.8);
+  color: #000;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -620,12 +622,13 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
 }
 #fh5co-hero .flexslider .slider-text > .slider-text-inner span {
   color: rgba(255, 255, 255, 0.8);
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  font-size: 12px;
+  font-weight: 500;
+  transition: all 0.8s ease 0s;
+  font-size: 15px;
   display: block;
-  margin-bottom: 20px;
+  padding: 0;
 }
+
 #fh5co-hero .flexslider .slider-text > .slider-text-inner .fh5co-lead a {
   color: rgba(255, 255, 255, 0.7);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
@@ -835,12 +838,11 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
   color: #FFFFFF;
   max-width: 500px;
 }
-.desc h {
-  width: 30%;
+.desc .h {
   color: white;
-  font-size: 10px;
+  font-size: 10px!important;
 }
-.desc h a {
+.desc .h a {
   color: white;
   text-decoration: underline;
 }
@@ -1233,7 +1235,7 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
   line-height: 150%;
   text-align: left;
 }
-.tel h {
+.tel .h {
   font-size: 16px;
   color: #FFFFFF;
   line-height: 150%;
@@ -1555,7 +1557,7 @@ input[type=text] {
 .text_header p {
   font-size: 16px;
 }
-.text_header p1 {
+.text_header span {
   font-size: 16 px;
   color: #d1d1d1;
   margin-top: 20px;
@@ -1623,6 +1625,9 @@ input[type=text] {
   margin-left: 21px;
 }
 
+.social_icons {
+  padding:0 12px;
+}
 .copyright {
   margin-top: 45px;
 }
@@ -1639,12 +1644,12 @@ input[type=text] {
   text-align: left;
   line-height: 1em;
 }
-.form h {
+.form .h {
   width: 30%;
   color: white;
   font-size: 10px;
 }
-.form h a {
+.form .h a {
   color: white;
   text-decoration: underline;
 }
@@ -1656,7 +1661,22 @@ input[type=text] {
   align-items: center;
 }
 
-.progect, .progectss {
+.progect {
+  color: inherit;
+  border: 3px solid #fff;
+  border-radius: 1px;
+  padding: 0 24px;
+  margin: 0;
+  background-color: transparent;
+  color: #fff;
+  margin-top: 30px;
+  transition: 0.8s;
+  height: 50px;
+}
+.progect:hover span {
+  color: #222 !important;
+}
+.progectss {
   color: inherit;
   border: 3px solid #fff;
   border-radius: 1px;
@@ -1667,21 +1687,18 @@ input[type=text] {
   margin-top: 30px;
   transition: 0.8s;
 }
-.progect p1, .progectss p1 {
+.progect span, .progectss span {
   font-size: 15px;
   font-weight: 500;
 }
-
 .progect:hover {
   background-color: white;
   transform: scale(1.05);
   color: #222;
 }
-
 .progectss {
   margin-top: 0px;
 }
-
 .progects {
   padding: 0 24px;
   height: 50px;
@@ -1694,13 +1711,11 @@ input[type=text] {
   font-weight: 500;
   transition: all 0.8s ease 0s;
 }
-
 .progects:hover {
   color: #222;
   background-color: white;
   transform: scale(1.05);
 }
-
 .portfolio {
   margin-top: 20px;
   padding: 10px 24px;
@@ -1715,11 +1730,9 @@ input[type=text] {
   color: #222;
   line-height: normal;
 }
-
 .portfolio:focus {
   text-decoration: none;
 }
-
 .portfolio:hover {
   background-color: #222;
   text-decoration: none;
@@ -1728,7 +1741,6 @@ input[type=text] {
 .portfolio:hover p {
   color: #fff;
 }
-
 .consultation {
   padding: 0 24px;
   height: 50px;
@@ -1739,42 +1751,36 @@ input[type=text] {
   color: #222;
   transition: all 0.8s ease 0s;
 }
-.consultation p1 {
+.consultation span {
   color: #fff;
   font-size: 15px;
   line-height: 24px;
   font-weight: 500;
 }
-
 .consultation:hover {
   background-color: white;
   transform: scale(1.05);
 }
-.consultation:hover p1 {
+.consultation:hover span {
   color: #222;
 }
-
 .phon {
   color: white;
   font-size: 18px;
   line-height: 138%;
 }
-
 .ph {
   animation: phone 5s ease-in-out infinite;
 }
-
 .bt {
   justify-content: center;
   display: flex;
 }
-
 .knopka {
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
-
 .block_portfolio {
   width: 327px;
   height: 50px;
@@ -1789,28 +1795,23 @@ input[type=text] {
   color: #222;
   margin-top: 2px;
 }
-
 .block_portfolio:hover {
   background-color: #222;
 }
 .block_portfolio:hover p {
   color: #F2F2F2;
 }
-
 iframe {
   margin-top: 90px;
   height: 700px;
 }
-
 .fh5co-intro-section {
   background: url(../images/bg-consult.jpg) no-repeat;
 }
-
 .threestep {
   padding-top: 160px;
   padding-bottom: 80px;
 }
-
 .step {
   display: flex;
   justify-content: center;
@@ -1821,7 +1822,6 @@ iframe {
   font-weight: 600;
   line-height: 61px;
 }
-
 .text_card {
   width: 100%;
 }
@@ -1831,7 +1831,7 @@ iframe {
   line-height: 130%;
   color: #a59898;
 }
-.text_card p1 {
+.text_card span {
   position: absolute;
   font-size: 14px;
   color: #FFFFFF;
@@ -1850,33 +1850,27 @@ iframe {
   -o-object-fit: cover;
      object-fit: cover;
 }
-
 .phonee {
   animation: phone 5s ease-in-out infinite;
 }
-
 .flat p {
   transform: rotate(90deg);
   transform-origin: left top 0;
   color: #ffffff;
 }
-
 .about {
   display: flex;
 }
-
 .img-responsive {
   width: 840px;
   height: 370px;
   border-radius: 1px;
 }
-
 .dizain_block, .dizain_block_one {
   display: flex;
   align-items: center;
   margin-bottom: 50px;
 }
-
 .circle, .circle_two {
   border: 1px solid #222;
   border-radius: 50%;
@@ -1888,14 +1882,12 @@ iframe {
   color: #222;
   font-weight: 500;
 }
-
 .circle_two {
   margin-left: 57px;
 }
 .circle_two p {
   margin-left: 2px;
 }
-
 .texts, .texts_two, .texts_three {
   margin-left: 25px;
 }
@@ -1916,20 +1908,16 @@ iframe {
 .texts li, .texts_two li, .texts_three li {
   font-size: 14px;
 }
-
-.texts_three p1 {
+.texts_three span {
   margin-top: 35px;
 }
-
 .works, .works_two, .works_three {
   height: 240px;
   background-size: cover;
 }
-
 .works_two {
   margin-left: 0px;
 }
-
 .contc_align {
   display: flex;
   align-items: center;
@@ -1941,7 +1929,6 @@ iframe {
   padding-top: 120px;
   padding-bottom: 120px;
 }
-
 .konsultation h2 {
   font-size: 50px;
   color: white;
@@ -1953,7 +1940,6 @@ iframe {
   color: #FFFFFF;
   font-weight: 400;
 }
-
 .form-input_name, .form-input_tell, .input_name_dizain, .input_tell_dizain {
   display: inline-block;
   width: 100%;
@@ -1964,15 +1950,12 @@ iframe {
   outline: none;
   color: white;
 }
-
 .content {
   display: flex;
 }
-
 .text {
   margin-left: 150px;
 }
-
 .form-input_tell, .input_tell_dizain {
   background: url(../images/Flag.jpg);
   background-repeat: no-repeat;
@@ -1981,25 +1964,20 @@ iframe {
   height: -moz-min-content;
   height: min-content;
 }
-
 .input_name_dizain, .input_tell_dizain {
   font-size: 14px;
 }
-
 .step h2 {
   font-size: 50px;
   font-weight: 500;
   text-align: center;
 }
-
 input {
   font-size: 16px;
 }
-
 .row_footer {
   display: flex;
 }
-
 .footer_menu {
   display: flex;
   align-items: center;
@@ -2015,14 +1993,14 @@ input {
   margin-right: 76px;
 }
 
-.footer_menu p1 {
+.footer_menu span {
   color: white;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
 }
 
-.footer_menu p1:hover {
+.footer_menu span:hover {
   text-decoration: underline;
 }
 
@@ -2191,7 +2169,7 @@ input {
   display: block;
 }
 
-p2 {
+span {
   font-weight: 600;
 }
 @keyframes mouse-scroll {
@@ -2309,7 +2287,7 @@ p2 {
     flex-direction: column;
     margin: o auto;
   }
-  .form h {
+  .form .h {
     width: 100%;
     text-align: center;
   }
@@ -2412,7 +2390,7 @@ p2 {
   .phone {
     position: absolute;
   }
-  .ph p1 {
+  .ph span {
     text-align: left;
     margin-left: 160px;
     padding: 10px;
@@ -2618,7 +2596,7 @@ p2 {
   #footer .footer_none ul li img {
     width: 50px;
   }
-  #footer .numbe p1 {
+  #footer .numbe span {
     font-size: 16px;
   }
   #footer .network_footer {
@@ -2802,7 +2780,7 @@ p2 {
   .progect {
     margin-top: 20px;
   }
-  .progect p1 {
+  .progect span {
     font-size: 18px;
     width: 100%;
     text-align: center;
@@ -2838,7 +2816,7 @@ p2 {
     font-size: 15px;
     line-height: 140%;
   }
-  .form h {
+  .form .h {
     margin-top: 28px;
     font-size: 10px;
     text-align: left;
@@ -2894,7 +2872,7 @@ p2 {
     font-size: 24px;
     line-height: 130%;
   }
-  .about-content p1 {
+  .about-content span {
     font-size: 12px;
     line-height: 130%;
     display: flex;
@@ -2984,7 +2962,7 @@ p2 {
   .texts_two h1, .texts_three h1 {
     margin-top: 30px;
   }
-  .texts p1, .texts_two p1, .texts_three p1 {
+  .texts span, .texts_two span, .texts_three span {
     width: 210px;
     height: 105px;
     font-size: 14px;
@@ -3000,7 +2978,7 @@ p2 {
   .phonee {
     animation: phone 5s ease-in-out infinite;
   }
-  .texts_two p1, .texts_three p1 {
+  .texts_two span, .texts_three span {
     width: 236px;
   }
   #fh5co-featured {
@@ -3039,7 +3017,7 @@ p2 {
     color: white;
     text-align: center;
   }
-  .footer_menu p1 {
+  .footer_menu span {
     font-size: 18px;
   }
   .phon {
@@ -3058,7 +3036,7 @@ p2 {
     font-size: 15px;
     line-height: 130%;
   }
-  .time p2, .time_vel p2, .time_mts p2 {
+  .time span, .time_vel span, .time_mts span {
     font-weight: bold;
     font-size: 18px;
     line-height: 130%;
@@ -3147,7 +3125,7 @@ p2 {
   iframe {
     margin-bottom: 15px;
   }
-  .time_mail p2, .time_mts p2, .time_vel p2 {
+  .time_mail span, .time_mts span, .time_vel span {
     display: block;
   }
   .card:hover, .work:hover {
@@ -3162,4 +3140,4 @@ p2 {
 }
 .fancybox__thumbs .carousel__slide .fancybox__thumb::after {
   border-color: white;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */ÓM4ÓM4ÓM4ÙýÚõÝ9†üãžô

@@ -41,6 +41,9 @@
 		<script src="js/respond.min.js"></script>
 		<![endif]-->
 
+	</head>
+
+	<body>
 		<!-- Yandex.Metrika counter -->
 		<script>
 			(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -67,10 +70,6 @@
 		gtag('js', new Date());
 		gtag('config', 'G-9YP9RDWRBE');
 		</script>
-
-	</head>
-
-	<body>
 
 		<!-- Burger menu-->
 		<nav id="fh5co-main-nav">
@@ -153,9 +152,8 @@
 									</div>
 
 									<div class="phone_header">
-										<li>
 											<a href="tel:+375296727206" class="phone_adaptive">
-												<img class="phonee" src="images/Phone.svg" icon="phone" alt="icon phone">
+												<img class="phonee" src="images/Phone.svg" title="phone" alt="icon phone">
 											</a>
 											<a href="tel:+375296727206" class="phone">
 												+375 (29) 672-72-06 
@@ -163,7 +161,6 @@
 											<a href="tel:+375333021717" class="phone">
 												+375 (33) 302-17-17
 											</a>
-										</li>	
 									</div>
 								</div>
 								<div class="burger">
@@ -189,10 +186,10 @@
 											<h2>Jurassic Studio</h2>
 											<p class="subtitle">Профессионально создаем современные и комфортные интерьеры более 20 лет!</p>
 										</div>
-										<a href="#fh5co-featured">
-											<button class="progect" type="button">
-												<p1>Заказать консультацию</p1>
-											</button>
+										<a href="#fh5co-featured">	
+												<button class="progect" type="button">
+													<span>Заказать консультацию</span>
+												</button>
 										</a>
 									</div>
 								</div>
@@ -351,7 +348,7 @@
 			</div>
 
 			<div class="col-md-13 col-md-offset-0 animate-box text-center">
-				<li class="contc_align">
+				<div class="contc_align">
 					<div class="container">
 
 							<div class="contcts">
@@ -361,7 +358,7 @@
 							</div>
 							<div class="bloc_contact">
 								<div class="form">
-									<h>Нажимая на кнопку "Заказать консультацию", я подтверждаю, что ознакомился с <a href="/privacy.html">Политикой конфиденциальности</a> и даю согласие на обработку всех моих персональных данных</h>
+									<p class="h">Нажимая на кнопку "Заказать консультацию", я подтверждаю, что ознакомился с <a href="/privacy.html">Политикой конфиденциальности</a> и даю согласие на обработку всех моих персональных данных</p>
 								
 									<div class="form_one">
 										<input class="form-input_name" id="fname_one" name="Ваше имя" placeholder="Ваше имя" required> 
@@ -372,13 +369,13 @@
 
 									<div class="form_three">
 										<button class="consultation" type="button" data-toggle="modal" data-target=".bd-example-modal-lg">
-											<p1>Заказать консультацию</p1>
+											<span>Заказать консультацию</span>
 										</button>
 									</div>
 								</div>
 							</div>					
 					</div>
-				</li>
+				</div>
 			</div>
 
 		</div>
@@ -512,7 +509,7 @@
 								Закажите дизайн-проект и получите комплексные решения всех вопросов,
 								связанные с будущим интерьером. 
 							</p>
-							<h>Нажимая на кнопку "Заказать консультацию", я подтверждаю, что ознакомился с <a href="/privacy.html">Политикой конфиденциальности</a> и даю согласие на обработку всех моих персональных данных</h>
+							<p class="h">Нажимая на кнопку "Заказать консультацию", я подтверждаю, что ознакомился с <a href="/privacy.html">Политикой конфиденциальности</a> и даю согласие на обработку всех моих персональных данных</p>
 							<div class="kontacts">
 								<a href="tel:+375296727206" class="phon">
 									<img class="pho" src="images/Phone.svg" alt="icon phone">
@@ -553,7 +550,7 @@
 								</div>
 
 								<!-- Modal -->
-								<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+								<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
 									<div class="modal-dialog modal-lg">
 										<div class="modal-content">
 											<h3>Спасибо за обратную связь!</h3>
@@ -588,46 +585,67 @@
 								<ul>
 									<li>
 										<a href="about.html">
-											<p1>О нас</p1>
+											<span>О нас</span>
 										</a>
 									</li>
 									<li>
 										<a href="work.html">
-											<p1>Портфолио</p1>
+											<span>Портфолио</span>
 										</a>
 									</li>
 									<li>
 										<a href="contact.html">
-											<p1>Контакты</p1>
+											<span>Контакты</span>
 										</a>
 									</li>
 								</ul>
-
+<!--
+								<div class="sotial_network">
+									
+										<li>	
+											<a href="https://t.me/JurassicStudio" target="_blank">
+												<img class="instagram" src="images/icon-teleg.svg" alt="icon telegram">
+											</a>
+										</li>
+										<li>	
+											<a href="viber://chat?number=%2B375296727206" target="_blank">
+												<img class="vk" src="images/icon-viber.svg" alt="icon viber">
+											</a>
+										</li>
+										<li>	
+											<a href="mailto:jurassic1999@mail.ru" target="_blank">
+												<img class="linkid" src="images/icon-mail.svg" alt="icon mail">
+											</a>
+										</li>
+									
+								</div>
+							-->
 								<div class="network_footer">
-									<li>
-										<a href="https://t.me/JurassicStudio" target="_blank">
-											<img class="instagram" src="images/icon-teleg.svg" alt="icon telegram">
-										</a>
-									</li>
-									<li>
-										<a href="viber://chat?number=%2B375296727206" target="_blank">
-											<img class="vk" src="images/icon-viber.svg" alt="icon viber">
-										</a>
-									</li>
-									<li>
-										<a href="mailto:jurassicstudio@tut.by" target="_blank">
-											<img class="linkid" src="images/icon-mail.svg" alt="icon mail">
-										</a>
-									</li>
+									
+										<div class="social_icons">
+											<a href="https://t.me/JurassicStudio" target="_blank">
+												<img class="instagram" src="images/icon-teleg.svg" alt="icon telegram">
+											</a>
+										</div>
+										<div class="social_icons">
+											<a href="viber://chat?number=%2B375296727206" target="_blank">
+												<img class="vk" src="images/icon-viber.svg" alt="icon viber">
+											</a>
+										</div>
+										<div class="social_icons">
+											<a href="mailto:jurassicstudio@tut.by" target="_blank">
+												<img class="linkid" src="images/icon-mail.svg" alt="icon mail">
+											</a>
+										</div>
+									
 								</div>
 
-								<div class="numbe">
-											
+								<div class="numbe">			
 									<a href="tel:+375296727206" class="phone">
-										<p1>+375 (29) 672-72-06</p1>
+										<span>+375 (29) 672-72-06</span>
 									</a>
 									<a href="tel:+375333021717" class="phone">
-										<p1>+375 (33) 302-17-17</p1>
+										<span>+375 (33) 302-17-17</span>
 									</a>
 								</div>
 
@@ -639,17 +657,17 @@
 					<ul>
 						<li>
 							<a href="about.html">
-								<p1> О нас</p1>
+								<span> О нас</span>
 							</a>
 						</li>
 						<li>
 							<a href="work.html">
-								<p1>Портфолио</p1>
+								<span>Портфолио</span>
 							</a>
 						</li>
 						<li>
 							<a href="contact.html">
-								<p1>Контакты</p1>
+								<span>Контакты</span>
 							</a>
 						</li>
 					</ul>
