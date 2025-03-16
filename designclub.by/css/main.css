@@ -4,6 +4,7 @@ body {
 	color: #646464;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
+	background: linear-gradient(76deg, #FFF 27.85%, #DDDFE1 100%);
 }
 
 a {
@@ -81,16 +82,8 @@ div.element_left:last-child {
 	padding: 0 2em;
 }
 
-.middle img {
-	width: 21.5em;
-	margin-top: 3em;
-	animation-duration: 4s;
-	animation-delay: 1s;
-	transition: .6s;
-}
-
-.middle img:hover {
-	width: 22.5em;
+.middle svg {
+	width: 380px;
 }
 
 .middle div {
@@ -103,36 +96,23 @@ div.element_left:last-child {
 	animation-delay: 1s;
 }
 
-.middle span {
-	font-size: 3em;
-	font-family: 'BankGothicBold';
-	text-transform: uppercase;
-	letter-spacing: 1.42em;
-	width: 7.3em;
-	cursor: default;
-	animation-duration: 8s;
-	animation-delay: 1s;
-}
-
 .middle p {
-	font-size: 1em;
-	margin: 0;
-	margin-top: 2em;
-	width: 22em;
+	width: 355px;
+	text-align: center;
+	font-size: 20px;
 }
 
 .but {
+	width: 380px;
 	margin-top: 2em;
 	margin-bottom: 2.2em;
-	padding: 7px 0;
-	width: 14em;
+	padding: 15px 0;
 	background: #111117;
-	border-radius: .3em;
-	border: 0;
+	border: none;
 	color: #eff0f1;
 	font-family: 'Open Sans', sans-serif;
-	font-weight: 400;
-	font-size: 1.3em;
+	font-size: 18px;
+	font-weight: 600;
 	text-decoration: none;
 	cursor: pointer;
 	outline: none;

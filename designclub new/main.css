@@ -1,0 +1,154 @@
+:root {
+	/* Основные цвета */
+	--primary-color: #383838; /* Основной цвет */
+	--text-color: #383838; /* Основной цвет текста */
+	--text-light: #646464; /* Вторичный цвет текста */
+	--bg-color: linear-gradient(90deg, #FFF 27.85%, #DDDFE1 100%); /* Фон страницы */
+  
+	/* Шрифты */
+	--font-size-default: 16px;
+	--font-size-additional: 20px;
+	--font-size-default-sm: 16px;
+	--font-weight-normal: 400;
+	--font-weight-bold: 700;
+}
+
+body {
+	margin: 0;
+	background: var(--bg-color);
+}
+
+section {
+	margin-top: 20vh; 
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.middle {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 25px;
+	flex-shrink: 0;
+}
+
+.middle h2 {
+	width: 355px;
+	color: #000;
+	text-align: center;
+	font-family: "Open Sans";
+	font-size: var(--font-size-additional);
+	font-weight: var(--font-weight-normal);
+}
+
+.container-button {
+	display: flex;
+	flex-direction: column;
+	align-self: stretch;
+	gap: 15px;
+	display: flex;
+}
+
+.button-main {
+	display: flex;
+	padding: 15px 35px;
+	justify-content: center;
+	align-items: center;
+	background: #000;
+	color: #FFF;
+	font-family: "Open Sans";
+	font-size: 17px;
+	font-weight: var(--font-weight-bold);
+	text-decoration: none;
+}
+
+.button-main:hover {
+	background-color: var(--text-light);
+}
+
+.button-additional {
+	display: flex;
+	padding: 15px 35px;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	align-self: stretch;
+	border: 1px solid #000;
+	font-family: "Open Sans";
+	color: #000;
+	font-size: 17px;
+	font-weight: var(--font-weight-bold);
+}
+
+.button-additional:hover {
+	color: var(--text-light);
+	border-color: var(--text-light);
+}
+
+.container-social {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+	cursor: pointer;
+}
+
+.container-social svg:hover path {
+	fill: var(--text-light);
+}
+
+.left, .right {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 30px;
+}
+
+.card {
+	display: flex;
+	width: 428px;
+	height: 230px;
+	padding: 0 55px;
+	align-items: center;
+	gap: 25px;
+	align-self: stretch;
+	font-family: "Open Sans";
+	font-size: var(--font-size-default);
+	font-weight: var(--font-weight-normal);
+}
+
+.card svg {
+	width: 80px;
+}
+
+.card .hat {
+	width: 90px;
+}
+
+.card h3 {
+	font-size: var(--font-size-additional);
+	font-weight: var(--font-weight-bold);
+}
+
+.card a {
+	color: var(--primary-color);
+	font-weight: var(--font-weight-bold);
+}
+
+.card a:hover {
+	color: var(--text-light);
+}
+
+.left .card {
+	border-radius: 0px 105px 105px 0px;
+	border-top: 1px solid var(--primary-color);
+	border-right: 1px solid var(--primary-color);
+	border-bottom: 1px solid var(--primary-color);
+}
+
+.right .card {
+	border-radius: 105px 0 0 105px;
+	border-top: 1px solid var(--primary-color);
+	border-left: 1px solid var(--primary-color);
+	border-bottom: 1px solid var(--primary-color);
+}

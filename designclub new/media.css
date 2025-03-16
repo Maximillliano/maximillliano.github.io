@@ -1,0 +1,83 @@
+@media (max-width: 1599px) { 
+	.card {width: 250px;}
+}
+
+@media (max-width: 1299px) { 
+	section {
+		flex-direction: column;
+		align-items: stretch;
+		margin-top: 70px;
+		gap: 40px;
+	}
+
+	.middle {
+		order: -1;
+	}
+
+	.left, .right {
+		align-items: stretch;
+	}
+
+	.right {
+		margin-bottom: 70px;
+	}
+
+	.card {
+		width: 428px;
+	}
+
+	.left .card:nth-child(1), .left .card:nth-child(3), .right .card:nth-child(2) {
+		align-self: flex-start;
+	}
+	
+	.left .card:nth-child(2), .right .card:nth-child(1), .right .card:nth-child(3) {
+		align-self: flex-end;
+	}
+
+	.right .card:nth-child(2) {
+		border-radius: 0px 105px 105px 0px;
+		border-top: 1px solid var(--primary-color);
+		border-right: 1px solid var(--primary-color);
+		border-bottom: 1px solid var(--primary-color);
+		border-left: none;
+	}
+
+	.left .card:nth-child(2) {
+		border-radius: 105px 0 0 105px;
+		border-top: 1px solid var(--primary-color);
+		border-left: 1px solid var(--primary-color);
+		border-bottom: 1px solid var(--primary-color);
+		border-right: none;
+	}
+
+	.container-button {
+		width: 467px;
+		align-self: auto;
+	}
+
+}
+
+@media (max-width: 599px) { 
+
+	section {
+		margin-top: 40px;
+	}
+
+	.middle {
+		padding: 0 20px;
+	}
+
+	.middle svg {
+		width: 90%;
+	}
+	
+	.card {
+		padding: 0 20px;
+		width: 300px;
+	}
+
+	.container-button {
+		align-self: stretch;
+		width: auto;
+	}
+}
