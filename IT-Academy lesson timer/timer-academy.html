@@ -1,0 +1,729 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Countdown Timer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            background: linear-gradient(to bottom right, #4c1d95, #581c87, #701a75);
+            position: relative;
+        }
+
+        .background-glow {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(120px);
+            animation: pulse 3s ease-in-out infinite;
+        }
+
+        .glow-1 {
+            top: 25%;
+            left: 25%;
+            width: 384px;
+            height: 384px;
+            background: rgba(139, 92, 246, 0.2);
+        }
+
+        .glow-2 {
+            bottom: 25%;
+            right: 25%;
+            width: 384px;
+            height: 384px;
+            background: rgba(168, 85, 247, 0.2);
+            animation-delay: 1s;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.6; }
+        }
+
+        .container {
+            position: relative;
+            z-index: 10;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .timer-wrapper {
+            transform: scale(1.5);
+            opacity: 0;
+            animation: fadeInScale 0.8s cubic-bezier(0.4, 0.0, 0.2, 1) forwards;
+        }
+
+        @keyframes fadeInScale {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(0.8);
+            }
+        }
+
+        .timer-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .circular-progress {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 34px;
+        }
+
+        .svg-container {
+            width: 500px;
+            height: 500px;
+            transform: rotate(-90deg);
+        }
+
+        .progress-bg {
+            fill: none;
+            stroke: rgba(255, 255, 255, 0.05);
+            stroke-width: 16;
+        }
+
+        .progress-bar {
+            fill: none;
+            stroke: url(#gradient);
+            stroke-width: 16;
+            stroke-linecap: round;
+            filter: drop-shadow(0 0 12px rgba(168, 85, 247, 0.6));
+            transition: stroke-dashoffset 0.5s ease-out;
+        }
+
+        .time-display {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .digits {
+            display: flex;
+            font-size: 140px;
+            font-weight: 300;
+            letter-spacing: -0.02em;
+            color: white;
+            font-feature-settings: "tnum";
+            filter: drop-shadow(0 4px 40px rgba(168, 85, 247, 0.5));
+        }
+
+        .digit {
+            display: inline-block;
+            min-width: 84px;
+            text-align: center;
+            position: relative;
+            height: 168px;
+            overflow: hidden;
+        }
+
+        .digit.colon {
+            min-width: 30px;
+        }
+
+        .digit-value {
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .digit-value.slide-out {
+            animation: slideOut 0.4s cubic-bezier(0.4, 0.0, 0.2, 1) forwards;
+        }
+
+        .digit-value.slide-in {
+            animation: slideIn 0.4s cubic-bezier(0.4, 0.0, 0.2, 1) forwards;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-40px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideOut {
+            from {
+                transform: translateY(0);
+                opacity: 1;
+            }
+            to {
+                transform: translateY(40px);
+                opacity: 0;
+            }
+        }
+
+        .status-text {
+            font-size: 20px;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.6);
+            margin-top: 24px;
+            text-transform: uppercase;
+            letter-spacing: 0.3em;
+        }
+
+        .motivational-text {
+            font-size: 14px;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: 16px;
+            max-width: 448px;
+            text-align: center;
+            padding: 0 16px;
+            opacity: 0;
+            transform: translateY(-10px);
+            transition: all 0.6s ease;
+        }
+
+        .motivational-text.show {
+            opacity: 0.8;
+            transform: translateY(0);
+        }
+
+        .controls {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+            margin-top: 0;
+        }
+
+        .btn {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease;
+            position: relative;
+        }
+
+        .btn:hover {
+            transform: scale(1.08);
+        }
+
+        .btn:active {
+            transform: scale(0.92);
+        }
+
+        .btn-play, .btn-pause {
+            background: linear-gradient(to bottom right, #a855f7, #8b5cf6, #7c3aed);
+            box-shadow: 0 8px 32px 0 rgba(168, 85, 247, 0.5), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-reset {
+            background: linear-gradient(to bottom right, #3f3f46, #27272a);
+            box-shadow: 0 8px 32px 0 rgba(39, 39, 42, 0.5), inset 0 1px 0 0 rgba(255, 255, 255, 0.1);
+        }
+
+        .btn svg {
+            width: 32px;
+            height: 32px;
+            fill: white;
+        }
+
+        .btn-play svg {
+            margin-left: 4px;
+        }
+
+        .presets {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 48px;
+        }
+
+        .preset-btn {
+            padding: 14px 32px;
+            border-radius: 16px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.05);
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .preset-btn:hover {
+            transform: scale(1.05) translateY(-2px);
+            background: rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.9);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .preset-btn:active {
+            transform: scale(0.95);
+        }
+
+        .preset-btn.active {
+            background: rgba(255, 255, 255, 0.15);
+            color: white;
+            border-color: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 4px 24px 0 rgba(168, 85, 247, 0.3);
+        }
+
+        .finished-glow {
+            position: absolute;
+            top: -100px;
+            left: -100px;
+            right: -100px;
+            bottom: -100px;
+            background: linear-gradient(to bottom right, rgba(168, 85, 247, 0.3), rgba(217, 70, 239, 0.3));
+            border-radius: 50%;
+            filter: blur(48px);
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .finished-glow.show {
+            animation: finishPulse 2s ease-in-out infinite;
+        }
+
+        @keyframes finishPulse {
+            0%, 100% { opacity: 0; transform: scale(0.8); }
+            50% { opacity: 0.4; transform: scale(1.2); }
+        }
+
+        .finished-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 24px;
+            font-weight: 300;
+            letter-spacing: 0.05em;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .finished-text.show {
+            opacity: 1;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-glow glow-1"></div>
+    <div class="background-glow glow-2"></div>
+
+    <div class="container">
+        <div class="timer-wrapper">
+            <div class="timer-container">
+                <div class="circular-progress">
+                    <svg class="svg-container" viewBox="0 0 400 400">
+                        <circle class="progress-bg" cx="200" cy="200" r="180"></circle>
+                        <circle class="progress-bar" cx="200" cy="200" r="180" id="progressCircle"></circle>
+                        <defs>
+                            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#a855f7" />
+                                <stop offset="50%" stop-color="#9333ea" />
+                                <stop offset="100%" stop-color="#7c3aed" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+
+                    <div class="time-display">
+                        <div class="digits" id="timeDigits"></div>
+                        <div class="status-text" id="statusText">Старт</div>
+                        <div class="motivational-text" id="motivationalText">Выключаем микрофоны, камеры и чилимся!</div>
+                    </div>
+
+                    <div class="finished-glow" id="finishedGlow"></div>
+                    <div class="finished-text" id="finishedText"></div>
+                </div>
+
+                <div class="controls">
+                    <button class="btn btn-play" id="playBtn">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                    </button>
+                    <button class="btn btn-pause hidden" id="pauseBtn">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/>
+                        </svg>
+                    </button>
+                    <button class="btn btn-reset hidden" id="resetBtn">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="presets" id="presets">
+                    <button class="preset-btn active" data-seconds="900">15 min</button>
+                    <button class="preset-btn" data-seconds="600">10 min</button>
+                    <button class="preset-btn" data-seconds="300">5 min</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        class CountdownTimer {
+            constructor() {
+                this.timeRemaining = 900;
+                this.totalTime = 900;
+                this.state = 'idle';
+                this.intervalId = null;
+                this.prevDigits = ['1', '5', ':', '0', '0'];
+                this.digitElements = [];
+                this.backgroundMusic = null;
+                this.fadeInterval = null;
+
+                this.initElements();
+                this.initAudio();
+                this.initEventListeners();
+                this.initDisplay();
+            }
+
+            initElements() {
+                this.elements = {
+                    timeDigits: document.getElementById('timeDigits'),
+                    statusText: document.getElementById('statusText'),
+                    motivationalText: document.getElementById('motivationalText'),
+                    progressCircle: document.getElementById('progressCircle'),
+                    playBtn: document.getElementById('playBtn'),
+                    pauseBtn: document.getElementById('pauseBtn'),
+                    resetBtn: document.getElementById('resetBtn'),
+                    presets: document.getElementById('presets'),
+                    finishedGlow: document.getElementById('finishedGlow'),
+                    finishedText: document.getElementById('finishedText')
+                };
+
+                const circumference = 2 * Math.PI * 180;
+                this.elements.progressCircle.style.strokeDasharray = circumference;
+                this.elements.progressCircle.style.strokeDashoffset = circumference;
+            }
+
+            initAudio() {
+                // ============================================
+                // ФОНОВАЯ МУЗЫКА - РАЗМЕСТИТЕ ВАШ ФАЙЛ ЗДЕСЬ
+                // ============================================
+                // 1. Поместите ваш аудиофайл в ту же папку, что и этот HTML файл
+                // 2. Замените 'ambient-music.mp3' на имя вашего файла
+                // Примеры:
+                //   - 'chill-ambient.mp3'
+                //   - 'meditation.mp3'
+                //   - 'calm-music.wav'
+                this.backgroundMusic = new Audio('https://zvukipro.com/uploads/files/2019-05/1559045711_24b0d8ed4ae4cb2.mp3');
+                this.backgroundMusic.loop = true;
+                this.backgroundMusic.volume = 0;
+                // ============================================
+            }
+
+            initEventListeners() {
+                this.elements.playBtn.addEventListener('click', () => this.start());
+                this.elements.pauseBtn.addEventListener('click', () => this.pause());
+                this.elements.resetBtn.addEventListener('click', () => this.reset());
+
+                this.elements.presets.querySelectorAll('.preset-btn').forEach(btn => {
+                    btn.addEventListener('click', (e) => {
+                        const seconds = parseInt(e.target.dataset.seconds);
+                        this.selectPreset(seconds, e.target);
+                    });
+                });
+            }
+
+            formatTime(seconds) {
+                const mins = Math.floor(seconds / 60);
+                const secs = seconds % 60;
+                return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+            }
+
+            initDisplay() {
+                const timeString = this.formatTime(this.timeRemaining);
+                const digits = timeString.split('');
+
+                this.elements.timeDigits.innerHTML = '';
+                this.digitElements = [];
+
+                digits.forEach((digit, index) => {
+                    const digitContainer = document.createElement('span');
+                    digitContainer.className = digit === ':' ? 'digit colon' : 'digit';
+
+                    const digitValue = document.createElement('span');
+                    digitValue.className = 'digit-value';
+                    digitValue.textContent = digit;
+
+                    digitContainer.appendChild(digitValue);
+                    this.elements.timeDigits.appendChild(digitContainer);
+                    this.digitElements.push({ container: digitContainer, value: digitValue, digit: digit });
+                });
+
+                this.prevDigits = digits;
+            }
+
+            updateDisplay() {
+                const timeString = this.formatTime(this.timeRemaining);
+                const digits = timeString.split('');
+
+                digits.forEach((digit, index) => {
+                    if (digit !== this.prevDigits[index] && this.digitElements[index]) {
+                        const oldValue = this.digitElements[index].value;
+                        
+                        // Анимация выхода старой цифры
+                        oldValue.classList.add('slide-out');
+
+                        // Создание новой цифры
+                        setTimeout(() => {
+                            const newValue = document.createElement('span');
+                            newValue.className = 'digit-value slide-in';
+                            newValue.textContent = digit;
+
+                            this.digitElements[index].container.innerHTML = '';
+                            this.digitElements[index].container.appendChild(newValue);
+                            this.digitElements[index].value = newValue;
+                            this.digitElements[index].digit = digit;
+                        }, 200);
+                    }
+                });
+
+                this.prevDigits = digits;
+
+                // Обновление прогресс-бара
+                const progress = ((this.totalTime - this.timeRemaining) / this.totalTime) * 100;
+                const circumference = 2 * Math.PI * 180;
+                const offset = circumference - (progress / 100) * circumference;
+                this.elements.progressCircle.style.strokeDashoffset = offset;
+            }
+
+            updateStatus(status) {
+                const statusTexts = {
+                    idle: 'Старт',
+                    running: 'Отдыхаем',
+                    paused: 'Пауза',
+                    finished: 'Конец'
+                };
+                this.elements.statusText.textContent = statusTexts[status] || '';
+            }
+
+            start() {
+                if (this.state === 'idle' || this.state === 'finished' || this.state === 'paused') {
+                    this.state = 'running';
+                    this.updateStatus('running');
+                    this.updateButtons();
+                    this.elements.motivationalText.classList.add('show');
+                    this.fadeInAudio();
+
+                    const startTime = Date.now();
+                    const targetEndTime = startTime + this.timeRemaining * 1000;
+
+                    this.intervalId = setInterval(() => {
+                        const now = Date.now();
+                        const remaining = Math.max(0, Math.ceil((targetEndTime - now) / 1000));
+
+                        this.timeRemaining = remaining;
+                        this.updateDisplay();
+
+                        if (remaining === 0) {
+                            this.finish();
+                        }
+                    }, 50);
+                }
+            }
+
+            pause() {
+                this.state = 'paused';
+                this.updateStatus('paused');
+                this.updateButtons();
+                this.elements.motivationalText.classList.remove('show');
+                this.fadeOutAudio();
+
+                if (this.intervalId) {
+                    clearInterval(this.intervalId);
+                    this.intervalId = null;
+                }
+            }
+
+            reset() {
+                this.state = 'idle';
+                this.timeRemaining = this.totalTime;
+                this.updateStatus('idle');
+                this.initDisplay();
+                this.updateButtons();
+                this.elements.motivationalText.classList.remove('show');
+                this.elements.finishedGlow.classList.remove('show');
+                this.elements.finishedText.classList.remove('show');
+                this.fadeOutAudio();
+
+                if (this.intervalId) {
+                    clearInterval(this.intervalId);
+                    this.intervalId = null;
+                }
+
+                // Обновление прогресс-бара
+                const circumference = 2 * Math.PI * 180;
+                this.elements.progressCircle.style.strokeDashoffset = circumference;
+            }
+
+            finish() {
+                this.state = 'finished';
+                this.updateStatus('finished');
+                this.updateButtons();
+                this.elements.motivationalText.classList.remove('show');
+                this.elements.finishedGlow.classList.add('show');
+                this.elements.finishedText.classList.add('show');
+                this.fadeOutAudio();
+                this.playNotification();
+
+                if (this.intervalId) {
+                    clearInterval(this.intervalId);
+                    this.intervalId = null;
+                }
+            }
+
+            updateButtons() {
+                if (this.state === 'running') {
+                    this.elements.playBtn.classList.add('hidden');
+                    this.elements.pauseBtn.classList.remove('hidden');
+                    this.elements.resetBtn.classList.remove('hidden');
+                    this.elements.presets.style.display = 'none';
+                } else if (this.state === 'paused') {
+                    this.elements.playBtn.classList.remove('hidden');
+                    this.elements.pauseBtn.classList.add('hidden');
+                    this.elements.resetBtn.classList.remove('hidden');
+                    this.elements.presets.style.display = 'none';
+                } else {
+                    this.elements.playBtn.classList.remove('hidden');
+                    this.elements.pauseBtn.classList.add('hidden');
+                    this.elements.resetBtn.classList.add('hidden');
+                    this.elements.presets.style.display = 'flex';
+                }
+            }
+
+            selectPreset(seconds, btnElement) {
+                if (this.state === 'idle' || this.state === 'finished') {
+                    this.totalTime = seconds;
+                    this.timeRemaining = seconds;
+                    this.state = 'idle';
+                    this.updateStatus('idle');
+                    this.initDisplay();
+                    this.elements.finishedGlow.classList.remove('show');
+                    this.elements.finishedText.classList.remove('show');
+
+                    this.elements.presets.querySelectorAll('.preset-btn').forEach(btn => {
+                        btn.classList.remove('active');
+                    });
+                    btnElement.classList.add('active');
+
+                    // Сброс прогресс-бара
+                    const circumference = 2 * Math.PI * 180;
+                    this.elements.progressCircle.style.strokeDashoffset = circumference;
+                }
+            }
+
+            fadeInAudio() {
+                if (!this.backgroundMusic) return;
+
+                this.backgroundMusic.volume = 0;
+                this.backgroundMusic.play().catch((error) => {
+                    console.log('Автовоспроизведение заблокировано браузером:', error);
+                });
+
+                let volume = 0;
+                if (this.fadeInterval) clearInterval(this.fadeInterval);
+
+                this.fadeInterval = setInterval(() => {
+                    volume = Math.min(volume + 0.015, 0.3);
+                    if (this.backgroundMusic) {
+                        this.backgroundMusic.volume = volume;
+                    }
+                    if (volume >= 0.3) {
+                        clearInterval(this.fadeInterval);
+                        this.fadeInterval = null;
+                    }
+                }, 50);
+            }
+
+            fadeOutAudio() {
+                if (!this.backgroundMusic) return;
+
+                let volume = this.backgroundMusic.volume;
+                if (this.fadeInterval) clearInterval(this.fadeInterval);
+
+                this.fadeInterval = setInterval(() => {
+                    volume = Math.max(volume - 0.02, 0);
+                    if (this.backgroundMusic) {
+                        this.backgroundMusic.volume = volume;
+                    }
+                    if (volume <= 0) {
+                        this.backgroundMusic.pause();
+                        clearInterval(this.fadeInterval);
+                        this.fadeInterval = null;
+                    }
+                }, 50);
+            }
+
+            playNotification() {
+                const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+                const oscillator = audioContext.createOscillator();
+                const gainNode = audioContext.createGain();
+
+                oscillator.connect(gainNode);
+                gainNode.connect(audioContext.destination);
+
+                oscillator.frequency.setValueAtTime(800, audioContext.currentTime);
+                oscillator.frequency.exponentialRampToValueAtTime(400, audioContext.currentTime + 0.5);
+
+                gainNode.gain.setValueAtTime(0.3, audioContext.currentTime);
+                gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.5);
+
+                oscillator.start(audioContext.currentTime);
+                oscillator.stop(audioContext.currentTime + 0.5);
+            }
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            new CountdownTimer();
+        });
+    </script>
+</body>
+</html>
