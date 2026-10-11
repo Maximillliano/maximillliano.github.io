@@ -33,8 +33,8 @@ Object.keys(P).forEach(k=>{const b=document.createElement('button');b.className=
 const W=[['Лайнворк','t'],['Блэкворк','t'],['Графика','t'],['Олд скул','t'],['Традишнл','t'],['Губы','p'],['Брови, волосковая','p'],['Хрящ, хеликс','x']];
 $('#wk').innerHTML=W.map((w,i)=>`<div class="w rv" data-f="${w[1]}" style="--d:${i%4*.08}s"><div class="ph" data-l="Работа ${i+1}"></div><p>${w[0]}</p></div>`).join('');
 $$('#wk .ph').forEach((e,i)=>setImg(e,IMG.works[i]));
-const T=[['','Тату-мастер','t'],['','Тату-мастер','t'],['','Мастер по пирсингу','x l'],['','Тату-мастер','t'],['','Мастер перманента','p'],['','Мастер перманента','p'],['','Мастер перманента','p'],['','Мастер по пирсингу','x l']];
-$('#tm').innerHTML=T.map((m,i)=>`<div class="m rv" data-f="${m[2]}" style="--d:${i%4*.08}s"><div class="ph" data-l="Фото мастера"></div>${m[0]?`<h3>${m[0]}</h3>`:""}<p style="margin-top:12px">${m[1]}</p><a class="btn s" href="#ct">Записаться к мастеру</a></div>`).join('');
+const T=[['Александра','Тату-мастер · 8 лет в профессии','t'],['Антон','Тату-мастер · 14 лет в профессии','t'],['Владимир','Врач · пирсинг и лазерное удаление','x l'],['Алесь','Тату-мастер · 12 лет в профессии','t'],['Ирина','Мастер перманентного макияжа · 10 лет','p'],['Мария','Мастер перманентного макияжа · 6 лет','p'],['','Мастер перманентного макияжа','p'],['','Мастер по пирсингу','x l']];
+$('#tm').innerHTML=T.map((m,i)=>`<div class="m rv" data-f="${m[2]}" style="--d:${i%4*.08}s"><div class="ph" data-l="Фото мастера"></div>${m[0]?`<h3>${m[0]}</h3>`:""}<p style="margin:${m[0]?'4px 0 14px':'12px 0 14px'}">${m[1]}</p><a class="btn s" href="#ct">Записаться к мастеру</a></div>`).join('');
 $$('#tm .ph').forEach((e,i)=>setImg(e,IMG.team[i]));
 const filt=(box,sel)=>$$('.chip',box).forEach(c=>c.onclick=()=>{$$('.chip',box).forEach(x=>x.classList.toggle('on',x==c));$$(sel).forEach(e=>{const h=c.dataset.f!='all'&&!e.dataset.f.split(' ').includes(c.dataset.f);e.classList.toggle('h',h);if(!h){e.classList.remove('in');setTimeout(()=>e.classList.add('in'),30)}})});
 filt($('#wf'),'.w');

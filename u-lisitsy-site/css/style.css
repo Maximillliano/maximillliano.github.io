@@ -180,4 +180,6 @@ h2{font-size:clamp(40px,6vw,86px);line-height:1}
 .fox2{margin:28px 0 0;padding:0;width:190px}.ct .chips{margin-top:28px!important}
 .w p,.m p,.c li,.c ul,.svc p,.rs p,.perk span,.step p,.step .mt span,.facts span,.stat span,.prow small,.bk small,.two p,.fi div p,.rate,.lead,.hd2>p,.ci small,.ph::after{color:var(--fg2)}
 .tr .mg{align-items:stretch}.rev{box-sizing:border-box;justify-content:space-between}.rev p{margin:0;flex:1 1 auto}
+.m h3{font-size:30px;line-height:1.05;margin:14px 0 0}
+@media(max-width:900px){.m h3{font-size:24px}}@media(max-width:600px){.m h3{font-size:17px;margin-top:10px}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}.wm span{transform:none}}
