@@ -182,4 +182,6 @@ h2{font-size:clamp(40px,6vw,86px);line-height:1}
 .tr .mg{align-items:stretch}.rev{box-sizing:border-box;justify-content:space-between}.rev p{margin:0;flex:1 1 auto}
 .m h3{font-size:30px;line-height:1.05;margin:14px 0 0}
 @media(max-width:900px){.m h3{font-size:24px}}@media(max-width:600px){.m h3{font-size:17px;margin-top:10px}}
+.logo img{width:46px}
+@media(min-width:1101px){.hero .lead{margin-right:130px}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}.wm span{transform:none}}

@@ -5,7 +5,7 @@ const LOGO='assets/img/logo-wordmark.svg';
 const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
 const setImg=(el,u)=>{if(u){el.style.backgroundImage=`url(${u})`;el.classList.add('img')}};
 /* hero */
-$('#wm').innerHTML='<div class="wl"><img alt="У Лисицы" src="'+LOGO+'"><img class="em" alt="" src="assets/img/logo-small.svg"></div>';
+$('#wm').innerHTML='<div class="wl"><img alt="У Лисицы" src="'+LOGO+'"></div>';
 $$('#hbg i').forEach((e,i)=>e.style.backgroundImage='url('+[IMG.hero,IMG.edu][i]+')');$$('[data-k]').forEach(e=>setImg(e,IMG[e.dataset.k]));{const pp=$('.pph');pp.style.setProperty('--d','url('+new URL(IMG.hand,document.baseURI).href+')');pp.style.setProperty('--m','url('+new URL(IMG.price,document.baseURI).href+')');pp.classList.add('img')}
 addEventListener('scroll',()=>{const y=scrollY;$('#h').classList.toggle('sc',y>40);if(y<innerHeight)$('#hbg').style.transform=`translateY(${y*.25}px) scale(${1+y/4000})`},{passive:true});
 /* burger */
