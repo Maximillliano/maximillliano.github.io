@@ -54,3 +54,5 @@ function loopM(el,html,speed){const build=()=>{el.innerHTML='<div class="mg">'+h
 function alignFacts(){const f=$('.facts'),st=$$('.step')[3];if(!f||!st)return;f.style.marginTop='';if(innerWidth>1100){const d=st.offsetTop-f.offsetTop;if(d>0)f.style.marginTop=(parseFloat(getComputedStyle(f).marginTop)+d)+'px'}}
 alignFacts();addEventListener('resize',alignFacts);addEventListener('load',alignFacts);if(document.fonts)document.fonts.ready.then(alignFacts);
 obs();
+/* hero video: при ошибке или «уменьшить анимацию» остаются фото */
+{const v=$('#hbg video');if(v){v.addEventListener('error',()=>v.remove());if(v.error)v.remove();if(matchMedia('(prefers-reduced-motion:reduce)').matches)v.remove();else v.play().catch(()=>{})}}
