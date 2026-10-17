@@ -185,7 +185,8 @@ h2{font-size:clamp(40px,6vw,86px);line-height:1}
 .logo img{width:46px}
 @media(min-width:1101px){.hero .lead{margin-right:130px}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}.wm span{transform:none}}
-/* hero video: заполняет экран, обрезка по центру (сверху/снизу или по бокам) */
-.hero .bgp video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center center;display:block;pointer-events:none}
-/* «Наши услуги»: на широких экранах фото не растягивается по вертикали */
-@media(min-width:1101px){.pg{grid-template-columns:min(35vw,460px) minmax(0,1fr);align-items:start}.pg .pph{height:auto;aspect-ratio:4/5;max-height:580px}}
+/* hero: фото-стена с эффектом «живой фотографии» (медленный дрейф) */
+.hero .bgp i.hw{inset:-7%;opacity:1;background-size:cover;background-position:50% 8%;animation:hdrift 40s ease-in-out infinite;animation-delay:0s;will-change:transform}
+.hero .bgp::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,.4)}
+@keyframes hdrift{0%,100%{transform:translate3d(-1.2%,1.6%,0) scale(1.03) rotate(-.25deg)}50%{transform:translate3d(1.2%,-1.6%,0) scale(1.1) rotate(.25deg)}}
+@media(max-width:700px){.hero .bgp i.hw{background-position:50% 50%;animation-duration:32s}}
