@@ -54,3 +54,5 @@ function loopM(el,html,speed){const build=()=>{el.innerHTML='<div class="mg">'+h
 function alignFacts(){const f=$('.facts'),st=$$('.step')[3];if(!f||!st)return;f.style.marginTop='';if(innerWidth>1100){const d=st.offsetTop-f.offsetTop;if(d>0)f.style.marginTop=(parseFloat(getComputedStyle(f).marginTop)+d)+'px'}}
 alignFacts();addEventListener('resize',alignFacts);addEventListener('load',alignFacts);if(document.fonts)document.fonts.ready.then(alignFacts);
 obs();
+
+(()=>{const v=document.getElementById('hv');if(!v)return;const c=navigator.connection;if((c&&c.saveData)||matchMedia('(prefers-reduced-motion:reduce)').matches)return;v.src=matchMedia('(max-width:700px)').matches?'assets/video/hero-bg-m.mp4?v=1':'assets/video/hero-bg.mp4?v=1';v.muted=true;v.addEventListener('playing',()=>v.classList.add('on'));v.addEventListener('error',()=>v.remove());const p=v.play();if(p&&p.catch)p.catch(()=>{})})();
